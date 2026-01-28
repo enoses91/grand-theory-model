@@ -1,0 +1,336 @@
+version: 1
+model: grand-theory
+updated: 2026-01-28
+
+# Status meanings:
+# canonical   = stable, normative reference
+# working     = active but non-canonical
+# provisional = candidate for canonization
+# deprecated  = retained for traceability only
+
+objects:
+
+  # =========================
+  # CORE METRIC & STATE (COR)
+  # =========================
+
+  - object_id: COR.CI
+    path: COR/COR.CI.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.CI]
+
+  - object_id: COR.E
+    path: COR/COR.E.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.E]
+
+  - object_id: COR.G
+    path: COR/COR.G.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.G]
+
+  - object_id: COR.PHI
+    path: COR/COR.PHI.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.PHI]
+
+  - object_id: COR.THETA
+    path: COR/COR.THETA.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.THETA]
+
+  - object_id: COR.X
+    path: COR/COR.X.md
+    kind: metric
+    status: canonical
+    legacy_ids: [O.1.METRIC.X]
+
+  - object_id: COR.H
+    path: COR/COR.H.md
+    kind: state
+    status: canonical
+    legacy_ids: [O.1.STATE.H]
+
+  - object_id: COR.KAPPA
+    path: COR/COR.KAPPA.md
+    kind: state
+    status: canonical
+    legacy_ids: [O.1.STATE.KAPPA]
+
+  - object_id: COR.CHI
+    path: COR/COR.CHI.md
+    kind: state
+    status: canonical
+    legacy_ids: [O.3.STATE.CHI]
+
+  - object_id: COR.STATE.G
+    path: COR/COR.STATE.G.md
+    kind: state
+    status: canonical
+    legacy_ids: [O.1.STATE.G]
+
+  # =================
+  # FEASIBLE BOUNDS
+  # =================
+
+  - object_id: BOUNDS.B_C
+    path: BOUNDS/BOUNDS.B_C.md
+    kind: bound
+    status: canonical
+    legacy_ids: [O.2.BOUND.B_C]
+
+  - object_id: BOUNDS.B_D
+    path: BOUNDS/BOUNDS.B_D.md
+    kind: bound
+    status: canonical
+    legacy_ids: [O.2.BOUND.B_D]
+
+  - object_id: BOUNDS.B_PHI
+    path: BOUNDS/BOUNDS.B_PHI.md
+    kind: bound
+    status: canonical
+    legacy_ids: [O.2.BOUND.B_PHI]
+
+  - object_id: BOUNDS.B_X
+    path: BOUNDS/BOUNDS.B_X.md
+    kind: bound
+    status: canonical
+    legacy_ids: [O.2.BOUND.B_X]
+
+  # =======
+  # FIELDS
+  # =======
+
+  - object_id: FIELDS.CULTURE_IDENTITY
+    path: FIELDS/FIELDS.CULTURE_IDENTITY.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.CULTURE_IDENTITY]
+
+  - object_id: FIELDS.DEMOGRAPHY
+    path: FIELDS/FIELDS.DEMOGRAPHY.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.DEMOGRAPHY]
+
+  - object_id: FIELDS.EDUCATION_KNOWLEDGE
+    path: FIELDS/FIELDS.EDUCATION_KNOWLEDGE.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.EDUCATION_KNOWLEDGE]
+
+  - object_id: FIELDS.GOVERNANCE
+    path: FIELDS/FIELDS.GOVERNANCE.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.GOVERNANCE]
+
+  - object_id: FIELDS.INFORMATION
+    path: FIELDS/FIELDS.INFORMATION.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.INFORMATION]
+
+  - object_id: FIELDS.MARKET
+    path: FIELDS/FIELDS.MARKET.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.MARKET]
+
+  - object_id: FIELDS.TECHNOLOGY
+    path: FIELDS/FIELDS.TECHNOLOGY.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.TECHNOLOGY]
+
+  - object_id: FIELDS.VIOLENCE
+    path: FIELDS/FIELDS.VIOLENCE.md
+    kind: field
+    status: canonical
+    legacy_ids: [O.2.FIELD.VIOLENCE]
+
+  # =========================
+  # MEASUREMENT & RLM
+  # =========================
+
+  - object_id: MEASUREMENT.GENERIC
+    path: MEASUREMENT/MEASUREMENT.GENERIC.md
+    kind: measurement
+    status: canonical
+    legacy_ids: [O.2.MEASUREMENT.GENERIC]
+
+  - object_id: MEASUREMENT.PI_C
+    path: MEASUREMENT/MEASUREMENT.PI_C.md
+    kind: measurement
+    status: canonical
+    legacy_ids: [O.2.MEASUREMENT.PI_C]
+
+  - object_id: MEASUREMENT.PI_CHI
+    path: MEASUREMENT/MEASUREMENT.PI_CHI.md
+    kind: measurement
+    status: canonical
+    legacy_ids: [O.2.MEASUREMENT.PI_CHI]
+
+  - object_id: MEASUREMENT.PI_G
+    path: MEASUREMENT/MEASUREMENT.PI_G.md
+    kind: measurement
+    status: canonical
+    legacy_ids: [O.2.MEASUREMENT.PI_G]
+
+  - object_id: MEASUREMENT.PI_X
+    path: MEASUREMENT/MEASUREMENT.PI_X.md
+    kind: measurement
+    status: canonical
+    legacy_ids: [O.2.MEASUREMENT.PI_X]
+
+  - object_id: RLM.EXIT_LOCKIN
+    path: RLM/RLM.EXIT_LOCKIN.md
+    kind: mechanism
+    status: canonical
+    legacy_ids: [O.2.RLM.EXIT_LOCKIN]
+
+  - object_id: RLM.GOVERNANCE_EXECUTION
+    path: RLM/RLM.GOVERNANCE_EXECUTION.md
+    kind: mechanism
+    status: canonical
+    legacy_ids: [O.2.RLM.GOVERNANCE_EXECUTION]
+
+  - object_id: RLM.INFORMATION_TOPOLOGY
+    path: RLM/RLM.INFORMATION_TOPOLOGY.md
+    kind: mechanism
+    status: canonical
+    legacy_ids: [O.2.RLM.INFORMATION_TOPOLOGY]
+
+  # =========================
+  # AXES (projection layer)
+  # =========================
+
+  - object_id: AXIS.AGREEABLENESS
+    path: AXIS/AXIS.AGREEABLENESS.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.AGREEABLENESS]
+
+  - object_id: AXIS.CONSCIENTIOUSNESS
+    path: AXIS/AXIS.CONSCIENTIOUSNESS.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.CONSCIENTIOUSNESS]
+
+  - object_id: AXIS.EMOTIONALITY
+    path: AXIS/AXIS.EMOTIONALITY.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.EMOTIONALITY]
+
+  - object_id: AXIS.EXTRAVERSION
+    path: AXIS/AXIS.EXTRAVERSION.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.EXTRAVERSION]
+
+  - object_id: AXIS.HONESTY_HUMILITY
+    path: AXIS/AXIS.HONESTY_HUMILITY.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.HONESTY_HUMILITY]
+
+  - object_id: AXIS.OPENNESS
+    path: AXIS/AXIS.OPENNESS.md
+    kind: axis
+    status: canonical
+    legacy_ids: [O.3.AXIS.OPENNESS]
+
+  # =========================
+  # OBJECTS (analytic)
+  # =========================
+
+  - object_id: OBJECT.CLASS
+    path: OBJECT/OBJECT.CLASS.md
+    kind: analytic_object
+    status: canonical
+    legacy_ids: [O.3.OBJECT.CLASS]
+
+  - object_id: OBJECT.CLUSTER
+    path: OBJECT/OBJECT.CLUSTER.md
+    kind: analytic_object
+    status: canonical
+    legacy_ids: [O.3.OBJECT.CLUSTER]
+
+  - object_id: OBJECT.GROUP
+    path: OBJECT/OBJECT.GROUP.md
+    kind: analytic_object
+    status: canonical
+    legacy_ids: [O.3.OBJECT.GROUP]
+
+  - object_id: OBJECT.INDIVIDUAL
+    path: OBJECT/OBJECT.INDIVIDUAL.md
+    kind: analytic_object
+    status: canonical
+    legacy_ids: [O.3.OBJECT.INDIVIDUAL]
+
+  - object_id: OBJECT.REGIME
+    path: OBJECT/OBJECT.REGIME.md
+    kind: analytic_object
+    status: canonical
+    legacy_ids: [O.3.OBJECT.REGIME]
+
+  # =========================
+  # OPERATORS (OCF)
+  # =========================
+
+  - object_id: OCF.OPERATOR.INTERVENTION_DYNAMICS
+    path: OCF/OCF.OPERATOR.INTERVENTION_DYNAMICS.md
+    kind: operator
+    status: canonical
+    legacy_ids: [O.4.OPERATOR.INTERVENTION_DYNAMICS]
+
+  - object_id: OCF.OPERATOR.OMISSION_AUDIT
+    path: OCF/OCF.OPERATOR.OMISSION_AUDIT.md
+    kind: operator
+    status: canonical
+    legacy_ids: [O.4.OPERATOR.OMISSION_AUDIT]
+
+  - object_id: OCF.OPERATOR.WEIGHTED_ACCESS
+    path: OCF/OCF.OPERATOR.WEIGHTED_ACCESS.md
+    kind: operator
+    status: provisional
+    notes: "Access-conditioning formalization of power; retained but under review."
+
+  # =========================
+  # DYNAMIC PATTERNS (DPI)
+  # =========================
+
+  - object_id: DPI.SALIENCE_DRIVEN_BASIN_HARDENING
+    path: DPI/DPI.SALIENCE_DRIVEN_BASIN_HARDENING.md
+    kind: pattern
+    status: canonical
+    legacy_ids: [O.3.PATTERN.SALIENCE_DRIVEN_BASIN_HARDENING]
+
+  - object_id: DPI.REGISTRY
+    path: DPI/dpi.yaml
+    kind: registry
+    status: working
+
+  # =========================
+  # CAUSAL CHAINS (CCFI)
+  # =========================
+
+  - object_id: CCFI.REGISTRY
+    path: CCFI/ccfi.yaml
+    kind: registry
+    status: working
+
+  # =========================
+  # IDEOLOGICAL BASINS (IBR)
+  # =========================
+
+  - object_id: IBR.REGISTRY
+    path: IBR/ibr.yaml
+    kind: registry
+    status: working

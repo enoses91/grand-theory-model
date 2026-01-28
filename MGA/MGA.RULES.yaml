@@ -1,0 +1,575 @@
+# mga_rules.yaml — WORKING / PROVISIONAL (until promoted to canonical memory)
+# Purpose: Persist MGA process rules outside model memory.
+# NOTE: MGA processes are epistemic/procedural operators; they do not add causal primitives.
+
+mga:
+  meta:
+    file_version: "0.3.1"
+    status: "working"
+    created: "2026-01-27"
+    timezone: "America/Chicago"
+    versioning:
+      scheme: "semver-ish"
+      file_version_semantics:
+        major: "breaking structural changes to file schema or cross-process invariants"
+        minor: "additive/non-breaking changes"
+        patch: "clarifications/typos/metadata"
+      process_version_semantics:
+        major: "breaking changes to required phases/outputs"
+        minor: "additive/non-breaking process rule changes"
+        patch: "clarifications/typos/metadata"
+      run_recording_requirement:
+        level: "must"
+        statement: "Every MGA run must record the file_version and the specific process version used."
+        required_fields: ["mga_rules_file_version", "process_name", "process_version"]
+    enums:
+      status: ["working", "candidate", "promoted", "retired"]
+      confidence: ["low", "medium", "high"]
+      enforcement_level: ["must", "should", "may", "must_not"]
+    artifacts:
+      cor: "COR.yaml (Canonical Object Registry) — authoritative ontology"
+      dpi: "DPI.yaml (Dynamic Pattern Inventory) — working/provisional"
+      ccfi: "CCFI.yaml (Causal Chain Fragment Inventory) — working/provisional"
+      ocf: "OCF/ (Observed/Operational Case Files) — evidence layer"
+      ibr: "IBR.yaml (Ideological Basin Register) — working/provisional"
+    changelog:
+      - date: "2026-01-27"
+        file_version: "0.3.0"
+        changed_processes: ["mga_a", "mga_b", "mga_c", "mga_t"]
+        summary: "Consolidated full MGA rule set into one file with per-process versioning and shared global guardrails."
+      - date: "2026-01-27"
+        file_version: "0.3.1"
+        changed_processes: ["mga_b"]
+        summary: "Added that basin-consistent salience profiles may be referenced via IBR entries."
+
+  global_guardrails:
+    - id: "MGA-GR-001"
+      level: "must"
+      name: "No new primitives in MGA"
+      statement: "MGA outputs must be expressible using existing COR objects. Any proposed model changes are routed via MGA-T only."
+    - id: "MGA-GR-002"
+      level: "must"
+      name: "Bracket normative truth"
+      statement: "MGA evaluates coordination dynamics, feasibility, and causal structure; it does not adjudicate moral, metaphysical, or theological truth claims."
+    - id: "MGA-GR-003"
+      level: "must"
+      name: "Scope discipline"
+      statement: "Every MGA run must declare scope, regime, scale(s) σ, and temporal horizon Δt; conclusions must not exceed declared domain-of-validity D(s,t,Δt)."
+    - id: "MGA-GR-004"
+      level: "must"
+      name: "Attribution discipline"
+      statement: "Do not infer intent from outcomes. Techniques require operator evidence of intentional invocation; otherwise classify as endogenous drift and/or exogenous shock."
+    - id: "MGA-GR-005"
+      level: "must"
+      name: "Time-constant discipline"
+      statement: "Claims must respect object- and regime-conditioned time constants τ_O and asymmetric collapse/recovery (τ_recover ≫ τ_collapse)."
+    - id: "MGA-GR-006"
+      level: "must_not"
+      name: "Pattern-as-cause misuse"
+      statement: "Dynamic Patterns and Chain Fragments are analytic compression tools; they cannot substitute for causal chains, evidence, and feasibility gates."
+    - id: "MGA-GR-007"
+      level: "must"
+      name: "Scale-transition discipline"
+      statement: "Any move across scale(s) must invoke a scale-transition operator T₁–T₄ with duration/persistence feasibility; otherwise it is a Silent Scale Shift."
+    - id: "MGA-GR-008"
+      level: "must"
+      name: "Measurement discipline"
+      statement: "Where empirical claims are made, specify measurement operator ℳ and acceptable proxies; reject Measurement Substitution (rhetoric for structure)."
+    - id: "MGA-GR-009"
+      level: "must"
+      name: "Goal–Function feasibility separation"
+      statement: "Goals are exogenous inputs; system functions are regime-constrained. Do not treat desired ends as feasible means without bound checks."
+
+  shared_sections:
+    # Reusable section specs across MGA types
+    scope_declaration:
+      id: "SEC-SCOPE"
+      level: "must"
+      required_fields:
+        - "mode"
+        - "topic_focus"
+        - "unit_of_analysis"
+        - "geography_or_jurisdiction"
+        - "time_horizon_delta_t"
+        - "reference_dates"
+        - "scale_sigma"
+      checks:
+        - id: "SEC-SCOPE-C1"
+          level: "must"
+          name: "Completeness"
+          statement: "If any field is unclear, label as unclear and constrain conclusions accordingly."
+    temporal_validity_checks:
+      id: "SEC-TEMPORAL"
+      level: "must"
+      checks:
+        - id: "TEMP-C1"
+          level: "must"
+          name: "Duration test"
+          statement: "Do not infer slow-variable change from fast-variable observations without time feasibility and transition operator."
+        - id: "TEMP-C2"
+          level: "must"
+          name: "Layer-mismatch test"
+          statement: "Ensure inferred causes live on compatible time scales with observed effects; otherwise bound or reject."
+        - id: "TEMP-C3"
+          level: "must"
+          name: "Recovery realism test"
+          statement: "Any recovery expectation must respect hysteresis and τ asymmetry; otherwise flag as infeasible."
+    error_taxonomy_pointer:
+      id: "SEC-ERROR-TAX"
+      level: "must"
+      note: "This is a pointer index; full definitions live in the glossary."
+      categories:
+        attribution_errors: ["Agency Inflation", "Agency Erasure", "Intent Laundering"]
+        scale_errors: ["Class–Group Conflation", "Cluster Agency Error", "Coalition-as-Group Error", "Silent Scale Shift"]
+        temporal_errors: ["Temporal Compression Error", "Late-Intervention Fallacy", "Recovery Realism Violation"]
+        salience_weighting_errors: ["Salience and Weighting Error", "Projection Boundary Error"]
+        measurement_errors: ["Measurement Substitution Error", "Evidence Hierarchy Violation"]
+        causality_errors: ["Narrative Causation Error", "Mechanism Omission Error"]
+
+  processes:
+    mga_a:
+      name: "MGA-A — Foundational Diagnosis (System-first)"
+      process_version: "0.2.0"
+      status: "working"
+      purpose:
+        - "Construct a model-grounded diagnosis of a situation without privileging an external author’s framing."
+        - "Identify regime, binding bounds, dominant fields/couplings, plausible causal chains, and active Dynamic Patterns."
+        - "Produce a bounded, testable explanation and prediction envelope."
+      when_to_use:
+        - "You want 'what is happening' in model terms."
+        - "No primary text to critique, or you want independent diagnosis before critique."
+      inputs_required:
+        - "situation_description (may include events, actors, geography, time window)"
+      inputs_optional:
+        - "evidence_links (OCF, datasets, reports)"
+        - "hypotheses_to_test"
+      outputs_required:
+        - "Scope declaration (SEC-SCOPE)"
+        - "Regime and bound snapshot"
+        - "Field and coupling map"
+        - "Candidate causal chain(s) with alternatives"
+        - "Dynamic Pattern identification (if any) with activation/boundary notes"
+        - "Uncertainties + measurement needs (ℳ/proxies)"
+        - "Bounded predictions (what would change beliefs)"
+      phases:
+        - id: "A-0"
+          name: "Scope & Mode"
+          level: "must"
+          inherit_section: "scope_declaration"
+        - id: "A-1"
+          name: "Regime & Boundary Conditions"
+          level: "must"
+          required_fields:
+            - "regime_characterization"
+            - "slow_variable_bounds (B_D, B_K, B_C, B_CI as relevant)"
+            - "temporal_domain_of_validity D(s,t,Δt)"
+          checks:
+            - inherit_section: "temporal_validity_checks"
+        - id: "A-2"
+          name: "Metric & State Hypothesis"
+          level: "should"
+          required_fields:
+            - "metric_components_estimates_or_direction (φ, θ, E, g, X, CI, κ, h)"
+            - "state_variables (as applicable)"
+            - "unknowns_and_uncertainty"
+        - id: "A-3"
+          name: "Field & Coupling Map"
+          level: "must"
+          required_fields:
+            - "fields_in_play (Gv, M, I, V, T, C, D as relevant)"
+            - "dominant_couplings"
+            - "possible_missing_fields"
+        - id: "A-4"
+          name: "Causal Chains and Alternatives"
+          level: "must"
+          required_fields:
+            - "primary_causal_chain_hypothesis"
+            - "at_least_one_alternative_chain"
+            - "operator_evidence_requirements (especially for Techniques)"
+          checks:
+            - id: "A-4-C1"
+              level: "must"
+              name: "Intent evidence gate"
+              statement: "If a Technique is proposed, specify what evidence would distinguish it from drift/shock."
+        - id: "A-5"
+          name: "Dynamic Pattern Check"
+          level: "should"
+          required_fields:
+            - "active_patterns (DPI ids or candidate descriptions)"
+            - "activation_conditions"
+            - "boundary_conditions"
+          checks:
+            - id: "A-5-C1"
+              level: "must_not"
+              name: "Pattern reification"
+              statement: "Patterns cannot substitute for chains; keep as descriptors."
+        - id: "A-6"
+          name: "Measurement Plan (ℳ) & Prediction Envelope"
+          level: "must"
+          required_fields:
+            - "measurements_needed"
+            - "proxy_candidates"
+            - "predictions_and_falsifiers"
+            - "residual_bounds"
+      acceptance_criteria:
+        complete_if_all_true:
+          - "Regime + bounds + D(s,t,Δt) stated"
+          - "At least one primary causal chain + one alternative"
+          - "Measurement needs and falsifiers stated"
+          - "Conclusions bounded by scope/time/scale"
+
+    mga_b:
+      name: "MGA-B — Critique / Analysis of Analysis (Argument-first)"
+      process_version: "0.3.1"
+      status: "working"
+      purpose:
+        - "Evaluate a text/argument’s validity within the model: object use, scale, time, causality, feasibility."
+        - "Diagnose errors with constructive repair paths."
+        - "Bound what can and cannot be concluded."
+        - "Flag (not enact) candidate inventory entries/refinements and model refinement signals."
+      when_to_use:
+        - "You have a primary text/argument to critique and repair."
+        - "You want explicit error labels, repair paths, and residual bounds."
+      inputs_required:
+        - "primary_text"
+      inputs_optional:
+        - "context"
+        - "author_claims (if provided)"
+        - "supporting_evidence (if provided)"
+      outputs_required:
+        - "Scope declaration (SEC-SCOPE)"
+        - "Explicit vs Implicit Assumption Audit"
+        - "Regime + boundary + temporal domain-of-validity statement"
+        - "Claim-level audit output (Pass/Fail + diagnostics)"
+        - "Agency Allocation Check (mandatory)"
+        - "Analysis Pattern Error Audit (mandatory)"
+        - "Inventory Impact statement (mandatory)"
+        - "Model Object Refinement Check disposition"
+      phases:
+        - id: "B-0"
+          name: "Scope & Mode"
+          level: "must"
+          inherit_section: "scope_declaration"
+        - id: "B-0.5"
+          name: "Explicit vs Implicit Assumption Audit"
+          level: "must"
+          required_fields:
+            - "explicit_assumptions"
+            - "implicit_assumptions"
+            - "unclear_assumptions"
+        - id: "B-2"
+          name: "Regime, Boundary Conditions, and Temporal Domain of Validity"
+          level: "must"
+          required_fields:
+            - "regime_characterization"
+            - "boundary_conditions (slow variables/bounds as relevant)"
+            - "temporal_domain_of_validity D(s,t,Δt)"
+            - "credibility_half_life (if time-sensitive)"
+          checks:
+            - inherit_section: "temporal_validity_checks"
+        - id: "B-3"
+          name: "Metric/State Binding + Measurement Discipline"
+          level: "should"
+          required_fields:
+            - "objects_and_metrics_invoked"
+            - "measurement_operator_or_proxy_requirements"
+            - "unknowns"
+        - id: "B-4"
+          name: "Field & Coupling Completeness"
+          level: "must"
+          required_fields:
+            - "fields_invoked"
+            - "couplings_asserted"
+            - "dominant_omissions_check"
+        - id: "B-5"
+          name: "Incentive Gradient Derivation"
+          level: "must"
+          required_fields:
+            - "incentives_claimed"
+            - "mechanism_pathway"
+            - "alternatives"
+          checks:
+            - id: "B-5-C1"
+              level: "must"
+              name: "Narrative causation rejection"
+              statement: "Stated intent is not evidence; require metric/state/field pathway or downgrade."
+        - id: "B-6"
+          name: "Dynamic Pattern Detection"
+          level: "should"
+          required_fields:
+            - "patterns_detected (DPI ids or candidates)"
+            - "activation/boundary notes"
+           - id: "B-7.25"
+         	   name: "Projection Class & Disciplinary Priors Inference"
+                        level: "must"
+                        required_fields:
+                             - "inferred_projection_class Π_d"
+                             - "evidence_mode"
+                             - "domain_of_validity D_d"
+                             - "projection_boundary_risks"
+                         notes:
+                              - >
+                                Where helpful, basin-consistent salience profiles may be referenced
+                                via Ideological Basin Register (IBR) entries as translation/compression aids.
+                                IBR references do not substitute for metric, field, topology, or causal analysis.
+        - id: "B-7.3"
+          name: "Author Background Verification (Optional, Controlled)"
+          level: "may"
+          required_fields:
+            - "invoked (true/false)"
+            - "facts_used (minimal)"
+            - "used_only_for_projection_inference (true)"
+        - id: "B-8"
+          name: "Model Object Refinement Check (Core)"
+          level: "must"
+          required_fields:
+            - "refinement_disposition (none|candidate_refinement)"
+            - "candidate_refinements (if any)"
+            - "refinement_risks"
+        - id: "B-9"
+          name: "Synthesis and Disposition"
+          level: "must"
+          required_fields:
+            - "overall_verdict_bounded"
+            - "dominant_errors_and_impact"
+            - "repair_guidance_summary"
+            - "residual_bounds_summary"
+      mandatory_sections:
+        - id: "B-SEC-AGENCY"
+          name: "Agency Allocation Check"
+          level: "must"
+          required_fields:
+            - "drift_contribution"
+            - "agency_contribution"
+            - "exogenous_shock_contribution"
+            - "agency_weight (low|medium|high)"
+            - "justification"
+        - id: "B-SEC-ERRORS"
+          name: "Analysis Pattern Error Audit"
+          level: "must"
+          required_fields:
+            - "errors_detected (may be empty)"
+            - "for_each_error: location + description + impact"
+          checks:
+            - inherit_section: "error_taxonomy_pointer"
+        - id: "B-SEC-CLAIMS"
+          name: "Claim-Level Audit Output"
+          level: "must"
+          required_fields:
+            - "claims"
+          claim_schema:
+            required_fields:
+              - "claim_text"
+              - "audit_result (pass|fail|partial)"
+              - "error_labels (list)"
+              - "english_diagnosis"
+              - "formal_fix (repair_path)"
+              - "residual_bound"
+        - id: "B-SEC-INVENTORY"
+          name: "Inventory Impact Requirement"
+          level: "must"
+          statement: >
+            Each MGA-B analysis must explicitly state whether the analyzed material introduces
+            new candidate Dynamic Patterns (DPI) or Causal Chain Fragments (CCFI), or warrants
+            refinement of existing inventory entries. Merely noting additional occurrences does
+            not satisfy this requirement. Absence of candidates must be explicitly stated.
+          required_fields:
+            - "dpi_impact (none|new_candidate|refine_existing)"
+            - "ccfi_impact (none|new_candidate|refine_existing)"
+            - "dpi_targets (list of ids if applicable)"
+            - "ccfi_targets (list of ids if applicable)"
+            - "disposition_sentence"
+      acceptance_criteria:
+        complete_if_all_true:
+          - "B-0, B-0.5, B-2, B-4, B-5, B-9 present"
+          - "Agency Allocation Check present"
+          - "Analysis Pattern Error Audit present"
+          - "Claim-Level Audit present"
+          - "Inventory Impact statement present"
+          - "Residual bounds explicitly stated"
+
+    mga_c:
+      name: "MGA-C — Hypothetical Intervention Design (Feasibility-first)"
+      process_version: "0.2.0"
+      status: "working"
+      purpose:
+        - "Design feasible intervention sequences under binding bounds, time constants, and governance constraints."
+        - "Identify levers, sequencing, failure modes, and monitoring/measurement for adaptation."
+        - "Reject infeasible interventions via Temporal Feasibility Gate and deep-constraint bounds."
+      when_to_use:
+        - "You want an action plan under constraints (policy, org change, program design)."
+        - "You want sequencing (TOC-style) and feasibility gating."
+      inputs_required:
+        - "goal_statement(s) (exogenous)"
+        - "regime/situation snapshot (from MGA-A or provided)"
+      inputs_optional:
+        - "candidate_levers (if provided)"
+        - "constraints list (legal, budget, capacity)"
+      outputs_required:
+        - "Scope declaration (SEC-SCOPE)"
+        - "Goal–Function Feasibility Separation"
+        - "Binding bound identification (B_dom) + residual slack"
+        - "Temporal Feasibility Gate result"
+        - "Lever set + sequencing plan (with τ and hysteresis)"
+        - "Risk register (including violence-coupling risk if relevant)"
+        - "Measurement/monitoring plan (ℳ) + decision triggers"
+      phases:
+        - id: "C-0"
+          name: "Scope & Mode"
+          level: "must"
+          inherit_section: "scope_declaration"
+        - id: "C-1"
+          name: "Goal–Function Feasibility Separation"
+          level: "must"
+          required_fields:
+            - "goals (S/I/F decomposition if relevant)"
+            - "system_functions_and_constraints"
+            - "explicit infeasibilities (if any)"
+        - id: "C-2"
+          name: "Regime & Bounds Snapshot"
+          level: "must"
+          required_fields:
+            - "regime_characterization"
+            - "slow_variable_bounds"
+            - "binding_bounds_candidates"
+            - "dominant_bound B_dom (selected)"
+            - "residual_slack (σ_i remaining even under binding bounds)"
+          checks:
+            - inherit_section: "temporal_validity_checks"
+        - id: "C-3"
+          name: "Temporal Feasibility Gate"
+          level: "must"
+          required_fields:
+            - "t_min requirements for proposed levers"
+            - "available time horizon"
+            - "gate_disposition (pass|fail|partial)"
+            - "if_fail: resequencing_or_rejection"
+          checks:
+            - id: "C-3-C1"
+              level: "must"
+              name: "Late-intervention rejection"
+              statement: "If feasibility has collapsed (bounds saturated, θ/φ too low, χ below threshold), reject or resequence; do not propose late reforms."
+        - id: "C-4"
+          name: "Lever Set Identification"
+          level: "must"
+          required_fields:
+            - "candidate_levers mapped to control surfaces / Techniques (if intentional)"
+            - "lever scale σ and required governance mode Γ"
+            - "expected Δ{φ, θ, E, g, X, CI, κ, h}"
+            - "risks and reversibility (χ, hysteresis)"
+          checks:
+            - id: "C-4-C1"
+              level: "must"
+              name: "Technique intent evidence"
+              statement: "If a lever is a Technique, specify who can invoke it and why it is feasible under current regime."
+        - id: "C-5"
+          name: "Sequencing (TOC-compatible)"
+          level: "must"
+          required_fields:
+            - "identify B_dom"
+            - "exploit/subordinate/elevate steps (only if time-feasible)"
+            - "dominance switching risk"
+            - "governance switching considerations (Γ and C_switch)"
+        - id: "C-6"
+          name: "Monitoring, Triggers, and Adaptation"
+          level: "must"
+          required_fields:
+            - "measurement_operator ℳ and proxies"
+            - "leading indicators"
+            - "decision triggers"
+            - "stop-loss / rollback criteria"
+        - id: "C-7"
+          name: "Residual Bounds"
+          level: "must"
+          required_fields:
+            - "what cannot be achieved under current regime/time"
+            - "what would be required to change feasibility"
+      acceptance_criteria:
+        complete_if_all_true:
+          - "Temporal Feasibility Gate present with disposition"
+          - "Binding bound B_dom identified with residual slack"
+          - "Sequencing provided with τ/hysteresis"
+          - "Monitoring and triggers specified"
+          - "Residual bounds stated"
+
+    mga_t:
+      name: "MGA-T — Theory Evolution Triage (Model-change router)"
+      process_version: "0.2.0"
+      status: "working"
+      purpose:
+        - "Decide whether observations/analyses warrant changes to the model (objects, definitions, taxonomies, procedures)."
+        - "Prevent overfitting, duplication, politicization, and narrative-driven ontology creep."
+        - "Route proposals: reject / refine / promote / defer."
+      when_to_use:
+        - "After MGA-B Phase 8/9 indicates possible model refinement, OR after MGA-A reveals persistent anomalies."
+        - "When considering promotion of working DPI/CCFI candidates or new error classes/RLMs."
+      inputs_required:
+        - "trigger_packet (must include at least one of: MGA-B refinement signals, MGA-A anomalies, repeated OCF conflicts)"
+      inputs_optional:
+        - "candidate_entry (proposed object/pattern/chain/rule)"
+        - "supporting OCF references"
+      outputs_required:
+        - "Disqualifier Gate result"
+        - "Structural Compatibility Screen result"
+        - "Value-axis / projection risk note (where relevant)"
+        - "Routing decision: reject|refine|promote|defer"
+        - "Specification of change (if refine/promote), scope bounds, risks"
+        - "Explicit 'no change indicated' allowed"
+      phases:
+        - id: "T-0"
+          name: "Scope & Trigger Declaration"
+          level: "must"
+          required_fields:
+            - "trigger_source (MGA-A|MGA-B|OCF)"
+            - "trigger_summary"
+            - "candidate_type (object|definition|pattern|chain|error_class|procedure_rule)"
+        - id: "T-1"
+          name: "Disqualifier Gate"
+          level: "must"
+          required_fields:
+            - "disqualifiers_checked"
+            - "gate_disposition (pass|fail)"
+          checks:
+            - id: "T-1-C1"
+              level: "must"
+              name: "Duplication check"
+              statement: "If candidate is reducible to existing COR objects or DPI/CCFI entries, reject or refine as alias/clarification."
+            - id: "T-1-C2"
+              level: "must"
+              name: "Politicization / rhetoric check"
+              statement: "Reject candidates that smuggle normative labels or partisan categories as ontology."
+            - id: "T-1-C3"
+              level: "must"
+              name: "Evidence insufficiency check"
+              statement: "If only single-instance support exists (N<3 independent OCFs or equivalent), defer unless it is a procedural rule."
+        - id: "T-2"
+          name: "Structural Compatibility Screen"
+          level: "must"
+          required_fields:
+            - "fits_existing_layers (primitive|second_order|meta_analytic|procedure)"
+            - "no_new_causal_substrate (true)"
+            - "scope_and_domain (regime/scale/time)"
+            - "failure_modes_and_misuse_risks"
+        - id: "T-3"
+          name: "Routing Decision"
+          level: "must"
+          required_fields:
+            - "route (reject|refine|promote|defer|no_change)"
+            - "rationale"
+            - "implementation_notes (if refine/promote)"
+        - id: "T-4"
+          name: "Change Specification (if refine/promote)"
+          level: "should"
+          required_fields:
+            - "exact delta (what changes)"
+            - "backward compatibility notes"
+            - "new required references (DPI/CCFI/COR/MGA rules)"
+            - "tests/counterexamples to validate"
+      acceptance_criteria:
+        complete_if_all_true:
+          - "Disqualifier Gate performed"
+          - "Compatibility screen performed"
+          - "Explicit routing decision stated"
+          - "If refine/promote: change spec includes scope + misuse risks"
+          - "If no_change: explicitly stated"
+

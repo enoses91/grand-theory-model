@@ -1,0 +1,269 @@
+# Causal Chain Fragment Inventory (CCFI) — WORKING / PROVISIONAL
+# WARNING:
+# - Entries are explanatory fragments, not laws.
+# - Chains do not introduce new causal primitives or intent.
+# - Not admissible without regime, scale, and temporal validation.
+# - Must be instantiated with evidence (OCF) and audited via MGA-B.
+# - Promotion path: repeated successful use + MGA-B survival + MGA-T routing.
+
+ccfi:
+  meta:
+    version: "0.1-working"
+    created: "2026-01-27"
+    scope: "Grand Theory / Manifold model"
+    confidence_scale: ["low", "medium", "high"]
+    status_enum: ["working", "candidate", "promoted", "retired"]
+    required_fields:
+      - chain_label
+      - steps
+      - fields_and_metrics
+      - directionality_and_lag
+      - regime_scale_bounds
+      - known_breaks_or_alternatives
+      - common_misuses
+      - status
+      - confidence
+
+  entries:
+    - id: "CCF-0001"
+      chain_label: "Selective Enforcement → Expectation Uncertainty → Fear-Based Compliance"
+      steps:
+        - "Selective or unpredictable enforcement episodes"
+        - "Collapse of focal-point expectations (φ-procedural effectiveness ↓)"
+        - "Perceived variance amplified by Information Field"
+        - "κ ↑ (ambiguity, cognitive compression)"
+        - "Behavioral suppression / over-compliance without formal rule change"
+      fields_and_metrics:
+        - "Governance Field (enforcement discretion)"
+        - "Information Field"
+        - "φ-procedural"
+        - "κ"
+        - "h (secondary, via identity threat)"
+      directionality_and_lag:
+        description: >
+          Directional and reinforcing in short horizons; expectation collapse can occur rapidly
+          after salient incidents. Behavioral effects precede legal remedies.
+        lag_estimate: "Days–weeks (local); months if generalized via salience"
+      regime_scale_bounds:
+        regime: "Democratic or hybrid regimes with formal rule-of-law intact"
+        scale: "Local to regional; national only if replicated or amplified"
+      known_breaks_or_alternatives:
+        - "Rapid, credible judicial or administrative correction"
+        - "Low salience limits generalization"
+        - "High θ with strong oversight dampens uncertainty"
+      common_misuses:
+        - "Inferring regime transition from local enforcement variance"
+        - "Assuming central executive intent without operator evidence"
+      status: "candidate"
+      confidence: "medium"
+
+    - id: "CCF-0002"
+      chain_label: "Promise Accumulation → Execution Shortfall → Legitimacy Decay Loop"
+      steps:
+        - "Stated or implied promises exceed execution capacity"
+        - "Backlog / latency accumulates (stock-flow imbalance)"
+        - "Observed service failure or delay"
+        - "Legitimacy state L_t ↓"
+        - "Voluntary compliance/cooperation ↓"
+        - "Enforcement burden ↑ → further execution degradation"
+      fields_and_metrics:
+        - "Governance Field (service delivery)"
+        - "Legitimacy (latent state L_t)"
+        - "Backlog / throughput mechanics"
+        - "Feasible Bounds (B_φ, B_X)"
+      directionality_and_lag:
+        description: >
+          Slow build with asymmetric recovery; collapse faster than restoration.
+        lag_estimate: "Months–years (sector/state dependent)"
+      regime_scale_bounds:
+        regime: "Any regime with service promises and compliance dependence"
+        scale: "Organizational to national"
+      known_breaks_or_alternatives:
+        - "Credible scope reduction + capacity increase"
+        - "Expectation reset without overpromising"
+      common_misuses:
+        - "Believing messaging alone restores legitimacy"
+        - "Ignoring hysteresis in recovery"
+      status: "promoted"
+      confidence: "high"
+
+    - id: "CCF-0003"
+      chain_label: "Salience Shock → Information Amplification → Basin Hardening"
+      steps:
+        - "Exogenous shock raises issue salience"
+        - "Information Field amplifies selective narratives"
+        - "κ ↑ due to overload"
+        - "Salience weighting W_b shifts"
+        - "Intra-basin cohesion ↑; inter-basin hostility ↑"
+      fields_and_metrics:
+        - "Information Field"
+        - "κ"
+        - "Ideological Basins (W_b)"
+        - "Topology (𝒢)"
+      directionality_and_lag:
+        description: >
+          Rapid onset under shock; persistence depends on identity hardening and topology.
+        lag_estimate: "Immediate–weeks"
+      regime_scale_bounds:
+        regime: "Open information environments"
+        scale: "Population-wide, but projection-dependent"
+      known_breaks_or_alternatives:
+        - "Salience decay"
+        - "Cross-cutting institutional incentives"
+      common_misuses:
+        - "Assuming preference change rather than salience shift"
+      status: "promoted"
+      confidence: "high"
+
+    - id: "CCF-0004"
+      chain_label: "Capacity Overload → Governance Switching"
+      steps:
+        - "Latency or coordination load exceeds tolerance (L_G · v_I > 1)"
+        - "Existing governance mode becomes infeasible"
+        - "Alternative governance mode has lower effective cost"
+        - "Governance switch (Γ_G → Γ_G')"
+        - "Hysteresis locks in new mode"
+      fields_and_metrics:
+        - "Governance state Γ_G"
+        - "Feasibility functional 𝓕_d"
+        - "Switching cost C_switch"
+        - "θ, χ_G, X"
+      directionality_and_lag:
+        description: >
+          Collapse fast; recovery slow and path-dependent.
+        lag_estimate: "Weeks–months for switch; years for reversal"
+      regime_scale_bounds:
+        regime: "Any complex organization or state"
+        scale: "Group to national"
+      known_breaks_or_alternatives:
+        - "Rapid capacity relief without governance change"
+        - "High switching cost blocks transition (leading to failure)"
+      common_misuses:
+        - "Attributing switch to leadership intent alone"
+      status: "promoted"
+      confidence: "high"
+
+    - id: "CCF-0005"
+      chain_label: "Compliance Burden Accumulation → Entry Failure → Informality Drift"
+      steps:
+        - "Procedural and compliance requirements increase"
+        - "Effective coordination cost exceeds entrant slack"
+        - "Legal entry fails before viability"
+        - "Selection for incumbents or informal channels"
+      fields_and_metrics:
+        - "Governance Field (procedural density)"
+        - "CI accumulation"
+        - "E_sub_tau (time/energy slack)"
+        - "Exit X"
+      directionality_and_lag:
+        description: >
+          Gradual accumulation with threshold effects.
+        lag_estimate: "Years (policy dependent)"
+      regime_scale_bounds:
+        regime: "Bureaucratic or highly regulated systems"
+        scale: "Sectoral or national"
+      known_breaks_or_alternatives:
+        - "True process simplification"
+        - "Automation reducing real coordination cost"
+      common_misuses:
+        - "Assuming anti-competitive intent when drift suffices"
+      status: "candidate"
+      confidence: "medium"
+
+    - id: "CCF-0006"
+      chain_label: "Attribution Ambiguity → Post-hoc Credit Capture → Accountability Erosion"
+      steps:
+        - "Complex causality obscures attribution"
+        - "Actors selectively claim intent for positive outcomes"
+        - "Negative outcomes reclassified as drift or shock"
+        - "Public accountability weakens"
+        - "Future permission structure shifts"
+      fields_and_metrics:
+        - "Information Field (narrative incentives)"
+        - "Technique attribution taxonomy"
+        - "Legitimacy (L_t)"
+      directionality_and_lag:
+        description: >
+          Narrative effects can be immediate; institutional effects lag.
+        lag_estimate: "Immediate–months"
+      regime_scale_bounds:
+        regime: "Politicized, low-trust environments"
+        scale: "Coalitions, parties, institutions"
+      known_breaks_or_alternatives:
+        - "Credible audits and shared measurement"
+        - "Symmetric credit/blame norms"
+      common_misuses:
+        - "Treating narratives as causal evidence"
+      status: "candidate"
+      confidence: "high"
+
+- id: "CCF-0007"
+  chain_label: "Demographic Shock → Topology Re-sorting → Identity Salience → Basin Stabilization"
+  steps:
+    - "Exogenous demographic change via migration (ΔD)"
+    - "Residential / social topology re-sorting (𝒢): enclaves or persistent contrast adjacency"
+    - "Repeated out-group exposure increases salience of group boundaries"
+    - "Information Field amplifies identity narratives; κ rises"
+    - "Internal group variance suppressed; high-order identities dominate"
+    - "Stable basin-consistent salience profile (W_b) emerges across generations"
+  fields_and_metrics:
+    - "Demographic Field (D)"
+    - "Topology (𝒢)"
+    - "Information Field (I)"
+    - "Identity Hardening (h)"
+    - "Cognitive Compression (κ)"
+    - "Ideological Basins (W_b)"
+  directionality_and_lag:
+    description: >
+      Initial salience spike can be rapid; durable identity consolidation requires
+      persistence across identity-formation time constants and reinforcement via topology
+      and information channels.
+    lag_estimate: "Months for salience effects; years–decades for intergenerational stabilization"
+  regime_scale_bounds:
+    regime: "Pluralist societies receiving sustained migration flows"
+    scale: "Local/community to mesoscopic cluster; national only via aggregation"
+  known_breaks_or_alternatives:
+    - "Topology that maximizes cross-cutting ties (schooling, labor markets)"
+    - "Narrative disruption via credible counter-experience"
+    - "Economic mobility reducing identity-centrality"
+  common_misuses:
+    - "Treating identity outcomes as inevitable"
+    - "Ignoring selection effects among migrants"
+    - "Collapsing cluster dynamics into group agency"
+  status: "candidate"
+  confidence: "medium"
+
+- id: "CCF-0008"
+  chain_label: "Epistemic Complexity → κ↑ → Rationalisation Constraint Relaxation → Motivated Cognition → h↑ Feedback"
+  steps:
+    - "High epistemic complexity in domain (I-mediated facts; low direct access)"
+    - "Forced low-resolution representation / compression (κ↑)"
+    - "Expanded set of subjectively-plausible justifications (rationalisation constraint relaxes)"
+    - "Motivated cognition operators activate (confirmation/avoidance, asymmetric standards, selective recall)"
+    - "Belief stabilization via social scaffolding (trusted testimony + network reinforcement over 𝒢)"
+    - "If belief is identity-protective: identity hardening increases (h↑)"
+    - "Feedback: h↑ raises tolerance for distortion and narrows admissible sources → κ effectively increases"
+  fields_and_metrics:
+    - "Information Field (I)"
+    - "Topology (𝒢)"
+    - "Cognitive Compression (κ)"
+    - "Identity Hardening (h)"
+  directionality_and_lag:
+    description: >
+      κ can rise quickly when domains become complex/mediated; motivated-cognition behaviors can shift within days/weeks.
+      h-feedback and stable cluster/basin alignment require persistence and reinforcement over longer horizons.
+    lag_estimate: "days–weeks (behavioral filtering); months–years (identity/basin stabilization)"
+  regime_scale_bounds:
+    regime: "High-information, contested-truth environments with weak shared arbiters"
+    scale: "Individual → meso clusters; macro effects require aggregation via topology and institutions"
+  known_breaks_or_alternatives:
+    - "Direct, repeated ground-truth feedback reduces κ and collapses rationalisation space"
+    - "Credible audits/shared measurement reduce ambiguity and weaken motivated insulation"
+    - "Cross-cutting ties and enforced epistemic diversity disrupt reinforcement loops"
+  common_misuses:
+    - "Attributing all false beliefs to motivation (ignores rational error under complexity)"
+    - "Attributing all false beliefs to complexity (ignores identity/status incentives)"
+    - "Treating elite 'complexity manufacture' as universal intent rather than incentive-aligned opportunity"
+  status: "candidate"
+  confidence: "medium"
+

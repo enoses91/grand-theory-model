@@ -1,0 +1,391 @@
+# Dynamic Pattern Inventory (DPI) — WORKING / PROVISIONAL
+# WARNING:
+# - Entries are second-order analytic objects (no independent causal power).
+# - Must be expressed using existing COR objects only.
+# - Not admissible as standalone explanations; must be paired with causal chains, evidence, and regime/scale checks.
+# - Promotion path: repeated MGA-B survival + Phase-9 refinement signal + MGA-T routing.
+
+dpi:
+  meta:
+    version: "0.1-working"
+    created: "2026-01-27"
+    scope: "Grand Theory / Manifold model"
+    confidence_scale: ["low", "medium", "high"]
+    status_enum: ["working", "candidate", "promoted", "retired"]
+    required_fields:
+      - name_common
+      - aliases
+      - formalism
+      - plain_language
+      - activation_conditions
+      - boundary_failure_conditions
+      - common_analyst_errors
+      - status
+      - confidence
+
+  entries:
+    - id: "DP-0001"
+      name_common: "Salience-Driven Basin Hardening"
+      aliases:
+        - "Affective polarization spiral"
+        - "Selective exposure / echo-chamber reinforcement"
+        - "Purity spiral / ideological purification"
+        - "Radicalization via information topology"
+      formalism:
+        objects:
+          - "Mesoscopic Clusters"
+          - "Ideological Basins (W_b)"
+          - "Information Field (I)"
+          - "Cognitive Compression (κ)"
+          - "Identity Hardening (h)"
+          - "Topology (𝒢)"
+        sketch: >
+          Under high κ and rising h, I-field feedback reweights salience W_b, increasing intra-basin
+          cohesion and inter-basin repulsion without requiring basin change. Observables are selective
+          exposure, purity tests, fragmentation, and adversarial remapping under projection.
+      plain_language: >
+        When people are overloaded and identity is sharpened, information flows and incentives push them
+        toward tighter ideological camps, harsher boundary policing, and reduced cross-camp comprehension.
+        It can look like preferences changed, but often it’s salience and signaling under compression.
+      activation_conditions:
+        regime_notes:
+          - "High κ (attention overload, complexity, threat)"
+          - "Rising h (identity threat, status competition)"
+          - "Information topology supports segmentation (𝒢 modularity)"
+        triggers:
+          - "Shocks increasing salience and uncertainty"
+          - "Incentives for audience capture / performative alignment"
+      boundary_failure_conditions:
+        - "Low κ and low h with high cross-cutting ties (dense 𝒢 bridging) dampens effect"
+        - "High θ and strong procedural legitimacy can reduce identity-centrality of politics"
+      common_analyst_errors:
+        - "Treating it as a cause of regime change rather than a second-order amplifier"
+        - "Assuming true preference reversal rather than salience reweighting"
+        - "Attributing intent (MCR) when dynamics are often MCI-like"
+      status: "promoted"
+      confidence: "high"
+      observed_in:
+        - "Saved memory: Dynamic Pattern definition locked (2026-01-08)"
+        - "Applies broadly in prior basin/left-right projection discussions"
+
+    - id: "DP-0002"
+      name_common: "Expectation Collapse under Selective Enforcement"
+      aliases:
+        - "Rule-of-law uncertainty zone"
+        - "Arbitrary enforcement fear loop"
+        - "Prerogative enforcement (dual-state framing in legal/political theory)"
+        - "Discretionary policing uncertainty"
+      formalism:
+        objects:
+          - "φ-procedural (rule-of-law / focal-point compliance)"
+          - "Governance Field (Gv) enforcement surfaces"
+          - "Information Field (I)"
+          - "κ (cognitive compression)"
+          - "h (identity hardening)"
+          - "Groups (enforcement orgs) with χ_G"
+        sketch: >
+          Even if formal law remains, selective and unpredictable enforcement reduces the focal-point
+          value of law, lowering φ-procedural’s effective constraint. I-field amplifies perceived variance,
+          increasing κ and behavior suppression. Effect is localized or partial unless θ/CI/judicial review
+          collapse crosses thresholds.
+      plain_language: >
+        People can’t act on their rights if they can’t predict whether rules will be applied consistently.
+        When enforcement becomes unpredictable—especially visibly so—fear and “play it safe” compliance rise,
+        even without new statutes.
+      activation_conditions:
+        triggers:
+          - "Visible discretionary enforcement episodes with low accountability"
+          - "Conflicting guidance across agencies/jurisdictions"
+          - "High media salience and fragmented information channels"
+        enabling_conditions:
+          - "Weak/slow reviewability; long lag to remedy"
+          - "Low trust/legitimacy baseline (L_t) or recent scandals"
+      boundary_failure_conditions:
+        - "Strong, rapid judicial/administrative correction restores focal-point function"
+        - "High θ and credible oversight reduce perceived variance"
+        - "Low salience limits generalization beyond the local encounter space"
+      common_analyst_errors:
+        - "Silent scale shift: inferring national regime transition from local enforcement variance"
+        - "Narrative causation: assuming central intent without operator evidence"
+        - "Binary thinking: treating φ as ‘on/off’ rather than degraded-effective"
+      status: "candidate"
+      confidence: "medium"
+      observed_in:
+        - "MGA-B on Woodhouse essay (2026-01-27 discussion)"
+
+    - id: "DP-0003"
+      name_common: "Promise Gap → Legitimacy Tightening Loop"
+      aliases:
+        - "Performance legitimacy decay"
+        - "Trust spiral / credibility trap"
+        - "Service failure → compliance decay feedback"
+      formalism:
+        objects:
+          - "Legitimacy state L_t (latent)"
+          - "Backlog/throughput mechanics (stock-flow identity)"
+          - "Feasible Bounds (B_φ, B_X)"
+          - "Governance Field (Gv)"
+          - "Incentive gradients shaping cooperation/compliance"
+        sketch: >
+          Accumulated promises exceeding execution capacity produce a promise gap, degrading L_t.
+          Lower L_t reduces voluntary compliance/cooperation, increasing enforcement burden and
+          reducing service quality, further degrading L_t (hysteresis and asymmetric recovery).
+      plain_language: >
+        When institutions repeatedly fail to deliver what they claim, trust drops. As trust drops,
+        people comply less and cooperation weakens, which makes delivery even harder—creating a self-reinforcing
+        decline unless capacity or expectations reset.
+      activation_conditions:
+        triggers:
+          - "Sustained backlog growth or service latency"
+          - "High visibility failures; repeated unmet commitments"
+        enabling_conditions:
+          - "Limited slack; binding capacity constraint"
+      boundary_failure_conditions:
+        - "Credible scope reduction + throughput gains can arrest loop"
+        - "Low salience or insulated constituencies reduce perceived gap"
+      common_analyst_errors:
+        - "Assuming persuasion alone restores legitimacy without feasibility repair"
+        - "Ignoring hysteresis: expecting fast recovery after single reform"
+      status: "candidate"
+      confidence: "high"
+      observed_in:
+        - "Saved memory: promise-gap coupling formalized (2026-01-09)"
+        - "Queue/legitimacy fusion frontier (2026-01-05)"
+
+    - id: "DP-0004"
+      name_common: "Governance Switching under Overload"
+      aliases:
+        - "Emergency centralization"
+        - "Technocratic takeover"
+        - "Crisis-driven fiat shift"
+      formalism:
+        objects:
+          - "Governance state Γ_G(t) (discrete)"
+          - "Feasibility functional 𝓕_d(t)"
+          - "Trigger surfaces (latency overload, enforcement collapse, χ decay, exit dominance, field runaway)"
+          - "Switching cost C_switch"
+        sketch: >
+          When triggers cross thresholds, an alternative governance mode d' becomes lower-cost:
+          𝓕_{d'} + C_switch < 𝓕_d. Transition is asymmetric (hysteresis), with fast collapse and slow recovery.
+      plain_language: >
+        Under stress, organizations and states change how they govern—often shifting toward more centralized
+        or coercive modes because the old coordination method can’t keep up. Reversing the shift is much harder.
+      activation_conditions:
+        triggers:
+          - "L_G · v_I > 1 (latency overload)"
+          - "ε_E > ε_E* (enforcement collapse)"
+          - "χ_G < χ* (coherence decay)"
+          - "Exit dominance X >> θ"
+      boundary_failure_conditions:
+        - "High θ + strong CI can absorb shocks without switching"
+        - "Low switching cost not guaranteed; high C_switch can block change and induce drift/failure"
+      common_analyst_errors:
+        - "Assuming governance permanence"
+        - "Treating leadership intent as sufficient to switch regimes"
+      status: "promoted"
+      confidence: "high"
+      observed_in:
+        - "Saved memory: governance switching formalism locked (2026-01-10)"
+
+    - id: "DP-0005"
+      name_common: "Compliance Saturation Trap"
+      aliases:
+        - "Administrative burden spiral"
+        - "Paperwork barrier / licensing drag"
+        - "Bureaucratic viscosity"
+      formalism:
+        objects:
+          - "Governance Field (Gv)"
+          - "Coordination load / procedure density (CI coupling)"
+          - "Feasible set shrink via transaction costs"
+          - "Exit (X) and entry barriers (E-coupled)"
+        sketch: >
+          Rising procedural/compliance requirements increase effective coordination cost for legal action,
+          causing resource exhaustion before productive operation begins; discourages entry/innovation and
+          selects for incumbents or informal/extra-legal channels.
+      plain_language: >
+        When the paperwork becomes the job, new entrants can’t survive long enough to become real operations.
+        Systems then drift toward incumbents, informality, or patronage as workarounds.
+      activation_conditions:
+        triggers:
+          - "High compliance cost relative to available slack (E_sub_tau)"
+          - "Low guidance clarity; frequent procedural changes"
+      boundary_failure_conditions:
+        - "Digitization/automation that reduces real coordination cost (not just adds portals)"
+        - "High θ with streamlined procedures and reliable focal points"
+      common_analyst_errors:
+        - "Confusing intended regulation goals with feasible execution capacity"
+        - "Attributing to malice when it can be endogenous drift / risk-minimization"
+      status: "candidate"
+      confidence: "medium"
+      observed_in:
+        - "Saved memory: technique-layer discussion + internal applicability note (2026-01-07)"
+
+    - id: "DP-0006"
+      name_common: "Left–Right Projection Whiplash"
+      aliases:
+        - "Preference instability illusion"
+        - "Salience reweighting / coalition re-anchoring"
+        - "Ideological relabeling under compression"
+      formalism:
+        objects:
+          - "Ideological basins (W_b)"
+          - "Projection operator Π_d = ⟨P_d, W_d, E_d, D_d⟩"
+          - "κ and h effects on compression and identity sorting"
+        sketch: >
+          High-dimensional basin structure is compressed into a left–right projection for mass coordination.
+          Under shocks, salience weights shift, coalitions re-anchor, and labels remap, creating apparent rapid
+          preference changes without underlying basin movement.
+      plain_language: >
+        The map changes, not necessarily the territory. People look like they “flipped,” but often the coalition
+        labels and what counts as “left” or “right” moved under stress and attention constraints.
+      activation_conditions:
+        triggers:
+          - "High κ and high information salience"
+          - "Coalition instability; elite narrative competition"
+      boundary_failure_conditions:
+        - "Stable low-salience periods with dense cross-cutting affiliations"
+      common_analyst_errors:
+        - "Treating left–right as a true latent axis rather than a lossy projection"
+        - "Inferring moral or psychological instability from projection artifacts"
+      status: "promoted"
+      confidence: "high"
+      observed_in:
+        - "Saved memory: left–right as lossy projection locked (2026-01-02)"
+        - "Projection formalism locked (2026-01-05)"
+
+    - id: "DP-0007"
+      name_common: "Post-hoc Credit / Blame Partitioning"
+      aliases:
+        - "Attribution asymmetry"
+        - "Propter/post hoc narrative capture"
+        - "Selective responsibility claiming"
+      formalism:
+        objects:
+          - "Analysis Pattern Errors (meta-analytic layer)"
+          - "Technique attribution taxonomy (intent laundering guardrails)"
+          - "Information Field (narrative incentives)"
+        sketch: >
+          Coalitions selectively claim intent for positive outcomes and deny agency for negative outcomes,
+          exploiting attribution ambiguity between technique-driven, endogenous drift, and exogenous shocks.
+          This shapes public belief without necessarily changing causal dynamics.
+      plain_language: >
+        After outcomes occur, factions rewrite the story so their side “meant the good parts” and “couldn’t help”
+        the bad parts. This manipulates accountability and future permission structures.
+      activation_conditions:
+        triggers:
+          - "High partisan salience; contested accountability"
+          - "Complex causality enabling plausible deniability"
+      boundary_failure_conditions:
+        - "High-quality shared measurement and credible audits reduce narrative degrees of freedom"
+      common_analyst_errors:
+        - "Believing attribution narratives as causal evidence"
+        - "Failing to separate intent (Technique) from mechanism-matching drift/shock"
+      status: "candidate"
+      confidence: "high"
+      observed_in:
+        - "Saved memory: MCI/MCR distinction + intent laundering guardrails (2026-01-07)"
+
+- id: "DP-0008"
+  name_common: "Demographic Shock–Induced Identity Activation"
+  aliases:
+    - "Out-group proximity identity activation"
+    - "Diaspora identity hardening"
+    - "Exile nationalism / diasporic religiosity"
+    - "Contrast-driven social identity salience (social psychology)"
+  formalism:
+    objects:
+      - "Demographic Field (D)"
+      - "Topology (𝒢)"
+      - "Information Field (I)"
+      - "Identity Hardening (h)"
+      - "Cognitive Compression (κ)"
+      - "Mesoscopic Clusters"
+      - "Ideological Basins (W_b)"
+    sketch: >
+      An exogenous demographic shock (ΔD) alters local population composition,
+      inducing topology re-sorting (𝒢 → enclave formation or contrast adjacency).
+      Sustained out-group proximity elevates identity salience via the Information Field,
+      increasing κ and suppressing intra-group variance. High-order identities
+      (religious, national, ethnic) dominate, raising h and stabilizing basin-consistent
+      salience profiles without requiring formal exclusion or coercion.
+  plain_language: >
+    When migration changes who lives next to whom, people are exposed every day to
+    visible difference. That repeated contrast makes group identity more salient,
+    crowds out internal disagreements, and hardens loyalty to the most emotionally
+    powerful identities—often religion or nation—even if no one is actively discriminating.
+  activation_conditions:
+    triggers:
+      - "Exogenous migration flows changing local demographic composition (ΔD > threshold)"
+      - "Sustained daily proximity to visibly different norms or identities"
+    enabling_conditions:
+      - "Topology that reinforces contrast (enclaves, parallel institutions)"
+      - "Information Field that amplifies identity narratives"
+      - "Baseline identity salience (h₀) not negligible"
+  boundary_failure_conditions:
+    - "High intermarriage and dense cross-cutting ties reduce contrast salience"
+    - "Strong integrative institutions mediate identity without suppression"
+    - "Low salience environments limit persistence beyond initial shock"
+  common_analyst_errors:
+    - "Ignoring D-field injection and treating identity activation as purely psychological"
+    - "Assuming discrimination or intent is required for identity hardening"
+    - "Inferring permanent identity change without persistence thresholds (τ_C, τ_B)"
+    - "Silent scale shift from local diaspora dynamics to national regime claims"
+  status: "candidate"
+  confidence: "medium"
+  observed_in:
+    - "Mahmod (2026) — migration and diasporic identity"
+    - "Historical diaspora nationalism cases (Irish, Turkish, Kurdish)"
+
+
+- id: "DP-0009"
+  name_common: "Epistemic Complexity–Enabled Motivated Cognition"
+  aliases:
+    - "Motivated cognition under epistemic complexity"
+    - "Rationalisation-constraint relaxation"
+    - "Priors + testimony mediation (social epistemology)"
+    - "Naïve realism failure (belief-manifest illusion)"
+    - "Uncertainty-flooding / ambiguity exploitation (propaganda studies)"
+  formalism:
+    objects:
+      - "Information Field (I)"
+      - "Cognitive Compression (κ)"
+      - "Identity Hardening (h)"
+      - "Mesoscopic Clusters"
+      - "Topology (𝒢)"
+      - "Metric feasibility / constraint set (implicit via κ,h bounds)"
+    sketch: >
+      In high epistemic-complexity domains, agents lack direct access to ground truth and must rely on
+      mediated testimony over I and network topology 𝒢. This raises κ (low-resolution compression of reality),
+      expanding the space of subjectively-justifiable beliefs (rationalisation constraint relaxes).
+      Motivated-cognition operators (confirmation/avoidance, asymmetric standards, selective memory) become
+      easier to sustain because disconfirming evidence is ambiguous, distant, or filterable.
+      If beliefs are identity-protective, h increases, feeding back by raising tolerance for distortion and
+      further narrowing acceptable evidence sources, reinforcing κ via selective compression.
+  plain_language: >
+    When it’s genuinely hard to know what’s true (because you can’t check directly and must rely on
+    experts/media/networks), it becomes much easier to convince yourself of what you *want* to be true.
+    Ambiguity creates “wiggle room” for rationalisations, and identity-protective beliefs then harden and
+    become self-reinforcing through selective attention and source trust.
+  activation_conditions:
+    triggers:
+      - "High epistemic complexity: indirect access to facts; dependence on testimony/experts/media"
+      - "High choice over information sources and low shared trust in arbiters"
+      - "Low immediate falsifiability / weak corrective feedback loops"
+    enabling_conditions:
+      - "Topology 𝒢 supports selective exposure (clustering, homophily, influencer hubs)"
+      - "Salience incentives favor narrative loyalty (status, belonging, coalition signaling)"
+      - "Identity relevance present (h not near-zero), even if not initially dominant"
+  boundary_failure_conditions:
+    - "Low epistemic complexity with direct verification (fast, cheap ground-truth feedback)"
+    - "Strong shared measurement/audit institutions reduce ambiguity degrees of freedom"
+    - "Cross-cutting ties + enforced epistemic diversity reduce selective insulation"
+  common_analyst_errors:
+    - "Inferring motivated cognition solely from false beliefs (ignoring epistemic complexity / rational error)"
+    - "Assuming belief updating in experiments falsifies motivated cognition (ignoring lowered complexity in labs)"
+    - "Treating ‘epistemic complexity’ as an excuse to suspend truth claims in all domains (scope overreach)"
+    - "Ignoring κ↔h feedback (identity-protective reasoning as amplifier, not just a byproduct)"
+  status: "candidate"
+  confidence: "medium"
+  observed_in:
+    - "Williams (2026): epistemic complexity as enabler of motivated cognition via rationalisation constraints"

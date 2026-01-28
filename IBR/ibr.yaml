@@ -1,0 +1,307 @@
+# IBR.yaml — Ideological Basin Register (WORKING / PROVISIONAL)
+# Purpose: Translation/compression layer for basin-consistent salience profiles W_b.
+# NOT ontology (COR) and NOT evidence (OCF). No case list maintained by design.
+
+ideological_basin_register:
+  meta:
+    file_version: "0.1.0"
+    status: "working"
+    created: "2026-01-27"
+    timezone: "America/Chicago"
+    versioning:
+      scheme: "semver-ish"
+      major: "breaking schema/interpretation changes"
+      minor: "additive entries or fields"
+      patch: "typos/clarifications"
+    guardrails:
+      - "IBR entries are second-order descriptors: no agency, no causal power."
+      - "Do not treat basins as cultures, ethnicities, or fixed essences."
+      - "HEXACO profiles are population-level tendencies; not individual diagnostics."
+      - "Do not use IBR as evidence; use OCF for grounded cases."
+      - "Basins must be unpacked into metric/fields/topology for causal explanation."
+
+  entry_schema:
+    required_fields:
+      - id
+      - name_common
+      - aliases
+      - hexaco_profile
+      - salience_weighting
+      - metric_couplings
+      - governance_affinities
+      - typical_activation_conditions
+      - failure_modes_under_shock
+      - projection_associations
+      - projection_notes
+      - misuse_warnings
+      - entry_version
+      - last_modified
+      - status
+
+  entries:
+    - id: "IBR-0001"
+      name_common: "Civic-Procedural Liberalism"
+      aliases:
+        - "procedural liberalism"
+        - "rule-of-law liberalism"
+        - "rights universalism (thin)"
+        - "institutionalist liberalism"
+      hexaco_profile:
+        salient_axes:
+          H: "medium"
+          E: "medium"
+          X: "medium"
+          A: "high"
+          C: "high"
+          O: "high"
+        notes: "Emphasizes fairness norms, institutional process, and pluralism; less identity-central by default."
+      salience_weighting:
+        emphasizes:
+          - "procedural fairness / due process"
+          - "rule of law as focal-point coordination"
+          - "individual rights (universalizable)"
+          - "pluralism and cross-cutting identities"
+          - "legible institutions and predictable enforcement"
+        deprioritizes:
+          - "sacralized tradition as authority"
+          - "in-group hierarchy as primary legitimacy source"
+          - "violence-justified boundary enforcement"
+      metric_couplings:
+        phi_procedural: "high"
+        theta: "high"
+        h: "low_to_medium"
+        kappa: "medium"
+        X: "medium"
+        CI: "high (tolerates formal complexity if legitimacy is maintained)"
+      governance_affinities:
+        primary:
+          - "bureaucratic"
+          - "board/committee (bounded)"
+        tolerates:
+          - "market-mediated"
+          - "federated"
+        resists:
+          - "clan/patronage"
+          - "fiat (except emergencies with narrow scope)"
+      typical_activation_conditions:
+        - "high θ and stable administrative/judicial correction cycles"
+        - "low existential threat and low identity salience"
+        - "dense cross-cutting ties (𝒢 bridging)"
+      failure_modes_under_shock:
+        - "rights become non-actionable under selective enforcement (φ-procedural effective ↓)"
+        - "procedural overload (CI↑) causing legitimacy decay via latency/backlog"
+        - "reversion to identity politics under high κ/h"
+      projection_associations:
+        primary:
+          - "constitutional law (rights/process)"
+          - "administrative law (reviewability/deference)"
+          - "political theory (liberal institutionalism)"
+        secondary:
+          - "public administration (capacity/state performance)"
+          - "economics (institutional/transaction-cost variants)"
+      projection_notes:
+        - "Often overestimates the self-healing speed of institutions (τ_recover ignored)."
+        - "Often treats written law as sufficient even when enforcement variance breaks focal-point function."
+      misuse_warnings:
+        - "Do not equate with any party label; it is a basin descriptor."
+        - "Do not assume universal viability; requires θ/CI/legitimacy conditions."
+      entry_version: 1
+      last_modified: "2026-01-27"
+      status: "candidate"
+
+    - id: "IBR-0002"
+      name_common: "Ethno-Religious Communitarian Traditionalism"
+      aliases:
+        - "religious traditionalism"
+        - "communitarian conservatism"
+        - "high in-group duty orientation"
+        - "collectivist moral order (folk term; must be unpacked)"
+      hexaco_profile:
+        salient_axes:
+          H: "medium"
+          E: "high"
+          X: "low_to_medium"
+          A: "medium"
+          C: "high"
+          O: "low"
+        notes: "Emphasizes loyalty, duty, norm enforcement, and tradition; novelty tolerance lower."
+      salience_weighting:
+        emphasizes:
+          - "in-group loyalty and boundary maintenance"
+          - "sacred tradition / φ-sac components"
+          - "norm conformity and role ethics"
+          - "hierarchy/authority as legitimacy"
+          - "collective honor and moral symmetry"
+        deprioritizes:
+          - "individual autonomy when conflicting with group norms"
+          - "cosmopolitan pluralism"
+          - "rapid norm change"
+      metric_couplings:
+        phi_sac: "high"
+        h: "high"
+        kappa: "medium_to_high under threat"
+        X: "low"
+        theta: "context-dependent (can substitute with χ in-group coherence locally)"
+      governance_affinities:
+        primary:
+          - "clan/patronage"
+          - "federated (by group boundaries)"
+        tolerates:
+          - "fiat (if aligned with in-group moral order)"
+        resists:
+          - "market-mediated (when it dissolves norms)"
+          - "bureaucratic (if perceived as alien/impersonal)"
+      typical_activation_conditions:
+        - "high out-group contrast and perceived boundary threat"
+        - "demographic change (ΔD) increasing salience of difference"
+        - "low trust in distant institutions; preference for local enforcement"
+      failure_modes_under_shock:
+        - "purity spirals and internal dissent suppression"
+        - "escalation to coercive boundary enforcement (violence-coupling risk ↑)"
+        - "coordination breakdown across groups due to low cross-cutting ties"
+      projection_associations:
+        primary:
+          - "social identity theory (psychology)"
+          - "anthropology of kinship/lineage and moral order"
+          - "comparative religion (endogenous coordination effects)"
+        secondary:
+          - "comparative politics (identity-based mobilization)"
+          - "migration studies (diaspora hardening)"
+      projection_notes:
+        - "Often misunderstood as 'irrational' rather than a coordination package under constraints."
+        - "Often conflated with ethnicity itself (category error); it is a weighting profile."
+      misuse_warnings:
+        - "Do not treat as immutable culture; it is regime- and topology-conditioned."
+        - "Do not infer individual traits from group-level descriptors."
+      entry_version: 1
+      last_modified: "2026-01-27"
+      status: "working"
+
+    - id: "IBR-0003"
+      name_common: "Ethno-Nationalist Security Reaction"
+      aliases:
+        - "nativism (political label; use cautiously)"
+        - "border-first nationalism"
+        - "security-first nationalism"
+        - "populist nationalism (subset; ambiguous)"
+      hexaco_profile:
+        salient_axes:
+          H: "medium"
+          E: "high"
+          X: "medium"
+          A: "low_to_medium"
+          C: "high"
+          O: "low"
+        notes: "Threat-sensitive; prioritizes order, boundary control, and status protection."
+      salience_weighting:
+        emphasizes:
+          - "territorial and cultural boundary control"
+          - "order, security, and enforcement"
+          - "in-group priority in resource allocation"
+          - "status protection against perceived displacement"
+        deprioritizes:
+          - "cosmopolitan universals"
+          - "procedural niceties when framed as security constraints"
+      metric_couplings:
+        h: "high"
+        kappa: "high under salient threat"
+        X: "low (prefers reduced exit options for out-groups)"
+        theta: "often demands higher θ for enforcement, but may accept fiat shortcuts"
+        phi_procedural: "medium_to_low under threat framing"
+      governance_affinities:
+        primary:
+          - "fiat (crisis/exception)"
+          - "bureaucratic (enforcement-heavy)"
+        tolerates:
+          - "federated (if it enables local boundary control)"
+        resists:
+          - "market-mediated (if it increases permeability/exit)"
+      typical_activation_conditions:
+        - "demographic shock (ΔD) perceived as rapid change"
+        - "institutional legitimacy decay or perceived enforcement asymmetry"
+        - "salience spikes amplified by Information Field"
+      failure_modes_under_shock:
+        - "exception creep (prerogative enforcement expansion)"
+        - "rights non-actionability for out-groups (φ-procedural effective ↓)"
+        - "polarization escalation via basin hardening (κ,h feedback)"
+      projection_associations:
+        primary:
+          - "political psychology (threat and authoritarianism research)"
+          - "comparative politics (nationalism studies)"
+        secondary:
+          - "security studies"
+          - "sociology of race/ethnicity (as category, not as essence)"
+      projection_notes:
+        - "Common analytic error: treating it as pure hatred rather than threat-weighted salience under constraints."
+      misuse_warnings:
+        - "Do not equate with any party label; basin can appear across parties."
+        - "Do not use moralized political labels as if they were model variables."
+      entry_version: 1
+      last_modified: "2026-01-27"
+      status: "working"
+
+    - id: "IBR-0004"
+      name_common: "State-Capacity Technocratic Institutionalism"
+      aliases:
+        - "capacity-first institutionalism"
+        - "administrative rationalism"
+        - "state-capacity liberalism (Cowen framing subset)"
+        - "systems governance (management science flavor)"
+      hexaco_profile:
+        salient_axes:
+          H: "medium"
+          E: "medium"
+          X: "medium"
+          A: "medium"
+          C: "high"
+          O: "medium"
+        notes: "Execution- and process-optimization orientation; less identity-driven."
+      salience_weighting:
+        emphasizes:
+          - "θ (state capacity / execution throughput)"
+          - "queue/backlog mechanics and service performance"
+          - "institutional control-surface geometry"
+          - "measurability, feedback, and operational realism"
+        deprioritizes:
+          - "symbolic purity politics"
+          - "rights maximalism without feasibility"
+          - "utopian welfare optimization"
+      metric_couplings:
+        theta: "high"
+        CI: "managed (prefers simplification/automation)"
+        phi_procedural: "medium_to_high (as stabilizer for legitimacy)"
+        kappa: "lowering κ via simplification and clarity is a goal"
+        h: "medium (tries to keep identity from dominating governance)"
+      governance_affinities:
+        primary:
+          - "bureaucratic (high-performance)"
+          - "technocratic fiat (bounded emergency use)"
+        tolerates:
+          - "board/committee (if not deadlocked)"
+          - "market-mediated (as tool, not ideology)"
+        resists:
+          - "clan/patronage"
+      typical_activation_conditions:
+        - "visible institutional failure (backlogs, latency, service collapse)"
+        - "crisis periods where feasibility dominates ideology"
+        - "high κ environments demanding simplification"
+      failure_modes_under_shock:
+        - "legitimacy failure if perceived as unaccountable (φ decay)"
+        - "overcentralization via emergency drift (Γ switching hysteresis)"
+        - "procedural ratchet (CI↑) if risk-minimization dominates"
+      projection_associations:
+        primary:
+          - "public administration (capacity theory)"
+          - "administrative law (control-surface geometry)"
+          - "systems engineering / operations research (queueing/DES)"
+        secondary:
+          - "political economy of state capacity"
+          - "management science (TOC/system dynamics)"
+      projection_notes:
+        - "Often underweights identity and legitimacy couplings until they bind."
+      misuse_warnings:
+        - "Do not assume technical feasibility implies political feasibility."
+        - "Do not treat capacity as value-neutral; salience priorities still exist."
+      entry_version: 1
+      last_modified: "2026-01-27"
+      status: "candidate"
