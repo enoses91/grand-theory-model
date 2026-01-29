@@ -1,8 +1,8 @@
-# O.1.METRIC.PHI.md
+# PHI
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.PHI`
+* **O_ID:** `COR.PHI`
 * **Name:** Legitimacy
 * **Order:** 1st
 * **Kind:** Core Metric

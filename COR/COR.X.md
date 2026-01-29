@@ -1,8 +1,8 @@
-# O.1.METRIC.X.md
+# X
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.X`
+* **O_ID:** `COR.X`
 * **Name:** X (Exit / Mobility / Option Value)
 * **Order:** 1st
 * **Kind:** Core Metric

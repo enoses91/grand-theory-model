@@ -1,8 +1,8 @@
-# O.1.METRIC.G.md
+# G
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.G`
+* **O_ID:** `COR.G`
 * **Name:** Individual Cognitive Capacity (g)
 * **Order:** 1st
 * **Kind:** Metric

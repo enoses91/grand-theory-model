@@ -23,7 +23,7 @@ It answers:
 > *Given a governance signal u(t), can group G produce coherent, externally meaningful action within Δt, and with what distortion?*
 
 Γ_G is **not**:
-- a metric element (not φ, θ, E, CI, X)
+- a metric element (not `COR.PHI`, `COR.THETA`, E, `COR.CI`, X)
 - a field (not ρ_k, Π_k, U_k)
 - a group trait label (“good leadership,” “competence”)
 - an ideology proxy
@@ -108,16 +108,16 @@ If ideology/class/leadership appear to “explain” Γ_G, the analysis must sho
 ### 4.3 Scale-bounded validity
 
 Γ_G is **σ-bounded**:
-- coherence substitution for weak θ is possible only within limited σ ranges
+- coherence substitution for weak `COR.THETA` is possible only within limited σ ranges
 - Γ_G cannot be assumed portable from low-σ (firm) to high-σ (nation) contexts
 
 ### 4.4 Regime conditioning
 
 Γ_G is conditioned by regime state \(S(t)\), including:
-- θ (throughput constraints)
-- CI (procedural inertia)
-- φ (legitimacy gating / voluntary compliance)
-- κ, h (compression / boundary hardening effects)
+- `COR.THETA` (throughput constraints)
+- `COR.CI` (procedural inertia)
+- `COR.PHI` (legitimacy gating / voluntary compliance)
+- `COR.KAPPA`, `COR.H` (compression / boundary hardening effects)
 - topology 𝒢 (interface fragmentation)
 
 ---
@@ -127,7 +127,7 @@ If ideology/class/leadership appear to “explain” Γ_G, the analysis must sho
 Let \(\mathcal{E}\) be the regime-local execution mechanism:
 
 \[
-y(t) = \mathcal{E}\big(u(t)\mid \theta,CI,\phi,\kappa,h,\mathcal{G}\big) + \varepsilon(t)
+y(t) = \mathcal{E}\big(u(t)\mid \theta, CI, \phi, \kappa, h, \mathcal{G}\big) + \varepsilon(t)
 \]
 
 Then:
@@ -171,7 +171,7 @@ Invalid uses include:
 - using Γ_G to infer intent or conspiracy beyond group boundaries
 - treating narrative output as evidence of Γ_G absent operational traces
 - assuming Γ_G is stable across σ without justification
-- using Γ_G as a substitute for θ at national scale by default
+- using Γ_G as a substitute for `COR.THETA` at national scale by default
 
 Violations indicate category error, projection failure, or intent laundering.
 
@@ -198,3 +198,5 @@ Recommended reference string:
 ---
 
 ### END OF OCF.OPERATOR.GAMMA_G (v1.0)
+
+

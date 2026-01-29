@@ -1,8 +1,8 @@
-# O.1.METRIC.E.md
+# E
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.E`
+* **O_ID:** `COR.E`
 * **Name:** E (Effective Surplus)
 * **Order:** 1st
 * **Kind:** Core Metric

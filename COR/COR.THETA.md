@@ -1,8 +1,8 @@
-# O.1.METRIC.THETA.md
+# THETA
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.THETA`
+* **O_ID:** `COR.THETA`
 * **Name:** θ (Institutional Capacity / Execution Coherence)
 * **Order:** 1st
 * **Kind:** Core Metric

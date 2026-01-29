@@ -1,8 +1,8 @@
-# O.1.STATE.KAPPA.md
+# KAPPA
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.STATE.KAPPA`
+* **O_ID:** `COR.KAPPA`
 * **Name:** κ (Cognitive Compression / Effective Dimensionality)
 * **Order:** 1st
 * **Kind:** State Variable

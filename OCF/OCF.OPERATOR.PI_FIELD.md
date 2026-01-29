@@ -135,11 +135,11 @@ Control surfaces \(U_k\) **inject, gate, or modulate** field propagation.
 
 Π_k is conditioned by, but not reducible to:
 
-- κ (compression affects effective gain)
-- h (boundary hardness affects edge permeability)
-- θ (execution capacity affects enforcement reach)
-- CI (procedural inertia affects persistence)
-- φ (legitimacy affects voluntary uptake)
+- `COR.KAPPA` (compression affects effective gain)
+- `COR.`COR.H`` (boundary hardness affects edge permeability)
+- `COR.THETA` (execution / throughput constraints condition realization of field injections)
+- `COR.`COR.CI`` (procedural inertia affects persistence)
+- `COR.PHI` (legitimacy affects voluntary uptake)
 
 These enter Π_k parametrically, not as substitutes.
 
@@ -169,7 +169,7 @@ Violations typically appear as:
 These are **field reification errors**.
 
 Correct form:
-> “Under Π_I on topology 𝒢 with κ↑ and penalty gradients, salience concentrated…”
+> “Under Π_I on topology 𝒢 with `COR.KAPPA`↑ and strong penalty gradients, attention/salience concentrates…”
 
 ---
 
@@ -208,3 +208,5 @@ Recommended reference string:
 ---
 
 ### END OF OCF.OPERATOR.PI_FIELD (v1.0)
+
+

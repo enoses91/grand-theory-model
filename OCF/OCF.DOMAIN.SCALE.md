@@ -82,7 +82,7 @@ All measurements are σ-relative.
 Examples:
 - Class is defined **only** relative to σ.
 - Exit (X) has different meaning at σ_individual vs σ_nation.
-- θ throughput metrics at σ_group do not scale linearly to σ_nation.
+- `COR.THETA` throughput metrics at σ_group do not scale linearly to σ_nation.
 
 ---
 
@@ -198,3 +198,5 @@ Recommended reference string:
 ---
 
 ### END OF OCF.DOMAIN.SCALE (v1.0)
+
+

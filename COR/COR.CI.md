@@ -1,8 +1,8 @@
-# O.1.METRIC.CI.md
+# CI
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.METRIC.CI`
+* **O_ID:** `COR.CI`
 * **Name:** CI (Crystallized / Institutionalized Intelligence)
 * **Order:** 1st
 * **Kind:** Core Metric

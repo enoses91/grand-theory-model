@@ -1,8 +1,8 @@
-# O.1.STATE.H.md
+# H
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.STATE.H`
+* **O_ID:** `COR.H`
 * **Name:** h (Boundary Hardness / Identity Hysteresis)
 * **Order:** 1st
 * **Kind:** State Variable

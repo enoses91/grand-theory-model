@@ -174,8 +174,8 @@ Flags non-negotiable violations, including:
 
 - class treated as agent
 - cluster treated as coordinated actor
-- χ treated as φ
-- φ treated as enforcement
+- χ treated as `COR.PHI`
+- `COR.PHI` treated as enforcement
 - RLMs treated as intent
 - regime treated as ideology
 
@@ -226,7 +226,7 @@ The audit checks:
 - Are slow variables treated as fast?
 
 Example flag:
-> “Assumes rapid φ recovery inconsistent with regime time constants.”
+> “Assumes rapid `COR.PHI` recovery inconsistent with regime time constants.”
 
 ---
 
@@ -312,3 +312,4 @@ Operator passes robustness, boundedness, and meta-analytic requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

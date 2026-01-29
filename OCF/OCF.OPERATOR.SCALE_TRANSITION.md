@@ -128,10 +128,10 @@ Reversal is not symmetric with formation.
 ### 4.5 Regime dependence
 
 Transition feasibility is conditioned by:
-- φ (legitimacy)
-- θ (execution capacity)
-- CI (institutional inertia)
-- κ, h (cognitive and boundary states)
+- `COR.PHI` (legitimacy)
+- `COR.THETA` (execution capacity)
+- `COR.`COR.CI`` (institutional inertia)
+- `COR.KAPPA`, `COR.`COR.H`` (cognitive and boundary states)
 - topology 𝒢
 
 Transitions valid in one regime may be impossible in another.
@@ -232,3 +232,5 @@ Recommended reference string:
 ---
 
 ### END OF OCF.OPERATOR.SCALE_TRANSITION (v1.0)
+
+

@@ -1,8 +1,8 @@
-# O.1.STATE.G.md
+# STATE.G
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.1.STATE.G`
+* **O_ID:** `COR.STATE.G`
 * **Name:** 𝒢 (Network Topology / Coordination Graph)
 * **Order:** 1st
 * **Kind:** StateVariable

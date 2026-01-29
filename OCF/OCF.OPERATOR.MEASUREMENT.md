@@ -92,11 +92,11 @@ Silent proxy substitution is prohibited.
 
 ### 5.1 No latent reification
 
-Latent elements (φ, θ, χ_G, Γ_G, W, Π_k states, etc.) **do not exist as observables**.
+Latent elements (`COR.PHI`, `COR.THETA`, χ_G, Γ_G (per `OCF.OPERATOR.GAMMA_G`), W, Π_k states (per `OCF.OPERATOR.PI_FIELD`), etc.) **do not exist as observables**.
 
 They exist only via measurement operators.
 
-Statements of the form “φ is X” without 𝓜 are invalid.
+Statements of the form “`COR.PHI` is X” without 𝓜 are invalid.
 
 ---
 
@@ -130,10 +130,10 @@ Common latent targets include:
 
 - **χ_G:** group coherence
 - **Γ_G:** group governance operator facets
-- **φ:** legitimacy
-- **θ:** execution throughput
-- **κ:** cognitive compression
-- **h:** boundary hardness
+- **`COR.PHI`:** legitimacy
+- **`COR.THETA`:** execution throughput
+- **`COR.KAPPA`:** cognitive compression
+- **`COR.`COR.H``:** boundary hardness
 - **W_{G→U}:** weighted access
 - **Field activation states:** ρ_k shape, variance, reach
 - **Topology features:** clustering, centrality, segregation
@@ -207,3 +207,5 @@ Recommended reference string:
 ---
 
 ### END OF OCF.OPERATOR.MEASUREMENT (v1.0)
+
+
