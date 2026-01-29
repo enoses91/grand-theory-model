@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Model: COR Lint",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/cor_lint.py", "--root", ".", "--cor", "COR.yaml", "--check-paths"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "focus": true
+      },
+      "problemMatcher": []
+    }
+  ]
+} 
