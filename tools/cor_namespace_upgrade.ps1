@@ -50,9 +50,9 @@ function ConvertTo-RelativePath {
   $full = (Resolve-Path -LiteralPath $Path).Path
   $root = (Resolve-Path -LiteralPath $RepoRoot).Path.TrimEnd('\')
   if ($full.StartsWith($root, [System.StringComparison]::OrdinalIgnoreCase)) {
-    $rel = $full.Substring($root.Length).TrimStart('\')
-    # normalize slashes to backslash for consistency on Windows
-    return ($rel -replace '/', '\')
+    $rel = $full.Substring($root.Length).TrimStart('\','/')
+    # normalize slashes to forward slash for git-style consistency
+    return ($rel -replace '\\','/')
   }
   # If outside root, just return full path
   return $full
@@ -64,7 +64,10 @@ function Read-CompletedSet {
   if (Test-Path -LiteralPath $TrackingFile) {
     Get-Content -LiteralPath $TrackingFile | ForEach-Object {
       $line = ($_ ?? "").Trim()
-      if ($line -and -not $line.StartsWith("#")) { [void]$set.Add($line) }
+      if ($line -and -not $line.StartsWith("#")) {
+        $norm = ($line -replace '\\','/')
+        [void]$set.Add($norm)
+        }
     }
   }
   return $set

@@ -1,5 +1,24 @@
-      "# COR namespace upgrade completed files",
-      "# One relative path per line, relative to repo root.",
-      "# Lines starting with # are comments."
+# COR namespace upgrade completed files
+# One relative path per line, relative to repo root.
+# Lines starting with # are comments.
 
-      
+COR/COR.CHI.md
+COR/COR.CI.md
+COR/COR.E.md
+COR/COR.G.md
+COR/COR.H.md
+COR/COR.KAPPA.md
+COR/COR.PHI.md
+COR/COR.STATE.G.md
+COR/COR.THETA.md
+COR/COR.X.md
+OCF/OCF.CONTROL_SURFACE.U.md
+OCF/OCF.DOMAIN.SCALE.md
+OCF/OCF.OPERATOR.GAMMA_G.md
+OCF/OCF.OPERATOR.INTERVENTION_DYNAMICS.md
+OCF/OCF.OPERATOR.MEASUREMENT.md
+OCF/OCF.OPERATOR.OMISSION_AUDIT.md
+OCF/OCF.OPERATOR.PI_FIELD.md
+OCF/OCF.OPERATOR.SCALE_TRANSITION.md
+OCF/OCF.OPERATOR.TECHNIQUE.md
+OCF/OCF.OPERATOR.WEIGHTED_ACCESS.md
