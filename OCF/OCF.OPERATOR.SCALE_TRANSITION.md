@@ -130,9 +130,9 @@ Reversal is not symmetric with formation.
 Transition feasibility is conditioned by:
 - `COR.PHI` (legitimacy)
 - `COR.THETA` (execution capacity)
-- `COR.`COR.CI`` (institutional inertia)
-- `COR.KAPPA`, `COR.`COR.H`` (cognitive and boundary states)
-- topology 𝒢
+- `COR.CI` (institutional inertia)
+- `COR.KAPPA`, `COR.H` (cognitive and boundary states)
+- topology `COR.STATE.G`
 
 Transitions valid in one regime may be impossible in another.
 
@@ -151,13 +151,13 @@ Intent must be evidenced independently via Techniques and control surfaces.
 
 ## 5. Relationship to Other OCFs
 
-### To σ (OCF.DOMAIN.SCALE)
+### To σ (`OCF.DOMAIN.SCALE`)
 
 Scale-transition operators are the **only permitted bridge** across σ.
 
 ---
 
-### To Π_k (OCF.OPERATOR.PI_FIELD)
+### To Π_k (`OCF.OPERATOR.PI_FIELD`)
 
 Field propagation may **enable or inhibit** transitions, but cannot substitute for them.
 
@@ -165,19 +165,19 @@ Propagation ≠ organization.
 
 ---
 
-### To Γ_G (OCF.OPERATOR.GAMMA_G)
+### To Γ_G (`OCF.OPERATOR.GAMMA_G`)
 
 T₂ and T₃ transitions require sufficient group coherence and governance latency.
 
 ---
 
-### To Techniques (OCF.OPERATOR.TECHNIQUE)
+### To Techniques (`OCF.OPERATOR.TECHNIQUE`)
 
 Techniques may **attempt to induce** scale transitions, but cannot guarantee them.
 
 ---
 
-### To Measurement (OCF.OPERATOR.MEASUREMENT)
+### To Measurement (`OCF.OPERATOR.MEASUREMENT`)
 
 Claims of successful transition require artifact-level evidence appropriate to the target scale.
 

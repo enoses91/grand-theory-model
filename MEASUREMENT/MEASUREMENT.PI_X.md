@@ -1,14 +1,8 @@
-## 3. π_X — Exit / Mobility Measurement Operator
-
-This prevents conflating “people are fine” with “people left.”
-
----
-
-# O.2.MEASUREMENT.PI_X.md
+# MEASUREMENT.PI_X.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.2.MEASUREMENT.PI_X`
+* **O_ID:** `MEASUREMENT.PI_X`
 * **Name:** π_X (Exit / Mobility Measurement Operator)
 * **Order:** 2nd
 * **Kind:** MeasurementOperator
@@ -40,7 +34,7 @@ Channels (choose relevant ones):
 
 ## 3. Interpretation Rules
 
-* Sustained net outflow ⇒ X high (for those agents)
+* Sustained net outflow ⇒ X (`COR.X`) high (for those agents)
 * Asymmetry across classes must be stated explicitly
 * Suppressed exit ≠ low desire to exit
 

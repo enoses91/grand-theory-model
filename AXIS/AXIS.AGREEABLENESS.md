@@ -1,8 +1,8 @@
-# O.3.AXIS.AGREEABLENESS.md
+# AXIS.AGREEABLENESS.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.AGREEABLENESS`
+* **O_ID:** `AXIS.AGREEABLENESS`
 * **Name:** Agreeableness (A)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -29,7 +29,7 @@ It does **not** encode:
 
 * kindness or virtue
 * compliance or submission
-* legitimacy (COR.PHI)
+* legitimacy (`COR.PHI`)
 * authority or power
 * political orientation
 
@@ -97,7 +97,7 @@ Agreeableness does **not** eliminate conflict; it shapes its trajectory.
 
 ## 5. Interaction with Core Objects
 
-### 5.1 With Group Coherence (χ)
+### 5.1 With Group Coherence (χ, defined in `COR.CHI`)
 
 * High variance in Agreeableness within a group:
 
@@ -113,7 +113,7 @@ Agreeableness does **not** eliminate conflict; it shapes its trajectory.
 
 ---
 
-### 5.2 With Culture / Identity Field
+### 5.2 With Culture / Identity Field (`FIELDS.CULTURE_IDENTITY`)
 
 * Low Agreeableness amplifies:
 
@@ -130,7 +130,7 @@ Trait effects are **field-conditioned**, not intrinsic.
 
 ---
 
-### 5.3 With Violence and Governance Fields
+### 5.3 With Violence (`FIELDS.VIOLENCE`) and Governance Fields (`FIELDS.GOVERNANCE`)
 
 * Low Agreeableness populations:
 

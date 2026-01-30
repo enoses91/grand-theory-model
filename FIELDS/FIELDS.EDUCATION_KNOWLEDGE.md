@@ -1,12 +1,12 @@
-# O.2.FIELD.EDUCATION_KNOWLEDGE
+# FIELDS.EDUCATION_KNOWLEDGE.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.EDUCATION_KNOWLEDGE
+- **O_ID:** FIELDS.EDUCATION_KNOWLEDGE
 - **Name:** Education / Knowledge Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes the generation, transmission, certification, stratification, and decay of knowledge, skills, methods, and epistemic standards as a coordination field over topology 𝒢; shapes cognitive capacity utilization (g), institutional competence (COR.THETA), technology adoption, and coordination reliability without encoding intelligence, truth, or intent.
+- **Role:** Encodes the generation, transmission, certification, stratification, and decay of knowledge, skills, methods, and epistemic standards as a coordination field over topology 𝒢 (`COR.STATE.G`); shapes cognitive capacity utilization (g), institutional competence (θ, `COR.THETA`), technology adoption, and coordination reliability without encoding intelligence, truth, or intent.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
@@ -21,13 +21,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; conditions feasible specialization depth, credential complexity, and transmission reliability)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; conditions feasible specialization depth, credential complexity, and transmission reliability, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - The Education / Knowledge Field is an **operator over distributions of epistemic capacity and credentials**.
 - It contains **no agents, no intelligence scores, no truth predicates, and no moral valuation**.
-- Observed attainment, failure, or mismatch **does not imply intent or merit**; outcomes arise endogenously from Π_K and U_K under capacity, selection, and institutional constraints.
+- Observed attainment, failure, or mismatch **does not imply intent or merit**; outcomes arise endogenously from Π_K (`OCF.OPERATOR.PI_FIELD`) and U_K (`OCF.CONTROL_SURFACE.U`) under capacity, selection, and institutional constraints.
 
 ---
 
@@ -143,33 +143,33 @@ Destabilization is structural, not normative.
 
 - **g:** individual cognitive capacity bounding learning rates
 - **E_τ:** temporal surplus for study and practice
-- **COR.KAPPA:** tolerance for curriculum and methodological complexity
-- **COR.CI:** institutional inertia within education systems
-- **Culture / Identity Field:** norms around status, merit, and education
+- **`COR.KAPPA`:** tolerance for curriculum and methodological complexity
+- **`COR.CI`:** institutional inertia within education systems
+- **Culture / Identity Field (`FIELDS.CULTURE_IDENTITY`):** norms around status, merit, and education
 
 ### 5.2 Bounded forcing into metric and state variables
 
 Education / Knowledge dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Institutional capacity (COR.THETA):**
+- **Institutional capacity (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_K,\Pi_K,U_K;\sigma)
 \]
 (administrative competence, professional reliability, execution quality)
 
-- **Cognitive compression (COR.KAPPA_load):**
+- **Cognitive compression (κ_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_K,\Pi_K,U_K;\sigma)
 \]
 (curriculum overload, credential complexity, epistemic fragmentation)
 
-- **Legitimacy (COR.PHI_proc / COR.PHI_exp):**
+- **Legitimacy (φ_proc / φ_exp):**
 \[
 \partial_t \phi_j = \ldots + J_{\phi_j}(\rho_K,\Pi_K,U_K;\sigma)
 \]
 (perceived fairness of selection, reliability of expertise)
 
-- **Exit / mobility (X):**
+- **Exit / mobility (`COR.X`):**
 \[
 \partial_t X = \ldots + J_X(\rho_K,\Pi_K,U_K;\sigma)
 \]
@@ -179,9 +179,9 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 
 ### 5.3 Coupling into Bounds
 
-- **B_C:** curriculum and credential complexity tighten coordination feasibility
-- **B_D:** skill formation interacts with demographic dependency and assimilation
-- **B_X:** credential portability conditions feasible exit
+- **B_C (`BOUNDS.B_C`):** curriculum and credential complexity tighten coordination feasibility
+- **B_D (`BOUNDS.B_D`):** skill formation interacts with demographic dependency and assimilation
+- **B_X (`BOUNDS.B_X`):** credential portability conditions feasible exit
 
 No coupling implies intent.
 
@@ -204,7 +204,7 @@ The field destabilizes when:
 - **Skill mismatch:** education fails to support roles
 - **Epistemic drift:** standards decay; low-quality knowledge persists
 - **Institutional overload:** education system violates B_C
-- **Legitimacy erosion:** COR.PHI declines due to perceived unfairness
+- **Legitimacy erosion:** `COR.PHI` declines due to perceived unfairness
 - **Expectation collapse:** promised returns fail to materialize
 
 ---

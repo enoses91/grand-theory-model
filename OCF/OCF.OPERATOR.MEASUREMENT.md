@@ -128,13 +128,13 @@ Do not reuse a proxy across unrelated latents without argument.
 
 Common latent targets include:
 
-- **χ_G:** group coherence
-- **Γ_G:** group governance operator facets
+- **`COR.CHI`:** group coherence
+- **`COR.STATE.G`:** group governance operator facets
 - **`COR.PHI`:** legitimacy
 - **`COR.THETA`:** execution throughput
 - **`COR.KAPPA`:** cognitive compression
-- **`COR.`COR.H``:** boundary hardness
-- **W_{G→U}:** weighted access
+- **`COR.H`:** boundary hardness
+- **W_{G→U}:** weighted access, defined in `OCF.OPERATOR.WEIGHTED_ACCESS`
 - **Field activation states:** ρ_k shape, variance, reach
 - **Topology features:** clustering, centrality, segregation
 

@@ -1,8 +1,8 @@
-# O.3.OBJECT.CLASS
+# OBJECT.CLASS
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.OBJECT.CLASS
+- **O_ID:** OBJECT.CLASS
 - **Name:** Class
 - **Order:** 3rd
 - **Kind:** Domain Object (Constraint Object)
@@ -10,7 +10,7 @@
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
-  - v1.0: Canonical Class object; formalized class as non-acting constraint indexed to effective surplus (E) with COR.THETA/X couplings.
+  - v1.0: Canonical Class object; formalized class as non-acting constraint indexed to effective surplus (E, `COR.E`) with `COR.THETA`/`COR.X` couplings.
   - v1.1: Tightened prohibitions against class-as-actor inference; clarified variance and exit asymmetry.
   - **v1.2:** Reconciled to explicitly reference **σ, 𝓜**, and strict **X/COR.THETA coupling discipline**; aligned language with Bounds (B_X, B_D, B_C); removed residual narrative slippage.
 
@@ -20,14 +20,14 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (class is undefined without explicit σ)
+- **Scale:** σ (class is undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
 - **Reference population:** 𝒫_σ
 
 **Non-Agency Constraint (hard)**
 - Class is a **constraint object**, not an actor.
 - It contains **no intent, no beliefs, no preferences, no ideology, and no coordination capacity**.
 - Class **cannot act, decide, align, or coordinate**.
-- Any statement attributing behavior, intent, or strategy to a class is invalid unless routed through Groups and Γ_G.
+- Any statement attributing behavior, intent, or strategy to a class is invalid unless routed through Groups and Γ_G (`COR.G`).
 
 ---
 
@@ -100,9 +100,9 @@ Different combinations can map to the same \(K_i\).
 
 ## 4. Structural Couplings (Strict, Non-Symmetric)
 
-### 4.1 Coupling to COR.THETA (Institutional Access)
+### 4.1 Coupling to `COR.THETA` (Institutional Access)
 
-- COR.THETA modifies **realized outcomes**, not class rank.
+- `COR.THETA` modifies **realized outcomes**, not class rank.
 - Higher class → lower friction, higher reliability, faster throughput.
 - Lower class → higher error rates, enforcement asymmetry, backlog exposure.
 
@@ -111,11 +111,11 @@ Formally:
 \partial \text{RealizedOutcome} / \partial \theta \;\text{is class-conditioned}
 \]
 
-Class does **not** increase COR.THETA.
+Class does **not** increase `COR.THETA`.
 
 ---
 
-### 4.2 Coupling to X (Exit / Mobility)
+### 4.2 Coupling to `COR.X` (Exit / Mobility)
 
 - Higher class → higher **credible exit** and option value.
 - Lower class → immobility, capture, and compliance pressure.
@@ -129,10 +129,10 @@ This coupling is **one-way**: exit does not define class, but class constrains e
 
 ---
 
-### 4.3 Coupling to COR.PHI (Legitimacy Stress)
+### 4.3 Coupling to `COR.PHI` (Legitimacy Stress)
 
 - Class asymmetry conditions **perceived fairness**.
-- Low-class immobility amplifies sensitivity of COR.PHI to:
+- Low-class immobility amplifies sensitivity of `COR.PHI` to:
   - selective enforcement,
   - unequal exit,
   - asymmetric burden.

@@ -1,8 +1,8 @@
-# O.2.RLM.GOVERNANCE_EXECUTION
+# RLM.GOVERNANCE_EXECUTION.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.RLM.GOVERNANCE_EXECUTION
+- **O_ID:** RLM.GOVERNANCE_EXECUTION
 - **Name:** Governance Execution
 - **Order:** 2nd
 - **Kind:** Regime-Local Mechanism (RLM)
@@ -20,8 +20,8 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; execution properties are σ-dependent)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; execution properties are σ-dependent, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - Governance Execution is a **mechanism**, not an actor.
@@ -126,20 +126,20 @@ This decomposition is **descriptive**, not normative.
 
 ## 5. Conditioning Variables (Regime Dependence)
 
-### 5.1 COR.THETA — Execution Throughput
-Low COR.THETA → backlog growth, triage, discretionary substitution.
+### 5.1 `COR.THETA` — Execution Throughput
+Low θ (see `COR.THETA`) → backlog growth, triage, discretionary substitution.
 
-### 5.2 COR.CI — Institutional Inertia
-High COR.CI → slow adaptation, rule accretion, procedural ratchets.
+### 5.2 `COR.CI` — Institutional Inertia
+High CI (see `COR.CI`) → slow adaptation, rule accretion, procedural ratchets.
 
-### 5.3 COR.PHI — Procedural Legitimacy
-Low COR.PHI → compliance decay, monitoring costs rise, asymmetry increases.
+### 5.3 `COR.PHI` — Procedural Legitimacy
+Low φ (see `COR.PHI`) → compliance decay, monitoring costs rise, asymmetry increases.
 
-### 5.4 COR.KAPPA, COR.H — Cognitive Compression & Boundary Hardness
-COR.KAPPA↑ → simplification errors;  
-COR.H↑ → identity-linked selective pressure.
+### 5.4 `COR.KAPPA`, `COR.H` — Cognitive Compression & Boundary Hardness
+κ (see `COR.KAPPA`) ↑ → simplification errors;  
+h (see `COR.H`) ↑ → identity-linked selective pressure.
 
-### 5.5 𝒢 — Coordination Topology
+### 5.5 `COR.STATE.G` — Coordination Topology
 Fragmented → enclave execution and brokerage;  
 Centralized → reach with single-point failure risk.
 
@@ -149,22 +149,22 @@ Centralized → reach with single-point failure risk.
 
 Governance Execution induces **bounded forcing** into downstream variables:
 
-- **Institutional capacity (COR.THETA):**
+- **Institutional capacity θ (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\mathcal{E},u_G;\sigma)
 \]
 
-- **Legitimacy (COR.PHI):**
+- **Legitimacy φ (`COR.PHI`):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\mathcal{E},u_G;\sigma)
 \]
 
-- **Cognitive compression (COR.KAPPA):**
+- **Cognitive compression κ (`COR.KAPPA`):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\mathcal{E},u_G;\sigma)
 \]
 
-- **Exit pressure (X):**
+- **Exit pressure X (`COR.X`):**
 \[
 \partial_t X = \ldots + J_X^{(+)}(\mathcal{E},u_G;\sigma)
 \]
@@ -177,13 +177,13 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and conditional on regime s
 
 Mapped to the locked Governance Failure-Mode Taxonomy.
 
-### 7.1 Throughput Collapse (COR.THETA-binding)
+### 7.1 Throughput Collapse (θ-binding)
 Backlogs dominate; legality becomes symbolic.
 
-### 7.2 Procedural Ratchet (COR.CI-dominant)
+### 7.2 Procedural Ratchet (CI-dominant)
 Rules accumulate faster than execution capacity.
 
-### 7.3 Selective Enforcement Spiral (COR.PHI-coupled)
+### 7.3 Selective Enforcement Spiral (φ-coupled)
 Asymmetry → compliance decay → coercion substitution (Violence Field coupling).
 
 ### 7.4 Topological Fragmentation (𝒢-dominant)
@@ -193,7 +193,7 @@ No failure mode implies intent.
 
 ---
 
-## 8. Relationship to Γ_G (Group Governance Operator)
+## 8. Relationship to Γ_G (Group Governance Operator, defined in `COR.G`)
 
 Γ_G is a **group-indexed specialization** of Governance Execution:
 
@@ -206,7 +206,7 @@ Interpretation:
 - **O.2.RLM.GOVERNANCE_EXECUTION:** regime-level executability
 - **Γ_G:** group-level executability under the same regime
 
-Γ_G is defined under **O.3.OBJECT.GROUP**, not as a Tier-2 primitive.
+Γ_G is defined under **`OBJECT.GROUP`**, not as a Tier-2 primitive.
 
 ---
 

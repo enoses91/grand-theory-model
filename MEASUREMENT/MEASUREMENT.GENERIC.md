@@ -1,14 +1,8 @@
-## 1. Generic Measurement Operator (template / guardrails)
-
-This one is *load-bearing*: it enforces **Unknown ≠ Null**, evidence hierarchy, and confidence labeling across the entire model.
-
----
-
-# O.2.MEASUREMENT.GENERIC.md
+# MEASUREMENT.GENERIC.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.2.MEASUREMENT.GENERIC`
+* **O_ID:** `MEASUREMENT.GENERIC`
 * **Name:** Measurement Operator (Generic)
 * **Order:** 2nd
 * **Kind:** MeasurementOperator
@@ -64,7 +58,7 @@ Lower tiers cannot override higher tiers.
 
 ## 4. MGA Integration
 
-* Required whenever invoking χ, 𝒢, X, C, Γ, alignment, or ε
+* Required whenever invoking χ (`COR.CHI`), 𝒢 (`COR.STATE.G`), X (`COR.X`), C, Γ (`COR.G`), alignment, or ε
 * Failure to specify (\mathcal{M}) ⇒ **measurement validity audit failure**
 
 ---

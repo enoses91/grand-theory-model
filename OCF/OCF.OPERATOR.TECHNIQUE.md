@@ -129,14 +129,14 @@ Claims of rapid, large-σ change are presumptively invalid.
 
 ## 4. Relationship to Other OCFs
 
-### To Control Surfaces (OCF.CONTROL_SURFACE.U)
+### To Control Surfaces (`OCF.CONTROL_SURFACE.U`)
 
 Control surfaces are the **atomic interfaces**.
 Techniques are **compositions** of U_k over time.
 
 ---
 
-### To Weighted Access (OCF.OPERATOR.WEIGHTED_ACCESS)
+### To Weighted Access (`OCF.OPERATOR.WEIGHTED_ACCESS`)
 
 Weighted Access conditions whether a Technique is even feasible.
 
@@ -144,21 +144,21 @@ Low W → symbolic or failed Techniques.
 
 ---
 
-### To Γ_G (OCF.OPERATOR.GAMMA_G)
+### To Γ_G (`OCF.OPERATOR.GAMMA_G`)
 
 Γ_G governs **internal execution** of the Technique.
 Low χ_G or high τ_G^{gov} → fragmented or stalled Techniques.
 
 ---
 
-### To Π_k (OCF.OPERATOR.PI_FIELD)
+### To Π_k (`OCF.OPERATOR.PI_FIELD`)
 
 Π_k governs **downstream propagation**.
 Techniques do not control amplification, decay, or spillover.
 
 ---
 
-### To σ (OCF.DOMAIN.SCALE)
+### To σ (`OCF.DOMAIN.SCALE`)
 
 σ bounds:
 - feasible scope

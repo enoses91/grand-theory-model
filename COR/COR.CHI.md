@@ -1,8 +1,8 @@
-# O.3.STATE.CHI
+# COR.CHI.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.STATE.CHI
+- **O_ID:** `COR.CHI`
 - **Name:** χ (Group Coherence)
 - **Order:** 3rd
 - **Kind:** State Variable

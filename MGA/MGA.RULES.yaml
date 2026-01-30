@@ -299,19 +299,19 @@ mga:
           required_fields:
             - "patterns_detected (DPI ids or candidates)"
             - "activation/boundary notes"
-           - id: "B-7.25"
-         	   name: "Projection Class & Disciplinary Priors Inference"
-                        level: "must"
-                        required_fields:
-                             - "inferred_projection_class Π_d"
-                             - "evidence_mode"
-                             - "domain_of_validity D_d"
-                             - "projection_boundary_risks"
-                         notes:
-                              - >
-                                Where helpful, basin-consistent salience profiles may be referenced
-                                via Ideological Basin Register (IBR) entries as translation/compression aids.
-                                IBR references do not substitute for metric, field, topology, or causal analysis.
+        - id: "B-7.25"
+         	name: "Projection Class & Disciplinary Priors Inference"
+          level: "must"
+          required_fields:
+            - "inferred_projection_class Π_d"
+            - "evidence_mode"
+            - "domain_of_validity D_d"
+            - "projection_boundary_risks"
+          notes:
+            - >
+              Where helpful, basin-consistent salience profiles may be referenced
+              via Ideological Basin Register (IBR) entries as translation/compression aids.
+              IBR references do not substitute for metric, field, topology, or causal analysis.
         - id: "B-7.3"
           name: "Author Background Verification (Optional, Controlled)"
           level: "may"

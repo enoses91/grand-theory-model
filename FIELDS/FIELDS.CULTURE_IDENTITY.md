@@ -1,8 +1,8 @@
-# O.2.FIELD.CULTURE_IDENTITY
+# FIELDS.CULTURE_IDENTITY.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.CULTURE_IDENTITY
+- **O_ID:** FIELDS.CULTURE_IDENTITY
 - **Name:** Culture / Identity Field
 - **Order:** 2nd
 - **Kind:** Field
@@ -11,7 +11,7 @@
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; distinguishes culture/identity as a coordination field from beliefs, morality, ideology, or narrative.
-  - v1.1: Integrated explicit coupling to COR.PHI, COR.KAPPA, COR.H, Demography, and Information fields; clarified failure modes and hysteresis.
+  - v1.1: Integrated explicit coupling to `COR.PHI`, `COR.KAPPA`, `COR.H`, Demography (`FIELDS.DEMOGRAPHY`), and Information (`FIELDS.INFORMATION`) fields; clarified failure modes and hysteresis.
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed implied agency; aligned propagation, control, and coupling language to OCF-safe operator form.
 
 ---
@@ -20,19 +20,19 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; conditions feasible identity complexity and boundary stability)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; conditions feasible identity complexity and boundary stability, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
-- The Culture / Identity Field is an **operator over distributions of meaning and boundaries**.
+- The Culture / Identity Field (`FIELDS.CULTURE_IDENTITY`) is an **operator over distributions of meaning and boundaries**.
 - It contains **no agents, no beliefs, no intentions, and no truth predicates**.
-- Identity convergence or polarization **does not imply deliberate mobilization or belief change**; it may arise endogenously from Π_CI and U_CI given topology, demography, COR.KAPPA, COR.H, COR.THETA, and E.
+- Identity convergence or polarization **does not imply deliberate mobilization or belief change**; it may arise endogenously from Π_CI (`OCF.OPERATOR.PI_FIELD`) and U_CI (`OCF.CONTROL_SURFACE.U`) given topology, demography (`FIELDS.DEMOGRAPHY`), `COR.KAPPA`, `COR.H`, `COR.THETA`, and `COR.E`.
 
 ---
 
 ## 1. Base Definition (O⁰)
 
-**The Culture / Identity Field is a second-order operator describing how shared meanings, norms, symbols, and identity boundaries are distributed, reinforced, and transformed across 𝓜 at scale σ.**
+**The Culture / Identity Field (`FIELDS.CULTURE_IDENTITY`) is a second-order operator describing how shared meanings, norms, symbols, and identity boundaries are distributed, reinforced, and transformed across 𝓜 at scale σ.**
 
 Formally, for field index k = COR.CI:
 
@@ -100,8 +100,8 @@ Topology \(\mathcal{G}(\sigma,t)\) conditions:
 ### 3.2 Nonlinearities and hysteresis
 
 - threshold-driven boundary hardening under threat or recognition asymmetry
-- feedback with COR.KAPPA (compression favors simplified identity schemas)
-- salience amplification via Information Field coupling
+- feedback with `COR.KAPPA` (compression favors simplified identity schemas)
+- salience amplification via Information Field (`FIELDS.INFORMATION`) coupling
 - hysteresis: identity commitments persist after initial drivers subside
 
 ---
@@ -136,14 +136,14 @@ Destabilization is assessed structurally, not morally.
 ### 5.1 Upstream dependencies
 
 - **Topology \(\mathcal{G}(\sigma,t)\):** segregation vs mixing
-- **Demography Field:** cohort replacement and cultural distance ΔC
-- **Information Field:** salience amplification and narrative scaffolding
-- **COR.KAPPA (compression):** favors simplified, binary identity frames
-- **COR.THETA / CI_load:** bounds institutional capacity to absorb recognition demands
+- **Demography Field (`FIELDS.DEMOGRAPHY`):** cohort replacement and cultural distance ΔC
+- **Information Field (`FIELDS.INFORMATION`):** salience amplification and narrative scaffolding
+- **`COR.KAPPA` (compression):** favors simplified, binary identity frames
+- **`COR.THETA` / CI_load:** bounds institutional capacity to absorb recognition demands
 
-### 5.2 Coupling into COR.H (boundary hardness)
+### 5.2 Coupling into H (boundary hardness, `COR.H`)
 
-The field injects bounded forcing terms into COR.H components:
+The field injects bounded forcing terms into `COR.H` components:
 
 - **h_boundary:** strengthened by segregation and recognition asymmetry
 - **h_moral:** strengthened by moralized identity labeling
@@ -155,11 +155,11 @@ The field injects bounded forcing terms into COR.H components:
 
 ### 5.3 Downstream effects (conditional)
 
-- **COR.PHI:** legitimacy shifts via perceived symmetry or bias in recognition
-- **B_C:** identity proliferation raises coordination/complexity burden
-- **Governance Field:** pressure for recognition, protection, or suppression
-- **Violence Field:** identity threat primes coercive escalation
-- **X:** exit pressure rises under enforced or non-assimilable identity regimes
+- **`COR.PHI`:** legitimacy shifts via perceived symmetry or bias in recognition
+- **B_C (`BOUNDS.B_C`):** identity proliferation raises coordination/complexity burden
+- **Governance Field (`FIELDS.GOVERNANCE`):** pressure for recognition, protection, or suppression
+- **Violence Field (`FIELDS.VIOLENCE`):** identity threat primes coercive escalation
+- **`COR.X`:** exit pressure rises under enforced or non-assimilable identity regimes
 
 No downstream effect implies intent.
 
@@ -182,7 +182,7 @@ Destabilization occurs when:
 - **Moralized coordination:** norms override performance criteria
 - **Recognition spirals:** escalating institutionalization demands
 - **Assimilation breakdown:** integration time exceeds tolerance
-- **Legitimacy erosion:** COR.PHI declines due to perceived bias
+- **Legitimacy erosion:** `COR.PHI` declines due to perceived bias
 - **Violence coupling:** identity threat activates coercion
 
 ---

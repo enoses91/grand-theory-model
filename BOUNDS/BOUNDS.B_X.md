@@ -1,8 +1,8 @@
-# O.2.BOUND.B_X
+# BOUNDS.B_X.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.BOUND.B_X
+- **O_ID:** BOUNDS.B_X
 - **Name:** B_X (Exit / Mobility Feasible Bound)
 - **Order:** 2nd
 - **Kind:** Bound
@@ -19,7 +19,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; B_X is undefined without explicit σ)
+- **Scale:** σ (effective coordination scale; B_X is undefined without explicit σ, as defined in `OCF.DOMAIN.SCALE`)
 
 **Non-Agency Constraint (hard)**
 - B_X is a **structural feasibility constraint**, not a choice set.
@@ -37,8 +37,8 @@ Formally:
 - B_X defines a feasible region \(\mathcal{R}_X(\sigma,\mathcal{M})\) over exit rates, channels, and asymmetries.
 - If effective exit pressure \(\Delta X \notin \mathcal{R}_X\), downstream degradation is **structurally forced**.
 - Exit cannot indefinitely substitute for:
-  - legitimacy repair (COR.PHI),
-  - capacity repair (COR.THETA),
+  - legitimacy repair (`COR.PHI`),
+  - capacity repair (`COR.THETA`),
   - or complexity reduction (B_C).
 
 B_X governs **how much exit is sustainable**, not whether exit is legal, moral, or desirable.
@@ -111,25 +111,25 @@ B_X binds through **field-induced forcing**, not direct action.
 
 ### 4.1 Primary tightening channels
 
-- **Market / Technology / Violence Fields → X**
+- **Market (`FIELDS.MARKET`) / Technology (`FIELDS.TECHNOLOGY`) / Violence (`FIELDS.VIOLENCE`) Fields → `COR.X`**
 \[
 \partial_t X = \ldots + J_X(\rho_M,\rho_T,\rho_V;\sigma)
 \]
 (capital mobility, remote work, displacement, coercion-driven flight)
 
-- **Governance Field → COR.THETA**
+- **Governance Field (`FIELDS.GOVERNANCE`) → `COR.THETA`**
 \[
 J_\theta^{(-)}(\rho_G,\Pi_G,U_G;\sigma)
 \]
 (service hollowing, execution overload, fiscal erosion)
 
-- **Information / Culture Fields → COR.PHI**
+- **Information (`FIELDS.INFORMATION`) / Culture (`FIELDS.CULTURE_IDENTITY`) Fields → `COR.PHI`**
 \[
 J_\phi^{(-)}(\rho_I,\rho_C;\sigma)
 \]
 (perceived unfairness, abandonment narratives, legitimacy loss)
 
-- **Demography Field → effective X**
+- **Demography (`FIELDS.DEMOGRAPHY`) Field → effective `COR.X`**
 \[
 J_X^{(+)}(\rho_D,\Pi_D,U_D;\sigma)
 \]
@@ -143,16 +143,16 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 
 ### 5.1 Upstream dependencies
 
-- **COR.THETA:** capacity to absorb exit-induced load
-- **E:** buffers against depletion
-- **COR.CI:** accumulated structure magnifying exit sensitivity
-- **𝒢:** alternative networks enabling or constraining exit
-- **COR.H:** boundary hardness raising exit costs and asymmetry
+- **`COR.THETA`:** capacity to absorb exit-induced load
+- **`COR.E`:** buffers against depletion
+- **`COR.CI`:** accumulated structure magnifying exit sensitivity
+- **`COR.STATE.G`:** alternative networks enabling or constraining exit
+- **`COR.H`:** boundary hardness raising exit costs and asymmetry
 
 ### 5.2 Cross-bound effects
 
 - Binding **B_X → activates EXIT–LOCK-IN**
-- Binding **B_X → tightens B_COR.PHI** (visible hollowing, perceived unfairness)
+- Binding **B_X → tightens B_φ** (visible hollowing, perceived unfairness)
 - Binding **B_X + B_C → delayed but sharper collapse**
 - Binding **B_X + exit suppression → rapid lock-in and conflict**
 
@@ -165,7 +165,7 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 - Sustained high out-migration or capital flight
 - Exit concentrated among high-skill or high-E cohorts
 - Exit substituting for reform rather than triggering it
-- High COR.CI amplifying hollowing effects
+- High `COR.CI` amplifying hollowing effects
 - Boundary hardening that traps low-X populations
 
 ### 6.2 Canonical failure modes

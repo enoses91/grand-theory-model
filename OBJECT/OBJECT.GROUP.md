@@ -1,8 +1,8 @@
-# O.3.OBJECT.GROUP
+# OBJECT.GROUP
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.OBJECT.GROUP
+- **O_ID:** OBJECT.GROUP
 - **Name:** Group
 - **Order:** 3rd
 - **Kind:** Domain Object (Actor Container)
@@ -20,14 +20,14 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Operational scale:** σ_G ⊆ σ (groups are defined at a specific effective coordination scale)
-- **Topology:** 𝒢(σ_G,t)
+- **Operational scale:** σ_G ⊆ σ (groups are defined at a specific effective coordination scale, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ_G,t), defined in `COR.STATE.G`
 
 **Agency Constraint (hard)**
 - Groups are the **lowest-level objects permitted to carry intent**, but:
   - intent alone is never sufficient for action;
   - realized action is fully conditioned by regime-local mechanisms.
-- No group outcome may be attributed to intent **without passing through Γ_G and execution artifacts**.
+- No group outcome may be attributed to intent **without passing through Γ_G (`COR.G`) and execution artifacts**.
 
 ---
 
@@ -143,7 +143,7 @@ Groups with \(\chi_G < \chi^*\) are **nominal but non-acting**.
 
 ---
 
-## 6. External Action: Derived Governance Operator Γ_G
+## 6. External Action: Derived Governance Operator Γ_G (`COR.G`)
 
 ### 6.1 Definition (Derived, Not Primitive)
 
@@ -246,8 +246,8 @@ Cross-object inference without operators is invalid.
 
 - **Low-coherence paralysis:** access exists, action does not
 - **Boundary leakage:** unauthorized acts attributed to group
-- **Factional capture:** χ maintained locally, collapses globally
-- **Latency mismatch:** Γ_G delay exceeds feasibility window
+- **Factional capture:** χ (`COR.CHI`) maintained locally, collapses globally
+- **Latency mismatch:** Γ_G (`COR.G`) delay exceeds feasibility window
 - **Attribution laundering:** blaming regime limits to mask χ failure
 
 No failure mode implies malign intent.

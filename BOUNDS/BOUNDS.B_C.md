@@ -1,12 +1,12 @@
-# O.2.BOUND.B_C
+# BOUNDS.B_C
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.BOUND.B_C
+- **O_ID:** `BOUNDS.B_C`
 - **Name:** B_C (Coordination–Complexity Feasible Bound)
 - **Order:** 2nd
 - **Kind:** Bound
-- **Role:** Constrains the maximum coordination complexity a system can sustain at scale σ on manifold 𝓜, given execution capacity (COR.THETA), cognitive bandwidth (COR.KAPPA), coordination topology (𝒢), and time constants; violation forces degradation in execution, legitimacy, or stability independent of intent.
+- **Role:** Constrains the maximum coordination complexity a system can sustain at scale σ on manifold 𝓜, given execution capacity θ (`COR.THETA`), cognitive bandwidth φ (`COR.KAPPA`), coordination topology 𝒢 (`COR.STATE.G`), and time constants; violation forces degradation in execution, legitimacy, or stability independent of intent.
 - **Status:** Canonical
 - **Version:** 1.1
 - **Changelog:**
@@ -19,7 +19,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; bounds are meaningless without explicit σ)
+- **Scale:** σ (effective coordination scale; bounds are meaningless without explicit σ, defined in `OCF.DOMAIN.SCALE`)
 
 **Non-Agency Constraint (hard)**
 - B_C is a **structural feasibility constraint**, not a decision rule.
@@ -117,25 +117,25 @@ B_C does not act directly; it **binds through field-induced forcing terms** once
 
 ### 4.1 Primary tightening channels
 
-- **Governance Field → COR.THETA**
+- **Governance Field `FIELDS.GOVERNANCE` → `COR.THETA`**
 \[
 J_\theta^{(-)}(\rho_G,\Pi_G,U_G;\sigma)
 \]
 (backlogs, delays, inconsistent execution)
 
-- **Information Field → COR.KAPPA**
+- **Information Field `FIELDS.INFORMATION` → `COR.KAPPA`**
 \[
 J_{\kappa}^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (confusion, salience overload, loss of predictability)
 
-- **Culture / Identity Field → COR.H**
+- **Culture / Identity Field `FIELDS.CULTURE_IDENTITY` → `COR.H`**
 \[
 J_{h}^{(+)}(\rho_C,\Pi_C,U_C;\sigma)
 \]
 (boundary hardening as simplification response)
 
-- **Market / Technology / Education Fields → C**
+- **Market (`FIELDS.MARKET`) / Technology (`FIELDS.TECHNOLOGY`) / Education (`FIELDS.EDUCATION_KNOWLEDGE`)Fields → C**
 \[
 \partial_t C = \ldots + J_C^{(+)}(\rho_M,\rho_T,\rho_K;\sigma)
 \]
@@ -149,18 +149,18 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 
 ### 5.1 Upstream dependencies
 
-- **COR.THETA:** execution throughput
-- **COR.KAPPA:** cognitive bandwidth
-- **𝒢:** modularity, segregation, propagation paths
-- **E:** enables capacity investment but cannot raise B_C directly
-- **X:** exit options that can mask overload temporarily
+- **`COR.THETA`:** execution throughput
+- **`COR.KAPPA`:** cognitive bandwidth
+- **`COR.STATE.G`:** modularity, segregation, propagation paths
+- **`COR.E`:** enables capacity investment but cannot raise B_C directly
+- **`COR.X`:** exit options that can mask overload temporarily
 
 ### 5.2 Cross-bound effects
 
-- Binding **B_C → tightens B_COR.PHI** (visible inconsistency, delay)
-- Binding **B_C → accelerates COR.KAPPA compression**
-- Binding **B_C → increases COR.H** (simplification via exclusion)
-- Binding **B_C + high X → delayed but sharper collapse**
+- Binding **B_C → tightens B_θ** (visible inconsistency, delay)
+- Binding **B_C → accelerates `COR.KAPPA` compression**
+- Binding **B_C → increases `COR.H`** (simplification via exclusion)
+- Binding **B_C + high `COR.X` → delayed but sharper collapse**
 
 ---
 
@@ -194,7 +194,7 @@ No failure mode implies intent.
   - overload effects: fast
   - complexity retirement: slow and politically constrained
   - recovery: slower than collapse
-- **Hysteresis:** COR.CI and institutional memory make rollback costly
+- **Hysteresis:** `COR.CI` and institutional memory make rollback costly
 
 ---
 
@@ -234,7 +234,7 @@ These are **structural signals**, not performance opinions.
 Invalid uses include:
 - treating complexity as mere “bureaucratic inefficiency”
 - assuming technology can always raise B_C
-- ignoring COR.KAPPA and topology when adding scope
+- ignoring `COR.KAPPA` and topology when adding scope
 - treating ambition or moral urgency as capacity
 - assuming appeals and safeguards are cost-free
 

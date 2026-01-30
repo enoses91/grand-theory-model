@@ -1,4 +1,4 @@
-# THETA
+# COR.THETA.md
 
 ## COR OBJECT HEADER
 

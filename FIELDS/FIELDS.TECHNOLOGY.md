@@ -1,12 +1,12 @@
-# O.2.FIELD.TECHNOLOGY
+# FIELDS.TECHNOLOGY
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.TECHNOLOGY
+- **O_ID:** FIELDS.TECHNOLOGY
 - **Name:** Technology Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes the generation, diffusion, adoption, embedding, and decay of tools, techniques, and production processes as a coordination-amplifying field over topology 𝒢; reshapes feasible surplus extraction (E), capacity deployment (COR.THETA), control surfaces, and coordination complexity without encoding intent, progress, or welfare.
+- **Role:** Encodes the generation, diffusion, adoption, embedding, and decay of tools, techniques, and production processes as a coordination-amplifying field over topology 𝒢 (`COR.STATE.G`); reshapes feasible surplus extraction (E, `COR.E`), capacity deployment (`COR.THETA`), control surfaces, and coordination complexity without encoding intent, progress, or welfare.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
@@ -21,13 +21,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; conditions feasible adoption depth, integration complexity, and leverage)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; conditions feasible adoption depth, integration complexity, and leverage, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `OCF.DOMAIN.SCALE`
 
 **Non-Agency Constraint (hard)**
 - The Technology Field is an **operator over distributions of capabilities and adoption states**.
 - It contains **no agents, no intent, no progress claims, and no welfare criteria**.
-- Observed productivity gains, failures, or disruptions **do not imply purpose**; they arise endogenously from Π_T and U_T under capacity, complexity, and topology constraints.
+- Observed productivity gains, failures, or disruptions **do not imply purpose**; they arise endogenously from Π_T (`OCF.OPERATOR.PI_FIELD`) and U_T (`OCF.CONTROL_SURFACE.U`) under capacity, complexity, and topology constraints.
 
 ---
 
@@ -63,7 +63,7 @@ The field encodes **capability change**, not direction or desirability.
 - **Productivity and leverage multipliers**
 - **Automation levels**
 - **Reliability and failure characteristics**
-- **Interoperability with existing COR.CI**
+- **Interoperability with existing `COR.CI`**
 - **Technical debt accumulation**
 
 Technology exists only insofar as it is **operationally embedded**.
@@ -73,7 +73,7 @@ Technology exists only insofar as it is **operationally embedded**.
 The quasi-conserved quantity is **effective coordination leverage per unit effort**:
 
 - technology amplifies action and reach
-- amplification is bounded by COR.THETA, COR.KAPPA, and COR.CI
+- amplification is bounded by `COR.THETA`, `COR.KAPPA`, and `COR.CI`
 - excess leverage without governance increases failure severity
 
 ---
@@ -140,29 +140,29 @@ Destabilization is structural, not normative.
 
 ### 5.1 Upstream dependencies
 
-- **E:** surplus available for development and adoption
-- **COR.THETA:** capacity to deploy, maintain, and govern systems
-- **COR.CI:** institutional compatibility, inertia, and legacy integration
-- **COR.KAPPA:** cognitive capacity to comprehend and manage complexity
-- **Information Field:** hype cycles, signaling, diffusion narratives
+- **`COR.E`:** surplus available for development and adoption
+- **`COR.THETA`:** capacity to deploy, maintain, and govern systems
+- **`COR.CI`:** institutional compatibility, inertia, and legacy integration
+- **`COR.KAPPA`:** cognitive capacity to comprehend and manage complexity
+- **Information Field (`FIELDS.INFORMATION`):** hype cycles, signaling, diffusion narratives
 
 ### 5.2 Bounded forcing into metric and state variables
 
 Technology dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Surplus (E):**
+- **Surplus (`COR.E`):**
 \[
 \partial_t E = \ldots + J_E(\rho_T,\Pi_T,U_T;\sigma)
 \]
 (productivity amplification or fragility-induced loss)
 
-- **Capacity (COR.THETA):**
+- **Capacity (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_T,\Pi_T,U_T;\sigma)
 \]
 (new control surfaces, operational load, maintenance burden)
 
-- **Cognitive compression (COR.KAPPA_load):**
+- **Cognitive compression (κ_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_T,\Pi_T,U_T;\sigma)
 \]
@@ -174,7 +174,7 @@ Technology dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (jurisdictional fragmentation, platform enclosure)
 
-- **Exit / mobility (X):**
+- **Exit / mobility (`COR.X`):**
 \[
 \partial_t X = \ldots + J_X(\rho_T,\Pi_T,U_T;\sigma)
 \]
@@ -184,9 +184,9 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 
 ### 5.3 Coupling into Bounds
 
-- **B_C:** layered technology increases coordination complexity
-- **B_D:** automation reshapes demographic demand for skills
-- **B_X:** digital and capital mobility loosen or tighten exit feasibility
+- **B_C (`BOUNDS.B_C`):** layered technology increases coordination complexity
+- **B_D (`BOUNDS.B_D`):** automation reshapes demographic demand for skills
+- **B_X (`BOUNDS.B_X`):** digital and capital mobility loosen or tighten exit feasibility
 
 No coupling implies intent.
 
@@ -198,8 +198,8 @@ No coupling implies intent.
 
 The Technology Field destabilizes systems when:
 - adoption outpaces governance and maintenance capacity
-- complexity exceeds COR.KAPPA and COR.THETA
-- legacy COR.CI resists integration
+- complexity exceeds `COR.KAPPA` and `COR.THETA`
+- legacy `COR.CI` resists integration
 - incentives reward scale over robustness
 - failure modes are poorly understood or externalized
 
@@ -208,7 +208,7 @@ The Technology Field destabilizes systems when:
 - **Technical debt spiral:** short-term gains create long-term fragility
 - **Automation without oversight:** amplified errors propagate system-wide
 - **Platform capture:** control surfaces concentrate leverage
-- **Innovation blockage:** COR.CI prevents diffusion despite availability
+- **Innovation blockage:** `COR.CI` prevents diffusion despite availability
 - **Catastrophic coupling:** small failures cascade across domains
 
 ---

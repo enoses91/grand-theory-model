@@ -26,7 +26,7 @@ Control surfaces are **the only place where intent enters the model**.
 
 U_k is **not**:
 - a field
-- a propagation mechanism (Π_k)
+- a propagation mechanism (Π_k, defined here `OCF.OPERATOR.PI_FIELD`)
 - an outcome
 - a moral claim
 - evidence of success

@@ -118,7 +118,7 @@ Do **not** reuse Π_k across fields without explicit redefinition.
 
 ---
 
-## 4. Relationship to Control Surfaces (U_k)
+## 4. Relationship to Control Surfaces (U_k (`OCF.CONTROL_SURFACE.U`))
 
 Control surfaces \(U_k\) **inject, gate, or modulate** field propagation.
 
@@ -136,9 +136,9 @@ Control surfaces \(U_k\) **inject, gate, or modulate** field propagation.
 Π_k is conditioned by, but not reducible to:
 
 - `COR.KAPPA` (compression affects effective gain)
-- `COR.`COR.H`` (boundary hardness affects edge permeability)
+- `COR.H` (boundary hardness affects edge permeability)
 - `COR.THETA` (execution / throughput constraints condition realization of field injections)
-- `COR.`COR.CI`` (procedural inertia affects persistence)
+- `COR.CI` (procedural inertia affects persistence)
 - `COR.PHI` (legitimacy affects voluntary uptake)
 
 These enter Π_k parametrically, not as substitutes.
@@ -169,7 +169,7 @@ Violations typically appear as:
 These are **field reification errors**.
 
 Correct form:
-> “Under Π_I on topology 𝒢 with `COR.KAPPA`↑ and strong penalty gradients, attention/salience concentrates…”
+> “Under Π_I on topology 𝒢 with κ↑ and strong penalty gradients, attention/salience concentrates…”
 
 ---
 

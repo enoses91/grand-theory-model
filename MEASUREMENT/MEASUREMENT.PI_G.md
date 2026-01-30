@@ -1,14 +1,8 @@
-## 2. π_𝒢 — Topology Coarse-Graining Operator
-
-This operationalizes 𝒢 and underpins COR.KAPPA, COR.H, and SDBH diagnostics.
-
----
-
-# O.2.MEASUREMENT.PI_G.md
+# MEASUREMENT.PI_G.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.2.MEASUREMENT.PI_G`
+* **O_ID:** `MEASUREMENT.PI_G`
 * **Name:** π_𝒢 (Topology Coarse-Graining Operator)
 * **Order:** 2nd
 * **Kind:** MeasurementOperator

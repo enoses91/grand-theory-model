@@ -1,8 +1,8 @@
-# O.2.FIELD.INFORMATION
+# FIELDS.INFORMATION.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.INFORMATION
+- **O_ID:** FIELDS.INFORMATION
 - **Name:** Information Field
 - **Order:** 2nd
 - **Kind:** Field
@@ -11,7 +11,7 @@
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; defines state distribution, propagation operator, control surfaces, conserved quantities, and failure modes.
-  - v1.1: Aligned couplings to expanded Tier-1 metrics/states (COR.KAPPA_load/COR.KAPPA_threat/COR.KAPPA_velocity; h_boundary/h_moral/h_enforcement; E_τ and E_s); clarified injection channels, speed-limit regimes, and diagnostic signatures; no ontology expansion.
+  - v1.1: Aligned couplings to expanded Tier-1 metrics/states (κ_load/κ_threat/κ_velocity; h_boundary/h_moral/h_enforcement; E_τ and E_s); clarified injection channels, speed-limit regimes, and diagnostic signatures; no ontology expansion.
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed any implied agency; made scale- and manifold-indexing explicit; tightened “injection” language to operator-safe (OCF-safe) causal phrasing.
 
 ---
@@ -20,12 +20,12 @@
 
 **Indexing**
 - **Manifold:** 𝓜 (state space / manifold over which objects are defined)
-- **Scale:** σ (effective coordination scale; conditions topology, correlation length, and feasible propagation regimes)
-- **Topology:** 𝒢(σ,t) (coordination topology / hypergraph at scale σ)
+- **Scale:** σ (effective coordination scale; conditions topology, correlation length, and feasible propagation regimes, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t) (coordination topology / hypergraph at scale σ), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - The Information Field is an **operator over distributions**. It contains **no agent**, **no intent**, **no belief**, and **no truth predicate**.
-- Observed convergence (lexical, topical, narrative) is **not** evidence of coordination intent; it can arise endogenously from Π_I and U_I given 𝒢(σ,t), COR.KAPPA, COR.H, COR.THETA, E, and COR.CI.
+- Observed convergence (lexical, topical, narrative) is **not** evidence of coordination intent; it can arise endogenously from Π_I (`OCF.OPERATOR.PI_FIELD`) and U_I (`OCF.CONTROL_SURFACE.U`) given 𝒢(σ,t), `COR.KAPPA`, `COR.H`, `COR.THETA`, `COR.E`, and `COR.CI`.
 
 ---
 
@@ -136,19 +136,19 @@ All couplings are expressed as **conditional influences on distributions and rat
 - **E_τ(σ,t)** (temporal surplus): correction bandwidth; low E_τ reduces verification throughput
 - **E_s(σ,t)** (security surplus): threat sensitivity; low E_s increases threat token salience coupling
 - **CI_load(σ,t)** (institutional/procedural load): raises cognitive load; reduces correction/processing capacity
-- **COR.THETA(σ,t)** (institutional capacity/throughput): bounds verification and response velocities
+- **θ(σ,t)** (institutional capacity/throughput): bounds verification and response velocities
 
-### 5.2 Coupling into COR.KAPPA (bounded injection channels)
+### 5.2 Coupling into `COR.KAPPA` (bounded injection channels)
 
-Define COR.KAPPA components: COR.KAPPA_velocity, COR.KAPPA_threat, COR.KAPPA_load. The Information Field contributes **bounded forcing terms** into COR.KAPPA dynamics:
+Define `COR.KAPPA` components: κ_velocity, κ_threat, κ_load. The Information Field contributes **bounded forcing terms** into `COR.KAPPA` dynamics:
 
-- **Velocity channel → COR.KAPPA_velocity**
+- **Velocity channel → κ_velocity**
   - high refresh rates, high novelty turnover, low signal-to-noise, outrage/engagement optimization
 
-- **Threat channel → COR.KAPPA_threat**
+- **Threat channel → κ_threat**
   - vivid threat tokens, violence-adjacent imagery, existential “enemy” frames
 
-- **Load channel → COR.KAPPA_load**
+- **Load channel → κ_load**
   - procedural complexity salience, compliance overload narratives, process churn visibility
 
 Formalized as:
@@ -158,7 +158,7 @@ Formalized as:
 \quad j \in \{\text{velocity, threat, load}\}
 \]
 
-### 5.3 Coupling into COR.H (boundary hardness components)
+### 5.3 Coupling into `COR.H` (boundary hardness components)
 
 Define COR.H components: h_boundary, h_moral, h_enforcement. The field contributes bounded forcing terms:
 
@@ -177,10 +177,10 @@ Define COR.H components: h_boundary, h_moral, h_enforcement. The field contribut
 
 Downstream consequences are described as regime-conditional outcomes of coupled dynamics:
 - **SDBH precursor conditions:** sustained salience + penalty associations + COR.KAPPA compression + COR.H hardening
-- **COR.PHI shifts:** perceived asymmetry/manipulation can erode COR.PHI_proc; overload can erode COR.PHI_exp
-- **COR.THETA/COR.CI load:** salience contests increase decision churn and throughput burden
-- **B_C tightening:** increased cognitive/coordination load raises effective complexity burden
-- **Exit signaling distortion:** altered beliefs about feasibility/risks of exit (via information asymmetry), without changing objective exit options X
+- **`COR.PHI` shifts:** perceived asymmetry/manipulation can erode COR.PHI_proc; overload can erode COR.PHI_exp
+- **`COR.THETA`/`COR.CI` load:** salience contests increase decision churn and throughput burden
+- **B_C (`BOUNDS.B_C`) tightening:** increased cognitive/coordination load raises effective complexity burden
+- **Exit (`COR.X`)signaling distortion:** altered beliefs about feasibility/risks of exit (via information asymmetry), without changing objective exit options X
 
 ---
 
@@ -188,7 +188,7 @@ Downstream consequences are described as regime-conditional outcomes of coupled 
 
 Define:
 - \(v_I(\sigma,t)\): effective propagation velocity of salient tokens over \(\mathcal{G}(\sigma,t)\)
-- \(v_C(\sigma,t)\): correction/verification velocity (bounded by E_τ, COR.THETA, CI_load)
+- \(v_C(\sigma,t)\): correction/verification velocity (bounded by E_τ, `COR.THETA`, CI_load)
 - \(L_G(\sigma,t)\): decision latency of key governing groups (Γ_G component; referenced here as an external parameter)
 
 High-risk regime when:
@@ -211,7 +211,7 @@ The field becomes destabilizing when:
 - attention scarcity is high (topic concentration ↑)
 - speed mismatch \(v_I \gg v_C\)
 - penalty gradients are asymmetric (selective suppression/penalty association visibility ↑)
-- COR.KAPPA is already compressed (especially COR.KAPPA_velocity/COR.KAPPA_threat elevated)
+- `COR.KAPPA` is already compressed (especially κ_velocity/κ_threat elevated)
 - topology is highly modular or highly centralized (either can yield monoculture dynamics)
 - E_τ is low and CI_load is high
 
@@ -230,10 +230,10 @@ The field becomes destabilizing when:
   - Signature: high message uniformity across independent actors without evidence of coordinated governance (do not infer intent)
 
 - **Threat priming spiral**
-  - Signature: COR.KAPPA_threat rises; h_moral rises; violence-adjacent tokens dominate; reintegration signals collapse
+  - Signature: κ_threat rises; h_moral rises; violence-adjacent tokens dominate; reintegration signals collapse
 
 - **Legitimacy erosion via perceived manipulation**
-  - Signature: COR.PHI_proc declines alongside rising control-surface visibility and asymmetric penalty gradients
+  - Signature: φ_proc declines alongside rising control-surface visibility and asymmetric penalty gradients
 
 ---
 
@@ -244,7 +244,7 @@ The field becomes destabilizing when:
   - salience spikes: fast
   - penalty association persistence: medium
   - narrative decay: slow when \(\mathcal{G}(\sigma,t)\) and \(U_I\) are stable
-- **Hysteresis:** once COR.KAPPA collapses or COR.H hardens, identical \(U_I\) and Π_I conditions yield stronger downstream forcing (path dependence).
+- **Hysteresis:** once `COR.KAPPA` collapses or `COR.H` hardens, identical \(U_I\) and Π_I conditions yield stronger downstream forcing (path dependence).
 
 ---
 

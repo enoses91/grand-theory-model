@@ -1,12 +1,12 @@
-# O.2.FIELD.MARKET
+# FIELDS.MARKET.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.MARKET
+- **O_ID:** FIELDS.MARKET
 - **Name:** Market Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes allocation, exchange, contracting, price signaling, and capital formation as a distributed coordination field over topology 𝒢; governs how surplus (E) is generated, allocated, and transformed into capacity (COR.THETA) and exit (X) without encoding ideology, welfare, or intent.
+- **Role:** Encodes allocation, exchange, contracting, price signaling, and capital formation as a distributed coordination field over topology 𝒢 (`COR.STATE.G`); governs how surplus (E, `COR.E`) is generated, allocated, and transformed into capacity (θ, `COR.THETA`) and exit (`COR.X`) without encoding ideology, welfare, or intent.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
@@ -21,13 +21,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; conditions market thickness, feasible contract complexity, and clearing speed)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; conditions market thickness, feasible contract complexity, and clearing speed, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - The Market Field is an **operator over distributions of prices, contracts, and claims**.
 - It contains **no agents, no preferences, no intent, and no welfare function**.
-- Observed allocations, prices, or crises **do not imply motive or design**; they arise endogenously from Π_M and U_M under enforceability, topology, and surplus constraints.
+- Observed allocations, prices, or crises **do not imply motive or design**; they arise endogenously from Π_M (`OCF.OPERATOR.PI_FIELD`) and U_M (`OCF.CONTROL_SURFACE.U`) under enforceability, topology, and surplus constraints.
 
 ---
 
@@ -71,7 +71,7 @@ These are **coordination signals and constraints**, not welfare outcomes.
 
 The quasi-conserved quantity is **claim structure relative to real surplus**:
 
-- claims and obligations are bounded by underlying surplus capacity E
+- claims and obligations are bounded by underlying surplus capacity `COR.E`
 - financial expansion reallocates claims faster than surplus can adjust
 - divergence between claims and E produces fragility
 
@@ -140,36 +140,36 @@ Destabilization is structural, not moral.
 
 ### 5.1 Upstream dependencies
 
-- **E:** real surplus base for production and investment
-- **COR.THETA:** governance execution affecting contract reliability
-- **COR.PHI:** legitimacy stabilizing expectations and voluntary compliance
-- **COR.CI:** institutional inertia affecting entry, restructuring, and reform speed
+- **`COR.E`:** real surplus base for production and investment
+- **`COR.THETA`:** governance execution affecting contract reliability
+- **`COR.PHI`:** legitimacy stabilizing expectations and voluntary compliance
+- **`COR.CI`:** institutional inertia affecting entry, restructuring, and reform speed
 - **Topology \(\mathcal{G}(\sigma,t)\):** thickness, concentration, segmentation
-- **Information Field:** price discovery, expectation formation, narrative risk premia
+- **Information Field (`FIELDS.INFORMATION`):** price discovery, expectation formation, narrative risk premia
 
 ### 5.2 Bounded forcing into metric and state variables
 
 Market dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Surplus (E):**
+- **Surplus (`COR.E`):**
 \[
 \partial_t E = \ldots + J_E(\rho_M,\Pi_M,U_M;\sigma)
 \]
 (misalallocation or productivity amplification)
 
-- **Capacity (COR.THETA):**
+- **Capacity (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_M,\Pi_M,U_M;\sigma)
 \]
 (crisis management load, bailout and control overhead)
 
-- **Exit / Mobility (X):**
+- **Exit / Mobility (`COR.X`):**
 \[
 \partial_t X = \ldots + J_X(\rho_M,\Pi_M,U_M;\sigma)
 \]
 (capital mobility, labor relocation, firm exit/entry dynamics)
 
-- **Cognitive load (COR.KAPPA_load):**
+- **Cognitive load (κ_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_M,\Pi_M,U_M;\sigma)
 \]
@@ -179,9 +179,9 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 
 ### 5.3 Coupling into Bounds
 
-- **B_C:** compliance and licensing regimes tighten coordination feasibility
-- **B_COR.PHI:** perceived unfairness or capture tightens legitimacy feasibility
-- **B_X:** capital controls or illiquidity bind exit
+- **`BOUNDS.B_C`:** compliance and licensing regimes tighten coordination feasibility
+- **`BOUNDS.B_PHI`:** perceived unfairness or capture tightens legitimacy feasibility
+- **`BOUNDS.B_X`:** capital controls or illiquidity bind exit
 
 No coupling implies intent.
 
@@ -192,8 +192,8 @@ No coupling implies intent.
 ### 6.1 High-risk regimes (scale-aware)
 
 The Market Field destabilizes when:
-- contract enforcement becomes unreliable (COR.THETA↓)
-- rule and compliance complexity rise (COR.CI↑, B_C tightens)
+- contract enforcement becomes unreliable (`COR.THETA`↓)
+- rule and compliance complexity rise (`COR.CI`↑, `BOUNDS.B_C` tightens)
 - expectations become narrative-dominated
 - credit becomes procyclical and fragile
 - rents dominate productive returns
@@ -205,7 +205,7 @@ The Market Field destabilizes when:
 - **Rent lock-in:** incumbents protected; dynamism collapses
 - **Debt overhang / claim inflation:** claims exceed surplus; defaults cascade
 - **Capture spiral:** control surfaces favor incumbents, eroding COR.PHI and COR.THETA
-- **Exit amplification:** capital/labor flight tightens B_X
+- **Exit amplification:** capital/labor flight tightens `BOUNDS.B_X`
 
 ---
 
@@ -215,7 +215,7 @@ The Market Field destabilizes when:
 - **Time constants:**
   - prices: fast
   - investment and capital stock: slow
-  - institutional repair (COR.THETA, COR.PHI): slower than collapse
+  - institutional repair (`COR.THETA`, `COR.PHI`): slower than collapse
 - **Hysteresis:** firm destruction, trust loss, and network decay slow recovery
 
 ---
@@ -250,7 +250,7 @@ Asset prices alone are insufficient.
 Invalid uses include:
 - treating markets as ideology
 - assuming prices imply truth or fairness
-- conflating financial claims with real surplus E
+- conflating financial claims with real surplus `COR.E`
 - ignoring enforcement and settlement reliability
 - inferring intent from allocation outcomes
 

@@ -1,8 +1,8 @@
-# O.2.RLM.INFORMATION_TOPOLOGY
+# RLM.INFORMATION_TOPOLOGY.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.RLM.INFORMATION_TOPOLOGY
+- **O_ID:** RLM.INFORMATION_TOPOLOGY
 - **Name:** Information–Topology (Amplification & Convergence Mechanism)
 - **Order:** 2nd
 - **Kind:** Regime-Local Mechanism (RLM)
@@ -20,8 +20,8 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; determines correlation length and amplification reach)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; determines correlation length and amplification reach, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in (`COR.STATE.G`)
 
 **Non-Agency Constraint (hard)**
 - Information–Topology is a **mechanism**, not an actor or pattern.
@@ -103,24 +103,24 @@ Key properties:
 
 ## 4. Conditioning Variables (Regime Dependence)
 
-### 4.1 COR.KAPPA — Cognitive Compression
-High COR.KAPPA compression increases:
+### 4.1 `COR.KAPPA` — Cognitive Compression
+High `COR.KAPPA` compression increases:
 - sloganization
 - frame dominance
 - loss of nuance and correction
 
-### 4.2 COR.H — Boundary Hardness
-High COR.H increases:
+### 4.2 `COR.H` — Boundary Hardness
+High `COR.H` increases:
 - in-group reinforcement
 - out-group penalty salience
 - fragmentation across modules
 
-### 4.3 𝒢 — Topology
+### 4.3 `COR.STATE.G` — Topology
 - Centralized hubs → rapid convergence
 - Modular networks → polarized convergence
 - Sparse networks → weak amplification
 
-### 4.4 W_{G→U} — Weighted Access
+### 4.4 W_{G→U} — Weighted Access (`OCF.OPERATOR.WEIGHTED_ACCESS`)
 Group-weighted access to information-relevant control surfaces (media, platforms, institutions)
 modulates **which signals enter Π_I with high visibility**, without implying coordination.
 
@@ -130,25 +130,25 @@ modulates **which signals enter Π_I with high visibility**, without implying co
 
 Information–Topology induces **bounded forcing** into downstream variables:
 
-- **Cognitive compression (COR.KAPPA):**
+- **Cognitive compression κ (`COR.KAPPA`):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (salience overload, simplification pressure)
 
-- **Boundary hardness (COR.H):**
+- **Boundary hardness h (`COR.H`):**
 \[
 \partial_t h = \ldots + J_h^{(+)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (identity reinforcement, exclusion dynamics)
 
-- **Legitimacy (COR.PHI):**
+- **Legitimacy φ (`COR.PHI`):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (perceived asymmetry, inconsistency exposure)
 
-- **Governance capacity load (COR.THETA):**
+- **Governance capacity load θ (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
@@ -165,7 +165,7 @@ The mechanism becomes active when **all** hold:
 1. Topology supports clustering or central amplification
 2. Attention is scarce relative to signal volume
 3. Penalty gradients exist for deviation
-4. COR.KAPPA is compressed
+4. `COR.KAPPA` is compressed
 5. Propagation speed exceeds correction speed
 
 Absent these, information diffusion remains pluralistic and weakly correlated.

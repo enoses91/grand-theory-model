@@ -1,8 +1,8 @@
-# O.3.OBJECT.CLUSTER
+# OBJECT.CLUSTER
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.OBJECT.CLUSTER
+- **O_ID:** OBJECT.CLUSTER
 - **Name:** Cluster
 - **Order:** 3rd
 - **Kind:** Domain Object (Salience / Alignment Object)
@@ -19,13 +19,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (clusters are undefined without explicit σ)
-- **Topology (indirect):** 𝒢(σ,t) via Information / Culture field propagation
+- **Scale:** σ (clusters are undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
+- **Topology (indirect):** 𝒢(σ,t) via Information / Culture field propagation, defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - A Cluster has **no intent, no preferences, no decision procedure, no governance, no access weights, and no execution capacity**.
 - A Cluster **cannot act**, even indirectly.
-- Any claim assigning agency, strategy, or responsibility to a cluster is invalid unless routed through Groups (O.3.OBJECT.GROUP) and Γ_G.
+- Any claim assigning agency, strategy, or responsibility to a cluster is invalid unless routed through Groups (`OBJECT.GROUP`) and Γ_G (`COR.G`).
 
 ---
 
@@ -81,9 +81,9 @@ Membership is probabilistic, not categorical.
 ### 3.2 Do *not* carry
 - intent
 - goals
-- χ (coherence)
-- Γ_G
-- W (access weights)
+- χ (coherence, `COR.CHI`)
+- Γ_G (`COR.G`)
+- W (access weights, `OCF.OPERATOR.WEIGHTED_ACCESS`)
 - norms or obligations
 - enforcement capacity
 
@@ -116,11 +116,11 @@ Salience is **externally induced**, not internally generated.
 
 Clusters interact with fields **only as substrates**, never as operators:
 
-- **Information Field:** amplifies visibility and apparent convergence
-- **Culture / Identity Field:** provides labels and symbolic boundaries
-- **Market Field:** responds with segmentation and targeting
-- **Governance Field:** may reference clusters rhetorically or statistically
-- **Violence Field:** clusters may be *targets* of coercion, never wielders
+- **Information Field (`FIELDS.INFORMATION`):** amplifies visibility and apparent convergence
+- **Culture / Identity Field (`FIELDS.CULTURE_IDENTITY`):** provides labels and symbolic boundaries
+- **Market Field (`FIELDS.MARKET`):** responds with segmentation and targeting
+- **Governance Field (`FIELDS.GOVERNANCE`):** may reference clusters rhetorically or statistically
+- **Violence Field (`FIELDS.VIOLENCE`):** clusters may be *targets* of coercion, never wielders
 
 Clusters do not inject forcing terms.
 
@@ -131,8 +131,8 @@ Clusters do not inject forcing terms.
 ### 6.1 RLM interaction (non-causal)
 
 Clusters are **inputs** to:
-- O.2.RLM.INFORMATION_TOPOLOGY
-- O.2.RLM.EXIT_LOCKIN (via salience-conditioned perception)
+-`RLM.INFORMATION_TOPOLOGY`
+- `RLM.EXIT_LOCKIN` (via salience-conditioned perception)
 
 But do not constitute mechanisms themselves.
 
@@ -142,11 +142,11 @@ But do not constitute mechanisms themselves.
 
 Clusters can participate in higher-order patterns, e.g.:
 
-- **O.3.PATTERN.SALIENCE_DRIVEN_BASIN_HARDENING**
+- **`DPI.SALIENCE_DRIVEN_BASIN_HARDENING`**
 
 Only when:
 - salience is sustained,
-- COR.KAPPA and COR.H are elevated,
+- `COR.KAPPA` and `COR.H` are elevated,
 - topology supports reinforcement.
 
 The **pattern** is causal; the cluster remains descriptive.

@@ -1,8 +1,8 @@
-# O.3.AXIS.CONSCIENTIOUSNESS.md
+# AXIS.CONSCIENTIOUSNESS.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.CONSCIENTIOUSNESS`
+* **O_ID:** `AXIS.CONSCIENTIOUSNESS`
 * **Name:** Conscientiousness (C)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -11,7 +11,7 @@
 * **Version:** 1.0
 * **Changelog:**
 
-  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to execution reliability, COR.THETA utilization, COR.CI ratchets, and governance execution without collapsing into competence, virtue, or intent.
+  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to execution reliability, `COR.THETA` utilization, `COR.CI` ratchets, and governance execution without collapsing into competence, virtue, or intent.
 
 ---
 
@@ -28,9 +28,9 @@ Conscientiousness:
 It does **not** encode:
 
 * intelligence or cognitive capacity (that is **g**)
-* legitimacy or trust (that is **COR.PHI**)
-* authority or power (that is **Access Weights**)
-* group agency (that requires **Group + χ**)
+* legitimacy or trust (that is **`COR.PHI`**)
+* authority or power (that is **Access Weights, `OCF.OPERATOR.WEIGHTED_ACCESS`**)
+* group agency (that requires **Group + χ**, `OBJECT.GROUP` and `COR.CHI`)
 
 ---
 
@@ -96,32 +96,32 @@ Conscientiousness **cannot override capacity constraints**.
 
 ## 5. Interaction with Core Objects
 
-### 5.1 With COR.THETA (Throughput / State Capacity)
+### 5.1 With `COR.THETA` (Throughput / State Capacity)
 
 * High (c_i) individuals **increase effective COR.THETA utilization**
 * Low (c_i) individuals increase variance and error load
-* COR.THETA aggregates over distributions of c, not best cases
+* `COR.THETA` aggregates over distributions of c, not best cases
 
-Low COR.THETA regimes amplify the costs of low Conscientiousness.
-
----
-
-### 5.2 With COR.CI (Institutional Accumulation)
-
-* High Conscientiousness + high COR.CI → procedural over-compliance risk
-* Low Conscientiousness + high COR.CI → enforcement drift and rule gaming
-* COR.CI ratchets are sensitive to tail behavior in c
-
-Conscientiousness interacts with COR.CI **nonlinearly**.
+Low `COR.THETA` regimes amplify the costs of low Conscientiousness.
 
 ---
 
-### 5.3 With Governance Execution (RLM)
+### 5.2 With `COR.CI` (Institutional Accumulation)
+
+* High Conscientiousness + high `COR.CI` → procedural over-compliance risk
+* Low Conscientiousness + high `COR.CI` → enforcement drift and rule gaming
+* `COR.CI` ratchets are sensitive to tail behavior in c
+
+Conscientiousness interacts with `COR.CI` **nonlinearly**.
+
+---
+
+### 5.3 With Governance Execution (RLM, `RLM.GOVERNANCE_EXECUTION`)
 
 * Execution failure may result from:
 
-  * COR.THETA binding (capacity)
-  * COR.CI dominance (procedural drag)
+  * `COR.THETA` binding (capacity)
+  * `COR.CI` dominance (procedural drag)
   * **low c variance** (human follow-through failure)
 
 Conscientiousness explains failure **without invoking intent or sabotage**.

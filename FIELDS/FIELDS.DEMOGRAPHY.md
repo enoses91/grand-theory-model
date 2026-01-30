@@ -1,17 +1,17 @@
-# O.2.FIELD.DEMOGRAPHY
+# FIELDS.DEMOGRAPHY.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.DEMOGRAPHY
+- **O_ID:** FIELDS.DEMOGRAPHY
 - **Name:** Demography Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes population structure and its evolution over time as a coordination-constraining field over topology 𝒢; governs cohort replacement, dependency ratios, migration, assimilation, and variance effects that bound surplus (E), capacity (COR.THETA), legitimacy (COR.PHI), and feasible regime trajectories without encoding preferences or intent.
+- **Role:** Encodes population structure and its evolution over time as a coordination-constraining field over topology 𝒢 (`COR.STATE.G`); governs cohort replacement, dependency ratios, migration, assimilation, and variance effects that bound surplus (E, `COR.E`), capacity (θ, `COR.THETA`), legitimacy (φ `COR.PHI`), and feasible regime trajectories without encoding preferences or intent.
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; demographic state distribution, transitions, control surfaces, and failure modes.
-  - v1.1: Clarified assimilation lag τ, variance dominance, and irreversibility; strengthened couplings to COR.THETA, COR.KAPPA, COR.H, and B_D.
+  - v1.1: Clarified assimilation lag τ, variance dominance, and irreversibility; strengthened couplings to `COR.THETA`, `COR.KAPPA`, `COR.H`, and B_D (`BOUNDS.B_D`).
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed implied agency; aligned transition language to OCF-safe operator form.
 
 ---
@@ -20,13 +20,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (population/system scale only; no individual-level agency)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (population/system scale only; no individual-level agency, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - The Demography Field is an **operator over population distributions and rates**.
 - It contains **no agents, no intentions, no preferences, and no ideology**.
-- Observed demographic outcomes (aging, migration, fertility change) **do not imply choice or design**; they arise from Π_D and U_D under biological, temporal, and structural constraints.
+- Observed demographic outcomes (aging, migration, fertility change) **do not imply choice or design**; they arise from Π_D (`OCF.OPERATOR.PI_FIELD`) and U_D (`OCF.CONTROL_SURFACE.U`) under biological, temporal, and structural constraints.
 
 ---
 

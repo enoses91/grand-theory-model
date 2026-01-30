@@ -1,4 +1,4 @@
-# STATE.G
+# COR.STATE.G.md
 
 ## COR OBJECT HEADER
 

@@ -44,15 +44,15 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 **Fields and metrics**
 
-- Governance field (Gv): enforcement regime, backlog, queueing dynamics
-- COR.PHI: procedural legitimacy (predictability), compliance willingness
-- COR.THETA: throughput and execution capacity under load
-- COR.KAPPA: compression under uncertainty and time poverty
+- Governance field (Gv. `FIELDS.GOVERNANCE`): enforcement regime, backlog, queueing dynamics
+- `COR.PHI`: procedural legitimacy (predictability), compliance willingness
+- `COR.THETA`: throughput and execution capacity under load
+- `COR.KAPPA`: compression under uncertainty and time poverty
 
 **Directionality and lag**
 
 - Enforcement shifts can be rapid; legitimacy recovery is slow and asymmetric
-- Compliance load rises quickly; COR.THETA_eff declines with delay via backlog accumulation
+- Compliance load rises quickly; θ_eff (`COR.THETA`) declines with delay via backlog accumulation
 
 **Regime/scale bounds**
 
@@ -79,16 +79,16 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - Promises/commitments exceed feasible throughput
 - Visible delivery failures accumulate (promise gap widens)
-- Procedural legitimacy decays (COR.PHI↓)
+- Procedural legitimacy decays (`COR.PHI`↓)
 - Compliance falls; enforcement burden rises
-- Rising burden further reduces COR.THETA_eff, increasing failures
+- Rising burden further reduces θ_eff, increasing failures
 
 **Fields and metrics**
 
-- COR.PHI: legitimacy and consent
-- COR.THETA: execution throughput and backlog
-- I-field: visibility/amplification of failures
-- Gv: backlog/queueing and service experience feedback
+- `COR.PHI`: legitimacy and consent
+- `COR.THETA`: execution throughput and backlog
+- I-field (`FIELDS.INFORMATION`): visibility/amplification of failures
+- Gv (`FIELDS.GOVERNANCE`): backlog/queueing and service experience feedback
 
 **Directionality and lag**
 
@@ -98,17 +98,17 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Regime/scale bounds**
 
 - Large-scale institutions with high visibility and low slack
-- Stronger where I-field gain is high and alternatives are salient
+- Stronger where I-field (`FIELDS.INFORMATION`) gain is high and alternatives are salient
 
 **Known breaks / alternatives**
 
-- De-scope promises or sequence them after COR.THETA repair
+- De-scope promises or sequence them after `COR.THETA` repair
 - Improve throughput before increasing obligations
 
 **Common misuses**
 
 - Treating legitimacy as “messaging” only
-- Assuming more enforcement can substitute for COR.PHI
+- Assuming more enforcement can substitute for `COR.PHI`
 
 **Status:** `promoted`  
 **Confidence:** `high`
@@ -121,16 +121,16 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Steps**
 
 - Administrative gates and rules increase cognitive/temporal load
-- Time poverty (E_τ↓) increases COR.KAPPA
-- COR.KAPPA reduces decision quality and increases error/rewind
-- COR.THETA_eff declines; backlog rises; execution collapses
+- Time poverty (E_τ↓) increases `COR.KAPPA`
+- `COR.KAPPA` reduces decision quality and increases error/rewind
+- θ_eff declines; backlog rises; execution collapses
 
 **Fields and metrics**
 
-- COR.THETA: execution capacity
-- COR.KAPPA: compression
+- `COR.THETA`: execution capacity
+- `COR.KAPPA`: compression
 - E_τ: temporal surplus
-- Gv: backlog and procedural gates
+- Gv (`FIELDS.GOVERNANCE`): backlog and procedural gates
 
 **Directionality and lag**
 
@@ -160,27 +160,27 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 **Steps**
 
-- I-field amplification increases salience load and conflict visibility
-- COR.KAPPA rises; causal discrimination falls
-- COR.H rises via identity salience and purity incentives
+- I-field (`FIELDS.INFORMATION`) amplification increases salience load and conflict visibility
+- `COR.KAPPA` rises; causal discrimination falls
+- `COR.H` rises via identity salience and purity incentives
 - Overton window narrows; discourse policing increases
 
 **Fields and metrics**
 
-- I-field: amplification and attention density
-- COR.KAPPA: compression
-- COR.H: hardening and hysteresis
-- COR.PHI: procedural legitimacy vs moral imbalance
+- I-field (`FIELDS.INFORMATION`): amplification and attention density
+- `COR.KAPPA`: compression
+- `COR.H`: hardening and hysteresis
+- `COR.PHI`: procedural legitimacy vs moral imbalance
 
 **Directionality and lag**
 
-- COR.KAPPA responds quickly; COR.H responds slower but is hysteretic
-- Overton narrowing can happen rapidly once COR.H crosses threshold
+- `COR.KAPPA` responds quickly; `COR.H` responds slower but is hysteretic
+- Overton narrowing can happen rapidly once `COR.H` crosses threshold
 
 **Regime/scale bounds**
 
 - High-velocity information environments
-- Stronger under low pluralism and contested COR.PHI-procedural
+- Stronger under low pluralism and contested φ-procedural
 
 **Known breaks / alternatives**
 
@@ -202,21 +202,21 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - Payment delays / procurement failures reduce vendor willingness
 - Service quality degrades; outages and delays increase
-- Backlog accumulates; COR.THETA_eff declines
-- Visible failures reduce COR.PHI and increase enforcement/triage burdens
+- Backlog accumulates; θ_eff declines
+- Visible failures reduce `COR.PHI` and increase enforcement/triage burdens
 
 **Fields and metrics**
 
-- M-field: vendor response and exchange constraints
-- COR.THETA: execution/operations throughput
-- E: surplus and payment capacity
-- Gv: backlog/queue dynamics
-- I-field: visibility of failures
+- M-field (`FIELDS.MARKET`): vendor response and exchange constraints
+- `COR.THETA`: execution/operations throughput
+- `COR.E`: surplus and payment capacity
+- Gv (`FIELDS.GOVERNANCE`): backlog/queue dynamics
+- I-field (`FIELDS.INFORMATION`): visibility of failures
 
 **Directionality and lag**
 
 - Vendor refusal can be sudden; operational degradation compounds
-- COR.PHI decay lags but persists
+- `COR.PHI` decay lags but persists
 
 **Regime/scale bounds**
 
@@ -241,17 +241,17 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 **Steps**
 
-- Exit options (X) become cheaper/more attractive for high-capacity actors
+- Exit options (`COR.X`) become cheaper/more attractive for high-capacity actors
 - Voice declines; reform capacity falls
 - Institutions drift toward lower-throughput equilibria
 - Decline accelerates via selection effects (who remains)
 
 **Fields and metrics**
 
-- X: exit/mobility
-- COR.THETA: execution responsiveness
-- E: opportunity cost differentials
-- COR.CI: competence retention and institutional learning
+- `COR.X`: exit/mobility
+- `COR.THETA`: execution responsiveness
+- `COR.XE`: opportunity cost differentials
+- `COR.CI`: competence retention and institutional learning
 
 **Directionality and lag**
 
@@ -284,14 +284,14 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 - Positive outcomes are attributed to intent/technique
 - Negative outcomes are attributed to shocks or opponents
 - Asymmetric attribution blocks learning and honest measurement
-- COR.KAPPA/COR.H rise under moralized narratives, hardening basins
+- `COR.KAPPA`/`COR.H` rise under moralized narratives, hardening basins
 
 **Fields and metrics**
 
-- I-field: narrative selection and amplification
+- I-field (`FIELDS.INFORMATION`): narrative selection and amplification
 - MGA attribution error layer: agency inflation/erasure
-- COR.KAPPA: causal discrimination loss
-- COR.H: identity hardening
+- `COR.KAPPA`: causal discrimination loss
+- `COR.H`: identity hardening
 
 **Directionality and lag**
 
@@ -323,16 +323,16 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - Demographic shock (objective or perceived) increases identity salience
 - Topology shifts toward segregation / clustering
-- I-field reinforcement increases out-group threat salience
-- COR.H increases with hysteresis; polarization rises
+- I-field (`FIELDS.INFORMATION`) reinforcement increases out-group threat salience
+- `COR.H` increases with hysteresis; polarization rises
 
 **Fields and metrics**
 
-- D-field: demographic change distributions and salience
-- 𝒢: topology/segregation/broker mass
-- I-field: amplification
-- COR.H: hardening
-- COR.PHI: procedural legitimacy and pluralism
+- D-field (`FIELDS.DEMOGRAPHY`): demographic change distributions and salience
+- `COR.STATE.G`: topology/segregation/broker mass
+- I-field (`FIELDS.INFORMATION`): amplification
+- `COR.H`: hardening
+- `COR.PHI`: procedural legitimacy and pluralism
 
 **Directionality and lag**
 

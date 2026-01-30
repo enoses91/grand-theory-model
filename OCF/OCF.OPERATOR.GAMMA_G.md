@@ -23,7 +23,7 @@ It answers:
 > *Given a governance signal u(t), can group G produce coherent, externally meaningful action within Δt, and with what distortion?*
 
 Γ_G is **not**:
-- a metric element (not `COR.PHI`, `COR.THETA`, E, `COR.CI`, X)
+- a metric element (not `COR.PHI`, `COR.THETA`, `COR.E`, `COR.CI`, `COR.X`)
 - a field (not ρ_k, Π_k, U_k)
 - a group trait label (“good leadership,” “competence”)
 - an ideology proxy
@@ -118,7 +118,7 @@ If ideology/class/leadership appear to “explain” Γ_G, the analysis must sho
 - `COR.CI` (procedural inertia)
 - `COR.PHI` (legitimacy gating / voluntary compliance)
 - `COR.KAPPA`, `COR.H` (compression / boundary hardening effects)
-- topology 𝒢 (interface fragmentation)
+- topology `COR.STATE.G` (interface fragmentation)
 
 ---
 

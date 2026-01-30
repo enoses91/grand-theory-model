@@ -1,12 +1,12 @@
-# O.2.BOUND.B_D
+# BOUNDS.B_D
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.BOUND.B_D
+- **O_ID:** BOUNDS.B_D
 - **Name:** B_D (Demographic Feasible Bound)
 - **Order:** 2nd
 - **Kind:** Bound
-- **Role:** Constrains feasible demographic trajectories at scale σ on manifold 𝓜 given cohort timing, dependency ratios, variance structure, cultural distance, assimilation capacity, and irreducible time constants; violation forces degradation in execution capacity (COR.THETA), legitimacy (COR.PHI), and coordination stability independent of intent.
+- **Role:** Constrains feasible demographic trajectories at scale σ on manifold 𝓜 given cohort timing, dependency ratios, variance structure, cultural distance, assimilation capacity, and irreducible time constants; violation forces degradation in execution capacity (`COR.THETA`), legitimacy (`COR.PHI`), and coordination stability independent of intent.
 - **Status:** Canonical
 - **Version:** 1.1
 - **Changelog:**
@@ -19,7 +19,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (population/system scale only; B_D is undefined without explicit σ)
+- **Scale:** σ (population/system scale only; B_D is undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
 
 **Non-Agency Constraint (hard)**
 - B_D is a **structural feasibility constraint**, not a policy lever.
@@ -30,7 +30,7 @@
 
 ## 1. Base Definition (O⁰)
 
-**B_D is the feasibility bound that limits how population size, structure, and composition can change without structurally degrading execution capacity (COR.THETA), legitimacy (COR.PHI), or coordination stability.**
+**B_D is the feasibility bound that limits how population size, structure, and composition can change without structurally degrading execution capacity (`COR.THETA`), legitimacy (`COR.PHI`), or coordination stability.**
 
 Formally:
 
@@ -108,25 +108,25 @@ B_D binds only through **field-induced forcing**, not direct action.
 
 ### 4.1 Primary tightening channels
 
-- **Demography Field → COR.THETA**
+- **Demography Field (`FIELDS.DEMOGRAPHY`) → `COR.THETA`**
 \[
 J_\theta^{(-)}(\rho_D,\Pi_D,U_D;\sigma)
 \]
 (service load, integration burden, dependency drag)
 
-- **Demography Field → COR.PHI**
+- **Demography Field → `COR.PHI`**
 \[
 J_\phi^{(-)}(\rho_D,\Pi_D,U_D;\sigma)
 \]
 (perceived asymmetry, service congestion, rule stress)
 
-- **Demography Field → COR.KAPPA**
+- **Demography Field → `COR.KAPPA`**
 \[
 J_\kappa^{(-)}(\rho_D,\Pi_D,U_D;\sigma)
 \]
 (heterogeneity-induced complexity and cognitive load)
 
-- **Demography Field → X**
+- **Demography Field → `COR.X`**
 \[
 J_X^{(+)}(\rho_D,\Pi_D,U_D;\sigma)
 \]
@@ -140,19 +140,19 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 
 ### 5.1 Upstream dependencies
 
-- **COR.THETA:** service provision and integration capacity
-- **COR.KAPPA:** tolerance for heterogeneity and coordination load
-- **COR.H:** boundary hardness amplifying demographic stress
-- **𝒢:** segregation vs mixing topology
-- **E:** surplus available for dependents and assimilation
+- **`COR.THETA`:** service provision and integration capacity
+- **`COR.KAPPA`:** tolerance for heterogeneity and coordination load
+- **`COR.H`:** boundary hardness amplifying demographic stress
+- **`COR.STATE.G`** segregation vs mixing topology
+- **`COR.E`:** surplus available for dependents and assimilation
 - **τ:** irreducible assimilation and cohort timing constants
 
 ### 5.2 Cross-bound effects
 
-- Binding **B_D → tightens B_COR.PHI** (legitimacy erosion)
+- Binding **B_D → tightens B_φ** (legitimacy erosion)
 - Binding **B_D → tightens B_C** (service and coordination overload)
 - Binding **B_D + high X → sorting, enclaves, delayed collapse**
-- Binding **B_D + COR.H↑ → rapid basin hardening**
+- Binding **B_D + h↑ → rapid basin hardening**
 
 ---
 
@@ -171,8 +171,8 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 
 - **Assimilation overload:** τ exceeds institutional tolerance
 - **Fiscal mirage:** short-term gains mask long-term dependency costs
-- **Legitimacy fracture:** COR.PHI declines due to perceived asymmetry
-- **Enclave lock-in:** Seg ↑, COR.H ↑, future feasibility shrinks
+- **Legitimacy fracture:** `COR.PHI` declines due to perceived asymmetry
+- **Enclave lock-in:** Seg ↑, `COR.H` ↑, future feasibility shrinks
 - **Intergenerational debt:** demographic fixes worsen future B_D
 
 No failure mode implies intent.

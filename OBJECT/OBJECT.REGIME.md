@@ -1,8 +1,8 @@
-# O.3.OBJECT.REGIME
+# OBJECT.REGIME
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.OBJECT.REGIME
+- **O_ID:** OBJECT.REGIME
 - **Name:** Regime
 - **Order:** 3rd
 - **Kind:** Domain Object (System Configuration / Feasibility Envelope)
@@ -19,7 +19,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (a Regime is undefined without explicit σ)
+- **Scale:** σ (a Regime is undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
 - **Time:** t, with persistence constraint
 
 **Non-Agency Constraint (hard)**
@@ -141,18 +141,18 @@ Claims omitting \(B_{dom}\) or Δt are invalid.
 
 ## 6. Field Activation Set
 
-A Field is **active** in a Regime if its propagation operator Π_k produces correlation lengths exceeding threshold at scale σ.
+A Field is **active** in a Regime if its propagation operator Π_k (`OCF.OPERATOR.PI_FIELD`) produces correlation lengths exceeding threshold at scale σ.
 
 Operational signatures:
 
-- **Information active:** salience cascades, narrative synchronization
-- **Governance active:** backlog, enforcement asymmetry dominates
-- **Market active:** price/wage/incentive dynamics dominate behavior
-- **Violence active:** coercion or threat conditions behavior beyond law
-- **Demography active:** cohort structure and flows dominate capacity/COR.PHI
-- **Technology active:** maturity or adoption friction dominates trajectories
-- **Culture/Identity active:** boundary enforcement and identity salience dominate
-- **Education/Knowledge active:** skill pipeline mismatch dominates outcomes
+- **Information (`FIELDS.INFORMATION`) active:** salience cascades, narrative synchronization
+- **Governance (`FIELDS.GOVERNANCE`) active:** backlog, enforcement asymmetry dominates
+- **Market (`FIELDS.MARKET`) active:** price/wage/incentive dynamics dominate behavior
+- **Violence (`FIELDS.VIOLENCE`) active:** coercion or threat conditions behavior beyond law
+- **Demography (`FIELDS.DEMOGRAPHY`) active:** cohort structure and flows dominate capacity/COR.PHI
+- **Technology (`FIELDS.TECHNOLOGY`) active:** maturity or adoption friction dominates trajectories
+- **Culture/Identity (`FIELDS.CULTURE_IDENTITY`) active:** boundary enforcement and identity salience dominate
+- **Education/Knowledge (`FIELDS.EDUCATION_KNOWLEDGE`) active:** skill pipeline mismatch dominates outcomes
 
 \(\mathcal{F}_{act}\) must be explicitly enumerated.
 
@@ -163,9 +163,9 @@ Operational signatures:
 Regimes are characterized by **coupling stiffness patterns**:
 
 - flattened response of outcomes to marginal policy inputs,
-- steep response of COR.PHI or V to small shocks,
-- COR.CI-driven inertial drag,
-- COR.KAPPA–COR.H feedback loops via Information–Topology.
+- steep response of `COR.PHI` or V (`FIELDS.VIOLENCE`) to small shocks,
+- `COR.CI`-driven inertial drag,
+- `COR.KAPPA`–`COR.H` feedback loops via Information–Topology (`FIELDS.INFORMATION`).
 
 These are **descriptive properties**, not teleological stages.
 
@@ -192,9 +192,9 @@ Interventions with duration < relevant τ are **null by construction**.
 
 Regime conditions:
 
-- **which RLMs are active** (Governance Execution, Exit–Lock-In, Information–Topology),
+- **which RLMs are active** (`RLM.GOVERNANCE_EXECUTION`, `RLM.EXIT_LOCKIN`, `RLM.INFORMATION_TOPOLOGY`),
 - **how strongly forcing terms J_z(·) transmit**, and
-- **whether control surfaces U_k have leverage or saturate**.
+- **whether control surfaces U_k (`OCF.CONTROL_SURFACE.U`) have leverage or saturate**.
 
 Regime does not replace Fields or RLMs; it **indexes their effectiveness**.
 
@@ -225,13 +225,13 @@ O_R
 \]
 
 Evidence bundles must span:
-- throughput/backlog (COR.THETA),
+- throughput/backlog (`COR.THETA`),
 - enforcement asymmetry (G/V),
-- exit and flight (X),
-- demographic structure (D),
-- salience propagation (I),
-- institutional inertia (COR.CI),
-- technology friction (T).
+- exit and flight (`COR.X`),
+- demographic structure (D. `FIELDS.DEMOGRAPHY`),
+- salience propagation (I, `FIELDS.INFORMATION`),
+- institutional inertia (`COR.CI`),
+- technology friction (T, `FIELDS.TECHNOLOGY`).
 
 Each regime estimate must include:
 - resolution r,

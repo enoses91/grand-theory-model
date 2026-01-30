@@ -1,8 +1,8 @@
-# O.3.AXIS.EMOTIONALITY.md
+# AXIS.EMOTIONALITY.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.EMOTIONALITY`
+* **O_ID:** `AXIS.EMOTIONALITY`
 * **Name:** Emotionality (E)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -11,7 +11,7 @@
 * **Version:** 1.0
 * **Changelog:**
 
-  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to threat perception, security dynamics, COR.KAPPA compression, and Violence/Governance fields while prohibiting moralization or ideological inference.
+  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to threat perception, security dynamics, `COR.KAPPA` compression, and Violence/Governance fields while prohibiting moralization or ideological inference.
 
 ---
 
@@ -116,7 +116,7 @@ Trait effects are **context-dependent**, not deterministic.
 * High Emotionality populations:
 
   * are more sensitive to perceived security failure (E_s↓)
-  * tighten B_COR.PHI faster under threat asymmetry
+  * tighten B_φ faster under threat asymmetry
 * Low Emotionality populations:
 
   * tolerate risk longer,
@@ -126,9 +126,9 @@ This explains heterogeneous political responses to identical threat levels.
 
 ---
 
-### 5.3 With COR.KAPPA (Cognitive Compression)
+### 5.3 With `COR.KAPPA` (Cognitive Compression)
 
-* Threat salience + high Emotionality accelerates COR.KAPPA compression
+* Threat salience + high Emotionality accelerates `COR.KAPPA` compression
 * Simplified narratives, heuristics, and authority-seeking increase
 * This is a **mechanical response**, not manipulation per se
 

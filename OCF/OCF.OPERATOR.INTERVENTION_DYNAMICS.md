@@ -1,8 +1,8 @@
-# O.4.OPERATOR.INTERVENTION_DYNAMICS
+# OCF.OPERATOR.INTERVENTION_DYNAMICS
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.4.OPERATOR.INTERVENTION_DYNAMICS
+- **O_ID:** `OCF.OPERATOR.INTERVENTION_DYNAMICS`
 - **Name:** Intervention Dynamics (Technique Composition)
 - **Order:** 4th
 - **Kind:** Operator (Accounting / Composition; Non-Causal)
@@ -20,7 +20,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (explicit for every invocation)
+- **Scale:** σ (explicit for every invocation, defined in `OCF.DOMAIN.SCALE`)
 - **Time:** t, Δt
 
 **Non-Agency Constraint (hard)**

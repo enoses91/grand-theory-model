@@ -1,12 +1,12 @@
-# O.3.PATTERN.SALIENCE_DRIVEN_BASIN_HARDENING
+# DPI.SALIENCE_DRIVEN_BASIN_HARDENING.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.3.PATTERN.SALIENCE_DRIVEN_BASIN_HARDENING
+- **O_ID:** DPI.SALIENCE_DRIVEN_BASIN_HARDENING
 - **Name:** Salience-Driven Basin Hardening (SDBH)
 - **Order:** 3rd (Dynamic Pattern)  
 - **Kind:** Pattern (Meta-Analytic; Non-Causal)
-- **Role:** Descriptive dynamic pattern in which Information-field salience and penalty gradients, interacting with cognitive compression (COR.KAPPA↑) and boundary hardness (COR.H↑), drive ideological basins to harden, narrow, and separate across scale σ on manifold 𝓜, without requiring first-order regime-variable shifts or agentic coordination.
+- **Role:** Descriptive dynamic pattern in which Information-field salience and penalty gradients, interacting with cognitive compression (`COR.KAPPA`↑) and boundary hardness (`COR.H`↑), drive ideological basins to harden, narrow, and separate across scale σ on manifold 𝓜, without requiring first-order regime-variable shifts or agentic coordination.
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
@@ -20,8 +20,8 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (pattern is undefined without explicit σ)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (pattern is undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - SDBH is a **pattern**, not a mechanism, actor, or force.
@@ -37,8 +37,8 @@
 
 - heightened **salience** in the Information Field,
 - combined with **penalty gradients** for deviation,
-- interacting with **cognitive compression** (COR.KAPPA↑),
-- and **boundary hardness** (COR.H↑),
+- interacting with **cognitive compression** (`COR.KAPPA`↑),
+- and **boundary hardness** (`COR.H`↑),
 
 produces **hardening, narrowing, and separation of ideological basins** at scale σ.
 
@@ -60,10 +60,10 @@ It does **not** answer:
 
 A typical SDBH configuration exhibits:
 
-1. **Salience shocks** enter the Information Field (events, symbols, crises).
-2. Under **COR.KAPPA↑**, agents reduce dimensionality of interpretation.
-3. **Π_I** amplifies frames that optimize for attention and penalty avoidance.
-4. **COR.H↑** raises in-group enforcement and out-group exclusion.
+1. **Salience shocks** enter the Information Field (`FIELDS.INFORMATION` - events, symbols, crises).
+2. Under **`COR.KAPPA`↑**, agents reduce dimensionality of interpretation.
+3. **Π_I (`OCF.OPERATOR.PI_FIELD`)** amplifies frames that optimize for attention and penalty avoidance.
+4. **`COR.H`↑** raises in-group enforcement and out-group exclusion.
 5. Basin boundaries steepen; moderate positions lose stability.
 6. Fragmentation and purity dynamics further increase salience.
 
@@ -114,10 +114,10 @@ No equation here implies causality; these are **pattern descriptors** only.
 SDBH may be identified only when all are present:
 
 - **Information Field:** \(\rho_I, \Pi_I, U_I\)
-- **States:** COR.KAPPA↑ and COR.H↑
-- **Topology:** clustering or echo-supporting 𝒢
+- **States:** `COR.KAPPA`↑ and `COR.H`↑
+- **Topology:** clustering or echo-supporting 𝒢 (`COR.STATE.G`)
 - **Penalty gradients:** social, economic, institutional, or platform-based
-- **Scale:** σ explicitly specified
+- **Scale:** σ (`OCF.DOMAIN.SCALE`) explicitly specified
 
 Absent any, SDBH must not be invoked.
 
@@ -128,8 +128,8 @@ Absent any, SDBH must not be invoked.
 ### 5.1 Relation to RLMs (non-causal)
 
 SDBH is **downstream of**:
-- O.2.RLM.INFORMATION_TOPOLOGY
-- O.2.RLM.EXIT_LOCKIN (indirectly, via salience and threat)
+- `RLM.INFORMATION_TOPOLOGY`
+- `RLM.EXIT_LOCKIN` (indirectly, via salience and threat)
 
 It is **not itself** a mechanism and cannot substitute for RLM analysis.
 
@@ -154,7 +154,7 @@ When SDBH is present, analysts often observe:
 - shrinking admissible discourse range (Overton tightening)
 - purity spirals and internal policing
 - misclassification of MCI as MCR
-- rising χ within aligned Groups, falling system-wide coherence
+- rising `COR.CHI` within aligned Groups, falling system-wide coherence
 - increased governance and legitimacy stress
 
 These are **correlations**, not guarantees.
@@ -169,7 +169,7 @@ SDBH is diagnostically active when:
 2. \(h > h^\*\)
 3. Salience distribution in \(\rho_I\) is highly concentrated
 4. Penalty gradients are visible and asymmetric
-5. 𝒢 supports clustering or rapid diffusion
+5. 𝒢 (`COR.STATE.G`) supports clustering or rapid diffusion
 
 Thresholds are regime- and σ-specific.
 
@@ -199,8 +199,8 @@ Narrative description alone is insufficient.
 
 - **Scale:** emerges meso → macro via correlation length growth; not mean aggregation
 - **Activation:** fast (shock- or salience-triggered)
-- **Deactivation:** slow; requires COR.KAPPA↓ and penalty relaxation
-- **Hysteresis:** high; once COR.H is elevated, decay is slow
+- **Deactivation:** slow; requires `COR.KAPPA`↓ and penalty relaxation
+- **Hysteresis:** high; once `COR.H` is elevated, decay is slow
 
 ---
 

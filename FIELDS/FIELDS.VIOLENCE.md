@@ -1,8 +1,8 @@
-# O.2.FIELD.VIOLENCE
+# FIELDS.VIOLENCE.md
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.2.FIELD.VIOLENCE
+- **O_ID:** FIELDS.VIOLENCE
 - **Name:** Violence Field
 - **Order:** 2nd
 - **Kind:** Field
@@ -21,13 +21,13 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; conditions feasible monopoly, force projection, and deterrence stability)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; conditions feasible monopoly, force projection, and deterrence stability, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - The Violence Field is an **operator over distributions of coercive capacity and threat**.
 - It contains **no agents, no intent, no moral claims, and no legitimacy judgments**.
-- Observed repression, deterrence, or escalation **does not imply motive**; outcomes arise endogenously from Π_V and U_V under capacity, topology, and constraint conditions.
+- Observed repression, deterrence, or escalation **does not imply motive**; outcomes arise endogenously from Π_V (`OCF.OPERATOR.PI_FIELD`) and U_V (`OCF.CONTROL_SURFACE.U`) under capacity, topology, and constraint conditions.
 
 ---
 
@@ -71,7 +71,7 @@ Threat salience typically dominates realized violence in shaping behavior.
 
 The quasi-conserved quantity is **credible coercive capacity under sustainment constraints**:
 
-- sustained force consumes **E_s** and **COR.THETA_exec**
+- sustained force consumes **E_s** and **θ_exec**
 - overuse degrades future threat credibility
 - fragmentation reduces effective capacity faster than depletion
 
@@ -133,7 +133,7 @@ Control surfaces determine **who may apply force, against whom, at what cost, an
 - **Neutral:** clear monopoly, proportional use, predictable restraint
 - **Destabilizing:** fragmented authority, selective force, impunity, blurred scope
 
-Destabilization accelerates COR.KAPPA_threat, h_enforcement, and downstream COR.PHI erosion.
+Destabilization accelerates κ_threat, h_enforcement, and downstream `COR.PHI` erosion.
 
 ---
 
@@ -142,17 +142,17 @@ Destabilization accelerates COR.KAPPA_threat, h_enforcement, and downstream COR.
 ### 5.1 Upstream dependencies
 
 - **E_s:** security surplus sustaining readiness and logistics
-- **COR.THETA_exec:** command, discipline, and response capacity
-- **COR.PHI_proc / COR.PHI_sac:** legitimacy conditions shaping compliance vs resistance
+- **θ_exec:** command, discipline, and response capacity
+- **φ_proc / φ_sac:** legitimacy conditions shaping compliance vs resistance
 - **CI_load:** rigidity within security institutions
 - **Topology \(\mathcal{G}(\sigma,t)\):** terrain, networks, sanctuary structure
-- **Information Field:** threat signaling, fear amplification, propaganda
+- **Information Field (`FIELDS.INFORMATION`):** threat signaling, fear amplification, propaganda
 
 ### 5.2 Bounded forcing into metric and state variables
 
 Violence dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Cognitive compression (COR.KAPPA_threat / COR.KAPPA_velocity):**
+- **Cognitive compression (κ_threat / κ_velocity):**
 \[
 \partial_t \kappa_j = \ldots + J_{\kappa_j}(\rho_V,\Pi_V,U_V;\sigma)
 \]
@@ -164,19 +164,19 @@ Violence dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (sacralized enemy framing, visible punishment, exclusion)
 
-- **Legitimacy (COR.PHI_proc / COR.PHI_sac):**
+- **Legitimacy (φ_proc / φ_sac):**
 \[
 \partial_t \phi_j = \ldots + J_{\phi_j}(\rho_V,\Pi_V,U_V;\sigma)
 \]
 (asymmetry, impunity, or short-lived sacral justification)
 
-- **Exit / mobility (X):**
+- **Exit / mobility (`COR.X`):**
 \[
 \partial_t X = \ldots + J_X(\rho_V,\Pi_V,U_V;\sigma)
 \]
 (flight, displacement, elite and capital exit)
 
-- **Institutional capacity (COR.THETA_exec):**
+- **Institutional capacity (θ_exec):**
 \[
 \partial_t \theta_{\text{exec}} = \ldots + J_{\theta_{\text{exec}}}(\rho_V,\Pi_V,U_V;\sigma)
 \]
@@ -186,9 +186,9 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 
 ### 5.3 Coupling into Bounds
 
-- **B_COR.PHI:** coercion substitutes for consent only temporarily
-- **B_X:** violence sharply tightens exit feasibility
-- **B_C:** militarization increases coordination load and rigidity
+- **B_φ (`BOUNDS.B_PHI`):** coercion substitutes for consent only temporarily
+- **B_X (`BOUNDS.B_X`):** violence sharply tightens exit feasibility
+- **B_C (`BOUNDS.B_C`):** militarization increases coordination load and rigidity
 
 No coupling implies intent.
 
@@ -202,8 +202,8 @@ Destabilization occurs when:
 - **E_s** falls below sustainment thresholds
 - monopoly on force fragments
 - enforcement becomes selective or politicized
-- **COR.PHI_proc** collapses faster than coercive repair
-- **COR.KAPPA_threat** is already elevated
+- **φ_proc** collapses faster than coercive repair
+- **κ_threat** is already elevated
 - topology favors insurgency or criminal networks
 
 ### 6.2 Canonical failure modes

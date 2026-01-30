@@ -1,4 +1,4 @@
-# X
+# COR.X.md
 
 ## COR OBJECT HEADER
 
@@ -7,11 +7,12 @@
 * **Order:** 1st
 * **Kind:** Core Metric
 * **Status:** Canonical
-* **Version:** 1.2
+* **Version:** 1.3
 * **Changelog:**
-  * v1.0: Scalar exit metric; masking dynamics and coupling to φ, θ, and E.
+  * v1.0: Scalar exit metric; masking dynamics and coupling to `COR.PHI`, `COR.THETA`, and `COR.E`.
   * v1.1: Integrated latent substructure (physical, economic, institutional, cognitive); formalized asymmetry, lock-in, and hysteresis.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) separation from control surfaces and intent, (iii) incorporation of Weighted Access and topology effects, (iv) measurement discipline via OCF.OPERATOR.MEASUREMENT, (v) alignment with scale-transition rules.
+  * **v1.3:** Namespace lint: fully-qualified `COR.*` cross-references; consistent backtick object IDs.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -24,39 +25,39 @@
 
 ## 1. Base Definition (O⁽⁰⁾)
 
-**X is the degree to which actors can credibly, affordably, and survivably exit a given coordination regime or obligation set.**
+**`COR.X` is the degree to which actors can credibly, affordably, and survivably exit a given coordination regime or obligation set.**
 
-X measures **option value**, not:
+`COR.X` measures **option value**, not:
 - satisfaction,
 - ideology,
 - loyalty,
 - legality alone,
 - or moral virtue.
 
-High X allows failure to be absorbed through re-sorting.  
-Low X forces failure to be absorbed internally via:
+High `COR.X` allows failure to be absorbed through re-sorting.  
+Low `COR.X` forces failure to be absorbed internally via:
 - compliance under strain,
 - protest,
 - or coercion.
 
-X answers **“can actors leave without catastrophic loss?”**, not **“do they want to?”**.
+`COR.X` answers **“can actors leave without catastrophic loss?”**, not **“do they want to?”**.
 
 ---
 
 ## 2. Formal Representation
 
-X is defined as a bounded scalar:
+`COR.X` is defined as a bounded scalar:
 
 \[
 X(\sigma,t) \in [0,1]
 \]
 
 where:
-- X = 0 indicates near-total lock-in (actors are trapped),
-- X = 1 indicates broadly accessible, low-cost, low-risk exit.
+- `COR.X` = 0 indicates near-total lock-in (actors are trapped),
+- `COR.X` = 1 indicates broadly accessible, low-cost, low-risk exit.
 
-**Default rule:** analyses operate on **scalar X**.  
-Internal structure is invoked **only when scalar X fails to explain masking, asymmetry, or delayed collapse**.
+**Default rule:** analyses operate on **scalar `COR.X`**.  
+Internal structure is invoked **only when scalar `COR.X` fails to explain masking, asymmetry, or delayed collapse**.
 
 ---
 
@@ -64,7 +65,7 @@ Internal structure is invoked **only when scalar X fails to explain masking, asy
 
 Exit is **scale-indexed** per `OCF.DOMAIN.SCALE`.
 
-- X at σ_individual is not equivalent to X at σ_group or σ_system.
+- `COR.X` at σ_individual is not equivalent to `COR.X` at σ_group or σ_system.
 - High exit for elites does not imply high exit for the population.
 - Cross-scale claims (“people can just leave”) require explicit **scale-transition logic**.
 
@@ -115,7 +116,7 @@ Where:
 These subcomponents:
 - have **no agency**,
 - are **not freely substitutable**,
-- cannot raise X above its scalar bound,
+- cannot raise `COR.X` above its scalar bound,
 - but strongly shape **who exits, how quickly, and with what downstream effects**.
 
 ---
@@ -159,36 +160,36 @@ R_{\text{risk}},
 Where:
 - **C_exit:** administrative, financial, and coordination costs
 - **R_risk:** retaliation, survivability risk, irreversibility
-- **𝒢:** topology effects (network lock-in, chokepoints)
+- **`COR.STATE.G`:** topology effects (network lock-in, chokepoints)
 
-Exit that is legal but one-shot, dangerous, or confiscatory contributes weakly to X.
+Exit that is legal but one-shot, dangerous, or confiscatory contributes weakly to `COR.X`.
 
 ---
 
 ## 6. Interaction With Other Core Metrics
 
-### 6.1 Legitimacy (φ)
-- High X masks φ decay by substituting exit for contestation.
-- Low X converts φ failure into protest or coercion.
-- Suppressing exit without restoring φ tightens B_φ.
+### 6.1 Legitimacy (`COR.PHI`)
+- High `COR.X` masks `COR.PHI` decay by substituting exit for contestation.
+- Low `COR.X` converts `COR.PHI` failure into protest or coercion.
+- Suppressing exit without restoring `COR.PHI` tightens B_`COR.PHI`.
 
 ---
 
-### 6.2 Execution Capacity (θ)
-- Exit drains skilled agents, lowering θ_exec and θ_adapt.
-- Forced retention increases enforcement load and accelerates θ failure.
+### 6.2 Execution Capacity (`COR.THETA`)
+- Exit drains skilled agents, lowering `COR.THETA`_exec and `COR.THETA`_adapt.
+- Forced retention increases enforcement load and accelerates `COR.THETA` failure.
 
 ---
 
-### 6.3 Surplus (E)
+### 6.3 Surplus (`COR.E`)
 - Exit reallocates E_m and E_τ across regimes.
 - Low E_r (risk buffer) increases exit sensitivity and volatility.
 
 ---
 
-### 6.4 Cognitive Compression and Boundaries (κ, h)
-- Selective exit increases boundary hardening (h).
-- Low X + rising κ yields moralization, zero-sum framing, and identity escalation.
+### 6.4 Cognitive Compression and Boundaries (`COR.KAPPA`, `COR.H`)
+- Selective exit increases boundary hardening (`COR.H`).
+- Low `COR.X` + rising `COR.KAPPA` yields moralization, zero-sum framing, and identity escalation.
 
 ---
 
@@ -196,9 +197,9 @@ Exit that is legal but one-shot, dangerous, or confiscatory contributes weakly t
 
 Control surfaces (U_k) may be used to **restrict exit**, but:
 
-- Exit suppression does **not** increase X.
-- Suppression raises C_exit and R_risk, lowering X^{eff}.
-- Persistent exit suppression accelerates φ decay and Violence-field coupling.
+- Exit suppression does **not** increase `COR.X`.
+- Suppression raises C_exit and R_risk, lowering `COR.X`^{eff}.
+- Persistent exit suppression accelerates `COR.PHI` decay and Violence-field coupling.
 
 Use of U_k does not imply legitimacy or stability.
 
@@ -207,16 +208,16 @@ Use of U_k does not imply legitimacy or stability.
 ## 8. Canonical Failure Modes
 
 - **Exit Masking:**  
-  High X delays reform while hollowing out capacity and legitimacy.
+  High `COR.X` delays reform while hollowing out capacity and legitimacy.
 
 - **Asymmetric Exit Trap:**  
-  High-X elites exit; low-X populations remain → localized collapse.
+  High-`COR.X` elites exit; low-`COR.X` populations remain → localized collapse.
 
 - **Brain Drain / Capital Flight:**  
   Loss of E_m and E_τ despite stable aggregates.
 
 - **Lock-In Collapse:**  
-  Forced reduction of X converts silent exit into overt conflict.
+  Forced reduction of `COR.X` converts silent exit into overt conflict.
 
 - **Cognitive Exit Precursor:**  
   Widespread X_cog precedes abrupt legitimacy rupture.
@@ -227,7 +228,7 @@ Use of U_k does not imply legitimacy or stability.
 
 - Exit availability can change quickly (policy, shocks).
 - Sorting, depletion, and institutional damage accumulate slowly.
-- Recovery is hysteretic: lost human and institutional capital may not return even if X later increases.
+- Recovery is hysteretic: lost human and institutional capital may not return even if `COR.X` later increases.
 
 ---
 
@@ -270,7 +271,7 @@ Unknown ≠ low; uncertainty must be bounded and labeled.
 Invalid uses include:
 - treating exit as preference or virtue,
 - moralizing exit behavior,
-- assuming suppressing exit restores φ or θ,
+- assuming suppressing exit restores `COR.PHI` or `COR.THETA`,
 - ignoring asymmetric exit access,
 - collapsing exit into ideology or topology.
 
@@ -282,7 +283,7 @@ Violations indicate **mobility blindness or agency misattribution**.
 
 Reducing ΔX → 0 yields:
 
-> X is a bounded scalar governing option value to exit coordination obligations.
+> `COR.X` is a bounded scalar governing option value to exit coordination obligations.
 
 Masking, asymmetry, and hysteresis collapse to a generic “exit delays failure” effect with unchanged semantics.
 

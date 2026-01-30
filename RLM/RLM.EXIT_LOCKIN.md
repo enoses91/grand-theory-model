@@ -19,8 +19,8 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (effective coordination scale; EXIT–LOCK-IN is undefined without explicit σ)
-- **Topology:** 𝒢(σ,t)
+- **Scale:** σ (effective coordination scale; EXIT–LOCK-IN is undefined without explicit σ, defined in `OCF.DOMAIN.SCALE`)
+- **Topology:** 𝒢(σ,t), defined in `COR.STATE.G`
 
 **Non-Agency Constraint (hard)**
 - EXIT–LOCK-IN is a **mechanism**, not an actor or strategy.
@@ -39,12 +39,12 @@
 
 Formally:
 
-- Given binding feasibility constraints (e.g., B_C, B_X, B_COR.PHI),
+- Given binding feasibility constraints (e.g., `BOUNDS.B_C`, `BOUNDS.B_X`, `BOUNDS.B_PHI`),
 - High effective exit \(X^{eff}\) routes stress into **masking**,
 - Low or suppressed \(X^{eff}\) routes stress into **lock-in**.
 
 EXIT–LOCK-IN introduces **no new causes**.
-It specifies the **expression channel** of stress, conditional on X and regime state.
+It specifies the **expression channel** of stress, conditional on `COR.X` and regime state.
 
 ---
 
@@ -92,8 +92,8 @@ Stress is **rerouted**, not eliminated.
 
 **Dynamics**
 - Structural failure persists but is hidden
-- COR.PHI erosion is delayed and uneven
-- COR.THETA degrades quietly as load concentrates on immobile actors
+- `COR.PHI` erosion is delayed and uneven
+- `COR.THETA` degrades quietly as load concentrates on immobile actors
 - E_m and E_τ drain through exit
 
 **Outcome**
@@ -111,9 +111,9 @@ Stress is **rerouted**, not eliminated.
 
 **Dynamics**
 - Pressure converts into overt contestation
-- COR.PHI collapses rapidly and visibly
-- COR.THETA is consumed by enforcement and crisis response
-- COR.KAPPA compresses; COR.H hardens; Violence Field activates
+- `COR.PHI` collapses rapidly and visibly
+- `COR.THETA` is consumed by enforcement and crisis response
+- `COR.KAPPA` compresses; `COR.H` hardens; Violence Field activates
 
 **Outcome**
 - Open instability, repression, or violence
@@ -125,14 +125,14 @@ Stress is **rerouted**, not eliminated.
 
 ### 4.1 Required upstream objects
 
-- **O.1.METRIC.X** — exit availability
-- **O.2.BOUND.B_X** — exit feasibility
-- **O.2.BOUND.B_C** — coordination overload
-- **O.2.BOUND.B_PHI** — legitimacy feasibility
-- **O.1.METRIC.THETA** — execution capacity
-- **O.1.STATE.KAPPA**, **O.1.STATE.H** — amplification states
-- **𝒢(σ,t)** — topology enabling or constraining exit
-- **W_{G→U}** — group-weighted access to exit-relevant control surfaces
+- **`COR.X`** — exit availability
+- **`BOUNDS.B_X`** — exit feasibility
+- **`BOUNDS.B_C`** — coordination overload
+- **`BOUNDS.B_PHI`** — legitimacy feasibility
+- **`COR.THETA`** — execution capacity
+- **`COR.KAPPA`**, **`COR.H`** — amplification states
+- **`COR.STATE.G`(σ,t)** — topology enabling or constraining exit
+- **W_{G→U} (`OCF.OPERATOR.WEIGHTED_ACCESS`)** — group-weighted access to exit-relevant control surfaces
 
 EXIT–LOCK-IN is **inactive** absent binding stress.
 
@@ -142,21 +142,21 @@ EXIT–LOCK-IN is **inactive** absent binding stress.
 
 EXIT–LOCK-IN induces **bounded forcing** into downstream variables, conditional on mode:
 
-### 5.1 Exit Masking (X high)
+### 5.1 Exit Masking X (`COR.X` high)
 
-- **Effective surplus (E):**
+- **Effective surplus E (`COR.E`):**
 \[
 \partial_t E = \ldots + J_E^{(-)}(\Pi_X;\sigma)
 \]
 (human capital and capital drain)
 
-- **Institutional capacity (COR.THETA):**
+- **Institutional capacity θ (`COR.THETA`):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\Pi_X;\sigma)
 \]
 (hollowing, service load concentration)
 
-- **Legitimacy (COR.PHI):**
+- **Legitimacy φ (`COR.PHI`):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\Pi_X;\sigma)
 \]
@@ -164,24 +164,24 @@ EXIT–LOCK-IN induces **bounded forcing** into downstream variables, conditiona
 
 ---
 
-### 5.2 Lock-In / Repression (X low)
+### 5.2 Lock-In / Repression X (`COR.X` low)
 
-- **Cognitive compression (COR.KAPPA):**
+- **Cognitive compression κ (`COR.KAPPA`):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\Pi_X;\sigma)
 \]
 
-- **Boundary hardness (COR.H):**
+- **Boundary hardness h (`COR.H`):**
 \[
 \partial_t h = \ldots + J_h^{(+)}(\Pi_X;\sigma)
 \]
 
-- **Violence activation (V):**
+- **Violence activation V (`FIELDS.VIOLENCE`):**
 \[
 \partial_t \rho_V = \ldots + J_V^{(+)}(\Pi_X;\sigma)
 \]
 
-- **Legitimacy (COR.PHI):**
+- **Legitimacy φ (`COR.PHI`):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\Pi_X;\sigma)
 \]
@@ -196,7 +196,7 @@ EXIT–LOCK-IN is typically **class- and skill-asymmetric**:
 
 - High-E / high-skill actors exit first
 - Low-X populations absorb coordination and enforcement load
-- Asymmetry accelerates COR.PHI fragmentation and COR.H hardening
+- Asymmetry accelerates φ fragmentation and h hardening
 
 Aggregate exit metrics **systematically understate** binding risk.
 
@@ -226,7 +226,7 @@ EXIT–LOCK-IN is **not universal**; it is regime- and scale-specific.
 ### Lock-In
 - Rapid escalation of protests, strikes, unrest
 - Increased enforcement and emergency powers
-- Sharp drops in COR.PHI indicators
+- Sharp drops in φ indicators
 - Discourse compression and tolerance loss (COR.KAPPA↑)
 
 Signatures identify **expression mode**, not cause.

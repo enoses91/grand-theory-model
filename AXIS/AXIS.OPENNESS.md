@@ -1,8 +1,8 @@
-# O.3.AXIS.OPENNESS.md
+# AXIS.OPENNESS.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.OPENNESS`
+* **O_ID:** `AXIS.OPENNESS`
 * **Name:** Openness to Experience (O)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -29,7 +29,7 @@ It does **not** encode:
 
 * intelligence or learning capacity (that is **g**)
 * moral or political orientation
-* legitimacy (COR.PHI)
+* legitimacy (`COR.PHI`)
 * creativity-as-success
 * correctness of beliefs
 
@@ -97,21 +97,21 @@ Openness **cannot overcome** binding feasibility bounds.
 
 ## 5. Interaction with Core Objects
 
-### 5.1 With Technology Field
+### 5.1 With Technology Field (`FIELDS.TECHNOLOGY`)
 
 * High Openness increases *interest* in new technologies
 * Adoption still requires:
 
   * technical maturity (B_T),
-  * institutional compatibility (COR.CI),
-  * surplus (E)
+  * institutional compatibility (`COR.CI`),
+  * surplus E (`COR.E`)
 * Low Openness slows diffusion even when feasible
 
 This explains **adoption lag vs invention timing**.
 
 ---
 
-### 5.2 With Education / Knowledge Field
+### 5.2 With Education / Knowledge Field (`FIELDS.EDUCATION_KNOWLEDGE`)
 
 * High Openness individuals:
 
@@ -126,13 +126,13 @@ Education outcomes reflect **selection + trait fit**, not treatment alone.
 
 ---
 
-### 5.3 With Culture / Identity and Ideological Basins
+### 5.3 With Culture / Identity (`FIELDS.CULTURE_IDENTITY`) and Ideological Basins
 
 * High Openness populations:
 
   * explore new identity frames
   * support pluralism under slack conditions
-* Under COR.KAPPA compression:
+* Under `COR.KAPPA` compression:
 
   * even high Openness collapses toward simpler narratives
 * Low Openness:

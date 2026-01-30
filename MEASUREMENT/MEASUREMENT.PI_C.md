@@ -1,14 +1,8 @@
-## 4. π_C — Coordination Complexity Measurement Operator
-
-This grounds B_C in observable structure.
-
----
-
-# O.2.MEASUREMENT.PI_C.md
+# MEASUREMENT.PI_C.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.2.MEASUREMENT.PI_C`
+* **O_ID:** `MEASUREMENT.PI_C`
 * **Name:** π_C (Coordination Complexity Measurement Operator)
 * **Order:** 2nd
 * **Kind:** MeasurementOperator

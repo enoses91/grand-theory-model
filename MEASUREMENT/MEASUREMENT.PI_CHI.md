@@ -1,14 +1,8 @@
-## 5. π_χ — Group Coherence Measurement Operator
-
-You will need this for groups, EXIT asymmetry, and future organizational analysis.
-
----
-
-# O.2.MEASUREMENT.PI_CHI.md
+# MEASUREMENT.PI_CHI.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.2.MEASUREMENT.PI_CHI`
+* **O_ID:** `MEASUREMENT.PI_CHI`
 * **Name:** π_χ (Group Coherence Measurement Operator)
 * **Order:** 2nd
 * **Kind:** MeasurementOperator
@@ -38,7 +32,7 @@ You will need this for groups, EXIT asymmetry, and future organizational analysi
 
 ## 3. Interpretation Rules
 
-* High χ can partially substitute for low COR.THETA locally
+* High χ (`COR.CHI`) can partially substitute for low `COR.THETA` locally
 * χ ≠ ideology or enthusiasm
 * Nominal groups with low χ lack agency
 

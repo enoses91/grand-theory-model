@@ -1,8 +1,8 @@
-# O.4.OPERATOR.OMISSION_AUDIT
+# OCF.OPERATOR.OMISSION_AUDIT
 
 ## COR OBJECT HEADER
 
-- **O_ID:** O.4.OPERATOR.OMISSION_AUDIT
+- **O_ID:** `OCF.OPERATOR.OMISSION_AUDIT`
 - **Name:** Omission Audit
 - **Order:** 4th
 - **Kind:** Meta-Operator (Analytic Discipline / Discovery Operator)
@@ -20,7 +20,7 @@
 
 **Indexing**
 - **Manifold:** 𝓜
-- **Scale:** σ (explicit for every audited claim)
+- **Scale:** σ (explicit for every audited claim, defined in `OCF.DOMAIN.SCALE`)
 
 **Non-Agency Constraint (hard)**
 - The Omission Audit is a **meta-analytic operator**, not a causal mechanism.
@@ -119,7 +119,7 @@ Skipping the audit **invalidates conclusions beyond descriptive scope**.
 
 ## 4. Canonical Audit Domains
 
-### 4.1 Field Omission Audit (ρ_k, Π_k, U_k)
+### 4.1 Field Omission Audit (ρ_k, Π_k (`OCF.OPERATOR.PI_FIELD`), U_k (`OCF.CONTROL_SURFACE.U`))
 
 For each Field \(F_k\), the audit asks:
 
@@ -155,7 +155,7 @@ Outputs:
 
 For each substantive claim, the audit checks:
 
-- Is σ explicitly declared?
+- Is σ (`OCF.DOMAIN.SCALE`) explicitly declared?
 - Are scale transitions invoked?
 - If so, are they mediated by valid operators **T₁–T₄**?
 
@@ -174,7 +174,7 @@ Flags non-negotiable violations, including:
 
 - class treated as agent
 - cluster treated as coordinated actor
-- χ treated as `COR.PHI`
+- `COR.CHI` treated as `COR.PHI`
 - `COR.PHI` treated as enforcement
 - RLMs treated as intent
 - regime treated as ideology

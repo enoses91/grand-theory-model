@@ -1,8 +1,8 @@
-# O.3.AXIS.HONESTY_HUMILITY.md
+# AXIS.HONESTY_HUMILITY.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.HONESTY_HUMILITY`
+* **O_ID:** `AXIS.HONESTY_HUMILITY`
 * **Name:** Honesty–Humility (H–H)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -28,7 +28,7 @@ H–H:
 It does **not** encode:
 
 * virtue or goodness
-* legitimacy (COR.PHI)
+* legitimacy (`COR.PHI`)
 * trustworthiness of institutions
 * ideology or political preference
 
@@ -50,7 +50,7 @@ Where:
 Population representation:
 
 [
-\rho_h(COR.H) = \text{distribution of Honesty–Humility across individuals}
+\rho_h = \text{distribution of Honesty–Humility across individuals}
 ]
 
 All analysis must operate on **distributions**, not point estimates.
@@ -105,20 +105,20 @@ H–H **does not negate incentives**; it shifts response probabilities.
 
 ---
 
-### 5.2 With Governance Execution (RLM)
+### 5.2 With Governance Execution (RLM, `RLM.GOVERNANCE_EXECUTION`)
 
-* Low COR.THETA / high COR.CI regimes amplify the variance effects of H–H
-* High COR.THETA regimes suppress trait-driven exploitation through enforcement
+* Low `COR.THETA` / high `COR.CI` regimes amplify the variance effects of H–H
+* High `COR.THETA` regimes suppress trait-driven exploitation through enforcement
 
 Trait effects are **regime-conditioned**.
 
 ---
 
-### 5.3 With Legitimacy (COR.PHI) and B_COR.PHI
+### 5.3 With Legitimacy (`COR.PHI`) and B_φ
 
-* Aggregate low H–H *does not* imply low COR.PHI
-* But low COR.PHI + weak enforcement allows low H–H actors to dominate outcomes
-* This creates **perceived unfairness**, tightening B_COR.PHI downstream
+* Aggregate low H–H *does not* imply low `COR.PHI`
+* But low `COR.PHI` + weak enforcement allows low H–H actors to dominate outcomes
+* This creates **perceived unfairness**, tightening B_φ downstream
 
 This is a second-order coupling, not direct causation.
 

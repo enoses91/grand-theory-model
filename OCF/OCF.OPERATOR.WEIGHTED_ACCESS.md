@@ -141,7 +141,7 @@ Weighted Access encodes **structural asymmetry**, not justice, fairness, or virt
 
 ## 5. Relationship to Other OCFs
 
-### To Control Surfaces (OCF.CONTROL_SURFACE.U)
+### To Control Surfaces (`OCF.CONTROL_SURFACE.U`)
 
 Weighted Access conditions **use**, not existence:
 
@@ -151,7 +151,7 @@ Weighted Access conditions **use**, not existence:
 
 ---
 
-### To Γ_G (OCF.OPERATOR.GAMMA_G)
+### To Γ_G (`OCF.OPERATOR.GAMMA_G`)
 
 Γ_G governs **internal coherence**;  
 Weighted Access governs **external interface leverage**.
@@ -160,7 +160,7 @@ Both are required for effective intervention.
 
 ---
 
-### To Π_k (OCF.OPERATOR.PI_FIELD)
+### To Π_k (`OCF.OPERATOR.PI_FIELD`)
 
 Weighted Access affects **initial perturbation amplitude** only.
 
@@ -168,7 +168,7 @@ Propagation remains governed by Π_k.
 
 ---
 
-### To σ (OCF.DOMAIN.SCALE)
+### To σ (`OCF.DOMAIN.SCALE`)
 
 Weighted Access is meaningful **only within declared σ bounds**.
 

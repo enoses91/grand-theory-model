@@ -1,4 +1,4 @@
-# KAPPA
+# COR.KAPPA.md
 
 ## COR OBJECT HEADER
 

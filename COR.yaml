@@ -1,12 +1,14 @@
 version: 1
 model: grand-theory
-updated: 2026-01-28
+updated: 2026-01-30
 
 # Status meanings:
 # canonical   = stable, normative reference
 # working     = active but non-canonical
 # provisional = candidate for canonization
 # deprecated  = retained for traceability only
+
+# Optional: symbol is internal notation used inside the object; O_ID is canonical for references/automation.
 
 objects:
 
@@ -15,60 +17,70 @@ objects:
   # =========================
 
   - object_id: COR.CI
+    symbol: CI
     path: COR/COR.CI.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.CI]
 
   - object_id: COR.E
+    symbol: E
     path: COR/COR.E.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.E]
 
   - object_id: COR.G
+    symbol: Γ_G
     path: COR/COR.G.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.G]
 
   - object_id: COR.PHI
+    symbol: φ
     path: COR/COR.PHI.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.PHI]
 
   - object_id: COR.THETA
+    symbol: θ
     path: COR/COR.THETA.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.THETA]
 
   - object_id: COR.X
+    symbol: X
     path: COR/COR.X.md
     kind: metric
     status: canonical
     legacy_ids: [O.1.METRIC.X]
 
   - object_id: COR.H
+    symbol: h
     path: COR/COR.H.md
     kind: state
     status: canonical
     legacy_ids: [O.1.STATE.H]
 
   - object_id: COR.KAPPA
+    symbol: κ
     path: COR/COR.KAPPA.md
     kind: state
     status: canonical
     legacy_ids: [O.1.STATE.KAPPA]
 
   - object_id: COR.CHI
+    symbol: χ
     path: COR/COR.CHI.md
     kind: state
     status: canonical
     legacy_ids: [O.3.STATE.CHI]
 
   - object_id: COR.STATE.G
+    symbol: 𝒢
     path: COR/COR.STATE.G.md
     kind: state
     status: canonical
@@ -79,24 +91,28 @@ objects:
   # =================
 
   - object_id: BOUNDS.B_C
+    symbol: B_C
     path: BOUNDS/BOUNDS.B_C.md
     kind: bound
     status: canonical
     legacy_ids: [O.2.BOUND.B_C]
 
   - object_id: BOUNDS.B_D
+    symbol: B_D
     path: BOUNDS/BOUNDS.B_D.md
     kind: bound
     status: canonical
     legacy_ids: [O.2.BOUND.B_D]
 
   - object_id: BOUNDS.B_PHI
+    symbol: B_φ
     path: BOUNDS/BOUNDS.B_PHI.md
     kind: bound
     status: canonical
     legacy_ids: [O.2.BOUND.B_PHI]
 
   - object_id: BOUNDS.B_X
+    symbol: B_X
     path: BOUNDS/BOUNDS.B_X.md
     kind: bound
     status: canonical
@@ -301,6 +317,42 @@ objects:
     kind: operator
     status: provisional
     notes: "Access-conditioning formalization of power; retained but under review."
+
+  - object_id: OCF.CONTROL_SURFACE.U
+    path: OCF/OCF.CONTROL_SURFACE.U.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical definition, invariants, and usage rules for **control surfaces."
+
+  - object_id: OCF.OPERATOR.PI_FIELD
+    path: OCF/OCF.OPERATOR.PI_FIELD.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical signature, invariants, reduction contract, and misuse prohibitions for **Π_k**, the operator governing how field state distributions propagate over topology and time."
+
+  - object_id: OCF.DOMAIN.SCALE
+    path: OCF/OCF.DOMAIN.SCALE.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical definition, invariants, and usage rules for **scale (σ)** as a domain index that bounds object validity, operator applicability, measurement meaning, and feasibility claims across the COR."
+
+  - object_id: OCF.OPERATOR.MEASUREMENT
+    path: OCF/OCF.DOMAIN.SCALE.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical definition, invariants, and usage rules for **measurement operators (𝓜)** that map observables and evidence to latent model elements while enforcing evidence hierarchy, confidence discipline, and non-reification."
+
+  - object_id: OCF.OPERATOR.SCALE_TRANSITION
+    path: OCF/OCF.OPERATOR.SCALE_TRANSITION.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical definition, invariants, and usage rules for **scale-transition operators** that mediate valid mappings across coordination scales (σ). Prevents illicit scale jumps, inevitability claims, and emergence-by-assertion."
+
+  - object_id: OCF.OPERATOR.TECHNIQUE
+    path: OCF/OCF.OPERATOR.TECHNIQUE.md
+    kind: operator
+    status: provisional
+    notes: "Provides the canonical definition, invariants, and usage rules for **Techniques**—structured, intentional compositions of control-surface invocations used by groups to attempt to shift system trajectories under regime constraints."
 
   # =========================
   # DYNAMIC PATTERNS (DPI)

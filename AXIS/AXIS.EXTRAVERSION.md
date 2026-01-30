@@ -1,8 +1,8 @@
-# O.3.AXIS.EXTRAVERSION.md
+# AXIS.EXTRAVERSION.md
 
 ## COR OBJECT HEADER
 
-* **O_ID:** `O.3.AXIS.EXTRAVERSION`
+* **O_ID:** `AXIS.EXTRAVERSION`
 * **Name:** Extraversion (Xv)
 * **Order:** 3rd
 * **Kind:** Individual Axis (Latent Trait)
@@ -123,7 +123,7 @@ This explains **visibility bias** without coordination claims.
   * g,
   * Conscientiousness,
   * Honesty–Humility,
-  * χ at group level
+  * χ (`COR.CHI`) at group level
 
 Extraversion explains **who shows up**, not who governs well.
 

@@ -81,7 +81,7 @@ All measurements are σ-relative.
 
 Examples:
 - Class is defined **only** relative to σ.
-- Exit (X) has different meaning at σ_individual vs σ_nation.
+- Exit (`COR.X`) has different meaning at σ_individual vs σ_nation.
 - `COR.THETA` throughput metrics at σ_group do not scale linearly to σ_nation.
 
 ---
