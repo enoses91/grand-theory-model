@@ -118,6 +118,13 @@ objects:
     status: canonical
     legacy_ids: [O.2.BOUND.B_X]
 
+  - object_id: BOUNDS.B_EG
+    symbol: B_EG
+    path: BOUNDS/BOUNDS.B_EGX.md
+    kind: bound
+    status: canonical
+    legacy_ids: 
+
   # =======
   # FIELDS
   # =======

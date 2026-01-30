@@ -7,12 +7,13 @@
 * **Order:** 1st
 * **Kind:** Core Metric
 * **Status:** Canonical
-* **Version:** 1.3
+* **Version:** 1.4
 * **Changelog:**
   * v1.0: Scalar surplus definition; coupling to `COR.THETA`, `COR.CI`, and growth.
   * v1.1: Integrated latent internal substructure (material, temporal, security, and buffering surplus); clarified leakage and variance effects.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) separation from wealth, growth, and intent, (iii) alignment with Measurement discipline, (iv) clarified interaction with `COR.CI` ratchets, `COR.THETA` repair, `COR.PHI` slack, and `COR.X` buffering, (v) aligned time and feasibility claims with scale-transition invariants.
   * **v1.3:** Namespace lint: fully-qualified `COR.*` cross-references; consistent backtick object IDs.
+  * **v1.4:** Update with `BOUNDS.ECO_GEO`.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -139,6 +140,35 @@ This prevents growth fetishism and mean-field error.
 
 ---
 
+## 4.3 Eco-Geographic Feasibility Coupling (B_EG)
+
+`COR.E` is **feasibility-gated** by eco-geographic constraints captured by `BOUNDS.ECO_GEO` (B_EG).
+
+When B_EG tightens, it constrains `COR.E` through **ceilings, variance, and recovery asymmetry**, not intent or allocation:
+
+- **Ceilings:**  
+  Eco-geo conditions impose upper bounds on realizable **E_m** (material surplus) via land productivity, water balance, energy availability, and corridor viability.
+
+- **Variance and tail risk:**  
+  Hazard regimes, climate variability, and logistics fragility increase downside variance, directly eroding **E_r** (risk / buffering surplus) even when mean output remains positive.
+
+- **Temporal compression:**  
+  Seasonality, disaster cycles, and repeated recovery demands compress **E_τ** (temporal surplus), shortening planning horizons and increasing decision myopia.
+
+- **Asymmetric recovery:**  
+  Eco-geo depletion and damage recover slowly relative to collapse:
+  \[
+  \tau_{recover}^{EG} \gg \tau_{collapse}^{EG}
+  \]
+  producing path dependence and ratcheting loss of effective surplus.
+
+B_EG does **not** replace `COR.E`.  
+It determines which surplus levels and trajectories are **physically and geographically feasible** at scale σ over horizon t.
+
+Surplus claims that ignore eco-geo ceilings, variance, or recovery asymmetry are invalid regardless of fiscal, technological, or political intent.
+
+---
+
 ## 5. Net Surplus and Leakage
 
 Effective surplus is **net of leakage**:
@@ -187,6 +217,32 @@ High gross surplus with high leakage behaves like low `COR.E`.
 
 ---
 
+### 6.5 `BOUNDS.ECO_GEO` (Eco-Geographic Feasibility)
+
+Eco-geographic constraints act as an upstream feasibility gate on `COR.E`:
+
+- Binding B_EG reduces achievable **E_m** and **E_r** even under competent allocation.
+- Increased hazard frequency and logistics friction raise surplus volatility, accelerating depletion.
+- Repeated eco-geo shocks divert surplus into maintenance and recovery, tightening `COR.THETA` and preventing surplus regeneration.
+
+Canonical interaction chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+(E_m,\ E_r,\ E_\tau)\ \downarrow
+\Rightarrow
+\theta\ \text{saturates}
+\Rightarrow
+X\ \uparrow
+\]
+
+Exit (`COR.X`) may temporarily protect individuals while **hollowing local surplus**, further degrading long-run `COR.E` at the originating scale.
+
+No amount of redistribution, messaging, or administrative tightening can raise `COR.E` above a binding B_EG without feasible adaptation (infrastructure, relocation, storage, corridor repair) over the appropriate time horizon.
+
+---
+
 ## 7. Control Surfaces and Allocation
 
 Control surfaces (U_k) **allocate surplus; they do not create it**.
@@ -215,6 +271,16 @@ No intent inference is permitted.
 
 - **Overextension:**  
   Commitments expand faster than `COR.E`, triggering `COR.THETA` and `COR.PHI` collapse.
+
+- **Eco-Geo Ceiling Error:**  
+  Treating surplus collapse as fiscal or managerial failure when binding eco-geographic constraints cap realizable E_m or destroy E_r through repeated hazard loss.
+
+- **Variance Blindness:**  
+  Positive average surplus with unmodeled eco-geo tail risk produces sudden collapse despite “healthy” headline indicators.
+
+- **Recovery Asymmetry Neglect:**  
+  Assuming eco-geo damage is quickly reversible, leading to chronic over-commitment and structural surplus depletion.
+
 
 ---
 

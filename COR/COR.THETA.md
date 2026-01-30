@@ -7,11 +7,12 @@
 * **Order:** 1st
 * **Kind:** Core Metric
 * **Status:** Canonical
-* **Version:** 1.2
+* **Version:** 1.3
 * **Changelog:**
   * v1.0: Scalar execution capacity definition; overload and φ-coupled failure modes.
   * v1.1: Integrated latent internal substructure (execution, coordination, adaptation); formalized asymmetric degradation and repair dynamics.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) clarified separation from Γ_G and Techniques, (iii) formalized interaction with control surfaces and weighted access without intent inference, (iv) upgraded measurement discipline to OCF.OPERATOR.MEASUREMENT, (v) aligned time-scale claims with scale-transition invariants.
+  * **v1.3:** Update with `BOUNDS.ECO_GEO`.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -195,6 +196,41 @@ Technique intent without θ produces:
 
 ---
 
+### 6.5 `BOUNDS.ECO_GEO` (Eco-Geographic Feasibility)
+
+Eco-geographic constraints (`BOUNDS.ECO_GEO`, B_EG) condition θ by **structurally increasing workload, variance, and recovery demand** relative to execution capacity.
+
+When B_EG tightens, θ degrades through:
+
+- **Recovery overload:**  
+  Repeated hazards, infrastructure damage, and environmental repair create persistent backlogs that saturate θ_exec.
+
+- **Coordination strain:**  
+  Geography-driven fragmentation, corridor fragility, and uneven exposure increase cross-unit coordination load, reducing θ_coord.
+
+- **Adaptive exhaustion:**  
+  Continuous crisis response crowds out learning and reform, driving early collapse of θ_adapt.
+
+Canonical conditioning chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+\text{workload variance} \uparrow
+\Rightarrow
+(\theta_{\text{exec}},\ \theta_{\text{coord}},\ \theta_{\text{adapt}})\ \downarrow
+\Rightarrow
+\theta\ \downarrow
+\]
+
+B_EG does **not** act through intent, governance quality, or leadership.  
+It alters the **feasible execution envelope** by changing what must be done, how often, and under what variance.
+
+Execution promises that ignore eco-geographic workload and recovery asymmetry are infeasible regardless of budget or authority.
+
+
+---
+
 ## 7. Control Surfaces and Asymmetry
 
 Use of control surfaces (U_k) does **not** increase θ by itself.
@@ -224,6 +260,16 @@ No inference of intent or competence is permitted.
 - **Adaptive Lock-In:**  
   Execution persists while reform capacity (θ_adapt) goes to zero.
 
+- **Recovery Backlog Trap:**  
+  Eco-geographic damage generates continuous recovery demand that permanently saturates θ_exec.
+
+- **Corridor-Induced Coordination Failure:**  
+  Geographic fragmentation or chokepoint fragility overwhelms θ_coord despite adequate local execution.
+
+- **Crisis-Mode Lock-In:**  
+  Repeated eco-geographic shocks eliminate θ_adapt, preventing reform even when failure is recognized.
+
+
 ---
 
 ## 9. Time Properties (Asymmetric)
@@ -237,6 +283,14 @@ No inference of intent or competence is permitted.
 This asymmetry explains why:
 - execution can persist long after reform capacity is gone,
 - recovery often fails even when resources exist.
+
+Eco-geographic stress steepens these asymmetries:
+
+- Hazard clustering and slow physical recovery (\(\tau_{recover}^{EG} \gg \tau_{collapse}^{EG}\)) keep θ_exec and θ_coord degraded even after acute events pass.
+- Persistent environmental or logistical constraints prevent θ_adapt from operating, locking institutions into crisis mode.
+
+As a result, partial restoration of surplus (E) or legitimacy (φ) may fail to restore θ when B_EG remains binding.
+
 
 ---
 
@@ -257,6 +311,16 @@ Primary observables:
 Subcomponents are **inferred from dynamics**, not directly measured.
 
 High confidence requires artifact-level evidence.
+
+When eco-geographic stress is hypothesized as a driver of θ degradation, acceptable observables include:
+
+- recovery and repair backlogs following hazard events,
+- execution latency increases correlated with environmental or logistical disruption,
+- variance in enforcement or service delivery across eco-geo exposure zones,
+- persistent diversion of capacity from routine execution to recovery tasks.
+
+Discourse or stated priorities alone cannot establish eco-geo–conditioned θ collapse.
+
 
 ---
 

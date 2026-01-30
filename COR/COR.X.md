@@ -7,12 +7,13 @@
 * **Order:** 1st
 * **Kind:** Core Metric
 * **Status:** Canonical
-* **Version:** 1.3
+* **Version:** 1.4
 * **Changelog:**
   * v1.0: Scalar exit metric; masking dynamics and coupling to `COR.PHI`, `COR.THETA`, and `COR.E`.
   * v1.1: Integrated latent substructure (physical, economic, institutional, cognitive); formalized asymmetry, lock-in, and hysteresis.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) separation from control surfaces and intent, (iii) incorporation of Weighted Access and topology effects, (iv) measurement discipline via OCF.OPERATOR.MEASUREMENT, (v) alignment with scale-transition rules.
   * **v1.3:** Namespace lint: fully-qualified `COR.*` cross-references; consistent backtick object IDs.
+  * **v1.4:** Update with `BOUNDS.ECO_GEO`.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -193,6 +194,42 @@ Exit that is legal but one-shot, dangerous, or confiscatory contributes weakly t
 
 ---
 
+### 6.5 `BOUNDS.ECO_GEO` (Eco-Geographic Feasibility)
+
+Eco-geographic constraints (`BOUNDS.ECO_GEO`, B_EG) condition `COR.X` by shaping both **exit pressure** and **realizable exit channels**.
+
+When B_EG tightens, exit dynamics change through:
+
+- **Forced exit activation:**  
+  Hazard exposure, land or water stress, and infrastructure failure raise exit pressure independent of legitimacy or ideology.
+
+- **Channel distortion:**  
+  Geography and corridor viability constrain X_phys and X_econ, increasing asymmetry between those who can relocate and those who cannot.
+
+- **Risk inflation:**  
+  Eco-geo volatility increases R_risk (survivability, irreversibility), lowering X^{eff} even when nominal exit options exist.
+
+- **Local hollowing:**  
+  Partial exit relieves individual exposure while degrading local surplus and capacity, reducing future exit feasibility for those who remain.
+
+Canonical conditioning chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+\text{exit pressure} \uparrow
+\Rightarrow
+X^{eff}\ \text{becomes asymmetric}
+\Rightarrow
+(\theta,\ E)\ \downarrow\ \text{locally}
+\]
+
+B_EG does **not** express preference or intent to exit.  
+It alters the **feasible option set** by changing who can leave, at what cost, and with what downstream effects.
+
+
+---
+
 ## 7. Control Surfaces and Exit Suppression
 
 Control surfaces (U_k) may be used to **restrict exit**, but:
@@ -222,6 +259,16 @@ Use of U_k does not imply legitimacy or stability.
 - **Cognitive Exit Precursor:**  
   Widespread X_cog precedes abrupt legitimacy rupture.
 
+- **Forced-Exit Hollowing:**  
+  Eco-geographic stress pushes out mobile actors, degrading local θ and E and accelerating collapse for immobile populations.
+
+- **Corridor-Bound Trap:**  
+  Geography or infrastructure loss blocks physical exit, converting latent exit pressure into coercion or conflict.
+
+- **Asymmetric Climate Exit:**  
+  High-X groups relocate early; low-X groups absorb rising risk, producing sharp distributional and political stress.
+
+
 ---
 
 ## 9. Time Properties (Asymmetric)
@@ -229,6 +276,13 @@ Use of U_k does not imply legitimacy or stability.
 - Exit availability can change quickly (policy, shocks).
 - Sorting, depletion, and institutional damage accumulate slowly.
 - Recovery is hysteretic: lost human and institutional capital may not return even if `COR.X` later increases.
+
+Eco-geographic stress steepens exit hysteresis:
+
+- Displacement driven by hazard or environmental degradation is often one-way.
+- Corridor loss or land degradation reduces future X_phys even if policies later liberalize.
+- Return migration requires eco-geo repair (\(\tau_{recover}^{EG} \gg \tau_{collapse}^{EG}\)), not merely restored legitimacy or incentives.
+
 
 ---
 
@@ -248,6 +302,16 @@ Observable bundles must specify **channel and scale**:
 - Cognitive: participation decay, epistemic fragmentation
 
 Unknown ≠ low; uncertainty must be bounded and labeled.
+
+When eco-geographic stress is proposed as a driver of exit, acceptable observables include:
+
+- migration or displacement flows correlated with hazard exposure or environmental degradation,
+- changes in corridor accessibility or transport costs affecting relocation,
+- differential exit rates across eco-geo exposure zones,
+- persistence of out-migration after policy or legitimacy stabilization.
+
+Discourse about “choice” or “preference” alone is insufficient to establish eco-geo-conditioned exit dynamics.
+
 
 ---
 

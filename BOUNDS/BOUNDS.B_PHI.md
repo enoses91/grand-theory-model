@@ -118,6 +118,11 @@ B_φ is plausibly binding when one or more are observed (artifact-sensitive):
 - exit pressure escalation (X dynamics) despite stable material conditions
 - legitimacy contestation inside institutions (θ utilization shifts to self-protection)
 - violence field activation (localized coercion becomes routine, not exceptional)
+- legitimacy decay following repeated environmental or infrastructure shocks despite neutral intent
+- enforcement or service asymmetries aligned with eco-geographic exposure zones
+- rising exit or noncompliance correlated with recovery failure rather than policy change
+- normalization of exceptional measures tied to disaster or resource stress
+
 
 ---
 
@@ -156,6 +161,40 @@ Complexity increases perceived unfairness and reduces comprehension; COR.KAPPA e
 \[
 B_C\ \text{binding} \Rightarrow \kappa \uparrow \Rightarrow \sigma_\phi \downarrow
 \]
+
+### 6.5 Interaction with Eco-Geographic Feasibility (B_EG)
+
+Eco-geographic constraints (`BOUNDS.ECO_GEO`, B_EG) condition B_φ **indirectly** by shaping asymmetry, service reliability, and recovery visibility.
+
+Binding or tightening B_EG can reduce legitimacy slack through:
+
+- **Asymmetric exposure and recovery:**  
+  Uneven hazard impact or differential recovery creates perceived two-tier outcomes even under neutral rules.
+
+- **Service failure salience:**  
+  Repeated infrastructure or environmental disruptions increase visible execution failure, widening the promise gap under `COR.THETA` saturation.
+
+- **Security degradation:**  
+  Persistent eco-geographic stress reduces effective security surplus (E_s), making legitimacy brittle even absent ideological conflict.
+
+- **Coercion normalization risk:**  
+  Environmental or disaster response that relies on exceptional measures increases coercion footprint, tightening B_φ over time.
+
+Canonical conditioning chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+(\theta,\ E_s)\ \downarrow
+\Rightarrow
+\text{PromiseGap} \uparrow\ \wedge\ \text{Asymmetry Salience} \uparrow
+\Rightarrow
+\sigma_\phi \downarrow
+\]
+
+B_EG does **not** determine legitimacy beliefs.  
+It alters the **feasible envelope for consent** by changing what can be delivered, how evenly, and with what visible reliability.
+
 
 ---
 
@@ -196,6 +235,12 @@ These are **second-order failure-mode labels** for common ways B_φ binds and st
 2. **Narrative Overreach:** messaging/claims exceed delivery capacity; promise gap widens; slack collapses.
 3. **Delayed Collapse:** high `COR.X` postpones visible failure; accumulated promise gap and asymmetry increase eventual rupture amplitude.
 4. **Fragmented `COR.PHI`:** `COR.H`↑ yields local legitimacy pockets while system-wide legitimacy collapses; “consent” becomes non-uniform and non-transferable.
+5. **Recovery Legitimacy Collapse:**  
+   Slow or uneven eco-geographic recovery sustains promise gaps and asymmetry, preventing legitimacy repair even after acute shocks pass.
+
+6. **Disaster-Exceptionalism Trap:**  
+   Repeated reliance on emergency powers or coercive coordination in response to eco-geographic stress tightens B_φ and normalizes consent erosion.
+
 
 ---
 
@@ -229,6 +274,16 @@ Secondary (medium/low):
 - discourse-only indicators without corroborating artifacts
 
 All bound conclusions must be **confidence-labeled**; discourse alone cannot establish binding status.
+
+When eco-geographic stress is hypothesized as a driver of B_φ tightening, acceptable indicators must include **operational and distributional artifacts**, such as:
+
+- differential recovery timelines across regions or groups,
+- service delivery or enforcement variance following environmental shocks,
+- exit or noncompliance patterns aligned with eco-geographic exposure,
+- persistence of emergency or exceptional measures beyond acute need.
+
+Narrative claims about “loss of trust” without such artifacts are insufficient to establish eco-geo–conditioned legitimacy binding.
+
 
 ---
 

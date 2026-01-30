@@ -149,12 +149,43 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 - **`COR.STATE.G`:** alternative networks enabling or constraining exit
 - **`COR.H`:** boundary hardness raising exit costs and asymmetry
 
+### 5.1.1 Eco-Geographic Feasibility (B_EG)
+
+**`BOUNDS.ECO_GEO` (B_EG)** is a primary upstream constraint shaping when and how B_X tightens.
+
+Eco-geographic stress conditions B_X through:
+
+- **Forced exit activation:**  
+  Hazard exposure, land or water degradation, and infrastructure loss raise exit pressure independent of legitimacy or preference.
+
+- **Channel feasibility distortion:**  
+  Geography, corridor viability, and environmental damage selectively constrain X_phys and X_econ, increasing class- and skill-weighted asymmetry.
+
+- **Risk inflation:**  
+  Eco-geo volatility raises survivability and irreversibility risk (R_risk), lowering effective exit even when nominal channels exist.
+
+- **Local hollowing feedback:**  
+  Partial exit relieves individual exposure while degrading local `COR.E` and `COR.THETA`, tightening B_X for remaining populations.
+
+Formally, B_EG acts as an upstream modifier of the feasible region:
+
+\[
+\mathcal{R}_X(\sigma,\mathcal{M}) = \mathcal{R}_X\!\left(\theta, E, CI, h, \mathcal{G} \;\middle|\; B_{EG}\right)
+\]
+
+B_EG introduces **non-substitutable pressure** on B_X: exit cannot compensate for binding eco-geographic constraints without feasible adaptation.
+
+
 ### 5.2 Cross-bound effects
 
 - Binding **B_X → activates EXIT–LOCK-IN**
 - Binding **B_X → tightens B_φ** (visible hollowing, perceived unfairness)
 - Binding **B_X + B_C → delayed but sharper collapse**
 - Binding **B_X + exit suppression → rapid lock-in and conflict**
+
+- **Binding B_EG → accelerates B_X exhaustion**  
+  Eco-geographic stress raises exit pressure while simultaneously degrading feasible exit channels, causing B_X to bind at lower aggregate exit levels than expected.
+
 
 ---
 
@@ -167,6 +198,11 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 - Exit substituting for reform rather than triggering it
 - High `COR.CI` amplifying hollowing effects
 - Boundary hardening that traps low-X populations
+- Persistent hazard-driven displacement or environmentally induced migration
+- Corridor loss or infrastructure degradation constraining physical exit
+- Exit flows correlated with eco-geographic exposure rather than policy or ideology
+- Rising exit risk (irreversibility, survivability) despite nominal exit legality
+
 
 ### 6.2 Canonical failure modes
 
@@ -174,6 +210,15 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 - **Asymmetric burden trap:** immobile populations absorb coordination load → COR.PHI collapse
 - **Exit exhaustion:** marginal exit costs rise; remaining exit becomes catastrophic
 - **Repression pivot:** suppressing exit after B_X binds triggers lock-in instability
+- **Forced-Exit Exhaustion:**  
+  Eco-geographic stress pushes exit beyond sustainable levels, rapidly binding B_X and converting exit into systemic depletion.
+
+- **Corridor Collapse Trap:**  
+  Loss of geographic or infrastructural corridors blocks exit after pressure has already risen, triggering lock-in instability.
+
+- **Eco-Geo Hollowing:**  
+  Environmentally driven exit removes mobile capacity first, accelerating θ and E collapse for immobile populations.
+
 
 No failure mode implies intent.
 
@@ -201,6 +246,16 @@ Indicators that B_X is binding include:
 - abrupt shifts from exit tolerance to exit suppression
 
 Measurements must be paired with **distributional (class/skill) decomposition**.
+
+When eco-geographic stress is hypothesized as a driver of B_X tightening, indicators must include **physical and logistical artifacts**, such as:
+
+- displacement flows aligned with hazard exposure or environmental degradation,
+- changes in corridor accessibility or transport survivability,
+- exit asymmetry by eco-geo exposure zone,
+- persistence of exit pressure after policy or legitimacy stabilization.
+
+Narrative attribution alone is insufficient to establish eco-geo–conditioned B_X binding.
+
 
 ---
 

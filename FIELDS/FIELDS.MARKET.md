@@ -146,6 +146,9 @@ Destabilization is structural, not moral.
 - **`COR.CI`:** institutional inertia affecting entry, restructuring, and reform speed
 - **Topology \(\mathcal{G}(\sigma,t)\):** thickness, concentration, segmentation
 - **Information Field (`FIELDS.INFORMATION`):** price discovery, expectation formation, narrative risk premia
+- **`BOUNDS.ECO_GEO` (Eco-Geographic Feasibility):**  
+  Physical corridor reliability, environmental damage, and geographic access constraints condition market clearing by limiting feasible throughput prior to price adjustment.
+
 
 ### 5.2 Bounded forcing into metric and state variables
 
@@ -177,6 +180,15 @@ Market dynamics inject **bounded forcing terms** into downstream variables:
 
 All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-conditioned.
 
+Eco-geographic constraints introduce non-price throughput limits:
+
+- corridor failure, port disruption, or transport degradation reduce effective market clearing capacity,
+- price signals adjust but cannot substitute for blocked physical flow,
+- procurement and settlement loads spill into `COR.THETA` as crisis-management overhead.
+
+These effects are structural and scale-conditioned, not expectation-driven.
+
+
 ### 5.3 Coupling into Bounds
 
 - **`BOUNDS.B_C`:** compliance and licensing regimes tighten coordination feasibility
@@ -206,6 +218,9 @@ The Market Field destabilizes when:
 - **Debt overhang / claim inflation:** claims exceed surplus; defaults cascade
 - **Capture spiral:** control surfaces favor incumbents, eroding COR.PHI and COR.THETA
 - **Exit amplification:** capital/labor flight tightens `BOUNDS.B_X`
+- **Throughput-First Collapse:**  
+  Physical or environmental corridor failure halts exchange before prices can equilibrate, producing shortages and volatility without market mispricing.
+
 
 ---
 

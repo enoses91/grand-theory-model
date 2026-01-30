@@ -7,11 +7,12 @@
 * **Order:** 1st
 * **Kind:** State Variable
 * **Status:** Canonical
-* **Version:** 1.2
+* **Version:** 1.3
 * **Changelog:**
   * v1.0: Scalar boundary hardness and persistence definition; coupling to κ, φ, topology.
   * v1.1: Integrated latent internal substructure (structural, moral, enforcement hardness); formalized asymmetric hardening/softening dynamics.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) clarified separation from ideology, groups, and legitimacy, (iii) formal linkage to κ-driven salience and Π_field propagation without agency, (iv) upgraded measurement discipline to OCF.OPERATOR.MEASUREMENT, (v) aligned hysteresis and reversibility claims with scale-transition rules.
+  * **v1.3:** Update with `BOUNDS.ECO_GEO`.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -159,6 +160,14 @@ Where:
 - \(R_h\) is shallow and time-gated,
 - \(\epsilon_h\) reflects hysteresis once h is high.
 
+Eco-geographic stress acts as a conditioning amplifier on \(A_h\):
+
+- Repeated hazard exposure, displacement, or recovery failure steepens \(A_h\) by sustaining threat salience.
+- Slow eco-geo recovery (\(\tau_{recover}^{EG} \gg \tau_{collapse}^{EG}\)) prolongs elevated h even after the initiating shock ends.
+
+Thus, removal of the original eco-geographic stressor does not imply rapid boundary softening once h is high.
+
+
 ---
 
 ### 5.2 Hysteresis (core property)
@@ -199,6 +208,44 @@ This explains systematic failure of “return to normal” strategies.
 
 ---
 
+### 6.5 `BOUNDS.ECO_GEO` (Eco-Geographic Feasibility)
+
+Eco-geographic constraints (`BOUNDS.ECO_GEO`, B_EG) condition boundary hardening **indirectly** through salience, scarcity, and repeated shock exposure.
+
+Binding or tightening B_EG can increase h via:
+
+- **Scarcity-driven sorting:**  
+  Persistent resource constraints (water, land, energy, housing) reduce tolerance for out-group access, increasing h_struct.
+
+- **Shock salience amplification:**  
+  Repeated hazards and recovery failures raise κ and threat salience, accelerating h_moral formation without belief change.
+
+- **Asymmetric loss and blame attribution:**  
+  Uneven eco-geo exposure or recovery can moralize boundaries, increasing h_moral even absent ideological polarization.
+
+- **Enforcement substitution under strain:**  
+  When eco-geo stress saturates θ, boundary maintenance shifts toward punitive or exclusionary mechanisms, increasing h_enf.
+
+Canonical conditioning chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+(E,\ \theta)\ \downarrow
+\Rightarrow
+\kappa\ \uparrow
+\Rightarrow
+h\ \uparrow
+\]
+
+B_EG does **not** determine the *content* of identities or boundaries.  
+It shapes the **rigidity and persistence** of boundaries once formed.
+
+Boundary hardening driven by eco-geographic stress is therefore **structural and hysteretic**, not ideological by default.
+
+
+---
+
 ## 7. Fields and Propagation (Non-Agency)
 
 h conditions **how identity and narrative fields propagate via Π_k**, but has no agency.
@@ -226,6 +273,16 @@ h conditions **how identity and narrative fields propagate via Π_k**, but has n
 - **Violence Substitution:**  
   Under high h_moral and low φ, coercion normalizes.
 
+- **Scarcity Moralization:**  
+  Material or ecological constraints are reframed as moral boundary violations, locking h_moral in place despite neutral initial conditions.
+
+- **Shock-Induced Hardening:**  
+  Repeated eco-geographic shocks raise h through salience and fear, even when φ and θ are partially restored.
+
+- **Recovery Asymmetry Lock-In:**  
+  Slow or uneven eco-geo recovery sustains high h after the original stressor is no longer active.
+
+
 ---
 
 ## 9. Measurement Discipline (OCF-Compliant)
@@ -244,6 +301,16 @@ Proxy bundles (scale-specific, ordered by reliability):
 5. Affective surveys (lowest reliability)
 
 h is **not directly observable**; confidence must be explicitly bounded.
+
+When eco-geographic stress is hypothesized as a driver of h, measurement must include **non-discursive artifacts**, such as:
+
+- spatial segregation following hazard or displacement,
+- exclusionary access rules tied to scarce resources,
+- differential recovery or service restoration patterns,
+- enforcement actions correlated with eco-geo stress zones.
+
+Narrative or ideological content alone is insufficient to establish eco-geo–conditioned hardening.
+
 
 ---
 

@@ -7,11 +7,12 @@
 * **Order:** 1st
 * **Kind:** State Variable
 * **Status:** Canonical
-* **Version:** 1.2
+* **Version:** 1.3
 * **Changelog:**
   * v1.0: Scalar cognitive compression; salience amplification and hysteresis.
   * v1.1: Integrated latent internal substructure (load, threat, velocity); asymmetric collapse/recovery dynamics.
   * **v1.2:** Reconciled with OCF anchors: (i) explicit σ (scale) conditioning, (ii) separation from metrics and intent, (iii) clarified coupling to CI, φ, θ, E, and fields via Π_k, (iv) upgraded measurement discipline to OCF.OPERATOR.MEASUREMENT, (v) removed residual narrative ambiguity.
+  * **v1.3:** Update with `BOUNDS.ECO_GEO`.
 
 **OCF References:**  
 - `OCF.DOMAIN.SCALE` (σ validity)  
@@ -158,6 +159,14 @@ Where:
 - \(R(\cdot)\) requires sustained low volatility and surplus,
 - \(\epsilon_\kappa\) reflects hysteresis once κ is low.
 
+Eco-geographic stress acts as a conditioning amplifier on compression dynamics:
+
+- Repeated hazard cycles and slow recovery (\(\tau_{recover}^{EG} \gg \tau_{collapse}^{EG}\)) keep \(A(\cdot)\) elevated even after acute shocks pass.
+- Persistent logistics or resource constraints prevent \(R(\cdot)\) from operating by collapsing E_τ and increasing background uncertainty.
+
+As a result, κ may remain low despite partial restoration of φ or θ when B_EG remains binding.
+
+
 ---
 
 ### 5.2 Salience dominance
@@ -207,6 +216,41 @@ This is **systematic salience dominance**, not random error.
 
 ---
 
+### 6.6 `BOUNDS.ECO_GEO` (Eco-Geographic Feasibility)
+
+Eco-geographic constraints (`BOUNDS.ECO_GEO`, B_EG) condition κ by **systematically increasing load, threat, and salience velocity** under stress.
+
+When B_EG tightens, κ declines through:
+
+- **Load amplification:**  
+  Recovery workload, infrastructure failure, and logistics friction increase procedural and coordination burden, accelerating κ_load compression.
+
+- **Threat salience:**  
+  Repeated hazard exposure, displacement risk, and resource insecurity elevate κ_threat even in the absence of violence or ideological conflict.
+
+- **Velocity shocks:**  
+  Rapid-onset disasters and cascading failures increase information velocity and novelty, steepening κ_velocity compression.
+
+Canonical conditioning chain:
+
+\[
+B_{EG}\ \downarrow
+\Rightarrow
+(E,\ \theta)\ \downarrow
+\Rightarrow
+(\kappa_{\text{load}},\ \kappa_{\text{threat}},\ \kappa_{\text{velocity}})\ \uparrow
+\Rightarrow
+\kappa\ \downarrow
+\]
+
+B_EG does **not** determine which narratives dominate.  
+It reduces the dimensionality available for processing any narrative, increasing susceptibility to salience dominance and attribution error.
+
+Eco-geographically induced compression is therefore **structural and non-ideological by default**.
+
+
+---
+
 ## 7. Fields and Propagation (Non-Agency)
 
 κ shapes how **fields propagate via Π_k**, but κ itself has no agency.
@@ -231,6 +275,16 @@ This is **systematic salience dominance**, not random error.
 - **Cognitive Lock-In:**  
   Even improving conditions fail to restore κ due to hysteresis.
 
+- **Shock-Salience Entrapment:**  
+  Repeated eco-geographic shocks keep rare, vivid events dominant in perception, preventing κ recovery even under improving averages.
+
+- **Recovery Blindness:**  
+  Analysts assume κ should rebound after an acute event, ignoring slow eco-geo recovery and persistent load.
+
+- **Structural Attribution Error:**  
+  Eco-geographically driven compression is misread as mass irrationality or bad faith.
+
+
 ---
 
 ## 9. Measurement Discipline (OCF-Compliant)
@@ -248,6 +302,15 @@ Observable bundles (scale-specific):
 - prevalence of binary framing across domains.
 
 κ is **never directly observable**; confidence must be bounded.
+
+When eco-geographic stress is proposed as a driver of κ compression, acceptable observables include:
+
+- persistence of salience after hazard events relative to recovery progress,
+- increased procedural load and backlog following eco-geo shocks,
+- volatility in attention and response patterns tied to environmental or logistical disruption.
+
+Narrative intensity alone is insufficient to infer eco-geo–conditioned κ collapse.
+
 
 ---
 

@@ -155,12 +155,44 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 - **`COR.E`:** enables capacity investment but cannot raise B_C directly
 - **`COR.X`:** exit options that can mask overload temporarily
 
+### 5.1.1 Eco-Geographic Feasibility (B_EG)
+
+**`BOUNDS.ECO_GEO` (B_EG)** is an upstream driver that tightens B_C by increasing effective coordination complexity C(\sigma).
+
+Eco-geographic stress raises coordination complexity through:
+
+- **Heterogeneity amplification:**  
+  Climate variation, hazard exposure, and geography-driven differences in operating conditions increase exception handling and rule branching.
+
+- **Recovery-driven load:**  
+  Environmental damage and infrastructure repair add parallel coordination tasks that compete with baseline execution.
+
+- **Temporal coupling:**  
+  Seasonality, disaster cycles, and rebuild sequencing increase synchronization demands and deadline pressure.
+
+- **Topology distortion:**  
+  Corridor loss, spatial fragmentation, and uneven accessibility reduce modularity in `COR.STATE.G`, increasing cross-unit coordination burden.
+
+Formally, B_EG acts as an upstream modifier of coordination load:
+
+\[
+C(\sigma) = C_0(\sigma) + \Delta C_{EG}(\sigma)
+\]
+
+where \(\Delta C_{EG}\) is non-substitutable and cannot be offset by intent, urgency, or moral force.
+
+Eco-geographic stress therefore tightens B_C **by raising C**, not by reducing θ or κ directly.
+
+
 ### 5.2 Cross-bound effects
 
 - Binding **B_C → tightens B_θ** (visible inconsistency, delay)
 - Binding **B_C → accelerates `COR.KAPPA` compression**
 - Binding **B_C → increases `COR.H`** (simplification via exclusion)
 - Binding **B_C + high `COR.X` → delayed but sharper collapse**
+- Binding **B_EG → accelerates B_C binding**  
+  Eco-geographic heterogeneity, recovery workload, and temporal coupling increase coordination complexity, causing B_C to bind at lower nominal scope and rule counts.
+
 
 ---
 
@@ -174,6 +206,12 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 - Overlapping jurisdictions and veto points
 - Appeals and safeguards added faster than throughput
 - Technology that adds interfaces instead of reducing load
+- Persistent environmental heterogeneity requiring local exceptions
+- Repeated disaster recovery layered onto baseline coordination
+- Seasonal or hazard-driven synchronization requirements
+- Geography-induced fragmentation reducing modularization
+- Infrastructure loss increasing interdependence among units
+
 
 ### 6.2 Canonical failure modes
 
@@ -182,6 +220,15 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 - **Legibility loss:** agents cannot predict outcomes; COR.PHI declines
 - **Shadow systems:** informal or corrupt bypasses emerge
 - **False reform:** new programs add C without subtracting legacy load
+- **Recovery-Complexity Spiral:**  
+  Eco-geographic damage adds coordination tasks faster than legacy complexity can be retired, forcing B_C violation.
+
+- **Heterogeneity Overload:**  
+  Environmental variation drives exception growth that overwhelms coordination capacity despite stable rule counts.
+
+- **Temporal Coupling Failure:**  
+  Disaster and seasonality synchronization demands exceed coordination limits, producing cascading execution breakdowns.
+
 
 No failure mode implies intent.
 
@@ -210,6 +257,16 @@ Indicators that B_C is binding include:
 - declining predictability reported by participants
 
 These are **structural signals**, not performance opinions.
+
+When eco-geographic stress is hypothesized as a driver of B_C binding, indicators must include **structural coordination artifacts**, such as:
+
+- growth in exception handling tied to environmental heterogeneity,
+- recovery-related coordination tasks crowding routine execution,
+- increased synchronization failures during hazard or seasonal cycles,
+- loss of modularity following corridor or infrastructure disruption.
+
+Narrative claims about “complex environments” alone are insufficient to establish eco-geo–conditioned B_C tightening.
+
 
 ---
 
