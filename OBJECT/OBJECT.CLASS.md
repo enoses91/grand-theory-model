@@ -10,9 +10,9 @@
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
-  - v1.0: Canonical Class object; formalized class as non-acting constraint indexed to effective surplus (E) with θ/X couplings.
+  - v1.0: Canonical Class object; formalized class as non-acting constraint indexed to effective surplus (E) with COR.THETA/X couplings.
   - v1.1: Tightened prohibitions against class-as-actor inference; clarified variance and exit asymmetry.
-  - **v1.2:** Reconciled to explicitly reference **σ, 𝓜**, and strict **X/θ coupling discipline**; aligned language with Bounds (B_X, B_D, B_C); removed residual narrative slippage.
+  - **v1.2:** Reconciled to explicitly reference **σ, 𝓜**, and strict **X/COR.THETA coupling discipline**; aligned language with Bounds (B_X, B_D, B_C); removed residual narrative slippage.
 
 ---
 
@@ -100,9 +100,9 @@ Different combinations can map to the same \(K_i\).
 
 ## 4. Structural Couplings (Strict, Non-Symmetric)
 
-### 4.1 Coupling to θ (Institutional Access)
+### 4.1 Coupling to COR.THETA (Institutional Access)
 
-- θ modifies **realized outcomes**, not class rank.
+- COR.THETA modifies **realized outcomes**, not class rank.
 - Higher class → lower friction, higher reliability, faster throughput.
 - Lower class → higher error rates, enforcement asymmetry, backlog exposure.
 
@@ -111,7 +111,7 @@ Formally:
 \partial \text{RealizedOutcome} / \partial \theta \;\text{is class-conditioned}
 \]
 
-Class does **not** increase θ.
+Class does **not** increase COR.THETA.
 
 ---
 
@@ -129,10 +129,10 @@ This coupling is **one-way**: exit does not define class, but class constrains e
 
 ---
 
-### 4.3 Coupling to φ (Legitimacy Stress)
+### 4.3 Coupling to COR.PHI (Legitimacy Stress)
 
 - Class asymmetry conditions **perceived fairness**.
-- Low-class immobility amplifies sensitivity of φ to:
+- Low-class immobility amplifies sensitivity of COR.PHI to:
   - selective enforcement,
   - unequal exit,
   - asymmetric burden.
@@ -286,3 +286,4 @@ All refinements (E decomposition, exit coupling, variance) collapse cleanly to a
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

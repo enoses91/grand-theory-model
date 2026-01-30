@@ -6,12 +6,12 @@
 - **Name:** Education / Knowledge Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes the generation, transmission, certification, stratification, and decay of knowledge, skills, methods, and epistemic standards as a coordination field over topology 𝒢; shapes cognitive capacity utilization (g), institutional competence (θ), technology adoption, and coordination reliability without encoding intelligence, truth, or intent.
+- **Role:** Encodes the generation, transmission, certification, stratification, and decay of knowledge, skills, methods, and epistemic standards as a coordination field over topology 𝒢; shapes cognitive capacity utilization (g), institutional competence (COR.THETA), technology adoption, and coordination reliability without encoding intelligence, truth, or intent.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
   - v1.0: Canonical field formalization; distinguishes education/knowledge from technology, information, and culture.
-  - v1.1: Integrated explicit selection vs treatment guardrails; strengthened coupling to θ, CI, κ, and φ.
+  - v1.1: Integrated explicit selection vs treatment guardrails; strengthened coupling to COR.THETA, COR.CI, COR.KAPPA, and COR.PHI.
   - v1.2: Reconciled to explicitly reference Π_k, U_k, σ, 𝓜; removed implied agency.
   - v1.3: Added explicit **J_z(·)** bounded forcing-term notation for primary couplings to improve mechanical consistency with other Fields and prepare for Bounds/RLM integration.
 
@@ -143,27 +143,27 @@ Destabilization is structural, not normative.
 
 - **g:** individual cognitive capacity bounding learning rates
 - **E_τ:** temporal surplus for study and practice
-- **κ:** tolerance for curriculum and methodological complexity
-- **CI:** institutional inertia within education systems
+- **COR.KAPPA:** tolerance for curriculum and methodological complexity
+- **COR.CI:** institutional inertia within education systems
 - **Culture / Identity Field:** norms around status, merit, and education
 
 ### 5.2 Bounded forcing into metric and state variables
 
 Education / Knowledge dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Institutional capacity (θ):**
+- **Institutional capacity (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_K,\Pi_K,U_K;\sigma)
 \]
 (administrative competence, professional reliability, execution quality)
 
-- **Cognitive compression (κ_load):**
+- **Cognitive compression (COR.KAPPA_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_K,\Pi_K,U_K;\sigma)
 \]
 (curriculum overload, credential complexity, epistemic fragmentation)
 
-- **Legitimacy (φ_proc / φ_exp):**
+- **Legitimacy (COR.PHI_proc / COR.PHI_exp):**
 \[
 \partial_t \phi_j = \ldots + J_{\phi_j}(\rho_K,\Pi_K,U_K;\sigma)
 \]
@@ -204,7 +204,7 @@ The field destabilizes when:
 - **Skill mismatch:** education fails to support roles
 - **Epistemic drift:** standards decay; low-quality knowledge persists
 - **Institutional overload:** education system violates B_C
-- **Legitimacy erosion:** φ declines due to perceived unfairness
+- **Legitimacy erosion:** COR.PHI declines due to perceived unfairness
 - **Expectation collapse:** promised returns fail to materialize
 
 ---
@@ -268,3 +268,4 @@ All refinements collapse to generic learning dynamics with semantics preserved.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

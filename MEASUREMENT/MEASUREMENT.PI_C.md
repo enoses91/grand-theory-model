@@ -39,7 +39,7 @@ This grounds B_C in observable structure.
 ## 3. Interpretation Rules
 
 * Rising variance + backlog ⇒ C increasing
-* Adding safeguards increases C unless matched by θ
+* Adding safeguards increases C unless matched by COR.THETA
 * Complexity reduction requires rule retirement evidence
 
 ---
@@ -52,3 +52,4 @@ This grounds B_C in observable structure.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

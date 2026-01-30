@@ -29,7 +29,7 @@ It does **not** encode:
 
 * intelligence or learning capacity (that is **g**)
 * moral or political orientation
-* legitimacy (φ)
+* legitimacy (COR.PHI)
 * creativity-as-success
 * correctness of beliefs
 
@@ -81,14 +81,14 @@ It conditions:
 * tolerance for conceptual complexity and ambiguity
 * speed of ideological basin exploration
 * uptake of new technologies *conditional on feasibility*
-* resistance to narrative closure under κ compression
+* resistance to narrative closure under COR.KAPPA compression
 
 Formally:
 
 [
 \text{NoveltyUptake}_i
 ;\propto;
-f\big(o_i,\ g_i,\ \kappa,\ CI,\ B_T\big)
+f\big(o_i,\ g_i,\ \kappa,\ COR.CI,\ B_T\big)
 ]
 
 Openness **cannot overcome** binding feasibility bounds.
@@ -103,7 +103,7 @@ Openness **cannot overcome** binding feasibility bounds.
 * Adoption still requires:
 
   * technical maturity (B_T),
-  * institutional compatibility (CI),
+  * institutional compatibility (COR.CI),
   * surplus (E)
 * Low Openness slows diffusion even when feasible
 
@@ -132,7 +132,7 @@ Education outcomes reflect **selection + trait fit**, not treatment alone.
 
   * explore new identity frames
   * support pluralism under slack conditions
-* Under κ compression:
+* Under COR.KAPPA compression:
 
   * even high Openness collapses toward simpler narratives
 * Low Openness:

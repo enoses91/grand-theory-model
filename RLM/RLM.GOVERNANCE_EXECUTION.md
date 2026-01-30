@@ -126,18 +126,18 @@ This decomposition is **descriptive**, not normative.
 
 ## 5. Conditioning Variables (Regime Dependence)
 
-### 5.1 θ — Execution Throughput
-Low θ → backlog growth, triage, discretionary substitution.
+### 5.1 COR.THETA — Execution Throughput
+Low COR.THETA → backlog growth, triage, discretionary substitution.
 
-### 5.2 CI — Institutional Inertia
-High CI → slow adaptation, rule accretion, procedural ratchets.
+### 5.2 COR.CI — Institutional Inertia
+High COR.CI → slow adaptation, rule accretion, procedural ratchets.
 
-### 5.3 φ — Procedural Legitimacy
-Low φ → compliance decay, monitoring costs rise, asymmetry increases.
+### 5.3 COR.PHI — Procedural Legitimacy
+Low COR.PHI → compliance decay, monitoring costs rise, asymmetry increases.
 
-### 5.4 κ, h — Cognitive Compression & Boundary Hardness
-κ↑ → simplification errors;  
-h↑ → identity-linked selective pressure.
+### 5.4 COR.KAPPA, COR.H — Cognitive Compression & Boundary Hardness
+COR.KAPPA↑ → simplification errors;  
+COR.H↑ → identity-linked selective pressure.
 
 ### 5.5 𝒢 — Coordination Topology
 Fragmented → enclave execution and brokerage;  
@@ -149,17 +149,17 @@ Centralized → reach with single-point failure risk.
 
 Governance Execution induces **bounded forcing** into downstream variables:
 
-- **Institutional capacity (θ):**
+- **Institutional capacity (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\mathcal{E},u_G;\sigma)
 \]
 
-- **Legitimacy (φ):**
+- **Legitimacy (COR.PHI):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\mathcal{E},u_G;\sigma)
 \]
 
-- **Cognitive compression (κ):**
+- **Cognitive compression (COR.KAPPA):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\mathcal{E},u_G;\sigma)
 \]
@@ -177,13 +177,13 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and conditional on regime s
 
 Mapped to the locked Governance Failure-Mode Taxonomy.
 
-### 7.1 Throughput Collapse (θ-binding)
+### 7.1 Throughput Collapse (COR.THETA-binding)
 Backlogs dominate; legality becomes symbolic.
 
-### 7.2 Procedural Ratchet (CI-dominant)
+### 7.2 Procedural Ratchet (COR.CI-dominant)
 Rules accumulate faster than execution capacity.
 
-### 7.3 Selective Enforcement Spiral (φ-coupled)
+### 7.3 Selective Enforcement Spiral (COR.PHI-coupled)
 Asymmetry → compliance decay → coercion substitution (Violence Field coupling).
 
 ### 7.4 Topological Fragmentation (𝒢-dominant)
@@ -265,3 +265,4 @@ Object passes robustness, boundedness, and reduction tests.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

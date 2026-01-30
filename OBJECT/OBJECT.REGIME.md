@@ -149,7 +149,7 @@ Operational signatures:
 - **Governance active:** backlog, enforcement asymmetry dominates
 - **Market active:** price/wage/incentive dynamics dominate behavior
 - **Violence active:** coercion or threat conditions behavior beyond law
-- **Demography active:** cohort structure and flows dominate capacity/φ
+- **Demography active:** cohort structure and flows dominate capacity/COR.PHI
 - **Technology active:** maturity or adoption friction dominates trajectories
 - **Culture/Identity active:** boundary enforcement and identity salience dominate
 - **Education/Knowledge active:** skill pipeline mismatch dominates outcomes
@@ -163,9 +163,9 @@ Operational signatures:
 Regimes are characterized by **coupling stiffness patterns**:
 
 - flattened response of outcomes to marginal policy inputs,
-- steep response of φ or V to small shocks,
-- CI-driven inertial drag,
-- κ–h feedback loops via Information–Topology.
+- steep response of COR.PHI or V to small shocks,
+- COR.CI-driven inertial drag,
+- COR.KAPPA–COR.H feedback loops via Information–Topology.
 
 These are **descriptive properties**, not teleological stages.
 
@@ -225,12 +225,12 @@ O_R
 \]
 
 Evidence bundles must span:
-- throughput/backlog (θ),
+- throughput/backlog (COR.THETA),
 - enforcement asymmetry (G/V),
 - exit and flight (X),
 - demographic structure (D),
 - salience propagation (I),
-- institutional inertia (CI),
+- institutional inertia (COR.CI),
 - technology friction (T).
 
 Each regime estimate must include:
@@ -274,3 +274,4 @@ Object passes robustness, boundedness, and reduction requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

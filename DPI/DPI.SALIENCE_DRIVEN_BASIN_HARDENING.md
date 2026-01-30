@@ -6,13 +6,13 @@
 - **Name:** Salience-Driven Basin Hardening (SDBH)
 - **Order:** 3rd (Dynamic Pattern)  
 - **Kind:** Pattern (Meta-Analytic; Non-Causal)
-- **Role:** Descriptive dynamic pattern in which Information-field salience and penalty gradients, interacting with cognitive compression (κ↑) and boundary hardness (h↑), drive ideological basins to harden, narrow, and separate across scale σ on manifold 𝓜, without requiring first-order regime-variable shifts or agentic coordination.
+- **Role:** Descriptive dynamic pattern in which Information-field salience and penalty gradients, interacting with cognitive compression (COR.KAPPA↑) and boundary hardness (COR.H↑), drive ideological basins to harden, narrow, and separate across scale σ on manifold 𝓜, without requiring first-order regime-variable shifts or agentic coordination.
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical pattern definition; activation conditions, signatures, symmetry.
   - v1.1: Clarified non-causal status; aligned with field/operator language; added measurement discipline.
-  - **v1.2:** Reconciled to explicitly reference **σ, 𝓜, Π_k, U_k, κ, h, and T-operators**; tightened pattern vs mechanism boundaries; removed residual causal or proto-agentic phrasing; aligned with RLM and Projection Control layer.
+  - **v1.2:** Reconciled to explicitly reference **σ, 𝓜, Π_k, U_k, COR.KAPPA, COR.H, and T-operators**; tightened pattern vs mechanism boundaries; removed residual causal or proto-agentic phrasing; aligned with RLM and Projection Control layer.
 
 ---
 
@@ -37,8 +37,8 @@
 
 - heightened **salience** in the Information Field,
 - combined with **penalty gradients** for deviation,
-- interacting with **cognitive compression** (κ↑),
-- and **boundary hardness** (h↑),
+- interacting with **cognitive compression** (COR.KAPPA↑),
+- and **boundary hardness** (COR.H↑),
 
 produces **hardening, narrowing, and separation of ideological basins** at scale σ.
 
@@ -61,9 +61,9 @@ It does **not** answer:
 A typical SDBH configuration exhibits:
 
 1. **Salience shocks** enter the Information Field (events, symbols, crises).
-2. Under **κ↑**, agents reduce dimensionality of interpretation.
+2. Under **COR.KAPPA↑**, agents reduce dimensionality of interpretation.
 3. **Π_I** amplifies frames that optimize for attention and penalty avoidance.
-4. **h↑** raises in-group enforcement and out-group exclusion.
+4. **COR.H↑** raises in-group enforcement and out-group exclusion.
 5. Basin boundaries steepen; moderate positions lose stability.
 6. Fragmentation and purity dynamics further increase salience.
 
@@ -114,7 +114,7 @@ No equation here implies causality; these are **pattern descriptors** only.
 SDBH may be identified only when all are present:
 
 - **Information Field:** \(\rho_I, \Pi_I, U_I\)
-- **States:** κ↑ and h↑
+- **States:** COR.KAPPA↑ and COR.H↑
 - **Topology:** clustering or echo-supporting 𝒢
 - **Penalty gradients:** social, economic, institutional, or platform-based
 - **Scale:** σ explicitly specified
@@ -199,8 +199,8 @@ Narrative description alone is insufficient.
 
 - **Scale:** emerges meso → macro via correlation length growth; not mean aggregation
 - **Activation:** fast (shock- or salience-triggered)
-- **Deactivation:** slow; requires κ↓ and penalty relaxation
-- **Hysteresis:** high; once h is elevated, decay is slow
+- **Deactivation:** slow; requires COR.KAPPA↓ and penalty relaxation
+- **Hysteresis:** high; once COR.H is elevated, decay is slow
 
 ---
 
@@ -244,3 +244,4 @@ Object passes robustness, boundedness, and non-causality requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

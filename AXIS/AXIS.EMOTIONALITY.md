@@ -11,7 +11,7 @@
 * **Version:** 1.0
 * **Changelog:**
 
-  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to threat perception, security dynamics, κ compression, and Violence/Governance fields while prohibiting moralization or ideological inference.
+  * v1.0: Canonical axis formalization; explicitly non-normative; clarifies coupling to threat perception, security dynamics, COR.KAPPA compression, and Violence/Governance fields while prohibiting moralization or ideological inference.
 
 ---
 
@@ -30,7 +30,7 @@ It does **not** encode:
 * rationality vs irrationality
 * courage or weakness
 * political preference
-* legitimacy (φ) or authority
+* legitimacy (COR.PHI) or authority
 * moral worth
 
 ---
@@ -88,7 +88,7 @@ Formally:
 [
 \text{ThreatResponse}_i
 ;\propto;
-f\big(e_i,\ \text{ThreatSignal},\ \kappa,\ h,\ E_s\big)
+f\big(e_i,\ \text{ThreatSignal},\ \kappa,\ COR.H,\ E_s\big)
 ]
 
 Emotionality **does not generate threat**; it shapes response.
@@ -116,7 +116,7 @@ Trait effects are **context-dependent**, not deterministic.
 * High Emotionality populations:
 
   * are more sensitive to perceived security failure (E_s↓)
-  * tighten B_φ faster under threat asymmetry
+  * tighten B_COR.PHI faster under threat asymmetry
 * Low Emotionality populations:
 
   * tolerate risk longer,
@@ -126,9 +126,9 @@ This explains heterogeneous political responses to identical threat levels.
 
 ---
 
-### 5.3 With κ (Cognitive Compression)
+### 5.3 With COR.KAPPA (Cognitive Compression)
 
-* Threat salience + high Emotionality accelerates κ compression
+* Threat salience + high Emotionality accelerates COR.KAPPA compression
 * Simplified narratives, heuristics, and authority-seeking increase
 * This is a **mechanical response**, not manipulation per se
 

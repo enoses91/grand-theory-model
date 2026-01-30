@@ -29,7 +29,7 @@ It does **not** encode:
 
 * kindness or virtue
 * compliance or submission
-* legitimacy (φ)
+* legitimacy (COR.PHI)
 * authority or power
 * political orientation
 
@@ -88,7 +88,7 @@ Formally:
 [
 \text{ConflictEscalation}_i
 ;\propto;
-f\big(1-a_i,\ \text{DisagreementIntensity},\ \kappa,\ h\big)
+f\big(1-a_i,\ \text{DisagreementIntensity},\ \kappa,\ COR.H\big)
 ]
 
 Agreeableness does **not** eliminate conflict; it shapes its trajectory.
@@ -165,7 +165,7 @@ Treating messaging or education as altering conflict temperament is invalid.
 System-level consequences arise from:
 
 * low-a tail dominance in salient roles
-* interaction with κ compression (simplification → harsher norms)
+* interaction with COR.KAPPA compression (simplification → harsher norms)
 * coupling to Information Field amplification
 * uneven distribution across classes and groups
 

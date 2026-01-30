@@ -28,7 +28,7 @@ H–H:
 It does **not** encode:
 
 * virtue or goodness
-* legitimacy (φ)
+* legitimacy (COR.PHI)
 * trustworthiness of institutions
 * ideology or political preference
 
@@ -50,7 +50,7 @@ Where:
 Population representation:
 
 [
-\rho_h(h) = \text{distribution of Honesty–Humility across individuals}
+\rho_h(COR.H) = \text{distribution of Honesty–Humility across individuals}
 ]
 
 All analysis must operate on **distributions**, not point estimates.
@@ -87,7 +87,7 @@ Formally:
 [
 \text{ExploitativeResponse}_i
 ;\propto;
-f\big(h_i,\ W(i,k),\ \phi,\ \theta,\ CI\big)
+f\big(h_i,\ W(i,k),\ \phi,\ \theta,\ COR.CI\big)
 ]
 
 H–H does nothing in isolation.
@@ -107,18 +107,18 @@ H–H **does not negate incentives**; it shifts response probabilities.
 
 ### 5.2 With Governance Execution (RLM)
 
-* Low θ / high CI regimes amplify the variance effects of H–H
-* High θ regimes suppress trait-driven exploitation through enforcement
+* Low COR.THETA / high COR.CI regimes amplify the variance effects of H–H
+* High COR.THETA regimes suppress trait-driven exploitation through enforcement
 
 Trait effects are **regime-conditioned**.
 
 ---
 
-### 5.3 With Legitimacy (φ) and B_φ
+### 5.3 With Legitimacy (COR.PHI) and B_COR.PHI
 
-* Aggregate low H–H *does not* imply low φ
-* But low φ + weak enforcement allows low H–H actors to dominate outcomes
-* This creates **perceived unfairness**, tightening B_φ downstream
+* Aggregate low H–H *does not* imply low COR.PHI
+* But low COR.PHI + weak enforcement allows low H–H actors to dominate outcomes
+* This creates **perceived unfairness**, tightening B_COR.PHI downstream
 
 This is a second-order coupling, not direct causation.
 
@@ -159,7 +159,7 @@ You may **not** attribute intent or morality to populations.
 Measurement operator:
 
 [
-\mathcal{M}_h:\ O_h \rightarrow \hat{h}_i
+\mathcal{M}_h:\ O_h \rightarrow \hat{COR.H}_i
 ]
 
 Primary observables (high cost, limited use):

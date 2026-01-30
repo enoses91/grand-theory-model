@@ -11,7 +11,7 @@
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; defines state distribution, propagation operator, control surfaces, conserved quantities, and failure modes.
-  - v1.1: Aligned couplings to expanded Tier-1 metrics/states (κ_load/κ_threat/κ_velocity; h_boundary/h_moral/h_enforcement; E_τ and E_s); clarified injection channels, speed-limit regimes, and diagnostic signatures; no ontology expansion.
+  - v1.1: Aligned couplings to expanded Tier-1 metrics/states (COR.KAPPA_load/COR.KAPPA_threat/COR.KAPPA_velocity; h_boundary/h_moral/h_enforcement; E_τ and E_s); clarified injection channels, speed-limit regimes, and diagnostic signatures; no ontology expansion.
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed any implied agency; made scale- and manifold-indexing explicit; tightened “injection” language to operator-safe (OCF-safe) causal phrasing.
 
 ---
@@ -25,7 +25,7 @@
 
 **Non-Agency Constraint (hard)**
 - The Information Field is an **operator over distributions**. It contains **no agent**, **no intent**, **no belief**, and **no truth predicate**.
-- Observed convergence (lexical, topical, narrative) is **not** evidence of coordination intent; it can arise endogenously from Π_I and U_I given 𝒢(σ,t), κ, h, θ, E, and CI.
+- Observed convergence (lexical, topical, narrative) is **not** evidence of coordination intent; it can arise endogenously from Π_I and U_I given 𝒢(σ,t), COR.KAPPA, COR.H, COR.THETA, E, and COR.CI.
 
 ---
 
@@ -97,7 +97,7 @@ Propagation is bounded-nonlinear due to:
 - engagement-weighted reinforcement (rich-get-richer attention)
 - threshold/virality effects
 - penalty-association-driven self-suppression
-- feedback couplings through κ and h (Section 5)
+- feedback couplings through COR.KAPPA and COR.H (Section 5)
 
 Nonlinearity is **saturating** because attention mass is capacity-bounded.
 
@@ -122,7 +122,7 @@ Nonlinearity is **saturating** because attention mass is capacity-bounded.
 - **Neutral control:** symmetric, transparent, low-gain; primarily reduces noise/spam
 - **Active control:** asymmetric amplification/suppression or selective penalty gradients
 
-Active control can correlate with φ_proc erosion **via perception of asymmetry** (a downstream coupling), without imputing intent.
+Active control can correlate with COR.PHI_proc erosion **via perception of asymmetry** (a downstream coupling), without imputing intent.
 
 ---
 
@@ -136,19 +136,19 @@ All couplings are expressed as **conditional influences on distributions and rat
 - **E_τ(σ,t)** (temporal surplus): correction bandwidth; low E_τ reduces verification throughput
 - **E_s(σ,t)** (security surplus): threat sensitivity; low E_s increases threat token salience coupling
 - **CI_load(σ,t)** (institutional/procedural load): raises cognitive load; reduces correction/processing capacity
-- **θ(σ,t)** (institutional capacity/throughput): bounds verification and response velocities
+- **COR.THETA(σ,t)** (institutional capacity/throughput): bounds verification and response velocities
 
-### 5.2 Coupling into κ (bounded injection channels)
+### 5.2 Coupling into COR.KAPPA (bounded injection channels)
 
-Define κ components: κ_velocity, κ_threat, κ_load. The Information Field contributes **bounded forcing terms** into κ dynamics:
+Define COR.KAPPA components: COR.KAPPA_velocity, COR.KAPPA_threat, COR.KAPPA_load. The Information Field contributes **bounded forcing terms** into COR.KAPPA dynamics:
 
-- **Velocity channel → κ_velocity**
+- **Velocity channel → COR.KAPPA_velocity**
   - high refresh rates, high novelty turnover, low signal-to-noise, outrage/engagement optimization
 
-- **Threat channel → κ_threat**
+- **Threat channel → COR.KAPPA_threat**
   - vivid threat tokens, violence-adjacent imagery, existential “enemy” frames
 
-- **Load channel → κ_load**
+- **Load channel → COR.KAPPA_load**
   - procedural complexity salience, compliance overload narratives, process churn visibility
 
 Formalized as:
@@ -158,9 +158,9 @@ Formalized as:
 \quad j \in \{\text{velocity, threat, load}\}
 \]
 
-### 5.3 Coupling into h (boundary hardness components)
+### 5.3 Coupling into COR.H (boundary hardness components)
 
-Define h components: h_boundary, h_moral, h_enforcement. The field contributes bounded forcing terms:
+Define COR.H components: h_boundary, h_moral, h_enforcement. The field contributes bounded forcing terms:
 
 - **h_boundary:** increases with modularity/segregation + reduced bridging exposure
 - **h_moral:** increases with moralized labeling, sacral/taboo token propagation
@@ -176,9 +176,9 @@ Define h components: h_boundary, h_moral, h_enforcement. The field contributes b
 ### 5.4 Downstream effects (bounded, non-teleological)
 
 Downstream consequences are described as regime-conditional outcomes of coupled dynamics:
-- **SDBH precursor conditions:** sustained salience + penalty associations + κ compression + h hardening
-- **φ shifts:** perceived asymmetry/manipulation can erode φ_proc; overload can erode φ_exp
-- **θ/CI load:** salience contests increase decision churn and throughput burden
+- **SDBH precursor conditions:** sustained salience + penalty associations + COR.KAPPA compression + COR.H hardening
+- **COR.PHI shifts:** perceived asymmetry/manipulation can erode COR.PHI_proc; overload can erode COR.PHI_exp
+- **COR.THETA/COR.CI load:** salience contests increase decision churn and throughput burden
 - **B_C tightening:** increased cognitive/coordination load raises effective complexity burden
 - **Exit signaling distortion:** altered beliefs about feasibility/risks of exit (via information asymmetry), without changing objective exit options X
 
@@ -188,7 +188,7 @@ Downstream consequences are described as regime-conditional outcomes of coupled 
 
 Define:
 - \(v_I(\sigma,t)\): effective propagation velocity of salient tokens over \(\mathcal{G}(\sigma,t)\)
-- \(v_C(\sigma,t)\): correction/verification velocity (bounded by E_τ, θ, CI_load)
+- \(v_C(\sigma,t)\): correction/verification velocity (bounded by E_τ, COR.THETA, CI_load)
 - \(L_G(\sigma,t)\): decision latency of key governing groups (Γ_G component; referenced here as an external parameter)
 
 High-risk regime when:
@@ -199,7 +199,7 @@ v_I(\sigma,t) \gg v_C(\sigma,t)
 v_I(\sigma,t)\cdot L_G(\sigma,t) \gg 1
 \]
 
-This is an **information speed-limit violation**: correction cannot keep pace with propagation; κ_velocity forcing increases.
+This is an **information speed-limit violation**: correction cannot keep pace with propagation; COR.KAPPA_velocity forcing increases.
 
 ---
 
@@ -211,7 +211,7 @@ The field becomes destabilizing when:
 - attention scarcity is high (topic concentration ↑)
 - speed mismatch \(v_I \gg v_C\)
 - penalty gradients are asymmetric (selective suppression/penalty association visibility ↑)
-- κ is already compressed (especially κ_velocity/κ_threat elevated)
+- COR.KAPPA is already compressed (especially COR.KAPPA_velocity/COR.KAPPA_threat elevated)
 - topology is highly modular or highly centralized (either can yield monoculture dynamics)
 - E_τ is low and CI_load is high
 
@@ -230,10 +230,10 @@ The field becomes destabilizing when:
   - Signature: high message uniformity across independent actors without evidence of coordinated governance (do not infer intent)
 
 - **Threat priming spiral**
-  - Signature: κ_threat rises; h_moral rises; violence-adjacent tokens dominate; reintegration signals collapse
+  - Signature: COR.KAPPA_threat rises; h_moral rises; violence-adjacent tokens dominate; reintegration signals collapse
 
 - **Legitimacy erosion via perceived manipulation**
-  - Signature: φ_proc declines alongside rising control-surface visibility and asymmetric penalty gradients
+  - Signature: COR.PHI_proc declines alongside rising control-surface visibility and asymmetric penalty gradients
 
 ---
 
@@ -244,7 +244,7 @@ The field becomes destabilizing when:
   - salience spikes: fast
   - penalty association persistence: medium
   - narrative decay: slow when \(\mathcal{G}(\sigma,t)\) and \(U_I\) are stable
-- **Hysteresis:** once κ collapses or h hardens, identical \(U_I\) and Π_I conditions yield stronger downstream forcing (path dependence).
+- **Hysteresis:** once COR.KAPPA collapses or COR.H hardens, identical \(U_I\) and Π_I conditions yield stronger downstream forcing (path dependence).
 
 ---
 
@@ -296,8 +296,9 @@ Reducing refinements ΔO → 0 yields:
 
 > Information propagates and allocates attention according to topology \(\mathcal{G}(\sigma,t)\) and bounded amplification dynamics under \(U_I\), over manifold 𝓜.
 
-Velocity channels, penalty gradients, and κ/h couplings collapse to generic propagation effects with unchanged semantics.
+Velocity channels, penalty gradients, and COR.KAPPA/COR.H couplings collapse to generic propagation effects with unchanged semantics.
 
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

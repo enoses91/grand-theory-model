@@ -1,6 +1,6 @@
 ## 2. π_𝒢 — Topology Coarse-Graining Operator
 
-This operationalizes 𝒢 and underpins κ, h, and SDBH diagnostics.
+This operationalizes 𝒢 and underpins COR.KAPPA, COR.H, and SDBH diagnostics.
 
 ---
 
@@ -65,4 +65,5 @@ Fallback:
 ---
 
 ### END OF CANONICAL OBJECT FILE
+
 

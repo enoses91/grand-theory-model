@@ -45,14 +45,14 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Fields and metrics**
 
 - Governance field (Gv): enforcement regime, backlog, queueing dynamics
-- φ: procedural legitimacy (predictability), compliance willingness
-- θ: throughput and execution capacity under load
-- κ: compression under uncertainty and time poverty
+- COR.PHI: procedural legitimacy (predictability), compliance willingness
+- COR.THETA: throughput and execution capacity under load
+- COR.KAPPA: compression under uncertainty and time poverty
 
 **Directionality and lag**
 
 - Enforcement shifts can be rapid; legitimacy recovery is slow and asymmetric
-- Compliance load rises quickly; θ_eff declines with delay via backlog accumulation
+- Compliance load rises quickly; COR.THETA_eff declines with delay via backlog accumulation
 
 **Regime/scale bounds**
 
@@ -79,14 +79,14 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - Promises/commitments exceed feasible throughput
 - Visible delivery failures accumulate (promise gap widens)
-- Procedural legitimacy decays (φ↓)
+- Procedural legitimacy decays (COR.PHI↓)
 - Compliance falls; enforcement burden rises
-- Rising burden further reduces θ_eff, increasing failures
+- Rising burden further reduces COR.THETA_eff, increasing failures
 
 **Fields and metrics**
 
-- φ: legitimacy and consent
-- θ: execution throughput and backlog
+- COR.PHI: legitimacy and consent
+- COR.THETA: execution throughput and backlog
 - I-field: visibility/amplification of failures
 - Gv: backlog/queueing and service experience feedback
 
@@ -102,13 +102,13 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 **Known breaks / alternatives**
 
-- De-scope promises or sequence them after θ repair
+- De-scope promises or sequence them after COR.THETA repair
 - Improve throughput before increasing obligations
 
 **Common misuses**
 
 - Treating legitimacy as “messaging” only
-- Assuming more enforcement can substitute for φ
+- Assuming more enforcement can substitute for COR.PHI
 
 **Status:** `promoted`  
 **Confidence:** `high`
@@ -121,14 +121,14 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Steps**
 
 - Administrative gates and rules increase cognitive/temporal load
-- Time poverty (E_τ↓) increases κ
-- κ reduces decision quality and increases error/rewind
-- θ_eff declines; backlog rises; execution collapses
+- Time poverty (E_τ↓) increases COR.KAPPA
+- COR.KAPPA reduces decision quality and increases error/rewind
+- COR.THETA_eff declines; backlog rises; execution collapses
 
 **Fields and metrics**
 
-- θ: execution capacity
-- κ: compression
+- COR.THETA: execution capacity
+- COR.KAPPA: compression
 - E_τ: temporal surplus
 - Gv: backlog and procedural gates
 
@@ -161,26 +161,26 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Steps**
 
 - I-field amplification increases salience load and conflict visibility
-- κ rises; causal discrimination falls
-- h rises via identity salience and purity incentives
+- COR.KAPPA rises; causal discrimination falls
+- COR.H rises via identity salience and purity incentives
 - Overton window narrows; discourse policing increases
 
 **Fields and metrics**
 
 - I-field: amplification and attention density
-- κ: compression
-- h: hardening and hysteresis
-- φ: procedural legitimacy vs moral imbalance
+- COR.KAPPA: compression
+- COR.H: hardening and hysteresis
+- COR.PHI: procedural legitimacy vs moral imbalance
 
 **Directionality and lag**
 
-- κ responds quickly; h responds slower but is hysteretic
-- Overton narrowing can happen rapidly once h crosses threshold
+- COR.KAPPA responds quickly; COR.H responds slower but is hysteretic
+- Overton narrowing can happen rapidly once COR.H crosses threshold
 
 **Regime/scale bounds**
 
 - High-velocity information environments
-- Stronger under low pluralism and contested φ-procedural
+- Stronger under low pluralism and contested COR.PHI-procedural
 
 **Known breaks / alternatives**
 
@@ -190,7 +190,7 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Common misuses**
 
 - Treating as ideology-specific (it is symmetric)
-- Treating censorship alone as cause rather than symptom of h
+- Treating censorship alone as cause rather than symptom of COR.H
 
 **Status:** `candidate`  
 **Confidence:** `medium`
@@ -202,13 +202,13 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - Payment delays / procurement failures reduce vendor willingness
 - Service quality degrades; outages and delays increase
-- Backlog accumulates; θ_eff declines
-- Visible failures reduce φ and increase enforcement/triage burdens
+- Backlog accumulates; COR.THETA_eff declines
+- Visible failures reduce COR.PHI and increase enforcement/triage burdens
 
 **Fields and metrics**
 
 - M-field: vendor response and exchange constraints
-- θ: execution/operations throughput
+- COR.THETA: execution/operations throughput
 - E: surplus and payment capacity
 - Gv: backlog/queue dynamics
 - I-field: visibility of failures
@@ -216,7 +216,7 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Directionality and lag**
 
 - Vendor refusal can be sudden; operational degradation compounds
-- φ decay lags but persists
+- COR.PHI decay lags but persists
 
 **Regime/scale bounds**
 
@@ -249,9 +249,9 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 **Fields and metrics**
 
 - X: exit/mobility
-- θ: execution responsiveness
+- COR.THETA: execution responsiveness
 - E: opportunity cost differentials
-- CI: competence retention and institutional learning
+- COR.CI: competence retention and institutional learning
 
 **Directionality and lag**
 
@@ -284,14 +284,14 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 - Positive outcomes are attributed to intent/technique
 - Negative outcomes are attributed to shocks or opponents
 - Asymmetric attribution blocks learning and honest measurement
-- κ/h rise under moralized narratives, hardening basins
+- COR.KAPPA/COR.H rise under moralized narratives, hardening basins
 
 **Fields and metrics**
 
 - I-field: narrative selection and amplification
 - MGA attribution error layer: agency inflation/erasure
-- κ: causal discrimination loss
-- h: identity hardening
+- COR.KAPPA: causal discrimination loss
+- COR.H: identity hardening
 
 **Directionality and lag**
 
@@ -324,15 +324,15 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 - Demographic shock (objective or perceived) increases identity salience
 - Topology shifts toward segregation / clustering
 - I-field reinforcement increases out-group threat salience
-- h increases with hysteresis; polarization rises
+- COR.H increases with hysteresis; polarization rises
 
 **Fields and metrics**
 
 - D-field: demographic change distributions and salience
 - 𝒢: topology/segregation/broker mass
 - I-field: amplification
-- h: hardening
-- φ: procedural legitimacy and pluralism
+- COR.H: hardening
+- COR.PHI: procedural legitimacy and pluralism
 
 **Directionality and lag**
 
@@ -356,3 +356,4 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 **Status:** `candidate`  
 **Confidence:** `low`
+

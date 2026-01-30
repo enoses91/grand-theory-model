@@ -6,12 +6,12 @@
 - **Name:** Market Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes allocation, exchange, contracting, price signaling, and capital formation as a distributed coordination field over topology 𝒢; governs how surplus (E) is generated, allocated, and transformed into capacity (θ) and exit (X) without encoding ideology, welfare, or intent.
+- **Role:** Encodes allocation, exchange, contracting, price signaling, and capital formation as a distributed coordination field over topology 𝒢; governs how surplus (E) is generated, allocated, and transformed into capacity (COR.THETA) and exit (X) without encoding ideology, welfare, or intent.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
   - v1.0: Canonical field formalization; defines state distribution, propagation operator, control surfaces, conserved quantities, and failure modes.
-  - v1.1: Clarified non-identity with “capitalism” or ideology; strengthened coupling language to E, θ, X, φ, and CI.
+  - v1.1: Clarified non-identity with “capitalism” or ideology; strengthened coupling language to E, COR.THETA, X, COR.PHI, and COR.CI.
   - v1.2: Reconciled to explicitly reference Π_k, U_k, σ, 𝓜; removed implied agency.
   - v1.3: Added explicit **J_z(·)** bounded forcing-term notation for primary couplings to improve mechanical consistency with other Fields and prepare for Bounds/RLM integration.
 
@@ -141,9 +141,9 @@ Destabilization is structural, not moral.
 ### 5.1 Upstream dependencies
 
 - **E:** real surplus base for production and investment
-- **θ:** governance execution affecting contract reliability
-- **φ:** legitimacy stabilizing expectations and voluntary compliance
-- **CI:** institutional inertia affecting entry, restructuring, and reform speed
+- **COR.THETA:** governance execution affecting contract reliability
+- **COR.PHI:** legitimacy stabilizing expectations and voluntary compliance
+- **COR.CI:** institutional inertia affecting entry, restructuring, and reform speed
 - **Topology \(\mathcal{G}(\sigma,t)\):** thickness, concentration, segmentation
 - **Information Field:** price discovery, expectation formation, narrative risk premia
 
@@ -157,7 +157,7 @@ Market dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (misalallocation or productivity amplification)
 
-- **Capacity (θ):**
+- **Capacity (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_M,\Pi_M,U_M;\sigma)
 \]
@@ -169,7 +169,7 @@ Market dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (capital mobility, labor relocation, firm exit/entry dynamics)
 
-- **Cognitive load (κ_load):**
+- **Cognitive load (COR.KAPPA_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_M,\Pi_M,U_M;\sigma)
 \]
@@ -180,7 +180,7 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 ### 5.3 Coupling into Bounds
 
 - **B_C:** compliance and licensing regimes tighten coordination feasibility
-- **B_φ:** perceived unfairness or capture tightens legitimacy feasibility
+- **B_COR.PHI:** perceived unfairness or capture tightens legitimacy feasibility
 - **B_X:** capital controls or illiquidity bind exit
 
 No coupling implies intent.
@@ -192,8 +192,8 @@ No coupling implies intent.
 ### 6.1 High-risk regimes (scale-aware)
 
 The Market Field destabilizes when:
-- contract enforcement becomes unreliable (θ↓)
-- rule and compliance complexity rise (CI↑, B_C tightens)
+- contract enforcement becomes unreliable (COR.THETA↓)
+- rule and compliance complexity rise (COR.CI↑, B_C tightens)
 - expectations become narrative-dominated
 - credit becomes procyclical and fragile
 - rents dominate productive returns
@@ -204,7 +204,7 @@ The Market Field destabilizes when:
 - **Liquidity freeze:** clearing fails under counterparty risk
 - **Rent lock-in:** incumbents protected; dynamism collapses
 - **Debt overhang / claim inflation:** claims exceed surplus; defaults cascade
-- **Capture spiral:** control surfaces favor incumbents, eroding φ and θ
+- **Capture spiral:** control surfaces favor incumbents, eroding COR.PHI and COR.THETA
 - **Exit amplification:** capital/labor flight tightens B_X
 
 ---
@@ -215,7 +215,7 @@ The Market Field destabilizes when:
 - **Time constants:**
   - prices: fast
   - investment and capital stock: slow
-  - institutional repair (θ, φ): slower than collapse
+  - institutional repair (COR.THETA, COR.PHI): slower than collapse
 - **Hysteresis:** firm destruction, trust loss, and network decay slow recovery
 
 ---
@@ -269,3 +269,4 @@ All refinements collapse to generic exchange dynamics with semantics preserved.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

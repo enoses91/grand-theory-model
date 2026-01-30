@@ -11,7 +11,7 @@
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; distinguishes culture/identity as a coordination field from beliefs, morality, ideology, or narrative.
-  - v1.1: Integrated explicit coupling to φ, κ, h, Demography, and Information fields; clarified failure modes and hysteresis.
+  - v1.1: Integrated explicit coupling to COR.PHI, COR.KAPPA, COR.H, Demography, and Information fields; clarified failure modes and hysteresis.
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed implied agency; aligned propagation, control, and coupling language to OCF-safe operator form.
 
 ---
@@ -26,7 +26,7 @@
 **Non-Agency Constraint (hard)**
 - The Culture / Identity Field is an **operator over distributions of meaning and boundaries**.
 - It contains **no agents, no beliefs, no intentions, and no truth predicates**.
-- Identity convergence or polarization **does not imply deliberate mobilization or belief change**; it may arise endogenously from Π_CI and U_CI given topology, demography, κ, h, θ, and E.
+- Identity convergence or polarization **does not imply deliberate mobilization or belief change**; it may arise endogenously from Π_CI and U_CI given topology, demography, COR.KAPPA, COR.H, COR.THETA, and E.
 
 ---
 
@@ -34,7 +34,7 @@
 
 **The Culture / Identity Field is a second-order operator describing how shared meanings, norms, symbols, and identity boundaries are distributed, reinforced, and transformed across 𝓜 at scale σ.**
 
-Formally, for field index k = CI:
+Formally, for field index k = COR.CI:
 
 \[
 F_{CI} \equiv \langle \rho_{CI}(x,\sigma,t),\ \Pi_{CI},\ U_{CI} \rangle
@@ -76,7 +76,7 @@ The quasi-conserved quantity is **shared meaning bandwidth** at scale σ:
 
 ---
 
-## 3. Propagation / Boundary Operator (Π_CI ≡ Π_k|_{k=CI})
+## 3. Propagation / Boundary Operator (Π_CI ≡ Π_k|_{k=COR.CI})
 
 ### 3.1 Core evolution equation
 
@@ -100,13 +100,13 @@ Topology \(\mathcal{G}(\sigma,t)\) conditions:
 ### 3.2 Nonlinearities and hysteresis
 
 - threshold-driven boundary hardening under threat or recognition asymmetry
-- feedback with κ (compression favors simplified identity schemas)
+- feedback with COR.KAPPA (compression favors simplified identity schemas)
 - salience amplification via Information Field coupling
 - hysteresis: identity commitments persist after initial drivers subside
 
 ---
 
-## 4. Control Surfaces (U_CI ≡ U_k|_{k=CI})
+## 4. Control Surfaces (U_CI ≡ U_k|_{k=COR.CI})
 
 ### 4.1 Canonical control surfaces
 
@@ -138,12 +138,12 @@ Destabilization is assessed structurally, not morally.
 - **Topology \(\mathcal{G}(\sigma,t)\):** segregation vs mixing
 - **Demography Field:** cohort replacement and cultural distance ΔC
 - **Information Field:** salience amplification and narrative scaffolding
-- **κ (compression):** favors simplified, binary identity frames
-- **θ / CI_load:** bounds institutional capacity to absorb recognition demands
+- **COR.KAPPA (compression):** favors simplified, binary identity frames
+- **COR.THETA / CI_load:** bounds institutional capacity to absorb recognition demands
 
-### 5.2 Coupling into h (boundary hardness)
+### 5.2 Coupling into COR.H (boundary hardness)
 
-The field injects bounded forcing terms into h components:
+The field injects bounded forcing terms into COR.H components:
 
 - **h_boundary:** strengthened by segregation and recognition asymmetry
 - **h_moral:** strengthened by moralized identity labeling
@@ -155,7 +155,7 @@ The field injects bounded forcing terms into h components:
 
 ### 5.3 Downstream effects (conditional)
 
-- **φ:** legitimacy shifts via perceived symmetry or bias in recognition
+- **COR.PHI:** legitimacy shifts via perceived symmetry or bias in recognition
 - **B_C:** identity proliferation raises coordination/complexity burden
 - **Governance Field:** pressure for recognition, protection, or suppression
 - **Violence Field:** identity threat primes coercive escalation
@@ -182,7 +182,7 @@ Destabilization occurs when:
 - **Moralized coordination:** norms override performance criteria
 - **Recognition spirals:** escalating institutionalization demands
 - **Assimilation breakdown:** integration time exceeds tolerance
-- **Legitimacy erosion:** φ declines due to perceived bias
+- **Legitimacy erosion:** COR.PHI declines due to perceived bias
 - **Violence coupling:** identity threat activates coercion
 
 ---
@@ -246,3 +246,4 @@ All refinements collapse to generic boundary dynamics with semantics preserved.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

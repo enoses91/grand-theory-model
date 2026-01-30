@@ -3,10 +3,10 @@
 ## COR OBJECT HEADER
 
 * **O_ID:** `O.2.BOUND.B_PHI`
-* **Name:** Legitimacy / Consent Feasible Bound (B_φ)
+* **Name:** Legitimacy / Consent Feasible Bound (B_COR.PHI)
 * **Order:** 2nd
 * **Kind:** Feasible Bound (Hard, trajectory-gating with slack)
-* **Role:** Constrains feasible trajectories by limiting the magnitude, speed, and asymmetry of changes (or steady-state configurations) that can be sustained without triggering legitimacy collapse, noncompliance, exit activation, or violence coupling. Distinct from φ itself.
+* **Role:** Constrains feasible trajectories by limiting the magnitude, speed, and asymmetry of changes (or steady-state configurations) that can be sustained without triggering legitimacy collapse, noncompliance, exit activation, or violence coupling. Distinct from COR.PHI itself.
 * **Status:** Canonical
 * **Version:** 1.1
 * **Changelog:**
@@ -17,14 +17,14 @@
 
 ## 1. Base Definition (O⁽⁰⁾)
 
-**B_φ is the feasibility bound associated with legitimacy and consent.** It limits the magnitude, speed, and asymmetry of changes (or steady-state configurations) that can be sustained without triggering systemic noncompliance, exit, or coercive escalation.
+**B_COR.PHI is the feasibility bound associated with legitimacy and consent.** It limits the magnitude, speed, and asymmetry of changes (or steady-state configurations) that can be sustained without triggering systemic noncompliance, exit, or coercive escalation.
 
-B_φ is **not** φ itself:
+B_COR.PHI is **not** COR.PHI itself:
 
-- **φ** is the metric component (current legitimacy level)
-- **B_φ** is the constraint determining what changes are feasible without collapsing φ
+- **COR.PHI** is the metric component (current legitimacy level)
+- **B_COR.PHI** is the constraint determining what changes are feasible without collapsing COR.PHI
 
-Formally, treat B_φ as a constraint operator mapping a candidate trajectory to feasible / infeasible **with respect to legitimacy**:
+Formally, treat B_COR.PHI as a constraint operator mapping a candidate trajectory to feasible / infeasible **with respect to legitimacy**:
 
 \[
 B_\phi:\ \mathcal{T} \rightarrow \{0,1\}
@@ -44,7 +44,7 @@ Let \(\mathcal{R}\) be the feasible region of trajectories:
 \mathcal{R} = \bigcap_i \left\{ \mathcal{T} : B_i(\mathcal{T}) = 1 \right\}
 \]
 
-B_φ contributes one constraint surface in \(\mathcal{R}\).
+B_COR.PHI contributes one constraint surface in \(\mathcal{R}\).
 
 ### 2.2 Slack
 
@@ -69,7 +69,7 @@ Clipped slack (robustness contract):
 
 ### 2.3 Dominance switching
 
-B_φ becomes binding (dominant) when:
+B_COR.PHI becomes binding (dominant) when:
 
 \[
 \tilde{\sigma}_\phi \approx \min_j \tilde{\sigma}_j
@@ -79,9 +79,9 @@ Dominance can switch rapidly during salience shocks, enforcement asymmetry, or p
 
 ---
 
-## 3. What B_φ Constrains (Canonical Drivers)
+## 3. What B_COR.PHI Constrains (Canonical Drivers)
 
-B_φ primarily constrains:
+B_COR.PHI primarily constrains:
 
 1. **Enforcement symmetry** (two-tier perception with corroborating artifacts)
 2. **Promise gap** (commitments vs delivery, and credibility of future delivery)
@@ -90,13 +90,13 @@ B_φ primarily constrains:
 5. **Coercion footprint** (violence field coupling risk / coercion normalization)
 6. **Complexity overload** (interaction with coordination/compliance burden)
 
-B_φ is sensitive not only to *what* happens, but **how**, **to whom**, and **how consistently**.
+B_COR.PHI is sensitive not only to *what* happens, but **how**, **to whom**, and **how consistently**.
 
 ---
 
 ## 4. Non-Compensability (Hard-Bound Property)
 
-B_φ is **non-compensatory** in late/binding regimes: strength in one channel (messaging, spending, or coercion) cannot “pay for” a violation in another once the bound is binding.
+B_COR.PHI is **non-compensatory** in late/binding regimes: strength in one channel (messaging, spending, or coercion) cannot “pay for” a violation in another once the bound is binding.
 
 Operationally:
 
@@ -110,26 +110,26 @@ This is a **hard feasibility constraint**, not a smooth tradeoff curve.
 
 ## 5. Binding-Bound Signatures (Observable)
 
-B_φ is plausibly binding when one or more are observed (artifact-sensitive):
+B_COR.PHI is plausibly binding when one or more are observed (artifact-sensitive):
 
 - rising noncompliance / evasion (tax, regulatory, institutional)
 - selective enforcement narratives **with corroborating enforcement artifacts**
-- accelerating polarization with boundary hardening (h↑)
+- accelerating polarization with boundary hardening (COR.H↑)
 - exit pressure escalation (X dynamics) despite stable material conditions
-- legitimacy contestation inside institutions (θ utilization shifts to self-protection)
+- legitimacy contestation inside institutions (COR.THETA utilization shifts to self-protection)
 - violence field activation (localized coercion becomes routine, not exceptional)
 
 ---
 
 ## 6. Cross-Bound Couplings (Amplification)
 
-### 6.1 Promise gap → B_φ tightening (canonical)
+### 6.1 Promise gap → B_COR.PHI tightening (canonical)
 
 \[
 \Delta \text{PromiseGap} \uparrow \Rightarrow \sigma_\phi \downarrow
 \]
 
-especially under θ saturation, CI ratchets, and high salience (Information field).
+especially under COR.THETA saturation, COR.CI ratchets, and high salience (Information field).
 
 ### 6.2 Enforcement asymmetry coupling
 
@@ -141,7 +141,7 @@ even if aggregate enforcement rises.
 
 ### 6.3 Interaction with Exit bound (B_X)
 
-As B_φ tightens, exit pressure tends to rise:
+As B_COR.PHI tightens, exit pressure tends to rise:
 
 \[
 \sigma_\phi \downarrow \Rightarrow \text{ExitPressure} \uparrow \Rightarrow \sigma_X \downarrow
@@ -151,7 +151,7 @@ Exit functions as a partial release valve until it becomes blocked or punished.
 
 ### 6.4 Interaction with Complexity bound (B_C)
 
-Complexity increases perceived unfairness and reduces comprehension; κ effects amplify salience and misattribution:
+Complexity increases perceived unfairness and reduces comprehension; COR.KAPPA effects amplify salience and misattribution:
 
 \[
 B_C\ \text{binding} \Rightarrow \kappa \uparrow \Rightarrow \sigma_\phi \downarrow
@@ -161,12 +161,12 @@ B_C\ \text{binding} \Rightarrow \kappa \uparrow \Rightarrow \sigma_\phi \downarr
 
 ## 7. Regime Dependence
 
-B_φ sensitivity varies by regime configuration:
+B_COR.PHI sensitivity varies by regime configuration:
 
-- high θ and high φ: slack larger; reforms feasible
-- low θ: execution errors frequent; legitimacy burns faster
-- high CI: procedural ratchets make fairness harder to demonstrate
-- high h: identity salience multiplies asymmetry sensitivity
+- high COR.THETA and high COR.PHI: slack larger; reforms feasible
+- low COR.THETA: execution errors frequent; legitimacy burns faster
+- high COR.CI: procedural ratchets make fairness harder to demonstrate
+- high COR.H: identity salience multiplies asymmetry sensitivity
 - low E_s: security failure makes legitimacy fragile
 
 Thus, feasibility is **regime-local**, not universal.
@@ -175,10 +175,10 @@ Thus, feasibility is **regime-local**, not universal.
 
 ## 8. Hysteresis and Irreversibility
 
-B_φ exhibits strong hysteresis:
+B_COR.PHI exhibits strong hysteresis:
 
 - legitimacy collapse can be fast
-- legitimacy recovery is slow (often slower than θ repair)
+- legitimacy recovery is slow (often slower than COR.THETA repair)
 
 \[
 \tau_\phi^{recover} \gg \tau_\phi^{collapse}
@@ -190,12 +190,12 @@ Visible betrayals, asymmetric enforcement, and normalized coercion imprint durab
 
 ## 9. Canonical Failure Modes (Named)
 
-These are **second-order failure-mode labels** for common ways B_φ binds and stays binding:
+These are **second-order failure-mode labels** for common ways B_COR.PHI binds and stays binding:
 
-1. **Legitimacy Trap:** attempts to restore φ by expanding coercion/enforcement tighten B_φ further (coercion footprint + asymmetry perceptions).
+1. **Legitimacy Trap:** attempts to restore COR.PHI by expanding coercion/enforcement tighten B_COR.PHI further (coercion footprint + asymmetry perceptions).
 2. **Narrative Overreach:** messaging/claims exceed delivery capacity; promise gap widens; slack collapses.
 3. **Delayed Collapse:** high X postpones visible failure; accumulated promise gap and asymmetry increase eventual rupture amplitude.
-4. **Fragmented φ:** h↑ yields local legitimacy pockets while system-wide legitimacy collapses; “consent” becomes non-uniform and non-transferable.
+4. **Fragmented COR.PHI:** COR.H↑ yields local legitimacy pockets while system-wide legitimacy collapses; “consent” becomes non-uniform and non-transferable.
 
 ---
 
@@ -213,14 +213,14 @@ These are **second-order failure-mode labels** for common ways B_φ binds and st
 
 ## 11. Measurement Notes (Bound Operator)
 
-B_φ is **not directly measurable**. Conclusions require a measurement operator consistent with evidence hierarchy.
+B_COR.PHI is **not directly measurable**. Conclusions require a measurement operator consistent with evidence hierarchy.
 
 Primary evidence (high):
 
 - enforcement artifacts: prosecution/sanction asymmetry with controls
 - institutional compliance rates (tax, rule compliance, court compliance)
 - exit traces (migration, capital flight) conditional on incentives
-- θ saturation indicators (backlog/throughput/self-protection shifts)
+- COR.THETA saturation indicators (backlog/throughput/self-protection shifts)
 - coercion normalization traces (routine force, routine exceptional measures)
 
 Secondary (medium/low):
@@ -247,7 +247,7 @@ All bound conclusions must be **confidence-labeled**; discourse alone cannot est
 
 **Default disposition:**
 - **Bound** unless multiple binding signatures are present.
-- If B_φ is clearly binding and tightening → **Reject** φ-increasing interventions that do not first retire promise gaps and restore symmetry/procedure.
+- If B_COR.PHI is clearly binding and tightening → **Reject** COR.PHI-increasing interventions that do not first retire promise gaps and restore symmetry/procedure.
 
 ---
 
@@ -259,8 +259,8 @@ Invalid uses include:
 - assuming elections alone guarantee slack
 - inferring legitimacy collapse from polarization without artifacts
 - ignoring hysteresis and recovery time constants
-- assuming intent or moral urgency relaxes B_φ
-- assuming coercion can substitute for consent without tightening B_φ
+- assuming intent or moral urgency relaxes B_COR.PHI
+- assuming coercion can substitute for consent without tightening B_COR.PHI
 
 Violations indicate normative substitution, artifact-free inference, or feasibility blindness.
 
@@ -286,3 +286,4 @@ Object passes robustness, boundedness, and reduction requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.1)
+

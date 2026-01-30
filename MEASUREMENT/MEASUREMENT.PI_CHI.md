@@ -38,7 +38,7 @@ You will need this for groups, EXIT asymmetry, and future organizational analysi
 
 ## 3. Interpretation Rules
 
-* High χ can partially substitute for low θ locally
+* High χ can partially substitute for low COR.THETA locally
 * χ ≠ ideology or enthusiasm
 * Nominal groups with low χ lack agency
 

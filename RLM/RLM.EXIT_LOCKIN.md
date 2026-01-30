@@ -10,7 +10,7 @@
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
-  - v1.0: Canonical RLM formalization; distinguishes exit masking from lock-in/repression pathways; integrates with B_φ and B_C.
+  - v1.0: Canonical RLM formalization; distinguishes exit masking from lock-in/repression pathways; integrates with B_COR.PHI and B_C.
   - **v1.2:** Reconciled to explicitly reference **σ, 𝓜, Π_k, U_k, W_{G→U}**, and bounded forcing semantics **J_z(·)**; removed residual agency language; aligned fully with Field/Bound/RLM discipline.
 
 ---
@@ -39,7 +39,7 @@
 
 Formally:
 
-- Given binding feasibility constraints (e.g., B_C, B_X, B_φ),
+- Given binding feasibility constraints (e.g., B_C, B_X, B_COR.PHI),
 - High effective exit \(X^{eff}\) routes stress into **masking**,
 - Low or suppressed \(X^{eff}\) routes stress into **lock-in**.
 
@@ -92,8 +92,8 @@ Stress is **rerouted**, not eliminated.
 
 **Dynamics**
 - Structural failure persists but is hidden
-- φ erosion is delayed and uneven
-- θ degrades quietly as load concentrates on immobile actors
+- COR.PHI erosion is delayed and uneven
+- COR.THETA degrades quietly as load concentrates on immobile actors
 - E_m and E_τ drain through exit
 
 **Outcome**
@@ -111,9 +111,9 @@ Stress is **rerouted**, not eliminated.
 
 **Dynamics**
 - Pressure converts into overt contestation
-- φ collapses rapidly and visibly
-- θ is consumed by enforcement and crisis response
-- κ compresses; h hardens; Violence Field activates
+- COR.PHI collapses rapidly and visibly
+- COR.THETA is consumed by enforcement and crisis response
+- COR.KAPPA compresses; COR.H hardens; Violence Field activates
 
 **Outcome**
 - Open instability, repression, or violence
@@ -150,13 +150,13 @@ EXIT–LOCK-IN induces **bounded forcing** into downstream variables, conditiona
 \]
 (human capital and capital drain)
 
-- **Institutional capacity (θ):**
+- **Institutional capacity (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\Pi_X;\sigma)
 \]
 (hollowing, service load concentration)
 
-- **Legitimacy (φ):**
+- **Legitimacy (COR.PHI):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\Pi_X;\sigma)
 \]
@@ -166,12 +166,12 @@ EXIT–LOCK-IN induces **bounded forcing** into downstream variables, conditiona
 
 ### 5.2 Lock-In / Repression (X low)
 
-- **Cognitive compression (κ):**
+- **Cognitive compression (COR.KAPPA):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\Pi_X;\sigma)
 \]
 
-- **Boundary hardness (h):**
+- **Boundary hardness (COR.H):**
 \[
 \partial_t h = \ldots + J_h^{(+)}(\Pi_X;\sigma)
 \]
@@ -181,7 +181,7 @@ EXIT–LOCK-IN induces **bounded forcing** into downstream variables, conditiona
 \partial_t \rho_V = \ldots + J_V^{(+)}(\Pi_X;\sigma)
 \]
 
-- **Legitimacy (φ):**
+- **Legitimacy (COR.PHI):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\Pi_X;\sigma)
 \]
@@ -196,7 +196,7 @@ EXIT–LOCK-IN is typically **class- and skill-asymmetric**:
 
 - High-E / high-skill actors exit first
 - Low-X populations absorb coordination and enforcement load
-- Asymmetry accelerates φ fragmentation and h hardening
+- Asymmetry accelerates COR.PHI fragmentation and COR.H hardening
 
 Aggregate exit metrics **systematically understate** binding risk.
 
@@ -226,8 +226,8 @@ EXIT–LOCK-IN is **not universal**; it is regime- and scale-specific.
 ### Lock-In
 - Rapid escalation of protests, strikes, unrest
 - Increased enforcement and emergency powers
-- Sharp drops in φ indicators
-- Discourse compression and tolerance loss (κ↑)
+- Sharp drops in COR.PHI indicators
+- Discourse compression and tolerance loss (COR.KAPPA↑)
 
 Signatures identify **expression mode**, not cause.
 
@@ -263,7 +263,7 @@ Signatures identify **expression mode**, not cause.
 Invalid uses include:
 - Treating exit masking as system health
 - Moralizing exit or repression
-- Assuming suppressing exit restores φ or θ
+- Assuming suppressing exit restores COR.PHI or COR.THETA
 - Ignoring class- or skill-weighted exit access
 - Treating EXIT–LOCK-IN as a universal law
 
@@ -283,3 +283,4 @@ Object passes robustness, boundedness, and regime-local requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

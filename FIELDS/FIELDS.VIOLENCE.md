@@ -11,7 +11,7 @@
 - **Version:** 1.3
 - **Changelog:**
   - v1.0: Canonical field formalization; violence as field operator with state distribution, propagation, and regime failure modes.
-  - v1.1: Aligned couplings to Tier-1 metrics/states (E_s; φ_proc/φ_sac; κ_threat; h_moral/h_enforcement; θ_exec; X); clarified threat vs realized violence.
+  - v1.1: Aligned couplings to Tier-1 metrics/states (E_s; COR.PHI_proc/COR.PHI_sac; COR.KAPPA_threat; h_moral/h_enforcement; COR.THETA_exec; X); clarified threat vs realized violence.
   - v1.2: Reconciled to explicitly reference Π_k, U_k, σ, 𝓜; removed implied agency.
   - v1.3: Added explicit **J_z(·)** bounded forcing-term notation for primary couplings to improve mechanical consistency with other Fields and prepare for Bounds/RLM integration.
 
@@ -71,7 +71,7 @@ Threat salience typically dominates realized violence in shaping behavior.
 
 The quasi-conserved quantity is **credible coercive capacity under sustainment constraints**:
 
-- sustained force consumes **E_s** and **θ_exec**
+- sustained force consumes **E_s** and **COR.THETA_exec**
 - overuse degrades future threat credibility
 - fragmentation reduces effective capacity faster than depletion
 
@@ -133,7 +133,7 @@ Control surfaces determine **who may apply force, against whom, at what cost, an
 - **Neutral:** clear monopoly, proportional use, predictable restraint
 - **Destabilizing:** fragmented authority, selective force, impunity, blurred scope
 
-Destabilization accelerates κ_threat, h_enforcement, and downstream φ erosion.
+Destabilization accelerates COR.KAPPA_threat, h_enforcement, and downstream COR.PHI erosion.
 
 ---
 
@@ -142,8 +142,8 @@ Destabilization accelerates κ_threat, h_enforcement, and downstream φ erosion.
 ### 5.1 Upstream dependencies
 
 - **E_s:** security surplus sustaining readiness and logistics
-- **θ_exec:** command, discipline, and response capacity
-- **φ_proc / φ_sac:** legitimacy conditions shaping compliance vs resistance
+- **COR.THETA_exec:** command, discipline, and response capacity
+- **COR.PHI_proc / COR.PHI_sac:** legitimacy conditions shaping compliance vs resistance
 - **CI_load:** rigidity within security institutions
 - **Topology \(\mathcal{G}(\sigma,t)\):** terrain, networks, sanctuary structure
 - **Information Field:** threat signaling, fear amplification, propaganda
@@ -152,7 +152,7 @@ Destabilization accelerates κ_threat, h_enforcement, and downstream φ erosion.
 
 Violence dynamics inject **bounded forcing terms** into downstream variables:
 
-- **Cognitive compression (κ_threat / κ_velocity):**
+- **Cognitive compression (COR.KAPPA_threat / COR.KAPPA_velocity):**
 \[
 \partial_t \kappa_j = \ldots + J_{\kappa_j}(\rho_V,\Pi_V,U_V;\sigma)
 \]
@@ -164,7 +164,7 @@ Violence dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (sacralized enemy framing, visible punishment, exclusion)
 
-- **Legitimacy (φ_proc / φ_sac):**
+- **Legitimacy (COR.PHI_proc / COR.PHI_sac):**
 \[
 \partial_t \phi_j = \ldots + J_{\phi_j}(\rho_V,\Pi_V,U_V;\sigma)
 \]
@@ -176,7 +176,7 @@ Violence dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (flight, displacement, elite and capital exit)
 
-- **Institutional capacity (θ_exec):**
+- **Institutional capacity (COR.THETA_exec):**
 \[
 \partial_t \theta_{\text{exec}} = \ldots + J_{\theta_{\text{exec}}}(\rho_V,\Pi_V,U_V;\sigma)
 \]
@@ -186,7 +186,7 @@ All \(J_z(\cdot)\) terms are **structurally bounded**, non-agentic, and scale-co
 
 ### 5.3 Coupling into Bounds
 
-- **B_φ:** coercion substitutes for consent only temporarily
+- **B_COR.PHI:** coercion substitutes for consent only temporarily
 - **B_X:** violence sharply tightens exit feasibility
 - **B_C:** militarization increases coordination load and rigidity
 
@@ -202,14 +202,14 @@ Destabilization occurs when:
 - **E_s** falls below sustainment thresholds
 - monopoly on force fragments
 - enforcement becomes selective or politicized
-- **φ_proc** collapses faster than coercive repair
-- **κ_threat** is already elevated
+- **COR.PHI_proc** collapses faster than coercive repair
+- **COR.KAPPA_threat** is already elevated
 - topology favors insurgency or criminal networks
 
 ### 6.2 Canonical failure modes
 
 - **Monopoly failure:** competing armed actors
-- **Repression spiral:** force substitutes for governance, degrading φ
+- **Repression spiral:** force substitutes for governance, degrading COR.PHI
 - **Deterrence breakdown:** threats lose credibility; violence spikes
 - **Militarization trap:** coercion expands into non-security domains
 - **Security exhaustion:** E_s depletion → sudden collapse
@@ -278,3 +278,4 @@ All refinements collapse to generic coercive capacity with semantics preserved.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

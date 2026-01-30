@@ -6,7 +6,7 @@
 - **Name:** B_C (Coordination–Complexity Feasible Bound)
 - **Order:** 2nd
 - **Kind:** Bound
-- **Role:** Constrains the maximum coordination complexity a system can sustain at scale σ on manifold 𝓜, given execution capacity (θ), cognitive bandwidth (κ), coordination topology (𝒢), and time constants; violation forces degradation in execution, legitimacy, or stability independent of intent.
+- **Role:** Constrains the maximum coordination complexity a system can sustain at scale σ on manifold 𝓜, given execution capacity (COR.THETA), cognitive bandwidth (COR.KAPPA), coordination topology (𝒢), and time constants; violation forces degradation in execution, legitimacy, or stability independent of intent.
 - **Status:** Canonical
 - **Version:** 1.1
 - **Changelog:**
@@ -36,7 +36,7 @@ Formally:
 
 - B_C defines a feasible region \(\mathcal{R}_C(\sigma,\mathcal{M})\) of coordination tasks, rules, obligations, and interdependencies.
 - If effective coordination demand \(C \notin \mathcal{R}_C\), then failure is **structurally forced**, not optional.
-- Exceeding B_C induces negative forcing into θ, φ, and κ through field couplings, independent of intent or resources.
+- Exceeding B_C induces negative forcing into COR.THETA, COR.PHI, and COR.KAPPA through field couplings, independent of intent or resources.
 
 B_C is **not**:
 - a preference for simplicity
@@ -117,19 +117,19 @@ B_C does not act directly; it **binds through field-induced forcing terms** once
 
 ### 4.1 Primary tightening channels
 
-- **Governance Field → θ**
+- **Governance Field → COR.THETA**
 \[
 J_\theta^{(-)}(\rho_G,\Pi_G,U_G;\sigma)
 \]
 (backlogs, delays, inconsistent execution)
 
-- **Information Field → κ**
+- **Information Field → COR.KAPPA**
 \[
 J_{\kappa}^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (confusion, salience overload, loss of predictability)
 
-- **Culture / Identity Field → h**
+- **Culture / Identity Field → COR.H**
 \[
 J_{h}^{(+)}(\rho_C,\Pi_C,U_C;\sigma)
 \]
@@ -149,17 +149,17 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 
 ### 5.1 Upstream dependencies
 
-- **θ:** execution throughput
-- **κ:** cognitive bandwidth
+- **COR.THETA:** execution throughput
+- **COR.KAPPA:** cognitive bandwidth
 - **𝒢:** modularity, segregation, propagation paths
 - **E:** enables capacity investment but cannot raise B_C directly
 - **X:** exit options that can mask overload temporarily
 
 ### 5.2 Cross-bound effects
 
-- Binding **B_C → tightens B_φ** (visible inconsistency, delay)
-- Binding **B_C → accelerates κ compression**
-- Binding **B_C → increases h** (simplification via exclusion)
+- Binding **B_C → tightens B_COR.PHI** (visible inconsistency, delay)
+- Binding **B_C → accelerates COR.KAPPA compression**
+- Binding **B_C → increases COR.H** (simplification via exclusion)
 - Binding **B_C + high X → delayed but sharper collapse**
 
 ---
@@ -179,7 +179,7 @@ All forcing terms are **bounded, non-agentic, and scale-conditioned**.
 
 - **Coordination collapse:** endemic backlog and inconsistency
 - **Rule explosion spiral:** failures trigger further complexity
-- **Legibility loss:** agents cannot predict outcomes; φ declines
+- **Legibility loss:** agents cannot predict outcomes; COR.PHI declines
 - **Shadow systems:** informal or corrupt bypasses emerge
 - **False reform:** new programs add C without subtracting legacy load
 
@@ -194,7 +194,7 @@ No failure mode implies intent.
   - overload effects: fast
   - complexity retirement: slow and politically constrained
   - recovery: slower than collapse
-- **Hysteresis:** CI and institutional memory make rollback costly
+- **Hysteresis:** COR.CI and institutional memory make rollback costly
 
 ---
 
@@ -234,7 +234,7 @@ These are **structural signals**, not performance opinions.
 Invalid uses include:
 - treating complexity as mere “bureaucratic inefficiency”
 - assuming technology can always raise B_C
-- ignoring κ and topology when adding scope
+- ignoring COR.KAPPA and topology when adding scope
 - treating ambition or moral urgency as capacity
 - assuming appeals and safeguards are cost-free
 
@@ -254,3 +254,4 @@ Object passes robustness, boundedness, and dominance requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

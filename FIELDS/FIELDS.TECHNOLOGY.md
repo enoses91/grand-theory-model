@@ -6,12 +6,12 @@
 - **Name:** Technology Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes the generation, diffusion, adoption, embedding, and decay of tools, techniques, and production processes as a coordination-amplifying field over topology 𝒢; reshapes feasible surplus extraction (E), capacity deployment (θ), control surfaces, and coordination complexity without encoding intent, progress, or welfare.
+- **Role:** Encodes the generation, diffusion, adoption, embedding, and decay of tools, techniques, and production processes as a coordination-amplifying field over topology 𝒢; reshapes feasible surplus extraction (E), capacity deployment (COR.THETA), control surfaces, and coordination complexity without encoding intent, progress, or welfare.
 - **Status:** Canonical
 - **Version:** 1.3
 - **Changelog:**
   - v1.0: Canonical field formalization; technology as coordination-amplifying field distinct from knowledge, markets, or ideology.
-  - v1.1: Clarified couplings to θ, E, CI, κ, and downstream fields; tightened failure modes.
+  - v1.1: Clarified couplings to COR.THETA, E, COR.CI, COR.KAPPA, and downstream fields; tightened failure modes.
   - v1.2: Reconciled to explicitly reference Π_k, U_k, σ, 𝓜; removed implied agency.
   - v1.3: Added explicit **J_z(·)** bounded forcing-term notation for primary couplings to improve mechanical consistency with other Fields and prepare for Bounds/RLM integration.
 
@@ -63,7 +63,7 @@ The field encodes **capability change**, not direction or desirability.
 - **Productivity and leverage multipliers**
 - **Automation levels**
 - **Reliability and failure characteristics**
-- **Interoperability with existing CI**
+- **Interoperability with existing COR.CI**
 - **Technical debt accumulation**
 
 Technology exists only insofar as it is **operationally embedded**.
@@ -73,7 +73,7 @@ Technology exists only insofar as it is **operationally embedded**.
 The quasi-conserved quantity is **effective coordination leverage per unit effort**:
 
 - technology amplifies action and reach
-- amplification is bounded by θ, κ, and CI
+- amplification is bounded by COR.THETA, COR.KAPPA, and COR.CI
 - excess leverage without governance increases failure severity
 
 ---
@@ -141,9 +141,9 @@ Destabilization is structural, not normative.
 ### 5.1 Upstream dependencies
 
 - **E:** surplus available for development and adoption
-- **θ:** capacity to deploy, maintain, and govern systems
-- **CI:** institutional compatibility, inertia, and legacy integration
-- **κ:** cognitive capacity to comprehend and manage complexity
+- **COR.THETA:** capacity to deploy, maintain, and govern systems
+- **COR.CI:** institutional compatibility, inertia, and legacy integration
+- **COR.KAPPA:** cognitive capacity to comprehend and manage complexity
 - **Information Field:** hype cycles, signaling, diffusion narratives
 
 ### 5.2 Bounded forcing into metric and state variables
@@ -156,13 +156,13 @@ Technology dynamics inject **bounded forcing terms** into downstream variables:
 \]
 (productivity amplification or fragility-induced loss)
 
-- **Capacity (θ):**
+- **Capacity (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta(\rho_T,\Pi_T,U_T;\sigma)
 \]
 (new control surfaces, operational load, maintenance burden)
 
-- **Cognitive compression (κ_load):**
+- **Cognitive compression (COR.KAPPA_load):**
 \[
 \partial_t \kappa_{\text{load}} = \ldots + J_{\kappa_{\text{load}}}(\rho_T,\Pi_T,U_T;\sigma)
 \]
@@ -198,8 +198,8 @@ No coupling implies intent.
 
 The Technology Field destabilizes systems when:
 - adoption outpaces governance and maintenance capacity
-- complexity exceeds κ and θ
-- legacy CI resists integration
+- complexity exceeds COR.KAPPA and COR.THETA
+- legacy COR.CI resists integration
 - incentives reward scale over robustness
 - failure modes are poorly understood or externalized
 
@@ -208,7 +208,7 @@ The Technology Field destabilizes systems when:
 - **Technical debt spiral:** short-term gains create long-term fragility
 - **Automation without oversight:** amplified errors propagate system-wide
 - **Platform capture:** control surfaces concentrate leverage
-- **Innovation blockage:** CI prevents diffusion despite availability
+- **Innovation blockage:** COR.CI prevents diffusion despite availability
 - **Catastrophic coupling:** small failures cascade across domains
 
 ---
@@ -273,3 +273,4 @@ All refinements collapse to generic capability shifts with semantics preserved.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

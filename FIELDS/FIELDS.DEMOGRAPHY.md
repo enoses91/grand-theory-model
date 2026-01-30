@@ -6,12 +6,12 @@
 - **Name:** Demography Field
 - **Order:** 2nd
 - **Kind:** Field
-- **Role:** Encodes population structure and its evolution over time as a coordination-constraining field over topology 𝒢; governs cohort replacement, dependency ratios, migration, assimilation, and variance effects that bound surplus (E), capacity (θ), legitimacy (φ), and feasible regime trajectories without encoding preferences or intent.
+- **Role:** Encodes population structure and its evolution over time as a coordination-constraining field over topology 𝒢; governs cohort replacement, dependency ratios, migration, assimilation, and variance effects that bound surplus (E), capacity (COR.THETA), legitimacy (COR.PHI), and feasible regime trajectories without encoding preferences or intent.
 - **Status:** Canonical
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical field formalization; demographic state distribution, transitions, control surfaces, and failure modes.
-  - v1.1: Clarified assimilation lag τ, variance dominance, and irreversibility; strengthened couplings to θ, κ, h, and B_D.
+  - v1.1: Clarified assimilation lag τ, variance dominance, and irreversibility; strengthened couplings to COR.THETA, COR.KAPPA, COR.H, and B_D.
   - v1.2: Reconciled to explicitly reference **Π_k, U_k, σ, 𝓜**; removed implied agency; aligned transition language to OCF-safe operator form.
 
 ---
@@ -111,3 +111,4 @@ Assimilation follows a drift–diffusion process:
 - drift governed by incentives, exposure, and institutional capacity
 - diffusion governed by cultural distance ΔC and segregation Seg
 - τ (assimilation lag) is a **hard constraint**, not a policy choice
+

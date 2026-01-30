@@ -11,7 +11,7 @@
 - **Version:** 1.2
 - **Changelog:**
   - v1.0: Canonical mechanism formalization; distinguishes propagation effects from beliefs and intent.
-  - v1.1: Integrated κ compression, h boundary effects, and MCI diagnostics.
+  - v1.1: Integrated COR.KAPPA compression, COR.H boundary effects, and MCI diagnostics.
   - **v1.2:** Reconciled to explicitly reference **σ, 𝓜, Π_k, U_k, W_{G→U}**, and bounded forcing semantics **J_z(·)**; removed residual agency language; aligned fully with Field/Bound/RLM discipline.
 
 ---
@@ -103,14 +103,14 @@ Key properties:
 
 ## 4. Conditioning Variables (Regime Dependence)
 
-### 4.1 κ — Cognitive Compression
-High κ compression increases:
+### 4.1 COR.KAPPA — Cognitive Compression
+High COR.KAPPA compression increases:
 - sloganization
 - frame dominance
 - loss of nuance and correction
 
-### 4.2 h — Boundary Hardness
-High h increases:
+### 4.2 COR.H — Boundary Hardness
+High COR.H increases:
 - in-group reinforcement
 - out-group penalty salience
 - fragmentation across modules
@@ -130,25 +130,25 @@ modulates **which signals enter Π_I with high visibility**, without implying co
 
 Information–Topology induces **bounded forcing** into downstream variables:
 
-- **Cognitive compression (κ):**
+- **Cognitive compression (COR.KAPPA):**
 \[
 \partial_t \kappa = \ldots + J_\kappa^{(+)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (salience overload, simplification pressure)
 
-- **Boundary hardness (h):**
+- **Boundary hardness (COR.H):**
 \[
 \partial_t h = \ldots + J_h^{(+)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (identity reinforcement, exclusion dynamics)
 
-- **Legitimacy (φ):**
+- **Legitimacy (COR.PHI):**
 \[
 \partial_t \phi = \ldots + J_\phi^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
 (perceived asymmetry, inconsistency exposure)
 
-- **Governance capacity load (θ):**
+- **Governance capacity load (COR.THETA):**
 \[
 \partial_t \theta = \ldots + J_\theta^{(-)}(\rho_I,\Pi_I,U_I;\sigma)
 \]
@@ -165,7 +165,7 @@ The mechanism becomes active when **all** hold:
 1. Topology supports clustering or central amplification
 2. Attention is scarce relative to signal volume
 3. Penalty gradients exist for deviation
-4. κ is compressed
+4. COR.KAPPA is compressed
 5. Propagation speed exceeds correction speed
 
 Absent these, information diffusion remains pluralistic and weakly correlated.
@@ -231,3 +231,4 @@ Object passes robustness, boundedness, and regime-local tests.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+

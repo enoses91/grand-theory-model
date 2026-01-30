@@ -6,7 +6,7 @@
 - **Name:** B_X (Exit / Mobility Feasible Bound)
 - **Order:** 2nd
 - **Kind:** Bound
-- **Role:** Constrains the extent to which exit, mobility, or substitution can absorb structural stress at scale σ on manifold 𝓜 without triggering capacity loss (θ), legitimacy collapse (φ), coordination lock-in, or destabilizing depletion dynamics, independent of intent.
+- **Role:** Constrains the extent to which exit, mobility, or substitution can absorb structural stress at scale σ on manifold 𝓜 without triggering capacity loss (COR.THETA), legitimacy collapse (COR.PHI), coordination lock-in, or destabilizing depletion dynamics, independent of intent.
 - **Status:** Canonical
 - **Version:** 1.1
 - **Changelog:**
@@ -37,8 +37,8 @@ Formally:
 - B_X defines a feasible region \(\mathcal{R}_X(\sigma,\mathcal{M})\) over exit rates, channels, and asymmetries.
 - If effective exit pressure \(\Delta X \notin \mathcal{R}_X\), downstream degradation is **structurally forced**.
 - Exit cannot indefinitely substitute for:
-  - legitimacy repair (φ),
-  - capacity repair (θ),
+  - legitimacy repair (COR.PHI),
+  - capacity repair (COR.THETA),
   - or complexity reduction (B_C).
 
 B_X governs **how much exit is sustainable**, not whether exit is legal, moral, or desirable.
@@ -78,7 +78,7 @@ Exit is typically **class- and skill-asymmetric**, tightening B_X faster than ag
 
 Let:
 
-- \(S(\sigma)\): structural stress (from B_C, B_D, B_φ)
+- \(S(\sigma)\): structural stress (from B_C, B_D, B_COR.PHI)
 - \(X(\sigma)\): effective exit availability
 - \(L_X\): depletion and load effects induced by exit
 
@@ -117,13 +117,13 @@ B_X binds through **field-induced forcing**, not direct action.
 \]
 (capital mobility, remote work, displacement, coercion-driven flight)
 
-- **Governance Field → θ**
+- **Governance Field → COR.THETA**
 \[
 J_\theta^{(-)}(\rho_G,\Pi_G,U_G;\sigma)
 \]
 (service hollowing, execution overload, fiscal erosion)
 
-- **Information / Culture Fields → φ**
+- **Information / Culture Fields → COR.PHI**
 \[
 J_\phi^{(-)}(\rho_I,\rho_C;\sigma)
 \]
@@ -143,16 +143,16 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 
 ### 5.1 Upstream dependencies
 
-- **θ:** capacity to absorb exit-induced load
+- **COR.THETA:** capacity to absorb exit-induced load
 - **E:** buffers against depletion
-- **CI:** accumulated structure magnifying exit sensitivity
+- **COR.CI:** accumulated structure magnifying exit sensitivity
 - **𝒢:** alternative networks enabling or constraining exit
-- **h:** boundary hardness raising exit costs and asymmetry
+- **COR.H:** boundary hardness raising exit costs and asymmetry
 
 ### 5.2 Cross-bound effects
 
 - Binding **B_X → activates EXIT–LOCK-IN**
-- Binding **B_X → tightens B_φ** (visible hollowing, perceived unfairness)
+- Binding **B_X → tightens B_COR.PHI** (visible hollowing, perceived unfairness)
 - Binding **B_X + B_C → delayed but sharper collapse**
 - Binding **B_X + exit suppression → rapid lock-in and conflict**
 
@@ -165,13 +165,13 @@ All \(J_z(\cdot)\) terms are **bounded, non-agentic, and scale-conditioned**.
 - Sustained high out-migration or capital flight
 - Exit concentrated among high-skill or high-E cohorts
 - Exit substituting for reform rather than triggering it
-- High CI amplifying hollowing effects
+- High COR.CI amplifying hollowing effects
 - Boundary hardening that traps low-X populations
 
 ### 6.2 Canonical failure modes
 
 - **Hollowing-out:** institutions persist but lose competence and legitimacy
-- **Asymmetric burden trap:** immobile populations absorb coordination load → φ collapse
+- **Asymmetric burden trap:** immobile populations absorb coordination load → COR.PHI collapse
 - **Exit exhaustion:** marginal exit costs rise; remaining exit becomes catastrophic
 - **Repression pivot:** suppressing exit after B_X binds triggers lock-in instability
 
@@ -244,3 +244,4 @@ Object passes robustness, boundedness, and dominance requirements.
 ---
 
 ### END OF CANONICAL OBJECT FILE
+

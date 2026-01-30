@@ -28,7 +28,7 @@ _Generated from `dpi.yaml` on 2026-01-28._
 | `DP-0006` | Technocratic Moralization Substitution | `promoted` | `medium` |
 | `DP-0007` | Intent Laundering / Credit–Blame Asymmetry | `candidate` | `high` |
 | `DP-0008` | Demographic Shock–Induced Identity Activation | `candidate` | `low` |
-| `DP-0009` | Vendor Degradation Spiral Under θ Extraction | `candidate` | `low` |
+| `DP-0009` | Vendor Degradation Spiral Under COR.THETA Extraction | `candidate` | `low` |
 
 ## Entries
 
@@ -46,12 +46,12 @@ _Generated from `dpi.yaml` on 2026-01-28._
 **observed_in:**
 
 - Cross-ideology online ecosystems
-- High-tempo media environments under κ load
+- High-tempo media environments under COR.KAPPA load
 - Fragmentation episodes under topology divergence
 
 **Plain language**
 
-Under high cognitive compression (κ), the Information field selectively amplifies identity-salient content. That raises identity hardening (h), narrows admissible discourse, and stabilizes a basin-specific salience-weighting profile W_b. The result is predictable polarization, purity spirals, and fragmented Overton windows without requiring “mass irrationality” or centralized intent.
+Under high cognitive compression (COR.KAPPA), the Information field selectively amplifies identity-salient content. That raises identity hardening (COR.H), narrows admissible discourse, and stabilizes a basin-specific salience-weighting profile W_b. The result is predictable polarization, purity spirals, and fragmented Overton windows without requiring “mass irrationality” or centralized intent.
 
 **Formalism**
 
@@ -59,28 +59,28 @@ _Objects:_ `Mesoscopic Clusters`, `Ideological Basins (W_b)`, `Information Field
 
 _Dynamics:_
 
-- I-amplified salience → κ↑ (compression) → h↑ (hardening)
-- h hysteresis makes reversal asymmetric (slow repair, fast harden)
+- I-amplified salience → COR.KAPPA↑ (compression) → COR.H↑ (hardening)
+- COR.H hysteresis makes reversal asymmetric (slow repair, fast harden)
 - Basin anchoring stabilizes W_b and creates selective exposure loops
 
 **Activation conditions**
 
-- κ elevated (time poverty / overload)
+- COR.KAPPA elevated (time poverty / overload)
 - High I-field gain (platform amplification, attention density)
-- Boundary hardness h not near neutral (already partially hardened)
-- Weak procedural legitimacy throughput (φ-procedural down or contested)
+- Boundary hardness COR.H not near neutral (already partially hardened)
+- Weak procedural legitimacy throughput (COR.PHI-procedural down or contested)
 
 **Boundary / failure conditions**
 
 - Low I-field gain (low amplification)
-- Strong φ-procedural + credible enforcement reduces purity incentives
-- High exit (X) relieving pressure can reduce h growth (but does not instantly repair)
+- Strong COR.PHI-procedural + credible enforcement reduces purity incentives
+- High exit (X) relieving pressure can reduce COR.H growth (but does not instantly repair)
 
 **Common analyst errors**
 
 - Treating basins as belief sets rather than salience-weighting regimes
 - Confusing narrative intent with endogenous I-field selection dynamics
-- Assuming κ relief implies h repair
+- Assuming COR.KAPPA relief implies COR.H repair
 
 **Status:** `promoted`  
 **Confidence:** `high`
@@ -96,7 +96,7 @@ _Dynamics:_
 
 **Plain language**
 
-As θ declines and accountability becomes asymmetric, organizations shift toward defensive process, veto points, and delay. This increases policy stiffness and backlog, further reducing throughput, creating a self-reinforcing risk-avoidance basin.
+As COR.THETA declines and accountability becomes asymmetric, organizations shift toward defensive process, veto points, and delay. This increases policy stiffness and backlog, further reducing throughput, creating a self-reinforcing risk-avoidance basin.
 
 **Formalism**
 
@@ -104,15 +104,15 @@ _Objects:_ `θ (execution capacity)`, `Governance Field (Gv)`, `κ`, `φ-procedu
 
 _Dynamics:_
 
-- θ↓ → backlog↑ → perceived risk↑ → procedural gates↑ → θ_eff↓
+- COR.THETA↓ → backlog↑ → perceived risk↑ → procedural gates↑ → COR.THETA_eff↓
 - Asymmetric penalties reward delay/denial more than action
 - Recovery is slow because removing gates raises perceived exposure
 
 **Activation conditions**
 
-- θ declining or overloaded
+- COR.THETA declining or overloaded
 - High scrutiny / audit pressure without matched capacity
-- Low slack in staffing/skills (CI not translating into throughput)
+- Low slack in staffing/skills (COR.CI not translating into throughput)
 
 **Boundary / failure conditions**
 
@@ -138,7 +138,7 @@ _Dynamics:_
 
 **Plain language**
 
-When pluralism is weak and legitimacy is contested, institutions substitute procedural correctness and moralized compliance for real legitimacy repair and throughput. This increases κ, narrows Overton width, and displaces execution-focused reforms.
+When pluralism is weak and legitimacy is contested, institutions substitute procedural correctness and moralized compliance for real legitimacy repair and throughput. This increases COR.KAPPA, narrows Overton width, and displaces execution-focused reforms.
 
 **Formalism**
 
@@ -146,19 +146,19 @@ _Objects:_ `CI`, `φ-procedural`, `φ-moral imbalance (J_φ)`, `κ`, `h`
 
 _Dynamics:_
 
-- CI used for procedural/moral enforcement rather than throughput
-- κ↑ from rule-complexity + discourse policing
-- h↑ as identity-loaded enforcement increases boundary hardness
+- COR.CI used for procedural/moral enforcement rather than throughput
+- COR.KAPPA↑ from rule-complexity + discourse policing
+- COR.H↑ as identity-loaded enforcement increases boundary hardness
 
 **Activation conditions**
 
-- High CI in elite sub-systems
+- High COR.CI in elite sub-systems
 - Weak pluralism and contested legitimacy
 - Incentives reward signaling over execution
 
 **Boundary / failure conditions**
 
-- Restored procedural legitimacy via credible performance (θ↑, promise gap↓)
+- Restored procedural legitimacy via credible performance (COR.THETA↑, promise gap↓)
 - Reduced enforcement salience / narrowed policing scope
 
 **Common analyst errors**
@@ -176,7 +176,7 @@ _Dynamics:_
 
 **Plain language**
 
-When stated commitments exceed execution capacity, promise accumulation creates repeated visible failure. This widens the promise gap, decays φ (especially φ-procedural), increases cynicism, and raises enforcement burden—further reducing θ_eff.
+When stated commitments exceed execution capacity, promise accumulation creates repeated visible failure. This widens the promise gap, decays COR.PHI (especially COR.PHI-procedural), increases cynicism, and raises enforcement burden—further reducing COR.THETA_eff.
 
 **Formalism**
 
@@ -184,8 +184,8 @@ _Objects:_ `φ`, `θ`, `Governance Field (Gv)`, `Information Field (I)`
 
 _Dynamics:_
 
-- Promises↑ + θ constrained → delivery shortfall↑ → φ↓
-- φ↓ → compliance↓ → enforcement burden↑ → θ_eff↓
+- Promises↑ + COR.THETA constrained → delivery shortfall↑ → COR.PHI↓
+- COR.PHI↓ → compliance↓ → enforcement burden↑ → COR.THETA_eff↓
 
 **Activation conditions**
 
@@ -196,7 +196,7 @@ _Dynamics:_
 **Boundary / failure conditions**
 
 - Promise downscaling / scope reduction
-- Throughput repair (θ↑) before promise expansion
+- Throughput repair (COR.THETA↑) before promise expansion
 
 **Common analyst errors**
 
@@ -219,7 +219,7 @@ _Objects:_ `κ`, `θ`, `E_τ`, `Governance Field (Gv)`
 
 _Dynamics:_
 
-- Compliance load↑ → E_τ↓ → κ↑ → θ_eff↓
+- Compliance load↑ → E_τ↓ → COR.KAPPA↑ → COR.THETA_eff↓
 - Workarounds increase variance and legitimacy stress
 
 **Activation conditions**
@@ -292,3 +292,4 @@ Actors retroactively claim intent for positive outcomes as “technique,” whil
 **Formalism**
 
 _Objects:_ `Information Field (I)`, `Attribution Error
+

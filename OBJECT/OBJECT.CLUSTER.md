@@ -146,7 +146,7 @@ Clusters can participate in higher-order patterns, e.g.:
 
 Only when:
 - salience is sustained,
-- κ and h are elevated,
+- COR.KAPPA and COR.H are elevated,
 - topology supports reinforcement.
 
 The **pattern** is causal; the cluster remains descriptive.
@@ -265,3 +265,4 @@ Object passes robustness, boundedness, and reduction tests.
 ---
 
 ### END OF CANONICAL OBJECT FILE (v1.2)
+
