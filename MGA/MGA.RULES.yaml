@@ -4,7 +4,7 @@
 
 mga:
   meta:
-    file_version: "0.3.1"
+    file_version: "0.3.2"
     status: "working"
     created: "2026-01-27"
     timezone: "America/Chicago"
@@ -30,7 +30,8 @@ mga:
       cor: "COR.yaml (Canonical Object Registry) — authoritative ontology"
       dpi: "DPI.yaml (Dynamic Pattern Inventory) — working/provisional"
       ccfi: "CCFI.yaml (Causal Chain Fragment Inventory) — working/provisional"
-      ocf: "OCF/ (Observed/Operational Case Files) — evidence layer"
+      ocf: "OCF/ (Operators & Control-surface Files) — operator/definition-anchor layer"
+      evr: "EVR/ (Evidence Records — worked case files) — evidence layer; directory to be created; formerly ambiguously labeled OCF"
       ibr: "IBR.yaml (Ideological Basin Register) — working/provisional"
     changelog:
       - date: "2026-01-27"
@@ -38,7 +39,7 @@ mga:
         changed_processes: ["mga_a", "mga_b", "mga_c", "mga_t"]
         summary: "Consolidated full MGA rule set into one file with per-process versioning and shared global guardrails."
       - date: "2026-01-27"
-        file_version: "0.3.1"
+        file_version: "0.3.2"
         changed_processes: ["mga_b"]
         summary: "Added that basin-consistent salience profiles may be referenced via IBR entries."
 
@@ -141,7 +142,7 @@ mga:
       inputs_required:
         - "situation_description (may include events, actors, geography, time window)"
       inputs_optional:
-        - "evidence_links (OCF, datasets, reports)"
+        - "evidence_links (EVR, datasets, reports)"
         - "hypotheses_to_test"
       outputs_required:
         - "Scope declaration (SEC-SCOPE)"
@@ -300,7 +301,7 @@ mga:
             - "patterns_detected (DPI ids or candidates)"
             - "activation/boundary notes"
         - id: "B-7.25"
-         	name: "Projection Class & Disciplinary Priors Inference"
+          name: "Projection Class & Disciplinary Priors Inference"
           level: "must"
           required_fields:
             - "inferred_projection_class Π_d"
@@ -504,10 +505,10 @@ mga:
         - "After MGA-B Phase 8/9 indicates possible model refinement, OR after MGA-A reveals persistent anomalies."
         - "When considering promotion of working DPI/CCFI candidates or new error classes/RLMs."
       inputs_required:
-        - "trigger_packet (must include at least one of: MGA-B refinement signals, MGA-A anomalies, repeated OCF conflicts)"
+        - "trigger_packet (must include at least one of: MGA-B refinement signals, MGA-A anomalies, repeated EVR conflicts)"
       inputs_optional:
         - "candidate_entry (proposed object/pattern/chain/rule)"
-        - "supporting OCF references"
+        - "supporting EVR references"
       outputs_required:
         - "Disqualifier Gate result"
         - "Structural Compatibility Screen result"
@@ -520,7 +521,7 @@ mga:
           name: "Scope & Trigger Declaration"
           level: "must"
           required_fields:
-            - "trigger_source (MGA-A|MGA-B|OCF)"
+            - "trigger_source (MGA-A|MGA-B|EVR)"
             - "trigger_summary"
             - "candidate_type (object|definition|pattern|chain|error_class|procedure_rule)"
         - id: "T-1"
@@ -541,7 +542,7 @@ mga:
             - id: "T-1-C3"
               level: "must"
               name: "Evidence insufficiency check"
-              statement: "If only single-instance support exists (N<3 independent OCFs or equivalent), defer unless it is a procedural rule."
+              statement: "If only single-instance support exists (N<3 independent EVRs or equivalent), defer unless it is a procedural rule."
         - id: "T-2"
           name: "Structural Compatibility Screen"
           level: "must"
