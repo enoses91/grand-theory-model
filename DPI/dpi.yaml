@@ -63,6 +63,7 @@ dpi:
         - "Assuming true preference reversal rather than salience reweighting"
         - "Attributing intent (MCR) when dynamics are often MCI-like"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
       observed_in:
         - "Saved memory: Dynamic Pattern definition locked (2026-01-08)"
@@ -183,6 +184,7 @@ dpi:
         - "Assuming governance permanence"
         - "Treating leadership intent as sufficient to switch regimes"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
       observed_in:
         - "Saved memory: governance switching formalism locked (2026-01-10)"
@@ -249,6 +251,7 @@ dpi:
         - "Treating left–right as a true latent axis rather than a lossy projection"
         - "Inferring moral or psychological instability from projection artifacts"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
       observed_in:
         - "Saved memory: left–right as lossy projection locked (2026-01-02)"
@@ -286,106 +289,106 @@ dpi:
       observed_in:
         - "Saved memory: MCI/MCR distinction + intent laundering guardrails (2026-01-07)"
 
-- id: "DP-0008"
-  name_common: "Demographic Shock–Induced Identity Activation"
-  aliases:
-    - "Out-group proximity identity activation"
-    - "Diaspora identity hardening"
-    - "Exile nationalism / diasporic religiosity"
-    - "Contrast-driven social identity salience (social psychology)"
-  formalism:
-    objects:
-      - "Demographic Field (D)"
-      - "Topology (𝒢)"
-      - "Information Field (I)"
-      - "Identity Hardening (h)"
-      - "Cognitive Compression (κ)"
-      - "Mesoscopic Clusters"
-      - "Ideological Basins (W_b)"
-    sketch: >
-      An exogenous demographic shock (ΔD) alters local population composition,
-      inducing topology re-sorting (𝒢 → enclave formation or contrast adjacency).
-      Sustained out-group proximity elevates identity salience via the Information Field,
-      increasing κ and suppressing intra-group variance. High-order identities
-      (religious, national, ethnic) dominate, raising h and stabilizing basin-consistent
-      salience profiles without requiring formal exclusion or coercion.
-  plain_language: >
-    When migration changes who lives next to whom, people are exposed every day to
-    visible difference. That repeated contrast makes group identity more salient,
-    crowds out internal disagreements, and hardens loyalty to the most emotionally
-    powerful identities—often religion or nation—even if no one is actively discriminating.
-  activation_conditions:
-    triggers:
-      - "Exogenous migration flows changing local demographic composition (ΔD > threshold)"
-      - "Sustained daily proximity to visibly different norms or identities"
-    enabling_conditions:
-      - "Topology that reinforces contrast (enclaves, parallel institutions)"
-      - "Information Field that amplifies identity narratives"
-      - "Baseline identity salience (h₀) not negligible"
-  boundary_failure_conditions:
-    - "High intermarriage and dense cross-cutting ties reduce contrast salience"
-    - "Strong integrative institutions mediate identity without suppression"
-    - "Low salience environments limit persistence beyond initial shock"
-  common_analyst_errors:
-    - "Ignoring D-field injection and treating identity activation as purely psychological"
-    - "Assuming discrimination or intent is required for identity hardening"
-    - "Inferring permanent identity change without persistence thresholds (τ_C, τ_B)"
-    - "Silent scale shift from local diaspora dynamics to national regime claims"
-  status: "candidate"
-  confidence: "medium"
-  observed_in:
-    - "Mahmod (2026) — migration and diasporic identity"
-    - "Historical diaspora nationalism cases (Irish, Turkish, Kurdish)"
+    - id: "DP-0008"
+      name_common: "Demographic Shock–Induced Identity Activation"
+      aliases:
+        - "Out-group proximity identity activation"
+        - "Diaspora identity hardening"
+        - "Exile nationalism / diasporic religiosity"
+        - "Contrast-driven social identity salience (social psychology)"
+      formalism:
+        objects:
+          - "Demographic Field (D)"
+          - "Topology (𝒢)"
+          - "Information Field (I)"
+          - "Identity Hardening (h)"
+          - "Cognitive Compression (κ)"
+          - "Mesoscopic Clusters"
+          - "Ideological Basins (W_b)"
+        sketch: >
+          An exogenous demographic shock (ΔD) alters local population composition,
+          inducing topology re-sorting (𝒢 → enclave formation or contrast adjacency).
+          Sustained out-group proximity elevates identity salience via the Information Field,
+          increasing κ and suppressing intra-group variance. High-order identities
+          (religious, national, ethnic) dominate, raising h and stabilizing basin-consistent
+          salience profiles without requiring formal exclusion or coercion.
+      plain_language: >
+        When migration changes who lives next to whom, people are exposed every day to
+        visible difference. That repeated contrast makes group identity more salient,
+        crowds out internal disagreements, and hardens loyalty to the most emotionally
+        powerful identities—often religion or nation—even if no one is actively discriminating.
+      activation_conditions:
+        triggers:
+          - "Exogenous migration flows changing local demographic composition (ΔD > threshold)"
+          - "Sustained daily proximity to visibly different norms or identities"
+        enabling_conditions:
+          - "Topology that reinforces contrast (enclaves, parallel institutions)"
+          - "Information Field that amplifies identity narratives"
+          - "Baseline identity salience (h₀) not negligible"
+      boundary_failure_conditions:
+        - "High intermarriage and dense cross-cutting ties reduce contrast salience"
+        - "Strong integrative institutions mediate identity without suppression"
+        - "Low salience environments limit persistence beyond initial shock"
+      common_analyst_errors:
+        - "Ignoring D-field injection and treating identity activation as purely psychological"
+        - "Assuming discrimination or intent is required for identity hardening"
+        - "Inferring permanent identity change without persistence thresholds (τ_C, τ_B)"
+        - "Silent scale shift from local diaspora dynamics to national regime claims"
+      status: "candidate"
+      confidence: "medium"
+      observed_in:
+        - "Mahmod (2026) — migration and diasporic identity"
+        - "Historical diaspora nationalism cases (Irish, Turkish, Kurdish)"
 
 
-- id: "DP-0009"
-  name_common: "Epistemic Complexity–Enabled Motivated Cognition"
-  aliases:
-    - "Motivated cognition under epistemic complexity"
-    - "Rationalisation-constraint relaxation"
-    - "Priors + testimony mediation (social epistemology)"
-    - "Naïve realism failure (belief-manifest illusion)"
-    - "Uncertainty-flooding / ambiguity exploitation (propaganda studies)"
-  formalism:
-    objects:
-      - "Information Field (I)"
-      - "Cognitive Compression (κ)"
-      - "Identity Hardening (h)"
-      - "Mesoscopic Clusters"
-      - "Topology (𝒢)"
-      - "Metric feasibility / constraint set (implicit via κ,h bounds)"
-    sketch: >
-      In high epistemic-complexity domains, agents lack direct access to ground truth and must rely on
-      mediated testimony over I and network topology 𝒢. This raises κ (low-resolution compression of reality),
-      expanding the space of subjectively-justifiable beliefs (rationalisation constraint relaxes).
-      Motivated-cognition operators (confirmation/avoidance, asymmetric standards, selective memory) become
-      easier to sustain because disconfirming evidence is ambiguous, distant, or filterable.
-      If beliefs are identity-protective, h increases, feeding back by raising tolerance for distortion and
-      further narrowing acceptable evidence sources, reinforcing κ via selective compression.
-  plain_language: >
-    When it’s genuinely hard to know what’s true (because you can’t check directly and must rely on
-    experts/media/networks), it becomes much easier to convince yourself of what you *want* to be true.
-    Ambiguity creates “wiggle room” for rationalisations, and identity-protective beliefs then harden and
-    become self-reinforcing through selective attention and source trust.
-  activation_conditions:
-    triggers:
-      - "High epistemic complexity: indirect access to facts; dependence on testimony/experts/media"
-      - "High choice over information sources and low shared trust in arbiters"
-      - "Low immediate falsifiability / weak corrective feedback loops"
-    enabling_conditions:
-      - "Topology 𝒢 supports selective exposure (clustering, homophily, influencer hubs)"
-      - "Salience incentives favor narrative loyalty (status, belonging, coalition signaling)"
-      - "Identity relevance present (h not near-zero), even if not initially dominant"
-  boundary_failure_conditions:
-    - "Low epistemic complexity with direct verification (fast, cheap ground-truth feedback)"
-    - "Strong shared measurement/audit institutions reduce ambiguity degrees of freedom"
-    - "Cross-cutting ties + enforced epistemic diversity reduce selective insulation"
-  common_analyst_errors:
-    - "Inferring motivated cognition solely from false beliefs (ignoring epistemic complexity / rational error)"
-    - "Assuming belief updating in experiments falsifies motivated cognition (ignoring lowered complexity in labs)"
-    - "Treating ‘epistemic complexity’ as an excuse to suspend truth claims in all domains (scope overreach)"
-    - "Ignoring κ↔h feedback (identity-protective reasoning as amplifier, not just a byproduct)"
-  status: "candidate"
-  confidence: "medium"
-  observed_in:
-    - "Williams (2026): epistemic complexity as enabler of motivated cognition via rationalisation constraints"
+    - id: "DP-0009"
+      name_common: "Epistemic Complexity–Enabled Motivated Cognition"
+      aliases:
+        - "Motivated cognition under epistemic complexity"
+        - "Rationalisation-constraint relaxation"
+        - "Priors + testimony mediation (social epistemology)"
+        - "Naïve realism failure (belief-manifest illusion)"
+        - "Uncertainty-flooding / ambiguity exploitation (propaganda studies)"
+      formalism:
+        objects:
+          - "Information Field (I)"
+          - "Cognitive Compression (κ)"
+          - "Identity Hardening (h)"
+          - "Mesoscopic Clusters"
+          - "Topology (𝒢)"
+          - "Metric feasibility / constraint set (implicit via κ,h bounds)"
+        sketch: >
+          In high epistemic-complexity domains, agents lack direct access to ground truth and must rely on
+          mediated testimony over I and network topology 𝒢. This raises κ (low-resolution compression of reality),
+          expanding the space of subjectively-justifiable beliefs (rationalisation constraint relaxes).
+          Motivated-cognition operators (confirmation/avoidance, asymmetric standards, selective memory) become
+          easier to sustain because disconfirming evidence is ambiguous, distant, or filterable.
+          If beliefs are identity-protective, h increases, feeding back by raising tolerance for distortion and
+          further narrowing acceptable evidence sources, reinforcing κ via selective compression.
+      plain_language: >
+        When it’s genuinely hard to know what’s true (because you can’t check directly and must rely on
+        experts/media/networks), it becomes much easier to convince yourself of what you *want* to be true.
+        Ambiguity creates “wiggle room” for rationalisations, and identity-protective beliefs then harden and
+        become self-reinforcing through selective attention and source trust.
+      activation_conditions:
+        triggers:
+          - "High epistemic complexity: indirect access to facts; dependence on testimony/experts/media"
+          - "High choice over information sources and low shared trust in arbiters"
+          - "Low immediate falsifiability / weak corrective feedback loops"
+        enabling_conditions:
+          - "Topology 𝒢 supports selective exposure (clustering, homophily, influencer hubs)"
+          - "Salience incentives favor narrative loyalty (status, belonging, coalition signaling)"
+          - "Identity relevance present (h not near-zero), even if not initially dominant"
+      boundary_failure_conditions:
+        - "Low epistemic complexity with direct verification (fast, cheap ground-truth feedback)"
+        - "Strong shared measurement/audit institutions reduce ambiguity degrees of freedom"
+        - "Cross-cutting ties + enforced epistemic diversity reduce selective insulation"
+      common_analyst_errors:
+        - "Inferring motivated cognition solely from false beliefs (ignoring epistemic complexity / rational error)"
+        - "Assuming belief updating in experiments falsifies motivated cognition (ignoring lowered complexity in labs)"
+        - "Treating ‘epistemic complexity’ as an excuse to suspend truth claims in all domains (scope overreach)"
+        - "Ignoring κ↔h feedback (identity-protective reasoning as amplifier, not just a byproduct)"
+      status: "candidate"
+      confidence: "medium"
+      observed_in:
+        - "Williams (2026): epistemic complexity as enabler of motivated cognition via rationalisation constraints"

@@ -1,6 +1,6 @@
 version: 1
 model: grand-theory
-updated: 2026-01-30
+updated: 2026-06-12
 
 # Status meanings:
 # canonical   = stable, normative reference
@@ -9,6 +9,11 @@ updated: 2026-01-30
 # deprecated  = retained for traceability only
 
 # Optional: symbol is internal notation used inside the object; O_ID is canonical for references/automation.
+
+# empirical_linkage meanings (descriptive-model discipline; see README "Epistemic Status"):
+# linkable    = proxy/instrument path plausibly exists (e.g., HEXACO instruments, governance indices); NOT yet linked
+# structural  = definitional/analytic object; empirical linkage not expected and absence is not a defect
+# (no object currently has status "linked"; that status requires a validated measurement construction)
 
 objects:
 
@@ -20,6 +25,7 @@ objects:
     symbol: CI
     path: COR/COR.CI.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.CI]
 
@@ -27,6 +33,7 @@ objects:
     symbol: E
     path: COR/COR.E.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.E]
 
@@ -34,6 +41,7 @@ objects:
     symbol: Γ_G
     path: COR/COR.G.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.G]
 
@@ -41,6 +49,7 @@ objects:
     symbol: φ
     path: COR/COR.PHI.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.PHI]
 
@@ -48,6 +57,7 @@ objects:
     symbol: θ
     path: COR/COR.THETA.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.THETA]
 
@@ -55,6 +65,7 @@ objects:
     symbol: X
     path: COR/COR.X.md
     kind: metric
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.METRIC.X]
 
@@ -62,6 +73,7 @@ objects:
     symbol: h
     path: COR/COR.H.md
     kind: state
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.STATE.H]
 
@@ -69,6 +81,7 @@ objects:
     symbol: κ
     path: COR/COR.KAPPA.md
     kind: state
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.STATE.KAPPA]
 
@@ -76,6 +89,7 @@ objects:
     symbol: χ
     path: COR/COR.CHI.md
     kind: state
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.STATE.CHI]
 
@@ -83,6 +97,7 @@ objects:
     symbol: 𝒢
     path: COR/COR.STATE.G.md
     kind: state
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.1.STATE.G]
 
@@ -94,6 +109,7 @@ objects:
     symbol: B_C
     path: BOUNDS/BOUNDS.B_C.md
     kind: bound
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.BOUND.B_C]
 
@@ -101,6 +117,7 @@ objects:
     symbol: B_D
     path: BOUNDS/BOUNDS.B_D.md
     kind: bound
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.BOUND.B_D]
 
@@ -108,6 +125,7 @@ objects:
     symbol: B_φ
     path: BOUNDS/BOUNDS.B_PHI.md
     kind: bound
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.BOUND.B_PHI]
 
@@ -115,15 +133,17 @@ objects:
     symbol: B_X
     path: BOUNDS/BOUNDS.B_X.md
     kind: bound
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.BOUND.B_X]
 
-  - object_id: BOUNDS.B_EG
+  - object_id: BOUNDS.ECO_GEO
     symbol: B_EG
-    path: BOUNDS/BOUNDS.B_EGX.md
+    path: BOUNDS/BOUNDS.ECO_GEO.md
     kind: bound
+    empirical_linkage: linkable
     status: canonical
-    legacy_ids: 
+    legacy_ids: [BOUNDS.B_EG]
 
   # =======
   # FIELDS
@@ -132,48 +152,56 @@ objects:
   - object_id: FIELDS.CULTURE_IDENTITY
     path: FIELDS/FIELDS.CULTURE_IDENTITY.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.CULTURE_IDENTITY]
 
   - object_id: FIELDS.DEMOGRAPHY
     path: FIELDS/FIELDS.DEMOGRAPHY.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.DEMOGRAPHY]
 
   - object_id: FIELDS.EDUCATION_KNOWLEDGE
     path: FIELDS/FIELDS.EDUCATION_KNOWLEDGE.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.EDUCATION_KNOWLEDGE]
 
   - object_id: FIELDS.GOVERNANCE
     path: FIELDS/FIELDS.GOVERNANCE.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.GOVERNANCE]
 
   - object_id: FIELDS.INFORMATION
     path: FIELDS/FIELDS.INFORMATION.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.INFORMATION]
 
   - object_id: FIELDS.MARKET
     path: FIELDS/FIELDS.MARKET.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.MARKET]
 
   - object_id: FIELDS.TECHNOLOGY
     path: FIELDS/FIELDS.TECHNOLOGY.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.TECHNOLOGY]
 
   - object_id: FIELDS.VIOLENCE
     path: FIELDS/FIELDS.VIOLENCE.md
     kind: field
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.FIELD.VIOLENCE]
 
@@ -184,48 +212,56 @@ objects:
   - object_id: MEASUREMENT.GENERIC
     path: MEASUREMENT/MEASUREMENT.GENERIC.md
     kind: measurement
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.MEASUREMENT.GENERIC]
 
   - object_id: MEASUREMENT.PI_C
     path: MEASUREMENT/MEASUREMENT.PI_C.md
     kind: measurement
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.MEASUREMENT.PI_C]
 
   - object_id: MEASUREMENT.PI_CHI
     path: MEASUREMENT/MEASUREMENT.PI_CHI.md
     kind: measurement
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.MEASUREMENT.PI_CHI]
 
   - object_id: MEASUREMENT.PI_G
     path: MEASUREMENT/MEASUREMENT.PI_G.md
     kind: measurement
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.MEASUREMENT.PI_G]
 
   - object_id: MEASUREMENT.PI_X
     path: MEASUREMENT/MEASUREMENT.PI_X.md
     kind: measurement
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.2.MEASUREMENT.PI_X]
 
   - object_id: RLM.EXIT_LOCKIN
     path: RLM/RLM.EXIT_LOCKIN.md
     kind: mechanism
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.2.RLM.EXIT_LOCKIN]
 
   - object_id: RLM.GOVERNANCE_EXECUTION
     path: RLM/RLM.GOVERNANCE_EXECUTION.md
     kind: mechanism
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.2.RLM.GOVERNANCE_EXECUTION]
 
   - object_id: RLM.INFORMATION_TOPOLOGY
     path: RLM/RLM.INFORMATION_TOPOLOGY.md
     kind: mechanism
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.2.RLM.INFORMATION_TOPOLOGY]
 
@@ -236,36 +272,42 @@ objects:
   - object_id: AXIS.AGREEABLENESS
     path: AXIS/AXIS.AGREEABLENESS.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.AGREEABLENESS]
 
   - object_id: AXIS.CONSCIENTIOUSNESS
     path: AXIS/AXIS.CONSCIENTIOUSNESS.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.CONSCIENTIOUSNESS]
 
   - object_id: AXIS.EMOTIONALITY
     path: AXIS/AXIS.EMOTIONALITY.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.EMOTIONALITY]
 
   - object_id: AXIS.EXTRAVERSION
     path: AXIS/AXIS.EXTRAVERSION.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.EXTRAVERSION]
 
   - object_id: AXIS.HONESTY_HUMILITY
     path: AXIS/AXIS.HONESTY_HUMILITY.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.HONESTY_HUMILITY]
 
   - object_id: AXIS.OPENNESS
     path: AXIS/AXIS.OPENNESS.md
     kind: axis
+    empirical_linkage: linkable
     status: canonical
     legacy_ids: [O.3.AXIS.OPENNESS]
 
@@ -276,30 +318,35 @@ objects:
   - object_id: OBJECT.CLASS
     path: OBJECT/OBJECT.CLASS.md
     kind: analytic_object
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.OBJECT.CLASS]
 
   - object_id: OBJECT.CLUSTER
     path: OBJECT/OBJECT.CLUSTER.md
     kind: analytic_object
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.OBJECT.CLUSTER]
 
   - object_id: OBJECT.GROUP
     path: OBJECT/OBJECT.GROUP.md
     kind: analytic_object
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.OBJECT.GROUP]
 
   - object_id: OBJECT.INDIVIDUAL
     path: OBJECT/OBJECT.INDIVIDUAL.md
     kind: analytic_object
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.OBJECT.INDIVIDUAL]
 
   - object_id: OBJECT.REGIME
     path: OBJECT/OBJECT.REGIME.md
     kind: analytic_object
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.OBJECT.REGIME]
 
@@ -307,57 +354,74 @@ objects:
   # OPERATORS (OCF)
   # =========================
 
+  - object_id: OCF.OPERATOR.GAMMA_G
+    symbol: Γ_G
+    path: OCF/OCF.OPERATOR.GAMMA_G.md
+    kind: operator
+    empirical_linkage: structural
+    status: canonical
+    notes: "Group-indexed governance/execution operator; definition anchor preventing semantic drift across COR files."
+
   - object_id: OCF.OPERATOR.INTERVENTION_DYNAMICS
     path: OCF/OCF.OPERATOR.INTERVENTION_DYNAMICS.md
     kind: operator
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.4.OPERATOR.INTERVENTION_DYNAMICS]
 
   - object_id: OCF.OPERATOR.OMISSION_AUDIT
     path: OCF/OCF.OPERATOR.OMISSION_AUDIT.md
     kind: operator
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.4.OPERATOR.OMISSION_AUDIT]
 
   - object_id: OCF.OPERATOR.WEIGHTED_ACCESS
     path: OCF/OCF.OPERATOR.WEIGHTED_ACCESS.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Access-conditioning formalization of power; retained but under review."
 
   - object_id: OCF.CONTROL_SURFACE.U
     path: OCF/OCF.CONTROL_SURFACE.U.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical definition, invariants, and usage rules for **control surfaces."
 
   - object_id: OCF.OPERATOR.PI_FIELD
     path: OCF/OCF.OPERATOR.PI_FIELD.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical signature, invariants, reduction contract, and misuse prohibitions for **Π_k**, the operator governing how field state distributions propagate over topology and time."
 
   - object_id: OCF.DOMAIN.SCALE
     path: OCF/OCF.DOMAIN.SCALE.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical definition, invariants, and usage rules for **scale (σ)** as a domain index that bounds object validity, operator applicability, measurement meaning, and feasibility claims across the COR."
 
   - object_id: OCF.OPERATOR.MEASUREMENT
-    path: OCF/OCF.DOMAIN.SCALE.md
+    path: OCF/OCF.OPERATOR.MEASUREMENT.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical definition, invariants, and usage rules for **measurement operators (𝓜)** that map observables and evidence to latent model elements while enforcing evidence hierarchy, confidence discipline, and non-reification."
 
   - object_id: OCF.OPERATOR.SCALE_TRANSITION
     path: OCF/OCF.OPERATOR.SCALE_TRANSITION.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical definition, invariants, and usage rules for **scale-transition operators** that mediate valid mappings across coordination scales (σ). Prevents illicit scale jumps, inevitability claims, and emergence-by-assertion."
 
   - object_id: OCF.OPERATOR.TECHNIQUE
     path: OCF/OCF.OPERATOR.TECHNIQUE.md
     kind: operator
+    empirical_linkage: structural
     status: provisional
     notes: "Provides the canonical definition, invariants, and usage rules for **Techniques**—structured, intentional compositions of control-surface invocations used by groups to attempt to shift system trajectories under regime constraints."
 
@@ -368,12 +432,14 @@ objects:
   - object_id: DPI.SALIENCE_DRIVEN_BASIN_HARDENING
     path: DPI/DPI.SALIENCE_DRIVEN_BASIN_HARDENING.md
     kind: pattern
+    empirical_linkage: structural
     status: canonical
     legacy_ids: [O.3.PATTERN.SALIENCE_DRIVEN_BASIN_HARDENING]
 
   - object_id: DPI.REGISTRY
     path: DPI/dpi.yaml
     kind: registry
+    empirical_linkage: structural
     status: working
 
   # =========================
@@ -383,6 +449,7 @@ objects:
   - object_id: CCFI.REGISTRY
     path: CCFI/ccfi.yaml
     kind: registry
+    empirical_linkage: structural
     status: working
 
   # =========================
@@ -392,4 +459,5 @@ objects:
   - object_id: IBR.REGISTRY
     path: IBR/ibr.yaml
     kind: registry
+    empirical_linkage: structural
     status: working

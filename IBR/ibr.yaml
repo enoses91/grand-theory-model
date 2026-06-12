@@ -1,6 +1,6 @@
 # IBR.yaml — Ideological Basin Register (WORKING / PROVISIONAL)
 # Purpose: Translation/compression layer for basin-consistent salience profiles W_b.
-# NOT ontology (COR) and NOT evidence (OCF). No case list maintained by design.
+# NOT ontology (COR) and NOT evidence (EVR). No case list maintained by design.
 
 ideological_basin_register:
   meta:
@@ -17,7 +17,7 @@ ideological_basin_register:
       - "IBR entries are second-order descriptors: no agency, no causal power."
       - "Do not treat basins as cultures, ethnicities, or fixed essences."
       - "HEXACO profiles are population-level tendencies; not individual diagnostics."
-      - "Do not use IBR as evidence; use OCF for grounded cases."
+      - "Do not use IBR as evidence; use EVR for grounded cases."
       - "Basins must be unpacked into metric/fields/topology for causal explanation."
 
   entry_schema:

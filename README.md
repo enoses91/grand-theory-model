@@ -1,8 +1,8 @@
-\# Grand Theory Model
+# Grand Theory Model
 
 
 
-This repository contains the \*\*Grand Theory\*\* coordination model: a formal, modular framework for analyzing social, political, economic, and institutional dynamics under explicit feasibility constraints.
+This repository contains the **Grand Theory** coordination model: a formal, modular framework for analyzing social, political, economic, and institutional dynamics under explicit feasibility constraints.
 
 
 
@@ -10,17 +10,67 @@ The project is structured to support:
 
 
 
-\* \*\*Canonical definitions\*\* (stable, audited objects)
+* **Canonical definitions** (stable, audited objects)
 
-\* \*\*Working / provisional analysis\*\* (iterative, exploratory)
+* **Working / provisional analysis** (iterative, exploratory)
 
-\* \*\*Inventory-driven automation\*\* (generation, linting, validation)
+* **Inventory-driven automation** (generation, linting, validation)
 
-\* \*\*Programmatic access\*\* by tools and agents
+* **Programmatic access** by tools and agents
 
 
 
-The goal is not narrative exposition, but \*\*structural clarity, falsifiability, and reuse\*\*.
+The goal is not narrative exposition, but **structural clarity, falsifiability, and reuse**.
+
+
+
+---
+
+---
+
+## Epistemic Status (read before using or extending)
+
+**This model is descriptive, not predictive.** It is a structured ontology and analytical methodology for coordination dynamics — not (yet) an estimated or empirically fitted model.
+
+1. **Formalism is logical pseudocode.** Mathematical notation (bounded scalars, inequalities, functionals) encodes *structure, direction, and constraint logic* — not measurement. No functional forms, units, or estimation procedures are defined. Agents and tools **must not** operationalize, estimate, or "fill in" the math without an explicit MGA-T routed change.
+
+2. **Empirical linkage is tracked per object.** Every entry in `COR.yaml` carries an `empirical_linkage` field: `linkable` (a proxy/instrument path plausibly exists but is not built) or `structural` (definitional/analytic; linkage not expected). No object currently holds status `linked`; that requires a validated measurement construction.
+
+3. **Evidence provenance.** The model was developed across several months of intensive analytical sessions (ChatGPT-4/5 era) including many worked case studies and an evidence base for the HEXACO/basin substrate. **That evidence did not survive the transfer to this repository.** Inventory entries marked `promoted` with provenance citations of the form "Saved memory: ..." rest on pre-transfer work not present in this corpus, and are slated for re-validation against rebuilt Evidence Records (EVR) before being treated as gated promotions.
+
+4. **Acronym disambiguation.** `OCF/` in this repository contains **operators and control-surface definition anchors**. The *evidence layer* of worked case files — previously also called OCF in process rules — is now designated **EVR (Evidence Records)**; the `EVR/` directory will be created when case work begins.
+
+5. **Subcomponent rule.** Latent subcomponents (e.g., CI_store/CI_access/CI_load, θ_exec/θ_adapt, φ_sac/φ_proc/φ_exp, κ_load) are defined and live **inside their parent object files only**. They are not independently registered in `COR.yaml` and must not be referenced as standalone objects.
+
+6. **Validation.** `tools/validate_model.py` enforces mechanical coherence (YAML validity, registry↔disk referential integrity, status enums, linkage fields). Run it before any commit; CI runs it on every push.
+
+
+
+## Core Design Principles
+
+
+
+1\. **Ontology before narrative**
+
+   All concepts are defined as explicit objects with scope, bounds, and couplings. Narrative explanations are secondary.
+
+
+
+2\. **Canonical vs working separation**
+
+   Stable, audited definitions are separated from provisional patterns, hypotheses, and causal chains.
+
+
+
+3\. **Inventory-driven model**
+
+   YAML inventories are the authoritative source for what exists in the model. Markdown files are rendered views, not the source of truth.
+
+
+
+4\. **Automation-first layout**
+
+   The repo is designed to support linting, regeneration, packaging, and agentic workflows without manual file juggling.
 
 
 
@@ -28,47 +78,15 @@ The goal is not narrative exposition, but \*\*structural clarity, falsifiability
 
 
 
-\## Core Design Principles
+## Repository Structure
 
 
 
-1\. \*\*Ontology before narrative\*\*
-
-&nbsp;  All concepts are defined as explicit objects with scope, bounds, and couplings. Narrative explanations are secondary.
+### Canonical Objects (Markdown)
 
 
 
-2\. \*\*Canonical vs working separation\*\*
-
-&nbsp;  Stable, audited definitions are separated from provisional patterns, hypotheses, and causal chains.
-
-
-
-3\. \*\*Inventory-driven model\*\*
-
-&nbsp;  YAML inventories are the authoritative source for what exists in the model. Markdown files are rendered views, not the source of truth.
-
-
-
-4\. \*\*Automation-first layout\*\*
-
-&nbsp;  The repo is designed to support linting, regeneration, packaging, and agentic workflows without manual file juggling.
-
-
-
----
-
-
-
-\## Repository Structure
-
-
-
-\### Canonical Objects (Markdown)
-
-
-
-These folders contain \*\*canonical, stable definitions\*\*. Each object has a single authoritative MD file.
+These folders contain **canonical, stable definitions**. Each object has a single authoritative MD file.
 
 
 
@@ -100,11 +118,11 @@ Canonical objects are:
 
 
 
-\* versioned
+* versioned
 
-\* intentionally conservative to change
+* intentionally conservative to change
 
-\* referenced by inventories and automation
+* referenced by inventories and automation
 
 
 
@@ -112,11 +130,11 @@ Canonical objects are:
 
 
 
-\### Patterns \& Chains (Canonical + Working)
+### Patterns & Chains (Canonical + Working)
 
 
 
-\#### DPI — Dynamic Pattern Inventory
+#### DPI — Dynamic Pattern Inventory
 
 
 
@@ -124,25 +142,25 @@ Canonical objects are:
 
 DPI/
 
-&nbsp; DPI.<PATTERN>.md        # Canonical patterns (one per file)
+  DPI.<PATTERN>.md        # Canonical patterns (one per file)
 
-&nbsp; dpi.yaml                # Working / provisional patterns
+  dpi.yaml                # Working / provisional patterns
 
-&nbsp; DPI.WORKING.md          # Generated view of working patterns
+  DPI.WORKING.md          # Generated view of working patterns
 
 ```
 
 
 
-\* \*\*MD files\*\* = canonical patterns
+* **MD files** = canonical patterns
 
-\* \*\*`dpi.yaml`\*\* = provisional / working patterns
+* **`dpi.yaml`** = provisional / working patterns
 
-\* \*\*`DPI.WORKING.md`\*\* = generated, non-canonical synthesis
+* **`DPI.WORKING.md`** = generated, non-canonical synthesis
 
 
 
-\#### CCFI — Causal Chain Function Inventory
+#### CCFI — Causal Chain Function Inventory
 
 
 
@@ -150,15 +168,15 @@ DPI/
 
 CCFI/
 
-&nbsp; ccfi.yaml               # Working / provisional causal chains
+  ccfi.yaml               # Working / provisional causal chains
 
-&nbsp; CCFI.WORKING.md         # Generated view of working chains
+  CCFI.WORKING.md         # Generated view of working chains
 
 ```
 
 
 
-Causal chains are treated as \*\*hypotheses\*\*, not primitives, until promoted.
+Causal chains are treated as **hypotheses**, not primitives, until promoted.
 
 
 
@@ -166,7 +184,7 @@ Causal chains are treated as \*\*hypotheses\*\*, not primitives, until promoted.
 
 
 
-\### Ideological Basins
+### Ideological Basins
 
 
 
@@ -174,7 +192,7 @@ Causal chains are treated as \*\*hypotheses\*\*, not primitives, until promoted.
 
 IBR/
 
-&nbsp; ibr.yaml                # Ideological basin registry
+  ibr.yaml                # Ideological basin registry
 
 ```
 
@@ -188,7 +206,7 @@ Basins are coordination equilibria, not belief systems, and are inventory-driven
 
 
 
-\### Root Inventory
+### Root Inventory
 
 
 
@@ -200,17 +218,17 @@ COR.yaml
 
 
 
-This file is the \*\*index of record\*\* for the model:
+This file is the **index of record** for the model:
 
 
 
-\* what objects exist
+* what objects exist
 
-\* where canonical definitions live
+* where canonical definitions live
 
-\* which inventories are authoritative
+* which inventories are authoritative
 
-\* what is eligible for automation
+* what is eligible for automation
 
 
 
@@ -222,7 +240,7 @@ Automation should treat `COR.yaml` as the entry point.
 
 
 
-\## Canonical vs Working Status
+## Canonical vs Working Status
 
 
 
@@ -242,7 +260,7 @@ Automation should treat `COR.yaml` as the entry point.
 
 
 
-\*\*Rule:\*\*
+**Rule:**
 
 
 
@@ -254,7 +272,7 @@ Automation should treat `COR.yaml` as the entry point.
 
 
 
-\## Automation (Planned / In Progress)
+## Automation (Planned / In Progress)
 
 
 
@@ -262,13 +280,13 @@ The structure is designed to support:
 
 
 
-\* Linting inventories against canonical objects
+* Linting inventories against canonical objects
 
-\* Regenerating `\*.WORKING.md` views
+* Regenerating `*.WORKING.md` views
 
-\* Building “packs” for LLMs or analysis tools
+* Building “packs” for LLMs or analysis tools
 
-\* Detecting drift between YAML and MD
+* Detecting drift between YAML and MD
 
 
 
@@ -288,21 +306,21 @@ tools/model.ps1
 
 
 
-\## What This Is \*Not\*
+## What This Is *Not*
 
 
 
-\* Not a political ideology
+* Not a political ideology
 
-\* Not a moral framework
+* Not a moral framework
 
-\* Not a historical narrative
+* Not a historical narrative
 
-\* Not a policy wishlist
+* Not a policy wishlist
 
 
 
-The model is \*\*agnostic to goals and moral truth\*\*. It evaluates \*\*feasibility, dynamics, and failure modes\*\* conditional on chosen goals.
+The model is **agnostic to goals and moral truth**. It evaluates **feasibility, dynamics, and failure modes** conditional on chosen goals.
 
 
 
@@ -310,17 +328,17 @@ The model is \*\*agnostic to goals and moral truth\*\*. It evaluates \*\*feasibi
 
 
 
-\## Status
+## Status
 
 
 
-\* Core ontology: \*\*stable\*\*
+* Core ontology: **stable**
 
-\* Inventories: \*\*active\*\*
+* Inventories: **active**
 
-\* Automation: \*\*under construction\*\*
+* Automation: **under construction**
 
-\* Empirical grounding: \*\*ongoing\*\*
+* Empirical grounding: **ongoing**
 
 
 
@@ -332,7 +350,7 @@ Breaking changes will be deliberate and rare.
 
 
 
-\## License / Use
+## License / Use
 
 
 
@@ -344,13 +362,13 @@ License and citation guidance to be added once the public interface stabilizes.
 
 
 
-\### Next steps (internal)
+### Next steps (internal)
 
 
 
-\* Add automation scripts (`model.ps1`)
+* Add automation scripts (`model.ps1`)
 
-\* Add inventory lint rules
+* Add inventory lint rules
 
-\* Add GitHub Action for consistency checks
+* Add GitHub Action for consistency checks
 

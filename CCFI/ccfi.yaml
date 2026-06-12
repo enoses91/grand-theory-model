@@ -3,7 +3,7 @@
 # - Entries are explanatory fragments, not laws.
 # - Chains do not introduce new causal primitives or intent.
 # - Not admissible without regime, scale, and temporal validation.
-# - Must be instantiated with evidence (OCF) and audited via MGA-B.
+# - Must be instantiated with evidence (EVR) and audited via MGA-B.
 # - Promotion path: repeated successful use + MGA-B survival + MGA-T routing.
 
 ccfi:
@@ -85,6 +85,7 @@ ccfi:
         - "Believing messaging alone restores legitimacy"
         - "Ignoring hysteresis in recovery"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
 
     - id: "CCF-0003"
@@ -113,6 +114,7 @@ ccfi:
       common_misuses:
         - "Assuming preference change rather than salience shift"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
 
     - id: "CCF-0004"
@@ -141,6 +143,7 @@ ccfi:
       common_misuses:
         - "Attributing switch to leadership intent alone"
       status: "promoted"
+      evidence_basis: "pre-transfer (ChatGPT-era case work; not in this corpus; re-validation against EVR pending)"
       confidence: "high"
 
     - id: "CCF-0005"
@@ -197,73 +200,73 @@ ccfi:
       status: "candidate"
       confidence: "high"
 
-- id: "CCF-0007"
-  chain_label: "Demographic Shock → Topology Re-sorting → Identity Salience → Basin Stabilization"
-  steps:
-    - "Exogenous demographic change via migration (ΔD)"
-    - "Residential / social topology re-sorting (𝒢): enclaves or persistent contrast adjacency"
-    - "Repeated out-group exposure increases salience of group boundaries"
-    - "Information Field amplifies identity narratives; κ rises"
-    - "Internal group variance suppressed; high-order identities dominate"
-    - "Stable basin-consistent salience profile (W_b) emerges across generations"
-  fields_and_metrics:
-    - "Demographic Field (D)"
-    - "Topology (𝒢)"
-    - "Information Field (I)"
-    - "Identity Hardening (h)"
-    - "Cognitive Compression (κ)"
-    - "Ideological Basins (W_b)"
-  directionality_and_lag:
-    description: >
-      Initial salience spike can be rapid; durable identity consolidation requires
-      persistence across identity-formation time constants and reinforcement via topology
-      and information channels.
-    lag_estimate: "Months for salience effects; years–decades for intergenerational stabilization"
-  regime_scale_bounds:
-    regime: "Pluralist societies receiving sustained migration flows"
-    scale: "Local/community to mesoscopic cluster; national only via aggregation"
-  known_breaks_or_alternatives:
-    - "Topology that maximizes cross-cutting ties (schooling, labor markets)"
-    - "Narrative disruption via credible counter-experience"
-    - "Economic mobility reducing identity-centrality"
-  common_misuses:
-    - "Treating identity outcomes as inevitable"
-    - "Ignoring selection effects among migrants"
-    - "Collapsing cluster dynamics into group agency"
-  status: "candidate"
-  confidence: "medium"
+    - id: "CCF-0007"
+      chain_label: "Demographic Shock → Topology Re-sorting → Identity Salience → Basin Stabilization"
+      steps:
+        - "Exogenous demographic change via migration (ΔD)"
+        - "Residential / social topology re-sorting (𝒢): enclaves or persistent contrast adjacency"
+        - "Repeated out-group exposure increases salience of group boundaries"
+        - "Information Field amplifies identity narratives; κ rises"
+        - "Internal group variance suppressed; high-order identities dominate"
+        - "Stable basin-consistent salience profile (W_b) emerges across generations"
+      fields_and_metrics:
+        - "Demographic Field (D)"
+        - "Topology (𝒢)"
+        - "Information Field (I)"
+        - "Identity Hardening (h)"
+        - "Cognitive Compression (κ)"
+        - "Ideological Basins (W_b)"
+      directionality_and_lag:
+        description: >
+          Initial salience spike can be rapid; durable identity consolidation requires
+          persistence across identity-formation time constants and reinforcement via topology
+          and information channels.
+        lag_estimate: "Months for salience effects; years–decades for intergenerational stabilization"
+      regime_scale_bounds:
+        regime: "Pluralist societies receiving sustained migration flows"
+        scale: "Local/community to mesoscopic cluster; national only via aggregation"
+      known_breaks_or_alternatives:
+        - "Topology that maximizes cross-cutting ties (schooling, labor markets)"
+        - "Narrative disruption via credible counter-experience"
+        - "Economic mobility reducing identity-centrality"
+      common_misuses:
+        - "Treating identity outcomes as inevitable"
+        - "Ignoring selection effects among migrants"
+        - "Collapsing cluster dynamics into group agency"
+      status: "candidate"
+      confidence: "medium"
 
-- id: "CCF-0008"
-  chain_label: "Epistemic Complexity → κ↑ → Rationalisation Constraint Relaxation → Motivated Cognition → h↑ Feedback"
-  steps:
-    - "High epistemic complexity in domain (I-mediated facts; low direct access)"
-    - "Forced low-resolution representation / compression (κ↑)"
-    - "Expanded set of subjectively-plausible justifications (rationalisation constraint relaxes)"
-    - "Motivated cognition operators activate (confirmation/avoidance, asymmetric standards, selective recall)"
-    - "Belief stabilization via social scaffolding (trusted testimony + network reinforcement over 𝒢)"
-    - "If belief is identity-protective: identity hardening increases (h↑)"
-    - "Feedback: h↑ raises tolerance for distortion and narrows admissible sources → κ effectively increases"
-  fields_and_metrics:
-    - "Information Field (I)"
-    - "Topology (𝒢)"
-    - "Cognitive Compression (κ)"
-    - "Identity Hardening (h)"
-  directionality_and_lag:
-    description: >
-      κ can rise quickly when domains become complex/mediated; motivated-cognition behaviors can shift within days/weeks.
-      h-feedback and stable cluster/basin alignment require persistence and reinforcement over longer horizons.
-    lag_estimate: "days–weeks (behavioral filtering); months–years (identity/basin stabilization)"
-  regime_scale_bounds:
-    regime: "High-information, contested-truth environments with weak shared arbiters"
-    scale: "Individual → meso clusters; macro effects require aggregation via topology and institutions"
-  known_breaks_or_alternatives:
-    - "Direct, repeated ground-truth feedback reduces κ and collapses rationalisation space"
-    - "Credible audits/shared measurement reduce ambiguity and weaken motivated insulation"
-    - "Cross-cutting ties and enforced epistemic diversity disrupt reinforcement loops"
-  common_misuses:
-    - "Attributing all false beliefs to motivation (ignores rational error under complexity)"
-    - "Attributing all false beliefs to complexity (ignores identity/status incentives)"
-    - "Treating elite 'complexity manufacture' as universal intent rather than incentive-aligned opportunity"
-  status: "candidate"
-  confidence: "medium"
+    - id: "CCF-0008"
+      chain_label: "Epistemic Complexity → κ↑ → Rationalisation Constraint Relaxation → Motivated Cognition → h↑ Feedback"
+      steps:
+        - "High epistemic complexity in domain (I-mediated facts; low direct access)"
+        - "Forced low-resolution representation / compression (κ↑)"
+        - "Expanded set of subjectively-plausible justifications (rationalisation constraint relaxes)"
+        - "Motivated cognition operators activate (confirmation/avoidance, asymmetric standards, selective recall)"
+        - "Belief stabilization via social scaffolding (trusted testimony + network reinforcement over 𝒢)"
+        - "If belief is identity-protective: identity hardening increases (h↑)"
+        - "Feedback: h↑ raises tolerance for distortion and narrows admissible sources → κ effectively increases"
+      fields_and_metrics:
+        - "Information Field (I)"
+        - "Topology (𝒢)"
+        - "Cognitive Compression (κ)"
+        - "Identity Hardening (h)"
+      directionality_and_lag:
+        description: >
+          κ can rise quickly when domains become complex/mediated; motivated-cognition behaviors can shift within days/weeks.
+          h-feedback and stable cluster/basin alignment require persistence and reinforcement over longer horizons.
+        lag_estimate: "days–weeks (behavioral filtering); months–years (identity/basin stabilization)"
+      regime_scale_bounds:
+        regime: "High-information, contested-truth environments with weak shared arbiters"
+        scale: "Individual → meso clusters; macro effects require aggregation via topology and institutions"
+      known_breaks_or_alternatives:
+        - "Direct, repeated ground-truth feedback reduces κ and collapses rationalisation space"
+        - "Credible audits/shared measurement reduce ambiguity and weaken motivated insulation"
+        - "Cross-cutting ties and enforced epistemic diversity disrupt reinforcement loops"
+      common_misuses:
+        - "Attributing all false beliefs to motivation (ignores rational error under complexity)"
+        - "Attributing all false beliefs to complexity (ignores identity/status incentives)"
+        - "Treating elite 'complexity manufacture' as universal intent rather than incentive-aligned opportunity"
+      status: "candidate"
+      confidence: "medium"
 

@@ -250,7 +250,7 @@ _Generated from `ccfi.yaml` on 2026-01-28._
 
 - `COR.X`: exit/mobility
 - `COR.THETA`: execution responsiveness
-- `COR.XE`: opportunity cost differentials
+- X–E coupling *(UNRESOLVED pre-transfer reference, formerly `COR­.XE` — object absent from registry; route via MGA-T: define as E×X coupling, alias to existing objects, or retire)*: opportunity cost differentials
 - `COR.CI`: competence retention and institutional learning
 
 **Directionality and lag**
