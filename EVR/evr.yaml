@@ -1,0 +1,7 @@
+evr:
+  meta:
+    file_version: "0.1.0"
+    description: "Registry of Evidence Records (worked case files). See EVR/README.md."
+    required_fields: [id, title, status, mga_process, provenance, sources_count]
+    status_enum: [draft, reviewed, accepted]
+  entries: []
