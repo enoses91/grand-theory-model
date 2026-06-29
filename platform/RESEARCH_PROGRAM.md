@@ -1,6 +1,6 @@
 # Research Program — Validating the Platform Architecture, Commercial Thesis, and Cognitive Foundations
 
-**Status:** design draft · **Version:** 1.3 · **Date:** 2026-06-28 · **Owner:** Eric Enos
+**Status:** design draft · **Version:** 1.4 · **Date:** 2026-06-28 · **Owner:** Eric Enos
 **Companions:** `UNIFIED_PLATFORM_ARCHITECTURE.md`, `DOMAIN_SCREENING_RUBRIC.md`
 **Purpose:** a structured program to validate (or falsify) the provisional decisions made across the architecture and commercial design, and to ground the system's logic in the relevant literature — including basic cognitive research on high-stakes decision-making under uncertainty not already covered in the Founder Platform work.
 **Stance:** falsification over validation. Each item names a **kill criterion**, not only a success criterion. High-stakes conclusions carry confidence + boundary conditions.
@@ -19,7 +19,7 @@ The program is not neutral discovery; three findings actively threaten the core 
 
    NDM's result is a finding about the **temporal** axis. The system targets the **stakes × dimensional** quadrant **with temporal slack** — the regime RPD never addressed. The two partition the decision space rather than competing. **Core mechanism (the stronger claim):** even within a *fixed* time budget, an LLM-driven system raises *achievable completeness per unit time*. The human's completeness-per-unit-time is bounded by the serial-chunking constraint — the binding limit is cognitive throughput, not the clock. The competitor is not "perfect completeness with infinite time"; it is "what *this* decision-maker could actually hold in the time they have," a low and beatable bar. The system also augments the phase RPD itself says *expands when time allows* — the expert's mental-simulation/checking phase — widening the dimensions considered before commitment. So the thesis reconciles with NDM rather than fighting it. `[I]` **Residual risk (unchanged):** more dimensions surfaced improves the decision only if the *added* dimensions are high-signal and correctly weighted; surfacing noise can degrade via overload/false precision. The opportunity argument strengthens; the fidelity burden (III.1/III.3) does not lift.
 
-2. **The structured-technique efficacy tension (the "ACH ghost").** The most direct prior art — Heuer's Analysis of Competing Hypotheses — has, under controlled test (Mandel; Dhami), shown *no advantage over a no-technique control*, with trained analysts skipping steps. `[F]` Structured analytic rigor has a genuinely mixed record of being adopted *and* of improving judgment. The empty market white-space may be a moat or a graveyard. This is the single most important thing the program must resolve. `[R]`
+2. **The structured-technique efficacy tension (the "ACH ghost").** The most direct prior art — Heuer's Analysis of Competing Hypotheses — has, under controlled test (Mandel; Dhami), shown *no advantage over a no-technique control*, with trained analysts skipping steps. `[F]` Structured analytic rigor has a genuinely mixed record of being adopted *and* of improving judgment. The empty market white-space may be a moat or a graveyard. This is the single most important thing the program must resolve. `[R]` **The "graveyard" is literal and enumerable — see Part VI.** ACH is one instance of a *class* of normatively-sound methods that failed on sustained human compliance (design rationale is a second). If the shared fatal flaw is compliance cost, and the system removes that flaw structurally (III.2), the entire class — not just the single method — becomes addressable. That reframing turns the most threatening tension into the largest opportunity, and is developed as its own work-stream in Part VI. `[I]`
 
 3. **The human-AI-combination tension (Vaccaro et al.).** A 2024 meta-analysis (Vaccaro, Almaatouq & Malone, "When combinations of humans and AI are useful") reportedly found that human-AI combinations frequently *fail to outperform the best of human-or-AI alone*. `[A]` (Seen cited, not yet read — verify.) Taken at face value this threatens the augmentation thesis. **But it must be *stratified*, not accepted whole**, because the result is only damaging if the pooled studies share the conditions the system targets — and they likely do not. The disconfirming conditions to factor out: `[I]`
    - *Role of AI:* if the corpus is dominated by **recommendation-centric** support (AI says "do X"), the null is a finding about recommendation, not about **process-oriented/interrogative** completeness-augmentation — the opposite category (the CHI tools-for-thought literature shows these behave oppositely).
@@ -56,11 +56,11 @@ The core premise ("humans can't hold high-dimensional problems; externalize the 
 ### I.3 Structured analytic techniques & their efficacy record — *the direct prior art*
 - **Heuer (1999), Psychology of Intelligence Analysis; Heuer & Pherson, Structured Analytic Techniques.** The ACH lineage; functionally the closest precedent. `[F]`
 - **Mandel; Dhami et al. — empirical critiques.** ACH ≈ control; step-skipping. The disconfirming evidence the program must answer. `[F]`
-- *Research question:* does the system's *structural execution* (engine runs the check, not the analyst) escape the compliance-decay failure mode that sank ACH? (Part III.2 — this is the mechanism that, if it works, distinguishes the system from the ACH null result.)
+- *Research question:* does the system's *structural execution* (engine runs the check, not the analyst) escape the compliance-decay failure mode that sank ACH? (Part III.2 — this is the mechanism that, if it works, distinguishes the system from the ACH null result. Generalized to a class in Part VI.)
 
 ### I.4 Completeness methods in other fields — *transfer evidence*
 - **Safety engineering: HAZOP (Kletz), STPA/STAMP (Leveson), FRAM (Hollnagel).** Mature forced-completeness methods; key lesson already established: **completeness remains analyst-dependent even in the most structured methods**, and no single method is complete. `[F]`
-- **Argument mapping / IBIS / Toulmin; argumentation frameworks (Dung, ASPIC+).** Structure-an-argument-to-expose-gaps; closest to the author-frame-extraction operation.
+- **Argument mapping / IBIS / Toulmin; argumentation frameworks (Dung, ASPIC+).** Structure-an-argument-to-expose-gaps; closest to the author-frame-extraction operation. (Also a Part VI corpse: design rationale.)
 - **Morphological analysis (Zwicky); MCDA; Integral Theory (Wilber).** Enumerate-the-possibility-space precedents.
 - *Research question:* which mechanisms transfer to loosely-formalized domains, and which are domain-bound? (Part II.)
 
@@ -111,6 +111,7 @@ The efficacy question is not binary ("does completeness help?") but a **rate-and
 - **Hypothesis:** ACH failed partly because *humans* execute the steps and skip them; the engine executes the completeness check *structurally*, so it can't be skipped. `[I]`
 - **Test:** measure execution fidelity of the engine vs. human-run ACH on matched tasks. If the engine's structural execution removes the step-skipping variance, that is the mechanism of advantage — and the defensible IP story.
 - **Kill criterion:** if structural execution doesn't improve over human execution (e.g., the LLM-filled cells reintroduce the same subjectivity ACH had in its matrix), the "structured beats unstructured" claim weakens to "depends on cell quality."
+- **Generalization:** this same mechanism is what makes Part VI possible. If structural execution defeats compliance-decay here, it plausibly defeats it for the *whole class* of compliance-failed methods — III.2 is the single-method proof, Part VI is the class-level consequence.
 
 ### III.3 The empowerment-fidelity risk (RR3)
 - **Question:** can a non-expert buyer *judge* the engine's output, or does a wrong frame become more dangerous because they trust it?
@@ -162,13 +163,15 @@ Pairs with III.5: where III.5 measures coherence (detection), III.6 measures the
 2. **AV5** — are target dimension spaces enumerable? (Same export-corpus dataset; cheap; gates the strong claim.)
 3. **AV2** — engine/pack independence (Phase 3; the platform claim).
 4. **CV1 + CV5 + CV7** — novelty, real coverage, and willingness-to-pay-for-rigor (the commercial kill-risks).
-5. Everything else.
+5. **Part VI graveyard screen** — once III.2 confirms the compliance-decay escape, run the screen to size the addressable class (research-and-positioning value; not on the critical kill-path but high strategic upside).
+6. Everything else.
 
 ### V.2 Methods palette
 - **The export corpus as primary dataset.** The dozens–hundreds of prior ChatGPT analyses are a labeled set of *applicability judgments* (which dimensions an author used vs. which the model added) — the single highest-value research asset, serving AV5, III.1, and the EVR seeding simultaneously. Mine it first.
 - **Expert elicitation panels** for the III.1 ground-truth frames (the "team the system replaces").
 - **Prototype A/B** for AV3/AV4/III.
 - **Customer discovery by buyer-shape** for Part IV (Sarah Bellenger / ManageYou as a live C0 empowerment case; a PE operating partner for the channel test; the.garage population for intrapreneur/founder).
+- **Implementation-science literature mining** for Part VI — search the *adoption-failure* literatures, not the method literatures (see VI.3).
 - **Literature review** for Part I — annotated bibliography + claims-vs-evidence table as the standing artifact.
 
 ### V.3 The kill-criteria summary (what would end or pivot the venture)
@@ -183,6 +186,70 @@ This research program is itself a high-stakes, high-dimensional decision under u
 
 ---
 
+## Part VI — The method-revival thesis (the "graveyard screen")
+
+**The generalization.** The ACH ghost (§0.2) and design rationale are not two isolated disappointments; they are two instances of a *single recurring pattern*: a method that research shows *works*, that died in practice because it depended on **sustained, complete, multi-step human compliance in complex or long-horizon domains**. If the fatal flaw is compliance cost, and an LLM-driven system performs the capture-and-checking *structurally* (III.2), then **the entire class of compliance-failed methods becomes newly viable in a human+system hybrid.** The thesis: *the system does not merely help with decisions; it potentially resurrects a class of abandoned-but-sound rigorous methods by removing their shared point of failure.* `[I]` This is a larger and more defensible claim than the single-product framing, and it comes with its own falsifiable boundary (VI.2).
+
+### VI.1 The screening predicate (what counts as a revivable "corpse")
+A method is a candidate iff it matches **all five**: `[R]`
+1. **Normatively sound** — research/theory says it improves the cognitive output when executed.
+2. **Compliance-dependent** — efficacy requires sustained, complete, multi-step human execution.
+3. **Complex / long-horizon domain** — applied where the burden compounds over time or scope.
+4. **Documented adoption/fidelity gap** — the field literature records abandonment, step-skipping, partial application, or "de-implementation."
+5. **Failure attributed to burden** — the stated cause is effort/discipline/upkeep, *not* the method being wrong.
+
+This is the §3 domain-rubric move applied to *methods* rather than *domains*: a five-part predicate that turns a vague intuition ("lots of good methods don't get used") into an enumerable screen.
+
+### VI.2 The second predicate (the kill criterion — not every corpse revives)
+**The load-bearing-effort guard.** `[R]` For some methods the laborious human execution *is itself the mechanism of value* — the struggle generates the understanding, and automating it hollows the method out (the anchoring/over-reliance failure mode from the claims register, at the method level). A candidate only revives if removing the human-compliance burden **preserves** the efficacy. So each candidate gets a second test:
+- *Does the value come from the human having *done the work*, or from the work *having been done*?* If the former, structural execution destroys it; if the latter, structural execution rescues it.
+- **Kill criterion for the whole thesis:** if, across candidates, the compliance burden turns out to be load-bearing more often than not, the method-revival thesis collapses to "a few methods revive" — still useful, but not a class-level opportunity.
+
+This guard is what keeps the thesis honest: it predicts *which* corpses stay buried, not just that some rise.
+
+### VI.3 The discovery method (how to enumerate the full population)
+The corpses are found by their **failure signature**, so the productive search is in the *adoption/implementation* literatures, not the method literatures. `[R]`
+1. **Operationalize VI.1** as a checklist screen.
+2. **Search implementation science** — medicine's discipline for "why don't proven things get used" — which may already hold partial catalogs of compliance-failed methods (and the *de-implementation* literature).
+3. **Query method-name × {adoption, compliance, fidelity, abandonment, sustainability, de-implementation}** rather than method-name alone.
+4. **Mine review articles that lament low uptake** of a rigorous method — each lament is a pointer to a corpse.
+5. **Score each candidate** on VI.1, then on the VI.2 load-bearing-effort guard.
+6. **Rank survivors** by (class size × per-method value × hybrid-feasibility) for the platform's pack roadmap.
+
+### VI.4 Candidate corpses (illustrative — all `[A]`, pending the VI.3 grounded pass)
+A non-exhaustive starting list to be confirmed/expanded by the implementation-science search. Each needs both predicates applied. `[A]`
+- **ACH / structured analytic techniques** (Heuer/Pherson) — the seed case; already in §0.2.
+- **Design rationale** (IBIS, gIBIS, QOC, ADRs) — explicit, well-documented adoption failure; the second seed.
+- **Formal specification / formal methods** (Z, VDM, manual-era TLA+) — proven, under-adopted on maintenance burden.
+- **FMEA / FMECA** — often *mandated* precisely because voluntary complete application decays (the mandate is the tell).
+- **Decision analysis / decision conferencing** (Howard-style) — high value, niche adoption; elicitation burden is the named barrier.
+- **Systematic review / evidence-synthesis protocols** (PRISMA, Cochrane) — completeness-dependent, brutally labor-intensive; *already* being revived via living reviews + AI-assisted screening (a visible revival-in-progress).
+- **Structured differential diagnosis / clinical guideline adherence** — vast "why protocols aren't completed" literature; commercially live.
+- **Morphological analysis (Zwicky); TRIZ; structured/dialectical inquiry & devil's-advocate methods** — enumerate-the-space methods with low sustained uptake.
+- **Cognitive task analysis** — powerful, expensive, under-used.
+
+`[I]` Rough count: ~10 beyond the two seeds from knowledge alone; the true population is likely larger once domain-specific protocols (engineering, medicine, law, finance, intelligence) are included via the VI.3 search.
+
+### VI.5 Where the revival research already lives (fragmented — the white space)
+`[I]` Active revival is happening, but **one method at a time, in domain silos, without the unifying thesis**:
+- AI-assisted **systematic review** (living reviews, screening automation) — the most mature single instance.
+- AI-assisted **formal methods / spec generation**.
+- LLM-assisted **threat modeling / FMEA / hazard analysis** in safety engineering.
+- The **tools-for-thought / cognitive-augmentation** stream (CHI 2025) reviving structured reasoning aids generally.
+
+What is **not** found (from knowledge; verify in VI.3): anyone who has *named the general pattern*, built the *screening predicate*, and treated compliance-failed methods as a *single enumerable, newly-viable class*. The pieces exist, fragmented; the **assembly and the general claim are the white space** — structurally the same finding as the platform's own market position.
+
+### VI.6 Novelty location (claim narrowly)
+`[R]` Not novel: that good methods go unused (implementation science owns this); that AI can assist any single one of these methods (revivals in progress). **Novel (to verify):** the *general thesis* that compliance-failure is a shared, now-removable fatal flaw, plus the *screen* that enumerates which methods it applies to and the *guard* that predicts which it does not. The contribution is the unifying frame and the predicate, not any single revival.
+
+### VI.7 Deliverables
+1. The two-predicate **graveyard screen** (VI.1 + VI.2) as a reusable instrument.
+2. A **scored catalog** of compliance-failed methods from the implementation-science search (VI.3).
+3. A **ranked revival roadmap** — which corpses, in which order, map to platform packs.
+4. A stated **boundary** (the load-bearing-effort exception): which methods the thesis predicts will *not* revive, and why.
+
+---
+
 ## Appendix — Standing artifacts this program produces
 1. Annotated bibliography keyed to architecture components (Part I).
 2. Claims-vs-evidence table (every system claim → supporting + disconfirming literature → status).
@@ -190,3 +257,4 @@ This research program is itself a high-stakes, high-dimensional decision under u
 4. Efficacy experiment results (III.1–III.4) — the go/no-go on the core thesis.
 5. Validated (or revised) domain-screening rubric with real, practitioner-sourced scores.
 6. A stated applicability boundary for the product (where it helps, where it doesn't).
+7. The **graveyard screen + scored catalog of compliance-failed methods** (Part VI) — the two-predicate instrument, the implementation-science-sourced candidate catalog, and the ranked revival roadmap.
