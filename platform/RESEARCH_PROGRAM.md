@@ -1,6 +1,6 @@
 # Research Program — Validating the Platform Architecture, Commercial Thesis, and Cognitive Foundations
 
-**Status:** design draft · **Version:** 1.4 · **Date:** 2026-06-28 · **Owner:** Eric Enos
+**Status:** design draft · **Version:** 1.5 · **Date:** 2026-06-28 · **Owner:** Eric Enos
 **Companions:** `UNIFIED_PLATFORM_ARCHITECTURE.md`, `DOMAIN_SCREENING_RUBRIC.md`
 **Purpose:** a structured program to validate (or falsify) the provisional decisions made across the architecture and commercial design, and to ground the system's logic in the relevant literature — including basic cognitive research on high-stakes decision-making under uncertainty not already covered in the Founder Platform work.
 **Stance:** falsification over validation. Each item names a **kill criterion**, not only a success criterion. High-stakes conclusions carry confidence + boundary conditions.
@@ -74,7 +74,14 @@ The core premise ("humans can't hold high-dimensional problems; externalize the 
 - **Tetlock — *Expert Political Judgment*, superforecasting.** Evidence on *which* cognitive styles forecast well under uncertainty (foxes > hedgehogs) — directly relevant to whether breadth-forcing improves outcomes. `[F]`
 - *Research question:* does the platform reproduce, for a solo analyst, the breadth advantage Tetlock attributes to "foxes"? (Part III.)
 
-### I.7 Explicitly excluded (already covered in Founder Platform work)
+### I.7 Analogy, abstraction & frame selection — *the engine of the "ping" (new, supports Part VII)*
+The recursive work-stream (Part VII) rests on cognitive work on *structural* (not surface) analogy and the selection of the abstraction level at which two cases share structure.
+- **Gentner — structure-mapping theory; Gentner & Markman — structural alignment.** Analogy as alignment of *relational structure*, not surface features — the formal account of why "rhyme" requires matching *cadence* (relations), not *sounds* (attributes). `[F]` (verify)
+- **Hofstadter & Sander — *Surfaces and Essences* (analogy as the core of cognition); Holyoak & Thagard — *Mental Leaps* (analogical mapping).** The claim that concept-formation *is* analogy at varying abstraction. `[mem]`
+- **Case-based reasoning (Kolodner); Gick & Holyoak — analogical transfer.** The retrieval-and-mapping pipeline; and the well-documented *failure* of spontaneous transfer (people miss productive analogies without a cue) — directly relevant to "I still had to provide the prompt." `[mem]`
+- *Research question:* is selection of the *productive* abstraction level (the frame at which an analogy is load-bearing, not vacuous) proceduralizable / algorithmically searchable, or is it a calibrated judgment? (Part VII.)
+
+### I.8 Explicitly excluded (already covered in Founder Platform work)
 Boehm Spiral Model; Lean Startup; Agile/waterfall method debates; Goldratt Theory of Constraints; the investability/IPHC frameworks. **Do not re-research.** `[F]` (per owner) Note only where they *interface* the engine (e.g., TOC sequencing in MGA-C).
 
 ---
@@ -164,7 +171,8 @@ Pairs with III.5: where III.5 measures coherence (detection), III.6 measures the
 3. **AV2** — engine/pack independence (Phase 3; the platform claim).
 4. **CV1 + CV5 + CV7** — novelty, real coverage, and willingness-to-pay-for-rigor (the commercial kill-risks).
 5. **Part VI graveyard screen** — once III.2 confirms the compliance-decay escape, run the screen to size the addressable class (research-and-positioning value; not on the critical kill-path but high strategic upside).
-6. Everything else.
+6. **Part VII instrumentation** — begin capturing the human-judgment signal (frame-selection / ping labels) *immediately and passively*, because the dataset is the long-pole asset and accrues only with use (VII.4). Analysis waits on volume; capture cannot.
+7. Everything else.
 
 ### V.2 Methods palette
 - **The export corpus as primary dataset.** The dozens–hundreds of prior ChatGPT analyses are a labeled set of *applicability judgments* (which dimensions an author used vs. which the model added) — the single highest-value research asset, serving AV5, III.1, and the EVR seeding simultaneously. Mine it first.
@@ -172,6 +180,7 @@ Pairs with III.5: where III.5 measures coherence (detection), III.6 measures the
 - **Prototype A/B** for AV3/AV4/III.
 - **Customer discovery by buyer-shape** for Part IV (Sarah Bellenger / ManageYou as a live C0 empowerment case; a PE operating partner for the channel test; the.garage population for intrapreneur/founder).
 - **Implementation-science literature mining** for Part VI — search the *adoption-failure* literatures, not the method literatures (see VI.3).
+- **Passive judgment-capture instrumentation** for Part VII — log frame-selection events in the normal course of use (VII.4); no separate study until volume accrues.
 - **Literature review** for Part I — annotated bibliography + claims-vs-evidence table as the standing artifact.
 
 ### V.3 The kill-criteria summary (what would end or pivot the venture)
@@ -182,7 +191,7 @@ Pairs with III.5: where III.5 measures coherence (detection), III.6 measures the
 - Each has a *pivot*, not just a death — mostly toward a narrower, still-valuable single-domain tool.
 
 ### V.4 Reflexive note
-This research program is itself a high-stakes, high-dimensional decision under uncertainty made by a small team without a world-class research staff — i.e., the exact ICP. The program is therefore a *hand-run instance of the system's own method*: enumerate the dimensions (architecture, efficacy, cognition, commercial), force the omitted ones into frame (the §0 tensions, the Gigerenzer regime, the ACH ghost), test boundaries, and surface uncertainty rather than fill it. If the system were built, validating it would be one of its own first analyses. `[I]`
+This research program is itself a high-stakes, high-dimensional decision under uncertainty made by a small team without a world-class research staff — i.e., the exact ICP. The program is therefore a *hand-run instance of the system's own method*: enumerate the dimensions (architecture, efficacy, cognition, commercial), force the omitted ones into frame (the §0 tensions, the Gigerenzer regime, the ACH ghost), test boundaries, and surface uncertainty rather than fill it. If the system were built, validating it would be one of its own first analyses. `[I]` **This reflexivity is not just rhetorical — it is a research object (Part VII):** the conversations that *produce* this program are themselves instances of the human+system loop whose automatability is in question, and they can be instrumented as data rather than left as anecdote.
 
 ---
 
@@ -250,6 +259,60 @@ What is **not** found (from knowledge; verify in VI.3): anyone who has *named th
 
 ---
 
+## Part VII — Recursive self-application: automating the human side of the loop
+
+**Origin.** This work-stream came from observing the conversations that *built* this program. Repeatedly, value was created by a specific human move: noticing that two items from prior model output might **share an antecedent**, and asking whether that antecedent **generalizes** — and at what level of abstraction. (ACH→design-rationale→Part VI; decision→decision-series; coherence→reversal-cost.) The question Part VII formalizes: **is that move automatable, or is it an uncodifiable property of human cognition?** `[I]`
+
+### VII.1 Decompose the move (don't treat the "ping" as atomic)
+Phenomenology is a poor guide to mechanism; the flash *feels* indivisible because its parts are fast and automatic. The move decomposes into four steps: `[I]`
+1. **Hold** ≥2 prior items jointly (working-memory load; Part I.1).
+2. **Propose** a candidate shared antecedent / structural analogy (generation).
+3. **Select the frame** — the *abstraction level* at which the analogy is load-bearing rather than vacuous (the scarce step).
+4. **Test generalizability** — does the antecedent subsume other cases; does it survive a counterexample; is it productive (makes a new checkable claim) or vacuous (so broad it predicts nothing)?
+
+The hypothesis (Part I.7, Gentner/RPD): the "ping" is **recognition-primed pattern-matching in the abstraction domain** — the same machinery as expert intuition elsewhere, fired by a learned recognizer. Not mystical; *learned*. `[I]`
+
+### VII.2 What automates cheaply vs. what is the hard part
+- **Cheap / near-solved:** steps 1–2 (hold + propose) and step 4's bookkeeping. A generator instance, prompted "what deeper structure might these share, and how far does it generalize," produces candidates with high recall. `[I]`
+- **The hard part — step 3, *productive-frame selection*:** any two things rhyme at a sufficiently high abstraction (everything shares structure if you go broad enough), so the failure mode is **vacuous over-generalization**, not scarcity. The scarce act is *rejecting frames that are too high* and selecting the level where the analogy is load-bearing. This is S4 boundary-sensitivity and the VI.2 load-bearing-effort guard, re-pointed at *candidate abstractions*. `[I]`
+- **The relevance-triage problem:** N prior items yield ~N² candidate pairs, most worthless. Something must decide *which pairs are worth a critic pass at all*. In the conversations, the human silently supplied this triage (fired on the few that "pinged," ignored the rest). Automating generation without triage yields combinatorial firehose. `[R]`
+
+### VII.3 The candidate architecture (multi-instance generator–critic)
+- **Generator instance:** propose antecedents + an abstraction ladder (instance → local parent → broad parent) per pair.
+- **Critic instance (separate, to limit anchoring contamination E7):** apply a discrimination rubric — load-bearing vs. coincidental; survives a counterexample?; productive vs. vacuous (does it predict anything new?).
+- **Triage stage (the unsolved front-end):** rank pairs by expected productivity *before* spending critic passes — the part with the least prior art.
+- This is a known pattern family (debate / generator–discriminator / constitutional critique) **pointed at the system's own reasoning trace** — i.e., the engine's S1–S6 applied to its own output corpus.
+
+### VII.4 The data problem is the real bottleneck — and it is fixable ("not available" → "not yet")
+**The central insight.** Whether step 3 is codifiable is *not primarily a model-capability question* — it is a **data** question. The recognizer that makes a human's frame-selection good was trained on a feedback signal — *which abstractions, once pursued, turned out productive vs. vacuous* — that is **sparse, delayed, and almost never recorded**. "Codifiable in principle but blocked in practice for want of data" means a system can be **built to capture that data**, converting the blocker from *not available* to *not yet*. `[R]`
+- **The decision-governance platform is itself the capture instrument.** Its provenance/EVR trail can log, in the normal course of use: which candidate frames/antecedents were proposed, which the operator *pursued*, and — via the existing coherence/rework machinery (III.5/III.6) — which pursued generalizations later proved **load-bearing** (held up, subsumed real cases) vs. **vacuous** (led nowhere, were abandoned). That is exactly the missing label. `[I]`
+- **Consequence:** the EVR trail is not only an audit surface and the labeled applicability dataset (Appendix item 3) — it is **potentially the labeled dataset for productive-abstraction discrimination that does not otherwise exist.** A quietly radical reframe: the platform's byproduct may be the training signal for the capability that would let it automate its own highest-value human step. `[A]` (Speculative — flagged for hard falsification, not belief.)
+- **Sequencing imperative (V.1 item 6):** because this dataset accrues *only with use* and is the long-pole asset, **passive capture must start as early as possible**, even though the analysis that uses it waits on volume. Instrument first; test later. You cannot distill a function you never recorded.
+
+### VII.5 The three falsifiable outcomes (the trichotomy)
+Once the labels exist, the core question resolves into one of three, with different ventures: `[R]`
+1. **Learnable-and-transferable** — a discriminator trained on the captured labels generalizes to a standalone, operator-independent capability. *(Strongest commercial outcome; least likely.)*
+2. **Learnable-but-personal** — you can train an operator-specific discriminator that amplifies *that* high-taste operator, but it does not transfer. *(Most likely; maps exactly to the rubric's **empowerment buyer-shape**, pointed at the operator's judgment rather than their coverage — "apprentices to a specific operator and amplifies them," not "an oracle.")*
+3. **Not-learnable-from-outcomes** — the signal is too sparse/delayed/confounded to train on; step 3 stays human. *(The thesis-limiting outcome; the product stays a hybrid loop with the human as permanent discriminator.)*
+
+### VII.6 Standing methodological warnings (the honest guards)
+- **Single-instance, no-control confound (the load-bearing caveat).** The conversations *feel* like evidence the loop is automatable because they produced good output — but the human supplied the calibration, and there is no control arm. The thread shows the loop **works with the human in it**, which is a *weaker, different* claim than "the loop automates." Treating the demo as evidence would be the system failing its own III.1 standard (no control, n=1). `[R]`
+- **Regression-to-the-mean trap.** If discrimination is personal (VII.5 #2), a generic two-instance loop replicates the *average* taste latent in the corpus — *not* the high-calibration tail that created the value. "Disintermediate the meat" then yields confident **mediocrity**, not replicated expertise. Removing the human is the *exit condition* of a data-collection program, not its premise. `[R]`
+- **Inherits, does not escape, the core bet.** VII depends entirely on E2/E11/III.1 (does structural execution of a *judgment* step beat human execution?). If those null, VII is a tireless proposer of plausible generalizations with no reliable filter — the design-rationale graveyard reborn as an idea firehose. VII is an *amplifier* of the core thesis, not an independent claim. `[R]`
+
+### VII.7 Deliverables
+1. A specification for **passive judgment-capture instrumentation** on the EVR/provenance trail (what frame-selection events to log; how to back-label productive vs. vacuous via III.5/III.6 outcomes).
+2. The **generator–critic–triage** prototype (multi-instance), with the triage front-end flagged as the novel/unsolved component.
+3. A **calibration experiment**: can an LLM critic separate productive from vacuous abstractions at human-level precision? *(Kill criterion: if the critic confidently blesses vacuous generalizations, structural execution of step 3 fails — and VII collapses to "keep the human as discriminator.")*
+4. A decision, once labels accrue, on which of the **VII.5 trichotomy** outcomes holds — and therefore which venture this is.
+
+### VII.8 Maps to (cross-references)
+- **Claims register:** depends on E2/E11/III.1; introduce as rows E12 (productive-frame discrimination is proceduralizable), E13 (the EVR trail can capture the calibration signal — "not yet" not "not available"), M8 (the personal-vs-transferable trichotomy determines the product shape).
+- **Architecture:** the generator–critic–triage loop is the engine's S1–S6 applied to its own output; the capture spec extends the provenance gate, not new infrastructure.
+- **Rubric:** outcome VII.5 #2 is the empowerment buyer-shape applied to *judgment*, not coverage.
+
+---
+
 ## Appendix — Standing artifacts this program produces
 1. Annotated bibliography keyed to architecture components (Part I).
 2. Claims-vs-evidence table (every system claim → supporting + disconfirming literature → status).
@@ -258,3 +321,4 @@ What is **not** found (from knowledge; verify in VI.3): anyone who has *named th
 5. Validated (or revised) domain-screening rubric with real, practitioner-sourced scores.
 6. A stated applicability boundary for the product (where it helps, where it doesn't).
 7. The **graveyard screen + scored catalog of compliance-failed methods** (Part VI) — the two-predicate instrument, the implementation-science-sourced candidate catalog, and the ranked revival roadmap.
+8. The **judgment-capture instrumentation spec + generator–critic–triage prototype + calibration experiment** (Part VII) — and the labeled productive-abstraction-discrimination dataset the EVR trail accrues, which is the long-pole asset converting "not available" into "not yet."
