@@ -15,6 +15,13 @@ Phase 1.5 (hygiene gate):
       O.1.(METRIC|STATE|FIELD).<TOKEN>
    appear anywhere under ./COR/
 
+Scope note:
+- Some repo directories are design/prose surfaces that intentionally sit OUTSIDE
+  model validation (they discuss COR.* tokens as examples, including deliberately
+  dangling references like COR.XE). These are excluded from the scan via
+  --exclude-dirs (default: "platform"). The folder's own README documents this
+  exclusion; keep the two in sync.
+
 What this intentionally does NOT do (yet):
 - No type checking (metric vs state vs field) unless you add type fields to COR.yaml.
 - No auto-fixes.
@@ -22,6 +29,7 @@ What this intentionally does NOT do (yet):
 
 Usage:
   python tools/cor_lint.py --root . --cor COR.yaml --check-paths
+  python tools/cor_lint.py --root . --cor COR.yaml --exclude-dirs platform,sandbox
 
 Exit codes:
   0 = clean
@@ -55,6 +63,11 @@ COR_REF_RE = re.compile(r"\bCOR\.[A-Z0-9_]+(?:\.[A-Z0-9_]+)*\b")
 LEGACY_RE = re.compile(r"\bO\.1\.(?:METRIC|STATE|FIELD)\.[A-Z0-9_]+(?:\.[A-Z0-9_]+)*\b")
 
 DEFAULT_INCLUDE_EXTS = {".md", ".yaml", ".yml"}
+
+# Directories (relative to --root) that are prose/design surfaces excluded from
+# model validation. They may reference COR.* tokens illustratively (incl. known
+# dangling refs), so scanning them would produce false-positive lint errors.
+DEFAULT_EXCLUDE_DIRS = {"platform"}
 
 
 def _read_text(path: Path) -> str:
@@ -120,7 +133,12 @@ def load_registry(reg_path: Path) -> tuple[set[str], list[dict]]:
     return registry_ids, normalized_entries
 
 
-def iter_repo_files(root: Path, exclude_files: set[Path], include_exts: set[str]) -> list[Path]:
+def iter_repo_files(
+    root: Path,
+    exclude_files: set[Path],
+    include_exts: set[str],
+    exclude_dirs: set[Path],
+) -> list[Path]:
     files: list[Path] = []
     for p in root.rglob("*"):
         if not p.is_file():
@@ -128,6 +146,8 @@ def iter_repo_files(root: Path, exclude_files: set[Path], include_exts: set[str]
         if p in exclude_files:
             continue
         if p.suffix.lower() not in include_exts:
+            continue
+        if any(_is_under(p, d) for d in exclude_dirs):
             continue
         files.append(p)
     return files
@@ -153,6 +173,13 @@ def main() -> int:
         default=",".join(sorted(DEFAULT_INCLUDE_EXTS)),
         help="Comma-separated extensions to scan (default: .md,.yaml,.yml)",
     )
+    ap.add_argument(
+        "--exclude-dirs",
+        default=",".join(sorted(DEFAULT_EXCLUDE_DIRS)),
+        help="Comma-separated directories (relative to --root) to skip; prose/design "
+             "surfaces excluded from model validation (default: platform). "
+             "Pass an empty string to scan everything.",
+    )
     ap.add_argument("--check-paths", action="store_true", help="Also verify that registry entry paths exist on disk")
     ap.add_argument(
         "--disable-legacy-check",
@@ -169,6 +196,8 @@ def main() -> int:
         print("ERROR: --include-exts resolved to empty set", file=sys.stderr)
         return 2
 
+    exclude_dirs = {(root / d.strip()).resolve() for d in args.exclude_dirs.split(",") if d.strip()}
+
     # Load registry (COR.yaml)
     try:
         registry_ids, reg_entries = load_registry(reg_path)
@@ -180,7 +209,12 @@ def main() -> int:
     exclude_files = {reg_path}
 
     # Scan repo
-    files = iter_repo_files(root, exclude_files=exclude_files, include_exts=include_exts)
+    files = iter_repo_files(
+        root,
+        exclude_files=exclude_files,
+        include_exts=include_exts,
+        exclude_dirs=exclude_dirs,
+    )
 
     found_refs: dict[str, list[str]] = {}   # COR.* ref -> [relative file paths]
     legacy_hits: dict[str, list[str]] = {}  # O.1.* legacy -> [relative file paths]
